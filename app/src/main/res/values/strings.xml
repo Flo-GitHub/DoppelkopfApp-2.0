@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DoppelkopfApp</string>
+    <string name="start_names_title">Names:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="names">Names:</string>
+    <string name="cent_per_point">Cent/Point:</string>
+    <string name="new_game">New game</string>
+    <string name="continue_game">Continue Game</string>
+    <string name="bock">Bock</string>
+    <string name="double_bock">Double Bock</string>
+    <string name="solo_bock_calculation">Solo-Bockcalculation</string>
+    <string name="points_short">P</string>
+    <string name="number_0">0</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="round_gives">gives.</string>
+    <string name="repeat_round">Repeat round?</string>
+
+</resources>
