@@ -1,17 +1,33 @@
 package com.example.admin.doppelkopfapp;
 
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import java.sql.SQLException;
+
+import javax.sql.DataSource;
+
+import static com.example.admin.doppelkopfapp.R.id.linearLayout;
+
 public class RoundActivity extends AppCompatActivity {
 
     private GameManager gameManager;
+    private GameManagerDataSource dataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +35,15 @@ public class RoundActivity extends AppCompatActivity {
         setContentView(R.layout.round_layout);
 
         gameManager = (GameManager) getIntent().getSerializableExtra(SettingsActivity.EXTRA_GAME_MANAGER);
+
+        dataSource = new GameManagerDataSource(this);
+        try {
+            dataSource.open();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        addOnClickListener();
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
@@ -28,36 +53,42 @@ public class RoundActivity extends AppCompatActivity {
         update();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        dataSource.close();
+    }
+
     public void update() {
         updateGiver();
         updateNames();
         hideBockIfDisabled();
     }
 
-    public void nextRound() {
-
-    }
 
     private void hideBockIfDisabled() {
-        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.round_linearLayout_bockGroup);
-        if( !gameManager.getSettings().isBock() )
-            linearLayout.setEnabled(false);
-        else
-            linearLayout.setEnabled(true);
+        RadioButton button1Bock = (RadioButton) findViewById(R.id.round_radioButton_1);
+        RadioButton button2Bock = (RadioButton) findViewById(R.id.round_radioButton_2);
+        if( !gameManager.getSettings().isBock() ) {
+            button1Bock.setEnabled(false);
+            button2Bock.setEnabled(false);
+        } else {
+            button1Bock.setEnabled(true);
+            button2Bock.setEnabled(true);
+        }
 
     }
 
     private void updateGiver() {
         TextView textView = (TextView) findViewById(R.id.round_textView_giver);
         Player p = gameManager.getGiver();
-        textView.setText(p.getName() + getString(R.string.round_gives) );
+        textView.setText(p.getName()  + " " + getString(R.string.round_gives) );
     }
 
     private void updateNames() {
         for( int i = 0; i < 4; i++ ) {
-            TextView textView = (TextView) AndroidUtils.findViewByName( "round_textView_active_" + i+1, this );
-            Player p = gameManager.getActivePlayers()[i];
-            textView.setText(p.getName() + ":");
+            TextView textView = (TextView) AndroidUtils.findViewByName( "round_textView_active_" + (i+1), this );
+            textView.setText(gameManager.getActivePlayers()[i].getName() + ": ");
         }
     }
 
@@ -73,16 +104,119 @@ public class RoundActivity extends AppCompatActivity {
             return 0;
     }
 
-    private void addPoints() {
+    private int[] getPoints() {
+        int[] points = new int[4];
         for( int i = 0; i < 4; i++ ) {
-            EditText editText = (EditText) AndroidUtils.findViewByName("round_editText_points_" + i+1, this);
-            int points = Integer.parseInt( editText.getText().toString() );
-            gameManager.getActivePlayers()[i].addPoints(points);
+            EditText editText = (EditText) AndroidUtils.findViewByName("round_editText_points_" + (i+1), this);
+            points[i] = Integer.parseInt( editText.getText().toString() );
         }
+        return points;
     }
 
     private boolean isRepeatRound() {
         CheckBox checkBox = (CheckBox) findViewById(R.id.round_checkBox_repeatRound);
         return checkBox.isChecked();
     }
+
+    private void addOnClickListener() {
+        Button buttonSkip = (Button) findViewById(R.id.round_button_skip);
+        buttonSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(RoundActivity.this);
+                builder.setCancelable(true);
+                builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        gameManager.skipRound();
+
+                        dataSource.updateGame(gameManager);
+
+                        Intent intent = new Intent(RoundActivity.this, MainActivity.class);
+                        intent.putExtra(SettingsActivity.EXTRA_GAME_MANAGER, gameManager);
+                        startActivity(intent);
+                    }
+                });
+                SkipDialog skipDialog = new SkipDialog();
+                skipDialog.show(getFragmentManager(), "Verify");
+            }
+        });
+
+        Button buttonContinue = (Button) findViewById(R.id.round_button_continue);
+        buttonContinue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    gameManager.nextRound(getPoints(), getBocks(), isRepeatRound());
+
+                    dataSource.updateGame(gameManager);
+
+                    Intent intent = new Intent(RoundActivity.this, MainActivity.class);
+                    intent.putExtra(SettingsActivity.EXTRA_GAME_MANAGER, gameManager);
+                    startActivity(intent);
+                } catch (Exception e) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(RoundActivity.this);
+                    builder.setCancelable(false);
+                    builder.setNeutralButton(getString(R.string.dialog_points_sum_not_0), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            return;
+                        }
+                    });
+                    SumPointsDialog sumPointsDialog = new SumPointsDialog();
+                    sumPointsDialog.show(getFragmentManager(), "Error");
+                }
+
+            }
+        });
+    }
+
+    public static class SkipDialog extends DialogFragment {
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState ) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setMessage(getString(R.string.dialog_skip_round));
+            builder.setCancelable(false);
+            builder.setPositiveButton( getString(R.string.yes), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    RoundActivity roundActivity = (RoundActivity) getActivity();
+                    roundActivity.gameManager.nextRound(
+                            roundActivity.getPoints(),
+                            roundActivity.getBocks(),
+                            roundActivity.isRepeatRound() );
+                    Intent intent = new Intent(roundActivity, MainActivity.class);
+                    intent.putExtra(SettingsActivity.EXTRA_GAME_MANAGER, roundActivity.gameManager);
+                    startActivity(intent);
+                }
+            });
+            builder.setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            return builder.create();
+        }
+    }
+
+    public static class SumPointsDialog extends DialogFragment {
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState ) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setMessage(getString(R.string.dialog_points_sum_not_0));
+            builder.setCancelable(false);
+            builder.setPositiveButton( getString(R.string.ok), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            return builder.create();
+        }
+    }
+
+
 }

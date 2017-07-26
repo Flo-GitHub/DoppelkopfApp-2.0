@@ -9,7 +9,7 @@
     <string name="new_game">New game</string>
     <string name="continue_game">Continue Game</string>
     <string name="bock">Bock</string>
-    <string name="double_bock">Double Bock</string>
+    <string name="double_bock">Doublebock</string>
     <string name="solo_bock_calculation">Solo-Bockcalculation</string>
     <string name="points_short">P</string>
     <string name="number_0">0</string>
@@ -17,5 +17,18 @@
     <string name="number_2">2</string>
     <string name="round_gives">gives.</string>
     <string name="repeat_round">Repeat round?</string>
+    <string name="bocks_remaining">Bocks remaining:</string>
+    <string name="double_bocks_remaining">Doublebocks remaining:</string>
+    <string name="next_round">next round</string>
+    <string name="menu">Menu</string>
+    <string name="continue_text">continue</string>
+    <string name="skip_round">skip round</string>
+    <string name="dialog_skip_round">Do you really want to skip the round?</string>
+    <string name="dialog_not_enough_players">Please type in at least 4 players.</string>
+    <string name="ok">Ok</string>
+    <string name="dialog_points_sum_not_0">Sum of all points is not 0 and/or a field is empty.</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+
 
 </resources>

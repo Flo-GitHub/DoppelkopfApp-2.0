@@ -1,6 +1,11 @@
 package com.example.admin.doppelkopfapp;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Admin on 06.06.2017.
@@ -15,13 +20,16 @@ public class GameManager implements Serializable {
     private int bocks = 0,
                 doubleBocks = 0;
     private GameSettings settings;
+    private final long databaseId;
 
-    public GameManager( Player[] players, GameSettings settings ) {
+    public GameManager( long dataBaseId, Player[] players, GameSettings settings ) {
+        this.databaseId = dataBaseId;
         this.players = players;
         this.settings = settings;
 
         BOCKS_TO_ADD = players.length;
     }
+
 
     public void skipRound() {
         nextGiverIndex();
@@ -66,6 +74,7 @@ public class GameManager implements Serializable {
                     if( bocks == 0 )
                         break;
                     doubleBocks++;
+                    bocks--;
                 }
                 bocks += BOCKS_TO_ADD - tempBocks;
             } else if( settings.isBock() ) {
@@ -82,9 +91,9 @@ public class GameManager implements Serializable {
     }
 
     private boolean isSolo(int[] points) {
-        int absoluteInteger = Math.abs(points[0]);
+        int absValue = Math.abs(points[0]);
         for( int i = 1; i < points.length; i++ )
-            if( Math.abs(points[i]) != absoluteInteger )
+            if( Math.abs(points[i]) != absValue )
                 return true;
         return false;
     }
@@ -126,13 +135,17 @@ public class GameManager implements Serializable {
 
     public void nextGiverIndex() {
         giverIndex += 1;
-        if (giverIndex > players.length) {
+        if (giverIndex > players.length-1) {
             giverIndex -= players.length;
        }
     }
 
 
     //getter
+    public long getDatabaseId() {
+        return databaseId;
+    }
+
     public Player[] getPlayers() {
         return players;
     }

@@ -1,24 +1,26 @@
 package com.example.admin.doppelkopfapp;
 
+import java.io.Serializable;
+
 /**
  * Created by Admin on 12/07/2017.
  */
 
-public class GameSettings {
+public class GameSettings implements Serializable{
 
     private int centPerPoint;
     private boolean bock;
     private boolean doubleBock;
     private boolean soloBockCalculation;
+    private final long dataBaseId;
 
-    public GameSettings(int centPerPoint, boolean bock, boolean doubleBock, boolean soloBockCalculation) {
+    public GameSettings(long dataBaseId, int centPerPoint, boolean bock, boolean doubleBock, boolean soloBockCalculation) {
+        this.dataBaseId = dataBaseId;
         this.centPerPoint = centPerPoint;
         this.bock = bock;
         this.doubleBock = doubleBock;
         this.soloBockCalculation = soloBockCalculation;
     }
-
-
 
     public int getCentPerPoint() {
         return centPerPoint;
@@ -50,6 +52,10 @@ public class GameSettings {
 
     public void setSoloBockCalculation(boolean soloBockCalculation) {
         this.soloBockCalculation = soloBockCalculation;
+    }
+
+    public long getDataBaseId() {
+        return dataBaseId;
     }
 
 }

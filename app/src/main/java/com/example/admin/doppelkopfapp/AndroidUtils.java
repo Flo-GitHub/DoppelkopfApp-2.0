@@ -1,6 +1,7 @@
 package com.example.admin.doppelkopfapp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.View;
 
 /**

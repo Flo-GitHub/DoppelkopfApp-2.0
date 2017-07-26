@@ -1,16 +1,20 @@
 package com.example.admin.doppelkopfapp;
 
+import java.io.Serializable;
+
 /**
  * Created by Admin on 06.06.2017.
  */
 
-public class Player {
+public class Player implements Serializable{
 
     private String name;
     private int points = 0;
     private int pointsLost = 0;
+    private final long dataBaseId;
 
-    public Player( String name ) {
+    public Player( long dataBaseId, String name ) {
+        this.dataBaseId = dataBaseId;
         this.name = name;
     }
 
@@ -19,6 +23,10 @@ public class Player {
 
         if( pointsToAdd < 0 )
             pointsLost += Math.abs(pointsToAdd);
+    }
+
+    public long getDataBaseId() {
+        return dataBaseId;
     }
 
     public int getPoints() {

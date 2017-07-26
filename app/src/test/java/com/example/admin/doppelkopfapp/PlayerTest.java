@@ -13,7 +13,7 @@ public class PlayerTest {
 
     @Test
     public void testPointsPositive() {
-        Player p = new Player("Test");
+        Player p = new Player(0, "Test");
         p.addPoints(200);
         p.addPoints(-10);
 
@@ -22,7 +22,7 @@ public class PlayerTest {
 
     @Test
     public void testPointsNegative() {
-        Player p = new Player("Test");
+        Player p = new Player(0, "Test");
         p.addPoints(-90);
         p.addPoints(-1);
 
@@ -31,14 +31,14 @@ public class PlayerTest {
 
     @Test
     public void testPointsLost() {
-        Player p = new Player("Test");
+        Player p = new Player(0, "Test");
         p.addPoints(20);
         p.addPoints(-12);
         p.addPoints(-40);
 
         assertThat(p.getPointsLost(), is(52));
 
-        Player p2 = new Player("Test2");
+        Player p2 = new Player(0, "Test2");
         p2.addPoints(-23);
         p2.addPoints(2003);
         p2.addPoints(-0);

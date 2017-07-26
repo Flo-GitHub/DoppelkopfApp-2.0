@@ -53,7 +53,7 @@ public class GameDBHelper extends SQLiteOpenHelper {
                     COLUMN_IS_SOLO_BOCK_CALCULATION + " integer);";
 
     public static final String SQL_CREATE_GAME =
-            "create table" + TABLE_GAME + "(" +
+            "create table " + TABLE_GAME + "(" +
                     COLUMN_ID + " integer primary key autoincrement, " +
                     COLUMN_BOCKS + " integer, " +
                     COLUMN_DOUBLE_BOCKS + " integer, " +

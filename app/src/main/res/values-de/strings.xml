@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DoppelkopfApp</string>
-    <string name="start_names_title">Names:</string>
+    <string name="start_names_title">Namen:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="names">Namen:</string>
@@ -9,13 +9,25 @@
     <string name="new_game">Neues Spiel</string>
     <string name="continue_game">Weiterspielen</string>
     <string name="bock">Bock</string>
-    <string name="double_bock">Doppel Bock</string>
+    <string name="double_bock">Doppelbock</string>
     <string name="solo_bock_calculation">Solo-Bockrechnung</string>
     <string name="points_short">P</string>
     <string name="number_0">0</string>
     <string name="number_1">1</string>
     <string name="number_2">2</string>
     <string name="round_gives">gibt.</string>
-    <string name="repeat_round">Repeat round?</string>
+    <string name="repeat_round">Runde wiederholen?</string>
+    <string name="bocks_remaining">Bocks verbleibend:</string>
+    <string name="double_bocks_remaining">Doppelbocks verbleibend:</string>
+    <string name="next_round">naechste Runde</string>
+    <string name="menu">Menu</string>
+    <string name="continue_text">weiter</string>
+    <string name="skip_round">ueberspringen</string>
+    <string name="dialog_skip_round">Wollen sie die Runde wirklich ueberspringen?</string>
+    <string name="dialog_not_enough_players">Bitte mindestens 4 Spieler eingeben.</string>
+    <string name="ok">Ok</string>
+    <string name="dialog_points_sum_not_0">Summe der Punkte ist nicht 0 und/oder ein Punktefeld ist nicht ausgefuellt.</string>
+    <string name="yes">ja</string>
+    <string name="no">nein</string>
 
 </resources>
