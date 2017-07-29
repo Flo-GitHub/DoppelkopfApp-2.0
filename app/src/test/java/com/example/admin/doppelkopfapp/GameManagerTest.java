@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
 
 /**
  * Created by Admin on 12/07/2017.
@@ -16,7 +15,7 @@ public class GameManagerTest {
     @Test(expected = IllegalArgumentException.class)
     public void testExceptionNextRoundSumNotZero() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
-        GameManager gameManager = new GameManager(0, players, null);
+        GameManager gameManager = new GameManager(players, null);
 
         gameManager.nextRound( new int[]{2, 23, 4, -32}, 2, false);
     }
@@ -24,13 +23,13 @@ public class GameManagerTest {
     @Test
     public void activePlayersLengthIs4() {
         Player[] players4 =  new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
-        GameManager gameManager4 = new GameManager(0, players4, null);
+        GameManager gameManager4 = new GameManager(players4, null);
 
         Player[] players5 =  new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4"), new Player(0, "6")};
-        GameManager gameManager5 = new GameManager(0, players5, null);
+        GameManager gameManager5 = new GameManager(players5, null);
 
         Player[] players6 =  new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4"), new Player(0, "6"), new Player(0, "6")};
-        GameManager gameManager6 = new GameManager(0, players6, null);
+        GameManager gameManager6 = new GameManager(players6, null);
 
         assertThat(gameManager4.getActivePlayers().length, is(4));
         assertThat(gameManager5.getActivePlayers().length, is(4));
@@ -41,8 +40,8 @@ public class GameManagerTest {
     @Test
     public void nextRoundGiverTwice() {
         Player[] players =  new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
-        GameSettings settings = new GameSettings(0, 0, false, false, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(0, false, false, false);
+        GameManager gameManager = new GameManager(players, settings);
 
         for( int i = 0; i < 2; i++ )
             gameManager.nextRound(new int[]{-1, -1, 1, 1}, 0, false);
@@ -55,8 +54,8 @@ public class GameManagerTest {
     @Test
     public void nextRoundGiverEightTimes() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4"), new Player(0, "6"), new Player(0, "6")};
-        GameSettings settings = new GameSettings(0, 0, false, false, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(0, false, false, false);
+        GameManager gameManager = new GameManager(players, settings);
         for( int i = 0; i < 8; i++ ) {
             gameManager.nextRound(new int[]{1, -1, 1, -1}, 0, false);
         }
@@ -67,8 +66,8 @@ public class GameManagerTest {
     @Test
     public void getActivePlayersFive() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4"), new Player(0, "6"), new Player(0, "6")};
-        GameSettings settings = new GameSettings(0, 15, false, false, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(15, false, false, false);
+        GameManager gameManager = new GameManager(players, settings);
 
         gameManager.nextRound(new int[]{1, -1, 1, -1}, 0, false);
 
@@ -78,8 +77,8 @@ public class GameManagerTest {
     @Test
     public void getMoney() {
         Player[] players =  new Player[]{new Player(0, "1"), new Player(0, "2")};
-        GameSettings settings = new GameSettings(0, 15, false, false, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(15, false, false, false);
+        GameManager gameManager = new GameManager(players, settings);
 
         players[0].addPoints(-20);
         players[0].addPoints(1);
@@ -93,8 +92,8 @@ public class GameManagerTest {
     @Test
     public void testPointsBock() {
         Player[] players =  new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
-        GameSettings settings = new GameSettings(0, 0, true, false, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(0, true, false, false);
+        GameManager gameManager = new GameManager(players, settings);
 
         //12 bocks
         gameManager.nextRound(new int[]{1, 1, -1, -1}, 2, true); // 1
@@ -111,8 +110,8 @@ public class GameManagerTest {
     @Test
     public void testPointsDoubleBock() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4") };
-        GameSettings settings = new GameSettings(0, 10, true, true, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(10, true, true, false);
+        GameManager gameManager = new GameManager(players, settings);
 
         for( int i = 0; i < 2; i++ )
             gameManager.nextRound(new int[]{1, 1, -1, -1}, 1, false);
@@ -127,8 +126,8 @@ public class GameManagerTest {
     @Test
     public void testPointsSoloBockCalculationEnabled() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
-        GameSettings settings = new GameSettings(0, 10, true, false, true);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(10, true, false, true);
+        GameManager gameManager = new GameManager(players, settings);
 
         gameManager.nextRound(new int[]{3, -1, -1, -1}, 1, false);
         for( int i = 0; i < 4; i++ )
@@ -144,8 +143,8 @@ public class GameManagerTest {
     @Test
     public void testPointsSoloBockCalculationDisabled() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
-        GameSettings settings = new GameSettings(0, 10, true, false, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(10, true, false, false);
+        GameManager gameManager = new GameManager(players, settings);
 
         gameManager.nextRound(new int[]{3, -1, -1, -1}, 1, false);
         for( int i = 0; i < 3; i++ )
@@ -161,8 +160,8 @@ public class GameManagerTest {
     @Test
     public void skipRound() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4"), new Player(0, "6"), new Player(0, "6")};
-        GameSettings settings = new GameSettings(0, 0, false, false, false);
-        GameManager gameManager = new GameManager(0, players, settings);
+        GameSettings settings = new GameSettings(0, false, false, false);
+        GameManager gameManager = new GameManager(players, settings);
 
         gameManager.nextRound(new int[]{1, 1, -1, -1}, 0, false);
         for( int i = 0; i < 4; i++ )

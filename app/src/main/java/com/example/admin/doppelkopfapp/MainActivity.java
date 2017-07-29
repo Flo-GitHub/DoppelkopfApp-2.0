@@ -1,18 +1,19 @@
 package com.example.admin.doppelkopfapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
+import java.text.NumberFormat;
 import java.util.Locale;
+
+/**
+ * Activity that shows all players' points and the money. From here you can get to the
+ * Round- or SettingsActivity
+ */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             TextView textView = (TextView) AndroidUtils.findViewByName("main_textView_text_" + (i+1), this);
             Player p = gameManager.getPlayers()[i];
 
-            textView.setText( String.format(Locale.getDefault(), "%s: %dP (%.2f€)", p.getName(), p.getPoints(),
-                    (float) (p.getPointsLost() * gameManager.getSettings().getCentPerPoint() / 100f)) );
+            textView.setText( String.format(Locale.getDefault(), "%s: %dP (%s)", p.getName(), p.getPoints(),
+                    NumberFormat.getCurrencyInstance().format(p.getPointsLost() * gameManager.getSettings().getCentPerPoint() / 100f) ) );
         }
     }
 

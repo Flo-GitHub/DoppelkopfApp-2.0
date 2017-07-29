@@ -13,7 +13,7 @@ import java.util.List;
 import static com.example.admin.doppelkopfapp.GameDBHelper.*;
 
 /**
- * Created by Admin on 12/07/2017.
+ * Easy access to the database.
  */
 
 public class GameManagerDataSource {
@@ -36,23 +36,31 @@ public class GameManagerDataSource {
         dbHelper.close();
     }
 
-    public int getPlayerCountInDb() {
-        String selectQuery = "SELECT * FROM " + TABLE_PLAYERS;
-        Cursor c = database.rawQuery(selectQuery, null);
-        return c.getCount();
+    public long getNextPlayerId() {
+        return getNextId(TABLE_PLAYERS);
     }
 
-    public int getGameCountInDb() {
-        String selectQuery = "SELECT * FROM " + TABLE_GAME;
-        Cursor c = database.rawQuery(selectQuery, null);
-        return c.getCount();
+    public long getNextGameId() {
+        return getNextId(TABLE_GAME);
     }
 
-    public int getSettingsCountInDb() {
-        String selectQuery = "SELECT * FROM " + TABLE_SETTINGS;
-        Cursor c = database.rawQuery(selectQuery, null);
-        return c.getCount();
+    private long getNextId( String tableName ) {
+        Cursor c = null;
+        long seq = 0;
+        try {
+            String sql = "select seq from sqlite_sequence where name=?";
+            c = database.rawQuery(sql, new String[] {tableName});
+            if (c.moveToFirst()) {
+                seq = c.getLong(0);
+            }
+        } finally {
+            if (c != null) {
+                c.close();
+            }
+        }
+        return seq + 1;
     }
+
 
     public boolean hasGame() {
         try {
@@ -67,8 +75,6 @@ public class GameManagerDataSource {
     }
 
     public long createGame(GameManager game) {
-        createSettings(game.getSettings()); //insert settings
-
         ContentValues values = gameValues(game);
         long gameId = database.insert(TABLE_GAME, null, values); //insert game
 
@@ -76,34 +82,38 @@ public class GameManagerDataSource {
             createPlayer(p, gameId); //insert players
         }
 
+        createSettings(game.getSettings(), gameId); //insert settings
+
         return gameId;
     }
 
     public void updateGame(GameManager game) {
-        updateSettings(game.getSettings());
-
         ContentValues values = gameValues(game);
         database.update(TABLE_GAME, values, COLUMN_ID + "=" + game.getDatabaseId(), null);
 
         for( Player p : game.getPlayers() )
             updatePlayer(p, game.getDatabaseId());
+
+        updateSettings(game.getSettings(), game.getDatabaseId() );
     }
 
     public GameManager getNewestGame() {
-        String selectQuery = "SELECT * FROM " + TABLE_GAME;
-
-        Log.e(LOG, selectQuery);
+        String selectQuery = "SELECT * FROM " +  TABLE_GAME + " WHERE + " + COLUMN_ID +
+                "= (SELECT MAX(" + COLUMN_ID + ")  FROM " + TABLE_GAME + ")";
 
         Cursor c = database.rawQuery(selectQuery, null);
         if( c != null )
             c.moveToLast();
 
         GameManager gameManager = new GameManager(
-                c.getPosition(),
-                getAllPlayers(c.getCount()-1),
-                getSettings( c.getInt( c.getColumnIndex(COLUMN_ID) ) ) );
-        gameManager.setBocks( c.getInt( c.getColumnIndex(COLUMN_BOCKS) )  );
-        gameManager.setDoubleBocks( c.getInt( c.getColumnIndex(COLUMN_DOUBLE_BOCKS) ) );
+                getAllPlayers(getNextGameId()-1),
+                getSettings(getNextGameId()-1));
+
+        gameManager.setDatabaseId( getNextGameId()-1 );
+        int bocks = c.getInt( c.getColumnIndex(COLUMN_BOCKS) );
+        int doubleBocks = c.getInt( c.getColumnIndex(COLUMN_DOUBLE_BOCKS) );
+        gameManager.setBocks( bocks );
+        gameManager.setDoubleBocks( doubleBocks );
         gameManager.setGiverIndex( c.getInt( c.getColumnIndex(COLUMN_GIVER_INDEX) ) );
 
         c.close();
@@ -113,19 +123,18 @@ public class GameManagerDataSource {
     public GameManager getGame(long gameID) {
         String selectQuery = "SELECT * FROM " + TABLE_GAME + " WHERE " + COLUMN_ID + " = " + gameID;
 
-        Log.e(LOG, selectQuery);
-
         Cursor c = database.rawQuery(selectQuery, null);
         if( c != null )
             c.moveToFirst();
 
         GameManager gameManager = new GameManager(
-                c.getPosition(),
                 getAllPlayers(gameID),
-                getSettings( c.getInt( c.getColumnIndex(COLUMN_ID) ) ) );
+                getSettings( gameID ));
         gameManager.setBocks( c.getInt( c.getColumnIndex(COLUMN_BOCKS) )  );
         gameManager.setDoubleBocks( c.getInt( c.getColumnIndex(COLUMN_DOUBLE_BOCKS) ) );
         gameManager.setGiverIndex( c.getInt( c.getColumnIndex(COLUMN_GIVER_INDEX) ) );
+
+        gameManager.setDatabaseId(gameID);
 
         c.close();
         return gameManager;
@@ -142,20 +151,20 @@ public class GameManagerDataSource {
     public void updatePlayer(Player player, long gameId) {
         ContentValues values = playerValues(player, gameId);
 
-        database.update(TABLE_PLAYERS, values, COLUMN_ID + "=" + player.getDataBaseId(), null);
+        database.update(TABLE_PLAYERS, values, COLUMN_ID + " = " + player.getDataBaseId(), null);
     }
 
-    public long createSettings(GameSettings settings) {
-        ContentValues values = settingsValues(settings);
+    public long createSettings(GameSettings settings, long gameId) {
+        ContentValues values = settingsValues(settings, gameId);
         long settingsId = database.insert(TABLE_SETTINGS, null, values);
 
         return settingsId;
     }
 
-    public void updateSettings(GameSettings settings) {
-        ContentValues values = settingsValues(settings);
+    public void updateSettings(GameSettings settings, long gameId) {
+        ContentValues values = settingsValues(settings, gameId);
 
-        database.update(TABLE_SETTINGS, values, COLUMN_ID + "=" + settings.getDataBaseId(), null);
+        database.update(TABLE_SETTINGS, values, COLUMN_GAME + " = " + gameId, null);
     }
 
 
@@ -163,8 +172,6 @@ public class GameManagerDataSource {
     public Player[] getAllPlayers(long gameID) {
         List<Player> players = new ArrayList<>();
         String selectQuery = "SELECT * FROM " + TABLE_PLAYERS + " WHERE " + COLUMN_GAME + " = " + gameID;
-
-        Log.e(LOG, selectQuery);
 
         Cursor c = database.rawQuery(selectQuery, null);
 
@@ -182,17 +189,14 @@ public class GameManagerDataSource {
         return players.toArray(new Player[players.size()]);
     }
 
-    public GameSettings getSettings(long id) {
-        String selectQuery = "SELECT * FROM " + TABLE_SETTINGS + " WHERE " + COLUMN_ID + " = " + id;
-
-        Log.e(LOG, selectQuery);
+    public GameSettings getSettings(long gameId) {
+        String selectQuery = "SELECT * FROM " + TABLE_SETTINGS + " WHERE " + COLUMN_GAME + " = " + gameId;
 
         Cursor c = database.rawQuery(selectQuery, null);
         if( c != null )
             c.moveToFirst();
 
         GameSettings gameSettings = new GameSettings(
-                id,
                 c.getInt( c.getColumnIndex(COLUMN_CENT_PER_POINT) ),
                 c.getInt( c.getColumnIndex(COLUMN_IS_BOCK) ) == 1 ? true : false,
                 c.getInt( c.getColumnIndex(COLUMN_IS_DOUBLE_BOCK) ) == 1 ? true : false,
@@ -203,13 +207,14 @@ public class GameManagerDataSource {
     }
 
 
-    //contentvalues
-    private ContentValues settingsValues(GameSettings settings) {
+    //contentValues
+    private ContentValues settingsValues(GameSettings settings, long gameId) {
         ContentValues values = new ContentValues();
+        values.put(COLUMN_GAME, gameId);
         values.put(COLUMN_CENT_PER_POINT, settings.getCentPerPoint());
-        values.put(COLUMN_IS_BOCK, settings.isBock());
-        values.put(COLUMN_IS_DOUBLE_BOCK, settings.isDoubleBock());
-        values.put(COLUMN_IS_SOLO_BOCK_CALCULATION, settings.isSoloBockCalculation());
+        values.put(COLUMN_IS_BOCK, settings.isBock() ? 1 : 0 );
+        values.put(COLUMN_IS_DOUBLE_BOCK, settings.isDoubleBock() ? 1 : 0);
+        values.put(COLUMN_IS_SOLO_BOCK_CALCULATION, settings.isSoloBockCalculation() ? 1 : 0);
         return values;
     }
 
@@ -224,7 +229,6 @@ public class GameManagerDataSource {
 
     private ContentValues gameValues(GameManager game) {
         ContentValues values = new ContentValues();
-        values.put(COLUMN_SETTINGS, game.getSettings().getDataBaseId());
         values.put(COLUMN_BOCKS, game.getBocks());
         values.put(COLUMN_DOUBLE_BOCKS, game.getDoubleBocks());
         values.put(COLUMN_GIVER_INDEX, game.getGiverIndex());

@@ -5,15 +5,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by Admin on 17/07/2017.
+ * Class that extends SQLiteOpenHelper and has got all the names and columns of the database in it.
  */
-
-//help: https://www.androidhive.info/2013/09/android-sqlite-database-with-multiple-tables/
 
 public class GameDBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "game.db";
-    public static final int    DB_VERSION = 1;
+    public static final int    DB_VERSION = 2;
 
     public static final String TABLE_PLAYERS = "table_players";
     public static final String TABLE_SETTINGS = "table_settings";
@@ -21,8 +19,6 @@ public class GameDBHelper extends SQLiteOpenHelper {
 
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_GAME = "game";
-    public static final String COLUMN_PLAYERS = "players";
-    public static final String COLUMN_SETTINGS = "settings";
     public static final String COLUMN_BOCKS = "bocks";
     public static final String COLUMN_DOUBLE_BOCKS = "doubleBocks";
     public static final String COLUMN_GIVER_INDEX = "giverIndex";
@@ -41,7 +37,8 @@ public class GameDBHelper extends SQLiteOpenHelper {
                     COLUMN_GAME + " integer, " +
                     COLUMN_NAME + " text not null, " +
                     COLUMN_POINTS + " integer, " +
-                    COLUMN_POINTS_LOST + " integer);";
+                    COLUMN_POINTS_LOST + " integer, " +
+                    "FOREIGN KEY (" + COLUMN_GAME + ") REFERENCES " + TABLE_GAME + "(" + COLUMN_ID + "));";
 
     public static final String SQL_CREATE_SETTINGS =
             "create table " + TABLE_SETTINGS + "(" +
@@ -50,18 +47,15 @@ public class GameDBHelper extends SQLiteOpenHelper {
                     COLUMN_CENT_PER_POINT + " integer, " +
                     COLUMN_IS_BOCK + " integer, " +
                     COLUMN_IS_DOUBLE_BOCK + " integer, " +
-                    COLUMN_IS_SOLO_BOCK_CALCULATION + " integer);";
+                    COLUMN_IS_SOLO_BOCK_CALCULATION + " integer, " +
+                    "FOREIGN KEY (" + COLUMN_GAME + ") REFERENCES " + TABLE_GAME + "(" + COLUMN_ID + "));";
 
     public static final String SQL_CREATE_GAME =
             "create table " + TABLE_GAME + "(" +
                     COLUMN_ID + " integer primary key autoincrement, " +
                     COLUMN_BOCKS + " integer, " +
                     COLUMN_DOUBLE_BOCKS + " integer, " +
-                    COLUMN_GIVER_INDEX  + " integer, " +
-                    COLUMN_PLAYERS + " integer, " +
-                    COLUMN_SETTINGS + " integer, " +
-                    "FOREIGN KEY (" + COLUMN_PLAYERS + ") REFERENCES " + TABLE_PLAYERS + "(" + COLUMN_GAME + "), " +
-                    "FOREIGN KEY (" + COLUMN_SETTINGS + ") REFERENCES " + TABLE_SETTINGS + "(" + COLUMN_ID + "));";
+                    COLUMN_GIVER_INDEX  + " integer);";
 
 
     public GameDBHelper(Context context) {

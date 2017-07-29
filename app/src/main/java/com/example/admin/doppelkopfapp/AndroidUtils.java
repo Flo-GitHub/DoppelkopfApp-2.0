@@ -1,11 +1,10 @@
 package com.example.admin.doppelkopfapp;
 
 import android.app.Activity;
-import android.content.Context;
 import android.view.View;
 
 /**
- * Created by Admin on 12/07/2017.
+ * Class that contains some Utils that do not implement any logic
  */
 
 public class AndroidUtils {

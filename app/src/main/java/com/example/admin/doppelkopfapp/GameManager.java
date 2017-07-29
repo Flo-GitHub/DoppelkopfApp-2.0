@@ -1,14 +1,10 @@
 package com.example.admin.doppelkopfapp;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
- * Created by Admin on 06.06.2017.
+ * Central class that has got all the data from the app (Players, Settings, Bocks).
+ * Already tested really well.
  */
 
 public class GameManager implements Serializable {
@@ -20,10 +16,9 @@ public class GameManager implements Serializable {
     private int bocks = 0,
                 doubleBocks = 0;
     private GameSettings settings;
-    private final long databaseId;
+    private long databaseId = -1;
 
-    public GameManager( long dataBaseId, Player[] players, GameSettings settings ) {
-        this.databaseId = dataBaseId;
+    public GameManager( Player[] players, GameSettings settings ) {
         this.players = players;
         this.settings = settings;
 
@@ -143,7 +138,13 @@ public class GameManager implements Serializable {
 
     //getter
     public long getDatabaseId() {
+        if( databaseId == -1 )
+            throw new NullPointerException("DatabaseId have not been initialized. ");
         return databaseId;
+    }
+
+    public void setDatabaseId(long databaseId) {
+        this.databaseId = databaseId;
     }
 
     public Player[] getPlayers() {
@@ -171,7 +172,7 @@ public class GameManager implements Serializable {
     }
 
     public void setBocks(int bocks) {
-        this.bocks = doubleBocks;
+        this.bocks = bocks;
     }
 
     public void setDoubleBocks(int doubleBocks) {

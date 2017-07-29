@@ -3,7 +3,7 @@ package com.example.admin.doppelkopfapp;
 import java.io.Serializable;
 
 /**
- * Created by Admin on 06.06.2017.
+ * Player class that is needed in the GameManager.
  */
 
 public class Player implements Serializable{
@@ -37,10 +37,6 @@ public class Player implements Serializable{
 
     public String getName() {
         return name;
-    }
-
-    public String getDisplayName( int centPerPoint ) {
-        return String.format( "%s: %dP (%f€)", name, points, pointsLost * centPerPoint / 100 );
     }
 
     public void setPoints(int points) {
