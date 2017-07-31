@@ -2,10 +2,6 @@ package com.example.admin.doppelkopfapp;
 
 import java.io.Serializable;
 
-/**
- * Player class that is needed in the GameManager.
- */
-
 public class Player implements Serializable{
 
     private String name;
@@ -46,4 +42,5 @@ public class Player implements Serializable{
     public void setPointsLost(int pointsLost) {
         this.pointsLost = pointsLost;
     }
+
 }

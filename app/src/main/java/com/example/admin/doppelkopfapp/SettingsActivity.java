@@ -17,10 +17,6 @@ import android.widget.Switch;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- * Activity where you can create a new game or continue an old.
- */
-
 public class SettingsActivity extends AppCompatActivity {
 
     public static final String EXTRA_GAME_MANAGER = "gameManager";

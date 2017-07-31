@@ -4,10 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Class that extends SQLiteOpenHelper and has got all the names and columns of the database in it.
- */
-
 public class GameDBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "game.db";

@@ -2,11 +2,6 @@ package com.example.admin.doppelkopfapp;
 
 import java.io.Serializable;
 
-/**
- * Central class that has got all the data from the app (Players, Settings, Bocks).
- * Already tested really well.
- */
-
 public class GameManager implements Serializable {
 
     private final int BOCKS_TO_ADD;
@@ -24,7 +19,6 @@ public class GameManager implements Serializable {
 
         BOCKS_TO_ADD = players.length;
     }
-
 
     public void skipRound() {
         nextGiverIndex();
@@ -179,4 +173,7 @@ public class GameManager implements Serializable {
         this.doubleBocks = doubleBocks;
     }
 
+    public int add( int a, int b ) {
+        return a + b;
+    }
 }

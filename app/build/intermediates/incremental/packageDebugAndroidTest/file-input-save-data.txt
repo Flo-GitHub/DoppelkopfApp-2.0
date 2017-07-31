@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Fri Jul 07 14:05:04 CEST 2017
+2.base=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\mergeJavaRes\\androidTest\\debug\\jars\\2\\1f\\main.jar
+5.file=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\mergeJavaRes\\androidTest\\debug\\jars\\2\\1f\\main.jar\\junit\\runner\\logo.gif
+5.set=JAVA_RESOURCE
+3.base=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\res\\resources-debug-androidTest.ap_
+2.set=JAVA_RESOURCE
+4.base=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\dex\\androidTest\\debug\\folders\\1000\\1f\\main
+count=6
+0.file=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\res\\resources-debug-androidTest.ap_\\AndroidManifest.xml
+5.base=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\mergeJavaRes\\androidTest\\debug\\jars\\2\\1f\\main.jar
+4.set=DEX
+1.file=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\mergeJavaRes\\androidTest\\debug\\jars\\2\\1f\\main.jar\\LICENSE-junit.txt
+1.set=JAVA_RESOURCE
+2.file=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\mergeJavaRes\\androidTest\\debug\\jars\\2\\1f\\main.jar\\junit\\runner\\smalllogo.gif
+0.base=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\res\\resources-debug-androidTest.ap_
+3.file=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\res\\resources-debug-androidTest.ap_\\resources.arsc
+3.set=ANDROID_RESOURCE
+1.base=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\mergeJavaRes\\androidTest\\debug\\jars\\2\\1f\\main.jar
+4.file=C\:\\Users\\Admin\\AndroidStudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\transforms\\dex\\androidTest\\debug\\folders\\1000\\1f\\main\\classes.dex
+0.set=ANDROID_RESOURCE

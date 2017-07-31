@@ -17,10 +17,6 @@ import android.widget.TextView;
 
 import java.sql.SQLException;
 
-/**
- * Activity where the user can give input or skip the current round.
- */
-
 public class RoundActivity extends AppCompatActivity {
 
     private GameManager gameManager;

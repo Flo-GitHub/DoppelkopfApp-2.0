@@ -2,10 +2,6 @@ package com.example.admin.doppelkopfapp;
 
 import java.io.Serializable;
 
-/**
- * Class that only contains the settings.
- */
-
 public class GameSettings implements Serializable{
 
     private int centPerPoint;

@@ -12,10 +12,6 @@ import java.util.List;
 
 import static com.example.admin.doppelkopfapp.GameDBHelper.*;
 
-/**
- * Easy access to the database.
- */
-
 public class GameManagerDataSource {
 
     private static final String LOG = "GmDataSource";

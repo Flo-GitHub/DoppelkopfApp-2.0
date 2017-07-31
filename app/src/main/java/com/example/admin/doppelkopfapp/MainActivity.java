@@ -10,11 +10,6 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-/**
- * Activity that shows all players' points and the money. From here you can get to the
- * Round- or SettingsActivity
- */
-
 public class MainActivity extends AppCompatActivity {
 
     private GameManager gameManager;
