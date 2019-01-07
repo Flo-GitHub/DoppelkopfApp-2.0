@@ -6,11 +6,11 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:orientation="vertical"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:id="@+id/round_textView_giver"
@@ -27,16 +27,16 @@
 
             <TextView
                 android:id="@+id/round_textView_active_1"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/round_editText_points_1"
-                android:layout_width="0dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.4"
+                android:layout_weight="0"
                 android:ems="10"
                 android:inputType="numberSigned"
                 android:textSize="24sp" />
@@ -44,6 +44,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:text="@string/points_short"
                 android:textSize="24sp" />
         </LinearLayout>
@@ -56,16 +57,16 @@
 
             <TextView
                 android:id="@+id/round_textView_active_2"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/round_editText_points_2"
-                android:layout_width="0dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.4"
+                android:layout_weight="0"
                 android:ems="10"
                 android:inputType="numberSigned"
                 android:textSize="24sp" />
@@ -74,6 +75,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:text="@string/points_short"
                 android:textSize="24sp" />
         </LinearLayout>
@@ -86,16 +88,16 @@
 
             <TextView
                 android:id="@+id/round_textView_active_3"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/round_editText_points_3"
-                android:layout_width="0dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.4"
+                android:layout_weight="0"
                 android:ems="10"
                 android:inputType="numberSigned"
                 android:textSize="24sp" />
@@ -104,6 +106,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="0"
                 android:text="@string/points_short"
                 android:textSize="24sp" />
 
@@ -117,16 +120,16 @@
 
             <TextView
                 android:id="@+id/round_textView_active_4"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/round_editText_points_4"
-                android:layout_width="0dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.4"
+                android:layout_weight="0"
                 android:ems="10"
                 android:inputType="numberSigned"
                 android:textSize="24sp" />
@@ -136,6 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
+                android:layout_weight="0"
                 android:text="@string/points_short"
                 android:textSize="24sp" />
 

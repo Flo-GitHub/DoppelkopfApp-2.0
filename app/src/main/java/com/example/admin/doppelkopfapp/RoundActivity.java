@@ -20,7 +20,7 @@ import java.sql.SQLException;
 public class RoundActivity extends AppCompatActivity {
 
     private GameManager gameManager;
-    private GameManagerDataSource dataSource;
+    private GameDataSource dataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class RoundActivity extends AppCompatActivity {
 
         gameManager = (GameManager) getIntent().getSerializableExtra(SettingsActivity.EXTRA_GAME_MANAGER);
 
-        dataSource = new GameManagerDataSource(this);
+        dataSource = new GameDataSource(this);
         try {
             dataSource.open();
         } catch (SQLException e) {
@@ -78,9 +78,10 @@ public class RoundActivity extends AppCompatActivity {
         textView.setText(p.getName()  + " " + getString(R.string.round_gives) );
     }
 
+
     private void updateNames() {
         for( int i = 0; i < 4; i++ ) {
-            TextView textView = (TextView) AndroidUtils.findViewByName( "round_textView_active_" + (i+1), this );
+            TextView textView = (TextView) AndroidUtils.findViewByName(this, "round_textView_active_" + (i+1) );
             textView.setText(gameManager.getActivePlayers()[i].getName() + ": ");
         }
     }
@@ -100,7 +101,7 @@ public class RoundActivity extends AppCompatActivity {
     private int[] getPoints() {
         int[] points = new int[4];
         for( int i = 0; i < 4; i++ ) {
-            EditText editText = (EditText) AndroidUtils.findViewByName("round_editText_points_" + (i+1), this);
+            EditText editText = (EditText) AndroidUtils.findViewByName(this, "round_editText_points_" + (i+1));
             points[i] = Integer.parseInt( editText.getText().toString() );
         }
         return points;
@@ -140,6 +141,7 @@ public class RoundActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
+                    GameManager gameManager = RoundActivity.this.gameManager.cloneGameManager();
                     gameManager.nextRound(getPoints(), getBocks(), isRepeatRound());
 
                     dataSource.updateGame(gameManager);

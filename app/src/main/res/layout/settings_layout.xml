@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginBottom="10dp"
             android:text="@string/names"
-            android:textSize="30sp" />
+            android:textSize="30dp" />
 
         <TableLayout
             android:id="@+id/tableLayout"
@@ -42,8 +42,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="@string/giverHintInTable"
                     android:inputType="textPersonName"
-                    android:textSize="24sp" />
+                    android:textSize="24dp" />
 
                 <EditText
                     android:id="@+id/settings_editText_name2"
@@ -51,8 +52,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="@string/number_2"
                     android:inputType="textPersonName"
-                    android:textSize="24sp" />
+                    android:textSize="24dp" />
             </TableRow>
 
             <TableRow
@@ -65,8 +67,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="@string/number_3"
                     android:inputType="textPersonName"
-                    android:textSize="24sp" />
+                    android:textSize="24dp" />
 
                 <EditText
                     android:id="@+id/settings_editText_name4"
@@ -74,8 +77,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="@string/number_4"
                     android:inputType="textPersonName"
-                    android:textSize="24sp" />
+                    android:textSize="24dp" />
             </TableRow>
 
             <TableRow
@@ -88,8 +92,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="@string/number_5"
                     android:inputType="textPersonName"
-                    android:textSize="24sp" />
+                    android:textSize="24dp" />
 
                 <EditText
                     android:id="@+id/settings_editText_name6"
@@ -97,8 +102,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:hint="@string/number_6"
                     android:inputType="textPersonName"
-                    android:textSize="24sp" />
+                    android:textSize="24dp" />
 
             </TableRow>
 
@@ -119,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cent_per_point"
-                android:textSize="24sp" />
+                android:textSize="24dp" />
 
             <EditText
                 android:id="@+id/settings_editText_cent_per_point"
@@ -130,7 +136,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="number"
-                android:textSize="24sp" />
+                android:textSize="24dp" />
         </LinearLayout>
 
         <Switch
@@ -142,7 +148,7 @@
             android:layout_below="@+id/linearLayout"
             android:layout_marginBottom="10dp"
             android:text="@string/bock"
-            android:textSize="24sp" />
+            android:textSize="24dp" />
 
         <Switch
             android:id="@+id/settings_switch_double_bock"
@@ -153,17 +159,17 @@
             android:layout_below="@+id/settings_switch_bock"
             android:layout_marginBottom="10dp"
             android:text="@string/double_bock"
-            android:textSize="24sp" />
+            android:textSize="24dp" />
 
         <Switch
             android:id="@+id/settings_switch_solo_bock_calculation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/solo_bock_calculation"
-            android:textSize="24sp"
-            android:layout_below="@+id/settings_switch_double_bock"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/settings_switch_double_bock"
+            android:text="@string/solo_bock_calculation"
+            android:textSize="24dp" />
 
         <Button
             android:id="@+id/settings_button_new_game"
@@ -177,7 +183,7 @@
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:text="@string/new_game"
-            android:textSize="18sp"
+            android:textSize="18dp"
             tools:ignore="RelativeOverlap" />
 
         <Button
@@ -190,7 +196,7 @@
             android:layout_margin="5dp"
             android:layout_toEndOf="@+id/settings_button_new_game"
             android:text="@string/continue_game"
-            android:textSize="18sp" />
+            android:textSize="18dp" />
 
     </RelativeLayout>
 </FrameLayout>

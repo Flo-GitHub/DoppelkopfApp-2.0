@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DoppelkopfApp</string>
-    <string name="start_names_title">Names:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="names">Names:</string>
@@ -9,8 +8,8 @@
     <string name="new_game">New game</string>
     <string name="continue_game">Continue Game</string>
     <string name="bock">Bock</string>
-    <string name="double_bock">Doublebock</string>
-    <string name="solo_bock_calculation">Solo-Bockcalculation</string>
+    <string name="double_bock">Double Bock</string>
+    <string name="solo_bock_calculation">Solo-Bock-Calculation</string>
     <string name="points_short">P</string>
     <string name="number_0">0</string>
     <string name="number_1">1</string>
@@ -18,7 +17,7 @@
     <string name="round_gives">gives.</string>
     <string name="repeat_round">Repeat round?</string>
     <string name="bocks_remaining">Bocks remaining:</string>
-    <string name="double_bocks_remaining">Doublebocks remaining:</string>
+    <string name="double_bocks_remaining">Double Bocks remaining:</string>
     <string name="next_round">next round</string>
     <string name="menu">Menu</string>
     <string name="continue_text">continue</string>
@@ -29,6 +28,18 @@
     <string name="dialog_points_sum_not_0">Sum of all points is not 0 and/or a field is empty.</string>
     <string name="yes">yes</string>
     <string name="no">no</string>
-
+    <string name="giverHintInTable">1 (Giver)</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="dialog_delete_player">Do you really want to delete this player? (Cannot be undone)</string>
+    <string name="dialog_delete_not_enough_players">Cannot delete player, there must be at least 4 players.</string>
+    <string name="dialog_add_player">Please type in the player\'s name:</string>
+    <string name="cancel">cancel</string>
+    <string name="hint_playername">Player Name</string>
+    <string name="hint_index">Index (Will be changed)</string>
+    <string name="title_activity_party_select">PartySelectActivity</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">DoppelkopfApp</string>
-    <string name="start_names_title">Namen:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="names">Namen:</string>
@@ -10,7 +9,7 @@
     <string name="continue_game">Weiterspielen</string>
     <string name="bock">Bock</string>
     <string name="double_bock">Doppelbock</string>
-    <string name="solo_bock_calculation">Solo-Bockrechnung</string>
+    <string name="solo_bock_calculation">Bock im Solo</string>
     <string name="points_short">P</string>
     <string name="number_0">0</string>
     <string name="number_1">1</string>
@@ -19,15 +18,26 @@
     <string name="repeat_round">Runde wiederholen?</string>
     <string name="bocks_remaining">Bocks verbleibend:</string>
     <string name="double_bocks_remaining">Doppelbocks verbleibend:</string>
-    <string name="next_round">naechste Runde</string>
-    <string name="menu">Menu</string>
+    <string name="next_round">nächste Runde</string>
+    <string name="menu">Menü</string>
     <string name="continue_text">weiter</string>
-    <string name="skip_round">ueberspringen</string>
-    <string name="dialog_skip_round">Wollen sie die Runde wirklich ueberspringen?</string>
+    <string name="skip_round">überspringen</string>
+    <string name="dialog_skip_round">Runde wirklich überspringen?</string>
     <string name="dialog_not_enough_players">Bitte mindestens 4 Spieler eingeben.</string>
     <string name="ok">Ok</string>
-    <string name="dialog_points_sum_not_0">Summe der Punkte ist nicht 0 und/oder ein Punktefeld ist nicht ausgefuellt.</string>
+    <string name="dialog_points_sum_not_0">Summe der Punkte ist nicht 0 und/oder ein Punktefeld ist nicht ausgefüllt.</string>
     <string name="yes">ja</string>
     <string name="no">nein</string>
+    <string name="giverHintInTable">1 (Geber)</string>
+    <string name="dialog_delete_not_enough_players">Spieler kann nicht geloescht werden, da es mindestens 4 Spieler geben muss.</string>
+    <string name="dialog_delete_player">Diesen Spieler wirklich löschen? (Kann nicht rückgängig gemacht werden)</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="dialog_add_player">Bitte geben Sie den Spielernamen ein:</string>
+    <string name="cancel">abbrechen</string>
+    <string name="hint_playername">Spielername</string>
+    <string name="hint_index">Index (Wird noch geaendert)</string>
 
 </resources>

@@ -21,7 +21,7 @@ public class SettingsActivity extends AppCompatActivity {
 
     public static final String EXTRA_GAME_MANAGER = "gameManager";
 
-    private GameManagerDataSource dataSource;
+    private GameDataSource dataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         addListeners();
 
-        dataSource = new GameManagerDataSource(this);
+        dataSource = new GameDataSource(this);
         try {
             dataSource.open();
         } catch (SQLException e) {
@@ -153,7 +153,7 @@ public class SettingsActivity extends AppCompatActivity {
         ArrayList<Player> players = new ArrayList<>();
         long nextPlayerId = dataSource.getNextPlayerId();
         for( int i = 1; i <= 6; i++ ) {
-            EditText editText = (EditText) AndroidUtils.findViewByName( "settings_editText_name" + i, this );
+            EditText editText = (EditText) AndroidUtils.findViewByName(this, "settings_editText_name" + i );
             if ( !editText.getText().toString().trim().isEmpty() ) {
                 players.add(new Player(nextPlayerId, editText.getText().toString().trim()));
                 nextPlayerId++;
@@ -191,4 +191,5 @@ public class SettingsActivity extends AppCompatActivity {
             return builder.create();
         }
     }
+
 }

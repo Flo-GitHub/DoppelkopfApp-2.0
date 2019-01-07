@@ -4,70 +4,114 @@ import java.io.Serializable;
 
 public class GameManager implements Serializable {
 
-    private final int BOCKS_TO_ADD;
-
-    private Player[] players;
+    private Party party;
+    private long[] playersDataBaseIds;
     private int giverIndex = 0;
     private int bocks = 0,
                 doubleBocks = 0;
-    private GameSettings settings;
     private long databaseId = -1;
 
-    public GameManager( Player[] players, GameSettings settings ) {
-        this.players = players;
-        this.settings = settings;
-
-        BOCKS_TO_ADD = players.length;
+    public GameManager(Party party, long[] playerDataBaseIds) {
+        this.party = party;
+        this.playersDataBaseIds = playerDataBaseIds;
     }
 
     public void skipRound() {
         nextGiverIndex();
     }
 
+    /**
+     *
+     * @param newPlayerId
+     * @param indexToAdd
+     * @return boolean if the add button should be disabled due to six playersDataBaseIds already playing
+     */
+    public boolean addPlayer( long newPlayerId, int indexToAdd ) {
+        //for the case something goes wrong or for the manual adding of playersDataBaseIds
+        if( playersDataBaseIds.length >= 6 )
+            throw new IndexOutOfBoundsException("Can't add more than six playersDataBaseIds to game.");
+        long[] tempPlayers = playersDataBaseIds;
+        playersDataBaseIds = new long[playersDataBaseIds.length+1];
+
+        boolean newPlayerInserted = false;
+        for( int i = 0; i < playersDataBaseIds.length; i++ ) {
+            if(i == indexToAdd) {
+                playersDataBaseIds[i] = newPlayerId;
+                newPlayerInserted = true;
+            }
+            else
+                playersDataBaseIds[i] = tempPlayers[newPlayerInserted ? i-1 : i];
+        }
+        if(playersDataBaseIds.length >= 6) {
+            return true;
+        }
+        return false;
+    }
+
+    public void removePlayer( long databaseId ) {
+        if( playersDataBaseIds.length <= 4 )
+            throw new IndexOutOfBoundsException("Can't remove the player because at least 4 playersDataBaseIds are needed");
+
+        long[] tempPlayers = playersDataBaseIds;
+        playersDataBaseIds = new long[playersDataBaseIds.length-1];
+
+        int indexToAdd = 0;
+        for( long id : tempPlayers )
+            if( id != databaseId ) {
+                playersDataBaseIds[indexToAdd] = id;
+                indexToAdd++;
+            }
+
+        while(giverIndex >= getPlayersDataBaseIds().length) {
+            giverIndex--;
+        }
+    }
+
     public void nextRound(int[] points, int bocks, boolean repeatRound) {
-        if( !isValidRound(points) )
-            throw new IllegalArgumentException("Sum of the points not equal 0." );
-        else if( points.length != 4 )
-            throw new IllegalArgumentException("Length of points should be 4, but was "+points.length);
+        if (!isValidRound(points))
+            throw new IllegalArgumentException("Sum of the points not equal 0.");
+        else if (points.length != 4)
+            throw new IllegalArgumentException("Length of points should be 4, but was " + points.length);
 
         int factorToIncrease;
-        if( !settings.isSoloBockCalculation() && isSolo(points) )
+        if (!party.getSettings().isSoloBockCalculation() && isSolo(points))
             factorToIncrease = 1;
-        else if( settings.isDoubleBock() && doubleBocks > 0 ) {
+        else if (party.getSettings().isDoubleBock() && doubleBocks > 0) {
             factorToIncrease = 4;
             doubleBocks--;
-        } else if( settings.isBock() && this.bocks > 0 ) {
+        } else if (party.getSettings().isBock() && this.bocks > 0) {
             factorToIncrease = 2;
             this.bocks--;
         } else
             factorToIncrease = 1;
 
-        for( int i = 0; i < points.length; i++ )
+        for (int i = 0; i < points.length; i++)
             points[i] *= factorToIncrease;
 
-        for( int i = 0; i < 4; i++ )
-            getActivePlayers()[i].addPoints(points[i]);
+        party.getPlayersByDBId(getActivePlayers());
+        for (int i = 0; i < 4; i++) {
+            party.getPlayerByDBId(getActivePlayers()[i]).addPoints(databaseId, points[i]);
+        }
 
-        if( !repeatRound )
+        if (!repeatRound)
             nextGiverIndex();
-
 
         addBocks(bocks);
     }
 
     private void addBocks(int n) {
         for( int i = 0; i < n; i++ ) {
-            if( settings.isDoubleBock() && bocks >= 1 ) {
+            if( party.getSettings().isDoubleBock() && bocks >= 1 ) {
                 int tempBocks = bocks;
-                for( int a = 0; a < BOCKS_TO_ADD; a++ ) {
+                for( int a = 0; a < playersDataBaseIds.length; a++ ) {
                     if( bocks == 0 )
                         break;
                     doubleBocks++;
                     bocks--;
                 }
-                bocks += BOCKS_TO_ADD - tempBocks;
-            } else if( settings.isBock() ) {
-                bocks += BOCKS_TO_ADD;
+                bocks += playersDataBaseIds.length - tempBocks;
+            } else if( party.getSettings().isBock() ) {
+                bocks += playersDataBaseIds.length;
             }
         }
     }
@@ -87,30 +131,41 @@ public class GameManager implements Serializable {
         return false;
     }
 
-    public Player getGiver() {
-        return players[giverIndex];
+    public long getGiver() {
+        return playersDataBaseIds[giverIndex];
     }
 
+    /*
+    This method is only used to find other inactive player in a game of six playersDataBaseIds.
+     */
     private int getAcrossFromGiverIndex() {
-        if( players.length != 6 )
+        if( playersDataBaseIds.length != 6 )
             throw new IllegalArgumentException("This method is only used to find the second" +
-                    " inactive player when playing with 6 players");
+                    " inactive player when playing with 6 playersDataBaseIds");
         int playerAcrossIndex = giverIndex + 3;
-        if( playerAcrossIndex > 5 ) playerAcrossIndex -= players.length;
+        if( playerAcrossIndex > 5 ) playerAcrossIndex -= playersDataBaseIds.length;
             return playerAcrossIndex;
     }
 
-    public Player[] getActivePlayers() {
-        if( players.length == 4 )
-            return players;
+    public long[] getActivePlayers() {
+
+        if( playersDataBaseIds.length == 4 )
+            return playersDataBaseIds;
         else {
-            Player[] activePlayers = new Player[4];
+            long[] activePlayers = new long[4];
             int activePlayerIndex = 0;
 
-            for( int i = 0; i < players.length; i++ ) {
-                if( players.length == 5 && giverIndex != i ||
-                        players.length == 6 && giverIndex != i && getAcrossFromGiverIndex() != i ) {
-                    activePlayers[activePlayerIndex] = players[i];
+            for(int i = giverIndex; i < playersDataBaseIds.length; i++ ) {
+                if( playersDataBaseIds.length == 5 && giverIndex != i ||
+                        playersDataBaseIds.length == 6 && giverIndex != i && getAcrossFromGiverIndex() != i ) {
+                    activePlayers[activePlayerIndex] = playersDataBaseIds[i];
+                    activePlayerIndex++;
+                }
+            }
+            for( int i = 0; i < giverIndex; i++ ) {
+                if( playersDataBaseIds.length == 5 && giverIndex != i ||
+                        playersDataBaseIds.length == 6 && giverIndex != i && getAcrossFromGiverIndex() != i ) {
+                    activePlayers[activePlayerIndex] = playersDataBaseIds[i];
                     activePlayerIndex++;
                 }
             }
@@ -119,21 +174,31 @@ public class GameManager implements Serializable {
     }
 
     public int getMoney( Player player ) {
-        return settings.getCentPerPoint() * player.getPointsLost();
+        return party.getSettings().getCentPerPoint() * player.getPointsLost().get(databaseId);
     }
 
     public void nextGiverIndex() {
         giverIndex += 1;
-        if (giverIndex > players.length-1) {
-            giverIndex -= players.length;
+        if (giverIndex > playersDataBaseIds.length-1) {
+            giverIndex -= playersDataBaseIds.length;
        }
     }
 
+    public GameManager cloneGameManager() {
+        //todo clone party too.
+        GameManager gameManager = new GameManager(party, playersDataBaseIds);
+        gameManager.setBocks(this.bocks);
+        gameManager.setDatabaseId(this.databaseId);
+        gameManager.setDoubleBocks(this.doubleBocks);
+        gameManager.setGiverIndex(this.giverIndex);
+        return gameManager;
+    }
 
-    //getter
+
+    //----
     public long getDatabaseId() {
         if( databaseId == -1 )
-            throw new NullPointerException("DatabaseId have not been initialized. ");
+            throw new NullPointerException("DatabaseId has not been set yet");
         return databaseId;
     }
 
@@ -141,8 +206,8 @@ public class GameManager implements Serializable {
         this.databaseId = databaseId;
     }
 
-    public Player[] getPlayers() {
-        return players;
+    public long[] getPlayersDataBaseIds() {
+        return playersDataBaseIds;
     }
 
     public int getGiverIndex() {
@@ -157,10 +222,6 @@ public class GameManager implements Serializable {
         return doubleBocks;
     }
 
-    public GameSettings getSettings() {
-        return settings;
-    }
-
     public void setGiverIndex(int giverIndex) {
         this.giverIndex = giverIndex;
     }
@@ -171,9 +232,5 @@ public class GameManager implements Serializable {
 
     public void setDoubleBocks(int doubleBocks) {
         this.doubleBocks = doubleBocks;
-    }
-
-    public int add( int a, int b ) {
-        return a + b;
     }
 }

@@ -12,6 +12,39 @@ import static org.junit.Assert.assertThat;
 
 public class GameManagerTest {
 
+    @Test
+    public void testAddPlayer(){
+        Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
+        GameManager gameManager = new GameManager(players, null);
+
+        Player firstNewPlayer = new Player(1, "FirstNewPlayer");
+        Player secondNewPlayer = new Player(2, "SecondNewPlayer");
+
+        gameManager.addPlayer( firstNewPlayer );
+        gameManager.addPlayer( secondNewPlayer );
+
+        assertThat(gameManager.getPlayersDataBaseIds().length, is(6));
+        assertThat(gameManager.getPlayersDataBaseIds()[4], is(equalTo(firstNewPlayer)));
+        assertThat(gameManager.getPlayersDataBaseIds()[5], is(equalTo(secondNewPlayer)));
+        assertThat(gameManager.getPlayersDataBaseIds()[4].getName(), is(equalTo(firstNewPlayer.getName())));
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class )
+    public void testAddPlayerException() {
+        Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4"), new Player(0, "5"), new Player(0, "6")};
+        GameManager gameManager = new GameManager(players, null);
+
+        gameManager.addPlayer(new Player(0, "7"));
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testRemovePlayerException() {
+        Player[] players = new Player[]{new Player(0, "1"), new Player(1,"2"), new Player(2, "3"), new Player(3, "4")};
+        GameManager gameManager = new GameManager(players, null);
+
+        gameManager.removePlayer(new Player(0, "1"));
+    }
+
     @Test(expected = IllegalArgumentException.class)
     public void testExceptionNextRoundSumNotZero() {
         Player[] players = new Player[]{new Player(0, "1"), new Player(0, "2"), new Player(0, "3"), new Player(0, "4")};
@@ -101,9 +134,9 @@ public class GameManagerTest {
         for( int i = 0; i < 10; i++)
             gameManager.nextRound(new int[]{1, 1, -1, -1}, 0, true); // 10 x 2
 
-        assertThat(gameManager.getPlayers()[0].getPoints(), is(23));
-        assertThat(gameManager.getPlayers()[2].getPoints(), is(-23));
-        assertThat(gameManager.getPlayers()[3].getPointsLost(), is(23));
+        assertThat(gameManager.getPlayersDataBaseIds()[0].getPoints(), is(23));
+        assertThat(gameManager.getPlayersDataBaseIds()[2].getPoints(), is(-23));
+        assertThat(gameManager.getPlayersDataBaseIds()[3].getPointsLost(), is(23));
         assertThat(gameManager.getBocks(), is(1));
     }
 
@@ -120,7 +153,7 @@ public class GameManagerTest {
 
         assertThat(gameManager.getBocks(), is(1));
         assertThat(gameManager.getDoubleBocks(), is(0));
-        assertThat(gameManager.getPlayers()[0].getPoints(), is(27));
+        assertThat(gameManager.getPlayersDataBaseIds()[0].getPoints(), is(27));
     }
 
     @Test
@@ -134,9 +167,9 @@ public class GameManagerTest {
             gameManager.nextRound(new int[]{3, -1, -1, -1}, 0, false);
 
         assertThat(gameManager.getBocks(), is(0));
-        assertThat(gameManager.getPlayers()[0].getPoints(), is(27) );
-        assertThat(gameManager.getPlayers()[1].getPoints(), is(-9) );
-        assertThat(gameManager.getPlayers()[2].getPointsLost(), is(9));
+        assertThat(gameManager.getPlayersDataBaseIds()[0].getPoints(), is(27) );
+        assertThat(gameManager.getPlayersDataBaseIds()[1].getPoints(), is(-9) );
+        assertThat(gameManager.getPlayersDataBaseIds()[2].getPointsLost(), is(9));
     }
 
 
@@ -152,9 +185,9 @@ public class GameManagerTest {
         gameManager.nextRound(new int[]{3, 3, -3, -3}, 0, false);
 
         assertThat(gameManager.getBocks(), is(3));
-        assertThat(gameManager.getPlayers()[0].getPoints(), is(18) );
-        assertThat(gameManager.getPlayers()[1].getPoints(), is(2));
-        assertThat(gameManager.getPlayers()[3].getPoints(), is(-10) );
+        assertThat(gameManager.getPlayersDataBaseIds()[0].getPoints(), is(18) );
+        assertThat(gameManager.getPlayersDataBaseIds()[1].getPoints(), is(2));
+        assertThat(gameManager.getPlayersDataBaseIds()[3].getPoints(), is(-10) );
     }
 
     @Test
