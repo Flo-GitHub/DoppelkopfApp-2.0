@@ -1,25 +1,10 @@
 package com.example.admin.doppelkopfapp;
 
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.TextView;
-
-import java.sql.SQLException;
 
 public class RoundActivity extends AppCompatActivity {
 
-    private GameManager gameManager;
+   /* private GameManager gameManager;
     private GameDataSource dataSource;
 
     @Override
@@ -209,5 +194,5 @@ public class RoundActivity extends AppCompatActivity {
             });
             return builder.create();
         }
-    }
+    }*/
 }

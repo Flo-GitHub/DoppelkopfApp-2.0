@@ -1,25 +1,10 @@
 package com.example.admin.doppelkopfapp;
 
-import android.app.Dialog;
-import android.app.DialogFragment;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.ActivityInfo;
-import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.EditText;
-import android.widget.Switch;
-
-import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    public static final String EXTRA_GAME_MANAGER = "gameManager";
+    /*public static final String EXTRA_GAME_MANAGER = "gameManager";
 
     private GameDataSource dataSource;
 
@@ -190,6 +175,6 @@ public class SettingsActivity extends AppCompatActivity {
             });
             return builder.create();
         }
-    }
+    }*/
 
 }

@@ -76,6 +76,14 @@ public class Party {
 
 
     //
+    public String getPlayersAsString() {
+        StringBuilder builder = new StringBuilder();
+        for(Player p : players) {
+            builder.append(p.getName() + ", ");
+        }
+        return builder.toString();
+    }
+
     public List<GameManager> getGames() {
         return games;
     }
