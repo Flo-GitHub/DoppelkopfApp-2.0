@@ -42,10 +42,7 @@ public class GameManager implements Serializable {
             else
                 playersDataBaseIds[i] = tempPlayers[newPlayerInserted ? i-1 : i];
         }
-        if(playersDataBaseIds.length >= 6) {
-            return true;
-        }
-        return false;
+        return playersDataBaseIds.length >= 6;
     }
 
     public void removePlayer( long databaseId ) {

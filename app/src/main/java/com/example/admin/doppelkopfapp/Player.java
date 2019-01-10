@@ -64,9 +64,7 @@ public class Player implements Serializable, Comparable{
 
     @Override
     public boolean equals( Object o ) {
-        if (((Player) o).getDataBaseId() == dataBaseId)
-            return true;
-        return false;
+        return ((Player) o).getDataBaseId() == dataBaseId;
     }
 
     @Override

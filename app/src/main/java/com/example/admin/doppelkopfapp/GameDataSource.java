@@ -44,7 +44,7 @@ public class GameDataSource {
         dbHelper = new GameDBHelper(context);
     }
 
-    public void open() throws SQLException{
+    public void open() {
         database = dbHelper.getWritableDatabase();
     }
 
@@ -300,10 +300,10 @@ public class GameDataSource {
 
         GameSettings gameSettings = new GameSettings(
                 c.getInt( c.getColumnIndex(COLUMN_CENT_PER_POINT) ),
-                c.getInt( c.getColumnIndex(COLUMN_IS_BOCK) ) == 1 ? true : false,
-                c.getInt( c.getColumnIndex(COLUMN_IS_DOUBLE_BOCK) ) == 1 ? true : false,
-                c.getInt( c.getColumnIndex(COLUMN_IS_SOLO_BOCK_CALCULATION) ) == 1 ? true : false,
-                c.getInt( c.getColumnIndex(COLUMN_IS_ADD_POINTS) ) == 1 ? true : false
+                c.getInt(c.getColumnIndex(COLUMN_IS_BOCK)) == 1,
+                c.getInt(c.getColumnIndex(COLUMN_IS_DOUBLE_BOCK)) == 1,
+                c.getInt(c.getColumnIndex(COLUMN_IS_SOLO_BOCK_CALCULATION)) == 1,
+                c.getInt(c.getColumnIndex(COLUMN_IS_ADD_POINTS)) == 1
         );
         c.close();
         return gameSettings;
