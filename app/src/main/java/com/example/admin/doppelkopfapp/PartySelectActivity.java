@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 
 public class PartySelectActivity extends AppCompatActivity {
 
@@ -20,13 +19,15 @@ public class PartySelectActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_party_select);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.party_select_toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.party_toolbar);
+        //setSupportActionBar(toolbar);
 
         partyManager = new PartyManager(this);
         adapter = new PartySelectAdapter(this, partyManager);
         initActionButton();
         initRecyclerView();
+        partyManager.test();
+        adapter.notifyDataSetChanged();
     }
 
     private void initRecyclerView() {
@@ -39,7 +40,7 @@ public class PartySelectActivity extends AppCompatActivity {
     }
 
     private void initActionButton() {
-        addButton = (FloatingActionButton) findViewById(R.id.party_select_add);
+        addButton = (FloatingActionButton) findViewById(R.id.party_add);
         //todo add event
     }
 
