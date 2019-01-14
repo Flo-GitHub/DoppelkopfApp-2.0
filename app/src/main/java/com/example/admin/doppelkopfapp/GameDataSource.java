@@ -55,6 +55,11 @@ public class GameDataSource {
     public long createParty(Party party) {
         ContentValues values = partyValues(party);
         long partyId = database.insert(TABLE_PARTY, null, values);
+        createSettings(party.getSettings(), partyId);
+        for(Player p : party.getPlayers()) {
+            createPlayer(p, partyId);
+        }
+
         return partyId;
     }
 
@@ -63,12 +68,7 @@ public class GameDataSource {
         long partyId = database.update(TABLE_PARTY,  values,
                 COLUMN_ID + " = " + party.getDatabaseId(), null);
 
-        updateGame(party.getCurrentGame(), partyId);
-
-        for( Player p : party.getPlayersByDBId(party.getCurrentGame().getPlayersDataBaseIds())) {
-            updatePlayer(p, party.getCurrentGame().getDatabaseId()); //insert players
-        }
-
+        updateGame(party, party.getCurrentGame(), partyId); //update game and players in current game
         updateSettings(party.getSettings(), partyId); //insert settings
     }
 
@@ -138,16 +138,19 @@ public class GameDataSource {
     }*/
 
 
-    public long createGame(GameManager game, long partyId) {
-        ContentValues values = gameValues(game, partyId);
-        long gameId = database.insert(TABLE_GAME, null, values); //insert game
-
+    public long createGame(GameManager game, long partyId) { ContentValues values = gameValues(game, partyId); long gameId = database.insert(TABLE_GAME, null, values); //insert game
         return gameId;
     }
 
-    public void updateGame(GameManager game, long partyId) {
+    public void updateGame(Party party, GameManager game, long partyId) {
         ContentValues values = gameValues(game, partyId);
         database.update(TABLE_GAME, values, COLUMN_ID + "=" + game.getDatabaseId(), null);
+
+        Player[] players = party.getPlayersByDBId(game.getPlayersDataBaseIds());
+        for(Player p : players) {
+            updatePlayer(p, game.getDatabaseId());
+        }
+
     }
 
 
@@ -179,10 +182,10 @@ public class GameDataSource {
     }
 
 
-    public long createPlayer(Player player, long gameId) {
-        ContentValues values = playerValues(player, gameId);
+    public long createPlayer(Player player, long partyId) {
+        ContentValues values = playerValues(player, partyId);
         long playerId = database.insert(TABLE_PLAYERS, null, values);
-        createPoints(player, gameId);
+        //todo createPoints(player, Id);
         return playerId;
     }
 

@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PartySelectActivity extends AppCompatActivity {
 
@@ -26,7 +30,6 @@ public class PartySelectActivity extends AppCompatActivity {
         adapter = new PartySelectAdapter(this, partyManager);
         initActionButton();
         initRecyclerView();
-        partyManager.test();
         adapter.notifyDataSetChanged();
     }
 
@@ -41,7 +44,16 @@ public class PartySelectActivity extends AppCompatActivity {
 
     private void initActionButton() {
         addButton = (FloatingActionButton) findViewById(R.id.party_add);
-        //todo add event
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //todo add actual add box to enter name
+                List<Player> samplePlayers = new ArrayList<>();
+                samplePlayers.add(new Player(1, "SamplePlayers"));
+                GameSettings sampleSettings = new GameSettings(1, false, false, false, false);
+                partyManager.addParty(new Party("Sample", samplePlayers, sampleSettings));
+            }
+        });
     }
 
 }
