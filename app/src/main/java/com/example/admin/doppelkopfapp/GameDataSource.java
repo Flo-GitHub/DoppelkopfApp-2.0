@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -21,6 +20,7 @@ import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_ADD_POINTS;
 import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_BOCK;
 import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_DOUBLE_BOCK;
 import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_SOLO_BOCK_CALCULATION;
+import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_LAST_DATE;
 import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_NAME;
 import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_PARTY;
 import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_PLAYER;
@@ -88,7 +88,8 @@ public class GameDataSource {
                 Party party = new Party(
                         c.getString(c.getColumnIndex(COLUMN_NAME)),
                         Arrays.asList(getAllPlayersInParty(partyID)),
-                        getSettings(partyID)
+                        getSettings(partyID),
+                        c.getString(c.getColumnIndex(COLUMN_LAST_DATE))
                 );
                 party.addGames(getAllGamesInParty(party));
                 parties.add(party);
@@ -227,11 +228,11 @@ public class GameDataSource {
     }
 
 
-    private HashMap<Long, Integer> getColumn(String points_column, long playerId) {
+    private HashMap<Long, Integer> getPointColumn(String points_column, long playerId) {
 
         HashMap<Long, Integer> map = new HashMap<>();
 
-        String selectQuery = "SELECT * FROM " + TABLE_SETTINGS + " WHERE " + COLUMN_PLAYER + " = " + playerId;
+        String selectQuery = "SELECT * FROM " + TABLE_POINTS + " WHERE " + COLUMN_PLAYER + " = " + playerId;
         Cursor c = database.rawQuery(selectQuery, null);
 
         if(c.moveToFirst()) {
@@ -246,11 +247,11 @@ public class GameDataSource {
     }
 
     public HashMap<Long, Integer> getPoints(long playerId) {
-        return getColumn(COLUMN_POINTS, playerId);
+        return getPointColumn(COLUMN_POINTS, playerId);
     }
 
     public HashMap<Long, Integer> getPointsLost(long playerId) {
-        return getColumn(COLUMN_POINTS_LOST, playerId);
+        return getPointColumn(COLUMN_POINTS_LOST, playerId);
     }
 
     //todo refactor
@@ -354,6 +355,7 @@ public class GameDataSource {
     private ContentValues partyValues(Party party){
          ContentValues values = new ContentValues();
          values.put(COLUMN_NAME, party.getName());
+         values.put(COLUMN_LAST_DATE, AndroidUtils.getDate());
          return values;
     }
 

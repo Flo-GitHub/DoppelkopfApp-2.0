@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -48,10 +49,7 @@ public class PartySelectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //todo add actual add box to enter name
-                List<Player> samplePlayers = new ArrayList<>();
-                samplePlayers.add(new Player(1, "SamplePlayers"));
-                GameSettings sampleSettings = new GameSettings(1, false, false, false, false);
-                partyManager.addParty(new Party("Sample", samplePlayers, sampleSettings));
+                Log.e("TEST","ADD BUTTON PRESSED");
             }
         });
     }

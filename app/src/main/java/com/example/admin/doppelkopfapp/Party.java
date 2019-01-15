@@ -11,12 +11,14 @@ public class Party {
     private List<Player> players;
     private GameSettings settings;
     private String name;
+    private String lastDate;
     private long databaseId;
 
-    public Party(String name, List<Player> players, GameSettings settings) {
+    public Party(String name, List<Player> players, GameSettings settings, String lastDate) {
         this.name = name;
         this.players = players;
         this.settings = settings;
+        this.lastDate = lastDate;
     }
 
     public void addGames(List<GameManager> games) {
@@ -81,7 +83,14 @@ public class Party {
         for(Player p : players) {
             builder.append(p.getName() + ", ");
         }
+        if (builder.length() > 1) {
+            builder.setLength(builder.length()-2);
+        }
         return builder.toString();
+    }
+
+    public String getLastDate() {
+        return lastDate;
     }
 
     public List<GameManager> getGames() {

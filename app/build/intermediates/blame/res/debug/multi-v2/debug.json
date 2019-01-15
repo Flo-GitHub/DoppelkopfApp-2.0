@@ -420,6 +420,22 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4_values-hdpi-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb0893c46665a01d16a499a8071921a5\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-fi_values-fi.arsc.flat",
             "map": [
                 {
@@ -447,22 +463,6 @@
                         "startOffsets": "105,213,313,414,500,605,723,810,892,972,1079,1182,1279,1385,1484,1588,1751,1850",
                         "endColumns": "107,99,100,85,104,117,86,81,79,106,102,96,105,98,103,162,98,79",
                         "endOffsets": "208,308,409,495,600,718,805,887,967,1074,1177,1274,1380,1479,1583,1746,1845,1925"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-hdpi-v4_values-hdpi-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb0893c46665a01d16a499a8071921a5\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "13",
-                        "endOffsets": "327"
                     }
                 }
             ]
@@ -610,38 +610,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-lo_values-lo.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb0893c46665a01d16a499a8071921a5\\res\\values-lo\\values-lo.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,305,412,497,602,714,791,869,949,1056,1153,1251,1356,1459,1563,1720,1816",
-                        "endColumns": "102,96,106,84,104,111,76,77,79,106,96,97,104,102,103,156,95,80",
-                        "endOffsets": "203,300,407,492,597,709,786,864,944,1051,1148,1246,1351,1454,1558,1715,1811,1892"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\eb5b31149423a550ab10531810a3a1c3\\res\\values-lo\\values-lo.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1897",
-                        "endColumns": "100",
-                        "endOffsets": "1993"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-land_values-land.arsc.flat",
             "map": [
                 {
@@ -671,6 +639,38 @@
                         "endLines": "9",
                         "endColumns": "12",
                         "endOffsets": "505"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-lo_values-lo.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb0893c46665a01d16a499a8071921a5\\res\\values-lo\\values-lo.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,208,305,412,497,602,714,791,869,949,1056,1153,1251,1356,1459,1563,1720,1816",
+                        "endColumns": "102,96,106,84,104,111,76,77,79,106,96,97,104,102,103,156,95,80",
+                        "endOffsets": "203,300,407,492,597,709,786,864,944,1051,1148,1246,1351,1454,1558,1715,1811,1892"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\eb5b31149423a550ab10531810a3a1c3\\res\\values-lo\\values-lo.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1897",
+                        "endColumns": "100",
+                        "endOffsets": "1993"
                     }
                 }
             ]
@@ -947,38 +947,6 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-ja_values-ja.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb0893c46665a01d16a499a8071921a5\\res\\values-ja\\values-ja.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,202,295,400,482,580,688,765,841,919,1021,1120,1215,1318,1413,1509,1657,1754",
-                        "endColumns": "96,92,104,81,97,107,76,75,77,101,98,94,102,94,95,147,96,77",
-                        "endOffsets": "197,290,395,477,575,683,760,836,914,1016,1115,1210,1313,1408,1504,1652,1749,1827"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\eb5b31149423a550ab10531810a3a1c3\\res\\values-ja\\values-ja.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1832",
-                        "endColumns": "100",
-                        "endOffsets": "1928"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-mr_values-mr.arsc.flat",
             "map": [
                 {
@@ -1006,6 +974,38 @@
                         "startOffsets": "105,216,322,429,519,620,735,812,890,970,1082,1184,1280,1389,1490,1605,1762,1867",
                         "endColumns": "110,105,106,89,100,114,76,77,79,111,101,95,108,100,114,156,104,79",
                         "endOffsets": "211,317,424,514,615,730,807,885,965,1077,1179,1275,1384,1485,1600,1757,1862,1942"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp-2.0\\app\\build\\intermediates\\res\\merged\\debug\\values-ja_values-ja.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb0893c46665a01d16a499a8071921a5\\res\\values-ja\\values-ja.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,202,295,400,482,580,688,765,841,919,1021,1120,1215,1318,1413,1509,1657,1754",
+                        "endColumns": "96,92,104,81,97,107,76,75,77,101,98,94,102,94,95,147,96,77",
+                        "endOffsets": "197,290,395,477,575,683,760,836,914,1016,1115,1210,1313,1408,1504,1652,1749,1827"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\eb5b31149423a550ab10531810a3a1c3\\res\\values-ja\\values-ja.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1832",
+                        "endColumns": "100",
+                        "endOffsets": "1928"
                     }
                 }
             ]

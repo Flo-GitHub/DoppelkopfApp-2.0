@@ -3,6 +3,7 @@ package com.example.admin.doppelkopfapp;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,13 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
             players = view.findViewById(R.id.party_card_players);
             date = view.findViewById(R.id.party_card_date);
             image = view.findViewById(R.id.party_card_image);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.e("viewhold", ""+ (getItemId()));//todo
+                }
+            });
         }
     }
 

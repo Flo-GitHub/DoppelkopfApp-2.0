@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class GameDBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "game.db";
-    public static final int    DB_VERSION = 2;
+    public static final int    DB_VERSION = 4;
 
     public static final String TABLE_PLAYERS = "table_players";
     public static final String TABLE_SETTINGS = "table_settings";
@@ -30,11 +30,12 @@ public class GameDBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_IS_BOCK = "isBock";
     public static final String COLUMN_IS_DOUBLE_BOCK = "isDoubleBock";
     public static final String COLUMN_IS_SOLO_BOCK_CALCULATION = "soloBockCalculation";
-
+    public static final String COLUMN_LAST_DATE = "lastDate";
 
     public static final String SQL_CREATE_PARTY =
             "create table " + TABLE_PARTY + "(" +
                     COLUMN_ID + " integer primary key autoincrement, " +
+                    COLUMN_LAST_DATE + " text not null, " +
                     COLUMN_NAME + " text not null);";
 
     public static final String SQL_CREATE_PLAYER =
@@ -63,6 +64,7 @@ public class GameDBHelper extends SQLiteOpenHelper {
                     COLUMN_IS_BOCK + " integer, " +
                     COLUMN_IS_DOUBLE_BOCK + " integer, " +
                     COLUMN_IS_SOLO_BOCK_CALCULATION + " integer, " +
+                    COLUMN_IS_ADD_POINTS + " integer, " +
                     "FOREIGN KEY (" + COLUMN_PARTY + ") REFERENCES " + TABLE_GAME + "(" + COLUMN_ID + "));";
 
     public static final String SQL_CREATE_GAME =
