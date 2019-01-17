@@ -66,7 +66,7 @@ public class RoundActivity extends AppCompatActivity {
 
     private void updateNames() {
         for( int i = 0; i < 4; i++ ) {
-            TextView textView = (TextView) AndroidUtils.findViewByName(this, "round_textView_active_" + (i+1) );
+            TextView textView = (TextView) MyUtils.findViewByName(this, "round_textView_active_" + (i+1) );
             textView.setText(gameManager.getActivePlayers()[i].getName() + ": ");
         }
     }
@@ -86,7 +86,7 @@ public class RoundActivity extends AppCompatActivity {
     private int[] getPoints() {
         int[] points = new int[4];
         for( int i = 0; i < 4; i++ ) {
-            EditText editText = (EditText) AndroidUtils.findViewByName(this, "round_editText_points_" + (i+1));
+            EditText editText = (EditText) MyUtils.findViewByName(this, "round_editText_points_" + (i+1));
             points[i] = Integer.parseInt( editText.getText().toString() );
         }
         return points;

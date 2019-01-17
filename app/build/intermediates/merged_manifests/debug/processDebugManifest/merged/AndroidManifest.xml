@@ -27,6 +27,7 @@
         <activity android:name="com.example.admin.doppelkopfapp.RoundActivity" />
         <activity android:name="com.example.admin.doppelkopfapp.MainActivity" />
         <activity android:name="com.example.admin.doppelkopfapp.SettingsActivity" />
+        <activity android:name="com.example.admin.doppelkopfapp.GameSelectActivity" />
     </application>
 
 </manifest>

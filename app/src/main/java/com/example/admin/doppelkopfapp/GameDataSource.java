@@ -355,7 +355,7 @@ public class GameDataSource {
     private ContentValues partyValues(Party party){
          ContentValues values = new ContentValues();
          values.put(COLUMN_NAME, party.getName());
-         values.put(COLUMN_LAST_DATE, AndroidUtils.getDate());
+         values.put(COLUMN_LAST_DATE, MyUtils.getDate());
          return values;
     }
 

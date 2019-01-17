@@ -1,9 +1,10 @@
 package com.example.admin.doppelkopfapp;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Party {
+public class Party implements Serializable {
 
     public static final int PLAYER_LIMIT = 15;
 
@@ -71,22 +72,12 @@ public class Party {
     }
 
 
-    public GameManager getCurrentGame(){
-        return games.get(games.size()-1);
+    public String getPlayersAsString(){
+        return MyUtils.getPlayersAsString(players);
     }
 
-
-
-    //
-    public String getPlayersAsString() {
-        StringBuilder builder = new StringBuilder();
-        for(Player p : players) {
-            builder.append(p.getName() + ", ");
-        }
-        if (builder.length() > 1) {
-            builder.setLength(builder.length()-2);
-        }
-        return builder.toString();
+    public GameManager getCurrentGame(){
+        return games.get(games.size()-1);
     }
 
     public String getLastDate() {

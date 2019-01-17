@@ -9,15 +9,17 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PartySelectActivity extends AppCompatActivity {
+public class PartySelectActivity extends AppCompatActivity implements Serializable {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private FloatingActionButton addButton;
+
     private PartyManager partyManager;
 
     @Override
@@ -29,9 +31,15 @@ public class PartySelectActivity extends AppCompatActivity {
 
         partyManager = new PartyManager(this);
         adapter = new PartySelectAdapter(this, partyManager);
-        initActionButton();
+        //initActionButton();
         initRecyclerView();
         adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        partyManager.closeDataBase();
     }
 
     private void initRecyclerView() {
@@ -52,6 +60,10 @@ public class PartySelectActivity extends AppCompatActivity {
                 Log.e("TEST","ADD BUTTON PRESSED");
             }
         });
+    }
+
+    public PartyManager getPartyManager() {
+        return partyManager;
     }
 
 }

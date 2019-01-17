@@ -1,6 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
-import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -10,11 +10,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.MyViewHolder> {
 
-    private Context context;
+    private PartySelectActivity partySelectActivity;
     private List<Party> partyList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -23,22 +24,31 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
 
         public MyViewHolder(View view){
             super(view);
-            group = view.findViewById(R.id.party_card_group);
-            players = view.findViewById(R.id.party_card_players);
+            group = view.findViewById(R.id.game_card_date);
+            players = view.findViewById(R.id.game_card_players);
             date = view.findViewById(R.id.party_card_date);
-            image = view.findViewById(R.id.party_card_image);
+            image = view.findViewById(R.id.game_card_image);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.e("viewhold", ""+ (getItemId()));//todo
+                    int pos = getAdapterPosition();
+
+                    if(pos != RecyclerView.NO_POSITION) {
+                        Log.e("viewholder", ""+ (pos));//todo
+
+                        Intent intent = new Intent(partySelectActivity, GameSelectActivity.class);
+                        intent.putExtra(INTENT_EXTRAS.PARTY_INDEX, pos);
+                        partySelectActivity.startActivity(intent);
+                    }
+
                 }
             });
         }
     }
 
-    public PartySelectAdapter(Context c, PartyManager partyManager) {
-        this.context = c;
+    public PartySelectAdapter(PartySelectActivity act, PartyManager partyManager) {
+        this.partySelectActivity = act;
         this.partyList = partyManager.getParties();
     }
 
@@ -54,7 +64,7 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
         Party party = partyList.get(position);
         holder.group.setText(party.getName());
         holder.players.setText(party.getPlayersAsString());
-        holder.date.setText(AndroidUtils.getDate());
+        holder.date.setText(MyUtils.getDate());
         //todo set image to the groups image
         //todo maybe add delete?
     }
@@ -63,5 +73,6 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
     public int getItemCount() {
         return partyList.size();
     }
+
 
 }

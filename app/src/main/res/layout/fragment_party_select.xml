@@ -40,12 +40,12 @@
                 android:layout_marginStart="16dp"
                 android:text="11/11/2018"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/party_card_image"
-                app:layout_constraintTop_toBottomOf="@+id/party_card_players"
+                app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/game_card_players"
                 app:layout_constraintWidth_default="wrap" />
 
             <TextView
-                android:id="@+id/party_card_players"
+                android:id="@+id/game_card_players"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -55,12 +55,12 @@
                 android:singleLine="true"
                 android:text="Player 1, Player 2, Playsafj;lkdsafffffffffff2332"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/party_card_image"
-                app:layout_constraintTop_toBottomOf="@+id/party_card_group"
+                app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/game_card_date"
                 app:layout_constraintWidth_default="wrap" />
 
             <TextView
-                android:id="@+id/party_card_group"
+                android:id="@+id/game_card_date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -71,12 +71,12 @@
                 android:text="Group Name"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/party_card_image"
+                app:layout_constraintStart_toEndOf="@+id/game_card_image"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_default="wrap" />
 
             <ImageView
-                android:id="@+id/party_card_image"
+                android:id="@+id/game_card_image"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@mipmap/ic_launcher"

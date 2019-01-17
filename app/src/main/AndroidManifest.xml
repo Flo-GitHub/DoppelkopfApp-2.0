@@ -19,6 +19,7 @@
         <activity android:name=".RoundActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SettingsActivity" />
+        <activity android:name=".GameSelectActivity"></activity>
     </application>
 
 </manifest>

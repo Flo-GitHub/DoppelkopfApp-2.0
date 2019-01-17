@@ -1,6 +1,7 @@
 package com.example.admin.doppelkopfapp;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 public class GameManager implements Serializable {
 
@@ -193,6 +194,11 @@ public class GameManager implements Serializable {
 
 
     //----
+    public String getPlayersAsString() {
+        Player[] players = party.getPlayersByDBId(playersDataBaseIds);
+        return MyUtils.getPlayersAsString(Arrays.asList(players));
+    }
+
     public long getDatabaseId() {
         if( databaseId == -1 )
             throw new NullPointerException("DatabaseId has not been set yet");

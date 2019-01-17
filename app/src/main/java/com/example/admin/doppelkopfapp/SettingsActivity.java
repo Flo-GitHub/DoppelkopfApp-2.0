@@ -138,7 +138,7 @@ public class SettingsActivity extends AppCompatActivity {
         ArrayList<Player> players = new ArrayList<>();
         long nextPlayerId = dataSource.getNextPlayerId();
         for( int i = 1; i <= 6; i++ ) {
-            EditText editText = (EditText) AndroidUtils.findViewByName(this, "settings_editText_name" + i );
+            EditText editText = (EditText) MyUtils.findViewByName(this, "settings_editText_name" + i );
             if ( !editText.getText().toString().trim().isEmpty() ) {
                 players.add(new Player(nextPlayerId, editText.getText().toString().trim()));
                 nextPlayerId++;
