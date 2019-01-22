@@ -887,10 +887,8 @@ id forever
 id fragment
 id game_add
 id game_card_date
-id game_card_games_played
 id game_card_image
 id game_card_players
-id game_card_view
 id game_recycler_view
 id ghost_view
 id gone
@@ -1109,7 +1107,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_party_select
-layout game_card
 layout main_layout
 layout notification_action
 layout notification_action_tombstone

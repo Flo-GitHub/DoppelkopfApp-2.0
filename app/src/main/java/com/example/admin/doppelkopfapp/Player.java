@@ -3,61 +3,54 @@ package com.example.admin.doppelkopfapp;
 import android.support.annotation.NonNull;
 
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Player implements Serializable, Comparable{
 
     private String name;
-    private Map<Long, Integer> points;
-    private Map<Long, Integer> pointsLost;
+    private int points;
+    private int pointsLost;
     private final long dataBaseId;
 
     public Player( long dataBaseId, String name ) {
         this.dataBaseId = dataBaseId;
         this.name = name;
 
-        points = new HashMap<>();
-        pointsLost = new HashMap<>();
+        points = 0;
+        pointsLost = 0;
     }
 
-    public void addPoints( long gameId, int pointsToAdd ) {
-        addValue(gameId, pointsToAdd, this.points);
+    public void addPoints(int pointsToAdd ) {
+        this.points += pointsToAdd;
 
         if( pointsToAdd < 0 )
-            addValue(gameId, Math.abs(pointsToAdd), this.pointsLost);
-    }
-
-    private static void addValue(long key, int pointsToAdd, Map<Long, Integer> map) {
-        int old = map.containsKey(key) ? map.get(key) : 0;
-        map.put(key, old + pointsToAdd);
+            this.points += Math.abs(pointsToAdd);
     }
 
     public long getDataBaseId() {
         return dataBaseId;
     }
 
-    public Map<Long, Integer> getPoints() {
+    public int getPoints() {
         return points;
     }
 
-    public Map<Long, Integer> getPointsLost() { return pointsLost; }
+    public int getPointsLost() { return pointsLost; }
 
     public String getName() {
         return name;
     }
 
-    public void setPoints(Map<Long, Integer> points) {
+    public void setPoints(int points) {
         this.points = points;
     }
 
-    public void setPointsLost(Map<Long, Integer> pointsLost) {
+    public void setPointsLost(int pointsLost) {
         this.pointsLost = pointsLost;
     }
 
     public Player clonePlayer() {
         Player player = new Player(this.dataBaseId, this.name);
-        player.setPoints(this.points); //todo may have to update clone method
+        player.setPoints(this.points);
         player.setPointsLost(this.pointsLost);
         return player;
     }

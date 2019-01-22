@@ -10,15 +10,13 @@ public class Party implements Serializable {
 
     private List<GameManager> games;
     private List<Player> players;
-    private GameSettings settings;
     private String name;
     private String lastDate;
     private long databaseId;
 
-    public Party(String name, List<Player> players, GameSettings settings, String lastDate) {
+    public Party(String name, List<Player> players, String lastDate) {
         this.name = name;
         this.players = players;
-        this.settings = settings;
         this.lastDate = lastDate;
     }
 
@@ -98,14 +96,6 @@ public class Party implements Serializable {
 
     public void setPlayers(List<Player> players) {
         this.players = players;
-    }
-
-    public GameSettings getSettings() {
-        return settings;
-    }
-
-    public void setSettings(GameSettings settings) {
-        this.settings = settings;
     }
 
     public void setDatabaseId(long databaseId) {

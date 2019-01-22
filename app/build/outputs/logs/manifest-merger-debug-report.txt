@@ -1,137 +1,137 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-MERGED from [com.android.support:design:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a531836858ae892cd262261c15d6184d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\bb0893c46665a01d16a499a8071921a5\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\green\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef07a6965e67ad4d2a8ddf1687981831\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\caf084f24607d7b31dee2b4fa3c64635\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\6542f8343f0c7899f88602806b530a8c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\d48d59cf23788995fac5611fb3ad70cc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\60aca5ded990674f202dda5d70d4291c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\312e2f28544bb0aebaa5c55077c33d6f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\d8752f2cc0cbf6d4a38da8a2894b219b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6fb6b5954f93a9c400c27c2cffbe7043\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c94368078d384f346d9c7967bb4e81f1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\eef07a5520b361506587857b8ee0f90f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9fc84bfaa73c9de15838b787c4cca1a7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\eb5b31149423a550ab10531810a3a1c3\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0ea593228dd5652d87269af6fd893c16\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ac16f7c79d92499fa1336bb6f8fd1351\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\729efd5208ac05df21d4660491079e0b\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\69c45015bf662e56f77f8cce9a896e42\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1b9999b274e001d22cb467d7fd90639d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\7689e17a0f37b83e8a5cb8c8766e07fc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f7cf8d066e197c1bbc24c479398b8916\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\2cc145c5b78fa77e4a10295a570cd6af\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\ab480bfb2a64842df89a079973ee34b3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\4b3e2e16f73d13fe29b502ea14b01689\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\d717e08e923bf8efce6789e08311c166\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9fba2d65edf623e704fe009dbf07b2ba\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1194b9efb28aa96ca39ed8b848feb4cd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\68885c95f29c25a750b4d4a03256a673\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\92fc6ad83207f4694d81eb52944c9645\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\8eea94d71cbd5d86fb7b498695ea49e4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\13a31036aaf950602ff43bbef36cd5a2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b76cbf7e445c4d640b431b487ad0a820\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\57557039d60fba25c64a191066cec282\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4c2a7a8ee4e90e8f43f85f759f3906b3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7336e67b68d9f8fe321a960c8c3fb613\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d2adc6fc5dbed7cb877ac50b53eed19\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
 	package
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:3:5-46
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:1-25:12
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:5:5-23:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\green\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef07a6965e67ad4d2a8ddf1687981831\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\green\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef07a6965e67ad4d2a8ddf1687981831\AndroidManifest.xml:9:5-20
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:5:5-23:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f7cf8d066e197c1bbc24c479398b8916\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f7cf8d066e197c1bbc24c479398b8916\AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.example.admin.doppelkopfapp.PartySelectActivity
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:12:9-18:20
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:12:9-18:20
 	android:name
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:12:19-54
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:12:19-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:13:13-17:29
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:13:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:14:17-69
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:14:17-69
 	android:name
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:14:25-66
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:14:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:16:17-77
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:16:27-74
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:16:27-74
 activity#com.example.admin.doppelkopfapp.RoundActivity
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:19:9-51
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:19:9-51
 	android:name
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:19:19-48
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:19:19-48
 activity#com.example.admin.doppelkopfapp.MainActivity
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:20:9-50
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:20:9-50
 	android:name
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:20:19-47
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:20:19-47
 activity#com.example.admin.doppelkopfapp.SettingsActivity
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:21:9-54
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:21:9-54
 	android:name
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:21:19-51
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:21:19-51
 activity#com.example.admin.doppelkopfapp.GameSelectActivity
-ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:22:9-65
+ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:22:9-65
 	android:name
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml:22:19-53
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml:22:19-53
 uses-sdk
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a531836858ae892cd262261c15d6184d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a531836858ae892cd262261c15d6184d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\bb0893c46665a01d16a499a8071921a5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\bb0893c46665a01d16a499a8071921a5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\green\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef07a6965e67ad4d2a8ddf1687981831\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\green\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\ef07a6965e67ad4d2a8ddf1687981831\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\caf084f24607d7b31dee2b4fa3c64635\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\caf084f24607d7b31dee2b4fa3c64635\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\6542f8343f0c7899f88602806b530a8c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\6542f8343f0c7899f88602806b530a8c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\d48d59cf23788995fac5611fb3ad70cc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\d48d59cf23788995fac5611fb3ad70cc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\60aca5ded990674f202dda5d70d4291c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\60aca5ded990674f202dda5d70d4291c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\312e2f28544bb0aebaa5c55077c33d6f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\312e2f28544bb0aebaa5c55077c33d6f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\d8752f2cc0cbf6d4a38da8a2894b219b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\d8752f2cc0cbf6d4a38da8a2894b219b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6fb6b5954f93a9c400c27c2cffbe7043\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6fb6b5954f93a9c400c27c2cffbe7043\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c94368078d384f346d9c7967bb4e81f1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c94368078d384f346d9c7967bb4e81f1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\eef07a5520b361506587857b8ee0f90f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\eef07a5520b361506587857b8ee0f90f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9fc84bfaa73c9de15838b787c4cca1a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\9fc84bfaa73c9de15838b787c4cca1a7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\eb5b31149423a550ab10531810a3a1c3\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\green\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\eb5b31149423a550ab10531810a3a1c3\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0ea593228dd5652d87269af6fd893c16\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0ea593228dd5652d87269af6fd893c16\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ac16f7c79d92499fa1336bb6f8fd1351\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ac16f7c79d92499fa1336bb6f8fd1351\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\729efd5208ac05df21d4660491079e0b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\729efd5208ac05df21d4660491079e0b\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\69c45015bf662e56f77f8cce9a896e42\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\green\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\69c45015bf662e56f77f8cce9a896e42\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1b9999b274e001d22cb467d7fd90639d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\1b9999b274e001d22cb467d7fd90639d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\7689e17a0f37b83e8a5cb8c8766e07fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\7689e17a0f37b83e8a5cb8c8766e07fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f7cf8d066e197c1bbc24c479398b8916\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\f7cf8d066e197c1bbc24c479398b8916\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\2cc145c5b78fa77e4a10295a570cd6af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\2cc145c5b78fa77e4a10295a570cd6af\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\ab480bfb2a64842df89a079973ee34b3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\ab480bfb2a64842df89a079973ee34b3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\4b3e2e16f73d13fe29b502ea14b01689\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\4b3e2e16f73d13fe29b502ea14b01689\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\d717e08e923bf8efce6789e08311c166\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\d717e08e923bf8efce6789e08311c166\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9fba2d65edf623e704fe009dbf07b2ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\9fba2d65edf623e704fe009dbf07b2ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1194b9efb28aa96ca39ed8b848feb4cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1194b9efb28aa96ca39ed8b848feb4cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\68885c95f29c25a750b4d4a03256a673\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\68885c95f29c25a750b4d4a03256a673\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\92fc6ad83207f4694d81eb52944c9645\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\92fc6ad83207f4694d81eb52944c9645\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\8eea94d71cbd5d86fb7b498695ea49e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\8eea94d71cbd5d86fb7b498695ea49e4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\13a31036aaf950602ff43bbef36cd5a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\13a31036aaf950602ff43bbef36cd5a2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b76cbf7e445c4d640b431b487ad0a820\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\b76cbf7e445c4d640b431b487ad0a820\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\57557039d60fba25c64a191066cec282\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\57557039d60fba25c64a191066cec282\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4c2a7a8ee4e90e8f43f85f759f3906b3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\4c2a7a8ee4e90e8f43f85f759f3906b3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7336e67b68d9f8fe321a960c8c3fb613\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7336e67b68d9f8fe321a960c8c3fb613\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d2adc6fc5dbed7cb877ac50b53eed19\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9d2adc6fc5dbed7cb877ac50b53eed19\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\green\StudioProjects\DoppelkopfApp-2.0\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\delv\Desktop\New folder\codingProjects\DoppelkopfApp - Copy\app\src\main\AndroidManifest.xml

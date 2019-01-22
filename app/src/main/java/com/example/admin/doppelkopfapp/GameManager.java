@@ -1,20 +1,27 @@
 package com.example.admin.doppelkopfapp;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class GameManager implements Serializable {
 
     private Party party;
+    private GameSettings settings;
     private long[] playersDataBaseIds;
     private int giverIndex = 0;
     private int bocks = 0,
                 doubleBocks = 0;
     private long databaseId = -1;
+    private ArrayList<GameRound> rounds;
+    private String lastDate = "";
+    private String firstDate = "";
 
-    public GameManager(Party party, long[] playerDataBaseIds) {
+    public GameManager(Party party, GameSettings settings, long[] playerDataBaseIds) {
         this.party = party;
         this.playersDataBaseIds = playerDataBaseIds;
+        this.settings = settings;
+        rounds = new ArrayList<>();
     }
 
     public void skipRound() {
@@ -72,12 +79,12 @@ public class GameManager implements Serializable {
             throw new IllegalArgumentException("Length of points should be 4, but was " + points.length);
 
         int factorToIncrease;
-        if (!party.getSettings().isSoloBockCalculation() && isSolo(points))
+        if (settings.isSoloBockCalculation() && isSolo(points))
             factorToIncrease = 1;
-        else if (party.getSettings().isDoubleBock() && doubleBocks > 0) {
+        else if (settings.isDoubleBock() && doubleBocks > 0) {
             factorToIncrease = 4;
             doubleBocks--;
-        } else if (party.getSettings().isBock() && this.bocks > 0) {
+        } else if (settings.isBock() && this.bocks > 0) {
             factorToIncrease = 2;
             this.bocks--;
         } else
@@ -88,7 +95,7 @@ public class GameManager implements Serializable {
 
         party.getPlayersByDBId(getActivePlayers());
         for (int i = 0; i < 4; i++) {
-            party.getPlayerByDBId(getActivePlayers()[i]).addPoints(databaseId, points[i]);
+            party.getPlayerByDBId(getActivePlayers()[i]).addPoints(points[i]);
         }
 
         if (!repeatRound)
@@ -99,7 +106,7 @@ public class GameManager implements Serializable {
 
     private void addBocks(int n) {
         for( int i = 0; i < n; i++ ) {
-            if( party.getSettings().isDoubleBock() && bocks >= 1 ) {
+            if( settings.isDoubleBock() && bocks >= 1 ) {
                 int tempBocks = bocks;
                 for( int a = 0; a < playersDataBaseIds.length; a++ ) {
                     if( bocks == 0 )
@@ -108,7 +115,7 @@ public class GameManager implements Serializable {
                     bocks--;
                 }
                 bocks += playersDataBaseIds.length - tempBocks;
-            } else if( party.getSettings().isBock() ) {
+            } else if( settings.isBock() ) {
                 bocks += playersDataBaseIds.length;
             }
         }
@@ -172,7 +179,7 @@ public class GameManager implements Serializable {
     }
 
     public int getMoney( Player player ) {
-        return party.getSettings().getCentPerPoint() * player.getPointsLost().get(databaseId);
+        return settings.getCentPerPoint() * player.getPointsLost();
     }
 
     public void nextGiverIndex() {
@@ -183,8 +190,8 @@ public class GameManager implements Serializable {
     }
 
     public GameManager cloneGameManager() {
-        //todo clone party too.
-        GameManager gameManager = new GameManager(party, playersDataBaseIds);
+        GameSettings settings = this.settings.cloneSettings();
+        GameManager gameManager = new GameManager(party, settings, playersDataBaseIds);
         gameManager.setBocks(this.bocks);
         gameManager.setDatabaseId(this.databaseId);
         gameManager.setDoubleBocks(this.doubleBocks);
@@ -235,5 +242,29 @@ public class GameManager implements Serializable {
 
     public void setDoubleBocks(int doubleBocks) {
         this.doubleBocks = doubleBocks;
+    }
+
+    public void setRounds(ArrayList<GameRound> rounds) {
+        this.rounds = rounds;
+    }
+
+    public ArrayList<GameRound> getRounds() {
+        return rounds;
+    }
+
+    public String getFirstDate() {
+        return firstDate;
+    }
+
+    public String getLastDate() {
+        return lastDate;
+    }
+
+    public void setFirstDate(String firstDate) {
+        this.firstDate = firstDate;
+    }
+
+    public void setLastDate(String lastDate) {
+        this.lastDate = lastDate;
     }
 }
