@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/game_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:minHeight="100dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/game_card_games_played"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="112 games played"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/game_card_players"
+                app:layout_constraintWidth_default="wrap" />
+
+            <TextView
+                android:id="@+id/game_card_players"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="left|start"
+                android:singleLine="true"
+                android:text="No players entered"
+                app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                app:layout_constraintTop_toBottomOf="@+id/game_card_date"
+                app:layout_constraintWidth_default="wrap" />
+
+            <TextView
+                android:id="@+id/game_card_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:text="Jan 12, 2018 - Feb 22, 2018 "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="wrap" />
+
+            <ImageView
+                android:id="@+id/game_card_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

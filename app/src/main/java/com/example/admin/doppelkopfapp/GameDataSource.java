@@ -10,30 +10,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_BOCKS;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_CENT_PER_POINT;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_DOUBLE_BOCKS;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_FIRST_DATE;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_GAME;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_GIVER_INDEX;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_ID;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_ADD_POINTS;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_BOCK;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_DOUBLE_BOCK;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_IS_SOLO_BOCK_CALCULATION;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_LAST_DATE;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_NAME;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_PARTY;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_PLAYER;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_POINTS;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_POINTS_LOST;
-import static com.example.admin.doppelkopfapp.GameDBHelper.COLUMN_ROUND;
-import static com.example.admin.doppelkopfapp.GameDBHelper.TABLE_GAME;
-import static com.example.admin.doppelkopfapp.GameDBHelper.TABLE_PARTY;
-import static com.example.admin.doppelkopfapp.GameDBHelper.TABLE_PLAYERS;
-import static com.example.admin.doppelkopfapp.GameDBHelper.TABLE_PLAYER_ROUND;
-import static com.example.admin.doppelkopfapp.GameDBHelper.TABLE_ROUND;
-import static com.example.admin.doppelkopfapp.GameDBHelper.TABLE_SETTINGS;
+import static com.example.admin.doppelkopfapp.GameDBHelper.*;
+
 
 public class GameDataSource {
 
@@ -84,7 +62,7 @@ public class GameDataSource {
                 Party party = new Party(
                         c.getString(c.getColumnIndex(COLUMN_NAME)),
                         Arrays.asList(getAllPlayersInParty(partyID)),
-                        c.getString(c.getColumnIndex(COLUMN_LAST_DATE))
+                        c.getString(c.getColumnIndex(COLUMN_FIRST_DATE))
                 );
                 party.addGames(getAllGamesInParty(party));
                 parties.add(party);
@@ -116,10 +94,6 @@ public class GameDataSource {
     public void updatePlayer(Player player, long gameId) {
         ContentValues values = playerValues(player, gameId);
         database.update(TABLE_PLAYERS, values, COLUMN_ID + " = " + player.getDataBaseId(), null);
-    }
-
-    public long getNextPlayerId() {
-        return getNextId(TABLE_PLAYERS);
     }
 
 
@@ -201,7 +175,6 @@ public class GameDataSource {
                 game.setDoubleBocks(c.getInt(c.getColumnIndex(COLUMN_DOUBLE_BOCKS)));
                 game.setGiverIndex(c.getInt(c.getColumnIndex(COLUMN_GIVER_INDEX)));
                 game.setFirstDate(c.getString(c.getColumnIndex(COLUMN_FIRST_DATE)));
-                game.setLastDate(c.getString(c.getColumnIndex(COLUMN_LAST_DATE)));
                 game.setDatabaseId(gameID);
 
                 games.add(game);
@@ -261,14 +234,33 @@ public class GameDataSource {
 
     //ROUND - START
     public void deleteDeepRound(GameRound round) {
-        database.delete(TABLE_ROUND, COLUMN_ROUND + "=" + round.getDataBaseId(), null);
-        deletePlayerRound(round);
+        database.delete(TABLE_ROUND, COLUMN_ID + "=" + round.getDataBaseId(), null);
+        deletePlayerRounds(round);
+    }
+
+    public List<GameRound> getAllRoundsInGame(long gameId) {
+        List<GameRound> rounds = new ArrayList<>();
+
+        String selectQuery = "SELECT * FROM " + TABLE_ROUND + " WHERE " +
+                COLUMN_GAME + " = " + gameId;
+        Cursor c = database.rawQuery(selectQuery, null);
+
+        if(c.moveToFirst()) {
+            do {
+                long id = c.getLong(c.getColumnIndex(COLUMN_ID));
+                rounds.add(new GameRound(id,
+                        (c.getInt(c.getColumnIndex(COLUMN_IS_BOCK) ) == 1),
+                        getPlayerPoints(id)));
+            } while (c.moveToNext());
+        }
+        c.close();
+        return rounds;
     }
     //ROUND - END
 
 
     //PLAYER ROUND - START
-    public void deletePlayerRound(GameRound round) {
+    private void deletePlayerRounds(GameRound round) {
         database.delete(TABLE_PLAYER_ROUND, COLUMN_ROUND + "=" + round.getDataBaseId(), null);
     }
 
@@ -292,30 +284,11 @@ public class GameDataSource {
     //PlAYER ROUND - END
 
 
-
-   //HELP
-    private long getNextId( String tableName ) {
-        Cursor c = null;
-        long seq = 0;
-        try {
-            String sql = "select seq from sqlite_sequence where name=?";
-            c = database.rawQuery(sql, new String[] {tableName});
-            if (c.moveToFirst()) {
-                seq = c.getLong(0);
-            }
-        } finally {
-            if (c != null) {
-                c.close();
-            }
-
-        } return seq + 1;
-    }
-
     //CONTENTVALUES
     private ContentValues partyValues(Party party){
          ContentValues values = new ContentValues();
          values.put(COLUMN_NAME, party.getName());
-         values.put(COLUMN_LAST_DATE, party.getLastDate());
+         values.put(COLUMN_FIRST_DATE, party.getFirstDate());
          return values;
     }
 
@@ -337,7 +310,7 @@ public class GameDataSource {
         values.put(COLUMN_DOUBLE_BOCKS, game.getDoubleBocks());
         values.put(COLUMN_GIVER_INDEX, game.getGiverIndex());
         values.put(COLUMN_FIRST_DATE, game.getFirstDate());
-        values.put(COLUMN_LAST_DATE, game.getLastDate());
+        values.put(COLUMN_FIRST_DATE, game.getFirstDate());
         return values;
     }
 
@@ -352,10 +325,11 @@ public class GameDataSource {
         return values;
     }
 
-    private ContentValues roundValues(long gameId, boolean isBock){
+    private ContentValues roundValues(long gameId, GameRound round){
         ContentValues values = new ContentValues();
         values.put(COLUMN_GAME, gameId);
-        values.put(COLUMN_IS_BOCK, isBock);
+        values.put(COLUMN_DATE, round.getDate());
+        values.put(COLUMN_IS_BOCK, round.isBock());
         return values;
     }
 

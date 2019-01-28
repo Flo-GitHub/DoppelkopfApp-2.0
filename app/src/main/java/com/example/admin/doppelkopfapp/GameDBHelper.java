@@ -31,7 +31,7 @@ public class GameDBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_IS_BOCK = "isBock";
     public static final String COLUMN_IS_DOUBLE_BOCK = "isDoubleBock";
     public static final String COLUMN_IS_SOLO_BOCK_CALCULATION = "soloBockCalculation";
-    public static final String COLUMN_LAST_DATE = "lastDate";
+    public static final String COLUMN_DATE = "date";
     public static final String COLUMN_FIRST_DATE = "firstDate";
     public static final String COLUMN_ROUND = "round";
 
@@ -39,7 +39,7 @@ public class GameDBHelper extends SQLiteOpenHelper {
     public static final String SQL_CREATE_PARTY =
             "create table " + TABLE_PARTY + "(" +
                     COLUMN_ID + " integer primary key autoincrement, " +
-                    COLUMN_LAST_DATE + " text not null, " +
+                    COLUMN_FIRST_DATE + " text not null, " +
                     COLUMN_NAME + " text not null);";
 
     //party - player
@@ -61,7 +61,6 @@ public class GameDBHelper extends SQLiteOpenHelper {
                     COLUMN_DOUBLE_BOCKS + " integer, " +
                     COLUMN_GIVER_INDEX  + " integer, " +
                     COLUMN_FIRST_DATE + " text, " +
-                    COLUMN_LAST_DATE + " text, " +
                     "FOREIGN KEY (" + COLUMN_PARTY + ") REFERENCES " + TABLE_PARTY + "(" + COLUMN_ID + "));";
 
     //party - game - settings
@@ -80,7 +79,8 @@ public class GameDBHelper extends SQLiteOpenHelper {
     public static final String SQL_CREATE_ROUND =
             "create table " + TABLE_ROUND + "(" +
                     COLUMN_ID + " integer primary key autoincrement, " +
-                    COLUMN_IS_BOCK + " integer, " +
+                    COLUMN_BOCKS + " integer, " +
+                    COLUMN_DATE + " integer, " +
                     COLUMN_GAME + " integer, " +
                     "FOREIGN KEY (" + COLUMN_GAME + ") REFERENCES " + TABLE_GAME + "(" + COLUMN_ID + "));";
 

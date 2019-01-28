@@ -11,13 +11,13 @@ public class Party implements Serializable {
     private List<GameManager> games;
     private List<Player> players;
     private String name;
-    private String lastDate;
+    private String firstDate;
     private long databaseId;
 
-    public Party(String name, List<Player> players, String lastDate) {
+    public Party(String name, List<Player> players, String firstDate) {
         this.name = name;
         this.players = players;
-        this.lastDate = lastDate;
+        this.firstDate = firstDate;
     }
 
     public void addGames(List<GameManager> games) {
@@ -78,8 +78,8 @@ public class Party implements Serializable {
         return games.get(games.size()-1);
     }
 
-    public String getLastDate() {
-        return lastDate;
+    public String getFirstDate() {
+        return firstDate;
     }
 
     public List<GameManager> getGames() {
