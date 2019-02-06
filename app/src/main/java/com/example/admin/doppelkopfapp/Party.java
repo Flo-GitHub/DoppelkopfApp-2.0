@@ -11,13 +11,14 @@ public class Party implements Serializable {
     private List<GameManager> games;
     private List<Player> players;
     private String name;
-    private String firstDate;
+    private String lastDate;
+    private long currentGame = -1;
     private long databaseId;
 
-    public Party(String name, List<Player> players, String firstDate) {
+    public Party(String name, List<Player> players, String lastDate) {
         this.name = name;
         this.players = players;
-        this.firstDate = firstDate;
+        this.lastDate = lastDate;
     }
 
     public void addGames(List<GameManager> games) {
@@ -74,12 +75,22 @@ public class Party implements Serializable {
         return MyUtils.getPlayersAsString(players);
     }
 
-    public GameManager getCurrentGame(){
-        return games.get(games.size()-1);
+    public Player[] getCurrentActivePlayers(){
+        long[] playerIds = getCurrentGame().getPlayersDataBaseIds();
+        return getPlayersByDBId(playerIds);
     }
 
-    public String getFirstDate() {
-        return firstDate;
+    public GameManager getCurrentGame(){
+        if(currentGame == -1)
+            throw new RuntimeException("CurrentGame in Party called but not initialized.");
+        for(GameManager game : games)
+            if(game.getDatabaseId() == currentGame)
+                return game;
+        throw new RuntimeException("CurrentGame in Party not found.");
+    }
+
+    public String getLastDate() {
+        return lastDate;
     }
 
     public List<GameManager> getGames() {

@@ -14,7 +14,7 @@ public class GameManager implements Serializable {
                 doubleBocks = 0;
     private long databaseId = -1;
     private ArrayList<GameRound> rounds;
-    private String firstDate;
+    private String lastDate;
 
     public GameManager(Party party, GameSettings settings, long[] playerDataBaseIds) {
         this.party = party;
@@ -251,11 +251,11 @@ public class GameManager implements Serializable {
         return rounds;
     }
 
-    public String getFirstDate() {
-        return firstDate;
+    public String getLastDate() {
+        return lastDate;
     }
 
-    public void setFirstDate(String firstDate) {
-        this.firstDate = firstDate;
+    public void setLastDate(String lastDate) {
+        this.lastDate = lastDate;
     }
 }

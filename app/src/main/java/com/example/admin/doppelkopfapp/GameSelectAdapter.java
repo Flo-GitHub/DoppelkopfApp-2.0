@@ -53,8 +53,8 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
     @Override
     public void onBindViewHolder(@NonNull GameSelectAdapter.MyViewHolder holder, int position) {
         GameManager game = gameList.get(position);
-        holder.date.setText(MyUtils.getDate());//todo change dates
-        holder.players.setText(game.getPlayersAsString(party));
+        holder.date.setText(game.getLastDate());//todo change dates
+        holder.players.setText(game.getPlayersAsString());
         holder.date.setText(MyUtils.getDate());
         //todo set image to the groups image??
         //todo maybe add delete?

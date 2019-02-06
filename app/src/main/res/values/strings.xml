@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DoppelkopfApp</string>
+    <string name="app_name">Doppelkopf Notes</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="names">Names:</string>
@@ -41,5 +41,8 @@
     <string name="hint_index">Index (Will be changed)</string>
     <string name="title_activity_party_select">PartySelectActivity</string>
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

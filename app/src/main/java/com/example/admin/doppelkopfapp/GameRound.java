@@ -8,6 +8,7 @@ public class GameRound {
     private int newBocks;
     private String date;
     private HashMap<Long, Boolean> playerSides;
+    private int rePoints;
     private int reBonusPoints = 0;
     private int conBonusPoints = 0;
     private int reAnnouncement = -1;
@@ -66,4 +67,29 @@ public class GameRound {
     public int getConBonusPoints() {
         return conBonusPoints;
     }
+
+    public int getRePoints() {
+        return rePoints;
+    }
+
+    public void setRePoints(int rePoints) {
+        this.rePoints = rePoints;
+    }
+
+    public int getNewBocks() {
+        return newBocks;
+    }
+
+    public void setNewBocks(int newBocks) {
+        this.newBocks = newBocks;
+    }
+
+    public int getCurrentRoundBock() {
+        return currentRoundBock;
+    }
+
+    public void setCurrentRoundBock(int currentRoundBock) {
+        this.currentRoundBock = currentRoundBock;
+    }
+
 }

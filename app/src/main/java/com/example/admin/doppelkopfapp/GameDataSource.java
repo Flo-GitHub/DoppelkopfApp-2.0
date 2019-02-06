@@ -62,7 +62,7 @@ public class GameDataSource {
                 Party party = new Party(
                         c.getString(c.getColumnIndex(COLUMN_NAME)),
                         Arrays.asList(getAllPlayersInParty(partyID)),
-                        c.getString(c.getColumnIndex(COLUMN_FIRST_DATE))
+                        c.getString(c.getColumnIndex(COLUMN_LAST_DATE))
                 );
                 party.addGames(getAllGamesInParty(party));
                 parties.add(party);
@@ -174,7 +174,7 @@ public class GameDataSource {
                 game.setBocks(c.getInt(c.getColumnIndex(COLUMN_BOCKS)));
                 game.setDoubleBocks(c.getInt(c.getColumnIndex(COLUMN_DOUBLE_BOCKS)));
                 game.setGiverIndex(c.getInt(c.getColumnIndex(COLUMN_GIVER_INDEX)));
-                game.setFirstDate(c.getString(c.getColumnIndex(COLUMN_FIRST_DATE)));
+                game.setLastDate(c.getString(c.getColumnIndex(COLUMN_LAST_DATE)));
                 game.setDatabaseId(gameID);
 
                 games.add(game);
@@ -248,9 +248,7 @@ public class GameDataSource {
         if(c.moveToFirst()) {
             do {
                 long id = c.getLong(c.getColumnIndex(COLUMN_ID));
-                rounds.add(new GameRound(id,
-                        (c.getInt(c.getColumnIndex(COLUMN_IS_BOCK) ) == 1),
-                        getPlayerPoints(id)));
+                rounds.add(new GameRound(id));
             } while (c.moveToNext());
         }
         c.close();
@@ -288,7 +286,7 @@ public class GameDataSource {
     private ContentValues partyValues(Party party){
          ContentValues values = new ContentValues();
          values.put(COLUMN_NAME, party.getName());
-         values.put(COLUMN_FIRST_DATE, party.getFirstDate());
+         values.put(COLUMN_LAST_DATE, party.getLastDate());
          return values;
     }
 
@@ -309,8 +307,7 @@ public class GameDataSource {
         values.put(COLUMN_BOCKS, game.getBocks());
         values.put(COLUMN_DOUBLE_BOCKS, game.getDoubleBocks());
         values.put(COLUMN_GIVER_INDEX, game.getGiverIndex());
-        values.put(COLUMN_FIRST_DATE, game.getFirstDate());
-        values.put(COLUMN_FIRST_DATE, game.getFirstDate());
+        values.put(COLUMN_LAST_DATE, game.getLastDate());
         return values;
     }
 
@@ -324,12 +321,17 @@ public class GameDataSource {
         values.put(COLUMN_IS_ADD_POINTS, settings.isAddPoints() ? 1 : 0);
         return values;
     }
-
+//TODO TODO TODO TODO TODO
     private ContentValues roundValues(long gameId, GameRound round){
         ContentValues values = new ContentValues();
         values.put(COLUMN_GAME, gameId);
         values.put(COLUMN_DATE, round.getDate());
-        values.put(COLUMN_IS_BOCK, round.isBock());
+        values.put(COLUMN_NEW_BOCKS, round.getNewBocks());
+        values.put(COLUMN_CURRENT_ROUND_BOCKS, round.getCurrentRoundBock());
+        values.put(COLUMN_RE_ANNOUNCEMENT, round.getReAnnouncement());
+        values.put(COLUMN_RE_BONUS, round.getReBonusPoints());
+        values.put(COLUMN_CON_ANNOUNCEMENT, round.getConAnnouncement());
+        values.put(COLUMN_CON_BONUS, round.getConBonusPoints());
         return values;
     }
 
