@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\green\\StudioProjects\\DoppelkopfApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb0893c46665a01d16a499a8071921a5\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\e871c25fdc950a7d296cb3808600591e\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\9fc84bfaa73c9de15838b787c4cca1a7\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\green\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\1f43b64779f9001f60cd8c3b08c13744\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

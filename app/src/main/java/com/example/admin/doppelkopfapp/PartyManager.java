@@ -11,20 +11,20 @@ public class PartyManager {
     private GameDataSource dataSource;
 
     public PartyManager(Context context) {
-        dataSource = new GameDataSource(context);
-        dataSource.open();
+        //dataSource = new GameDataSource(context);
+        //dataSource.open();
         //test
-        parties = dataSource.getAllParties();
+        //parties = dataSource.getAllParties();
     }
 
     public void addParty(Party party) {
         parties.add(party);
-        dataSource.createParty(party);
+        //dataSource.createParty(party);
     }
 
-    public void closeDataBase() {
-        dataSource.close();
-    }
+    //public void closeDataBase() {
+     //   dataSource.close();
+    //}
 
     public List<Party> getParties() {
         return parties;

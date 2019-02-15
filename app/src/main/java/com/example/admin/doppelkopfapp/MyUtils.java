@@ -6,7 +6,9 @@ import android.view.View;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by delv on 8/1/2017.
@@ -34,7 +36,7 @@ public class MyUtils {
         }
         return builder.toString();
     }
-    //todo update when pulling db extension from github
+    /*todo update when pulling db extension from github
     public static void createPartyDataSource(GameDataSource dataSource) {
         Party party = sampleParty();
         party.setDatabaseId(dataSource.createParty(party));
@@ -45,7 +47,7 @@ public class MyUtils {
         for(Player p : party.getPlayers()) {
             dataSource.createPlayer(p, party.getDatabaseId());
         }
-    }
+    }*/
 
     public static Party sampleParty() {
         List<Player> players = new ArrayList<>();
@@ -54,8 +56,17 @@ public class MyUtils {
         players.add(new Player(3, "Player3"));
         players.add(new Player(4, "Player4"));
         GameSettings settings = new GameSettings(1, false, false, false, false);
-        Party party = new Party("This is the coolest group in the world", players, settings, "Jan 14, 2018");
-        GameManager manager = new GameManager(new long[]{1, 2, 3, 4});
+        Party party = new Party("This is the coolest group in the world", players, "Jan 14, 2018");
+        GameManager manager = new GameManager(party, settings, new long[]{1, 2, 3, 4});
+
+        Map<Long, Integer> map = new HashMap<>();
+        map.put(1L, 234);
+        map.put(2L, -2343);
+        map.put(3L, 9003);
+        map.put(4L, 0);
+        GameRound round = new GameRound(0, map);
+
+        manager.addRound(round);
         party.addGame(manager);
         return party;
     }

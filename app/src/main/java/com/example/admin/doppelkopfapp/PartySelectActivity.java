@@ -39,7 +39,7 @@ public class PartySelectActivity extends AppCompatActivity implements Serializab
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        partyManager.closeDataBase();
+        //partyManager.closeDataBase();
     }
 
     private void initRecyclerView() {

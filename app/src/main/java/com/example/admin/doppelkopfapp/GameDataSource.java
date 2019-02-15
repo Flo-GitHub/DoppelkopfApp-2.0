@@ -15,7 +15,7 @@ import static com.example.admin.doppelkopfapp.GameDBHelper.*;
 
 public class GameDataSource {
 
-    private static final String LOG = "GmDataSource";
+/*    private static final String LOG = "GmDataSource";
 
     private SQLiteDatabase database;
     private GameDBHelper dbHelper;
@@ -64,7 +64,7 @@ public class GameDataSource {
                         Arrays.asList(getAllPlayersInParty(partyID)),
                         c.getString(c.getColumnIndex(COLUMN_LAST_DATE))
                 );
-                party.addGames(getAllGamesInParty(party));
+                party.setGames(getAllGamesInParty(party));
                 parties.add(party);
 
             } while(c.moveToNext());
@@ -343,6 +343,6 @@ public class GameDataSource {
         return values;
     }
 
-
+*/
 
 }

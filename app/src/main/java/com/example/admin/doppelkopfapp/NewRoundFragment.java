@@ -5,6 +5,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,8 +56,9 @@ public class NewRoundFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        party = MyUtils.sampleParty();
         if (getArguments() != null) {
-            party = (Party) getArguments().getSerializable(ARG_PARTY);
+            //party = (Party) getArguments().getSerializable(ARG_PARTY);
         }
     }
 
@@ -67,11 +69,14 @@ public class NewRoundFragment extends Fragment {
 
         int[] ids = new int[]{R.id.toggle_round_player1, R.id.toggle_round_player2,
                 R.id.toggle_round_player3, R.id.toggle_round_player4};
-        Player[] players = party.getCurrentActivePlayers();
+        List<Player> players = party.getPlayers();
 
+        Log.e("oncreate", players.get(0).getName());
+        player_views = new ToggleButton[4];
         for(int i = 0; i < ids.length; i++) {
             player_views[i] = view.findViewById(ids[i]);
-            player_views[i].setText(players[i].getName());
+            player_views[i].setTextOn("W " + players.get(i).getName());
+            player_views[i].setTextOff("L " + players.get(i).getName());
             player_views[i].setChecked(false);
         }
 
@@ -87,8 +92,8 @@ public class NewRoundFragment extends Fragment {
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+//            throw new RuntimeException(context.toString()
+  //                  + " must implement OnFragmentInteractionListener");
         }
     }
 

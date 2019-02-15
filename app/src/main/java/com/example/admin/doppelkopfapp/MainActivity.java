@@ -1,159 +1,116 @@
 package com.example.admin.doppelkopfapp;
 
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.view.View;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+import java.security.spec.ECField;
 
-   /* private GameManager gameManager;
-    private GameDataSource dataSource;
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_layout);
+        setContentView(R.layout.activity_main);
 
-        gameManager = (GameManager) getIntent().getSerializableExtra(SettingsActivity.EXTRA_GAME_MANAGER);
-        dataSource = new GameDataSource(this);
-        try {
-            dataSource.open();
-        } catch (SQLException e) {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar);
+        setSupportActionBar(toolbar);
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        findViewById(R.id.main_activity_fragment);
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        Fragment fragment = null;
+        Class fragmentClass;
+
+        switch (item.getItemId()) {
+            case R.id.nav_camera:
+                fragmentClass = NewRoundFragment.class;
+                break;
+            case R.id.nav_gallery:
+                fragmentClass = TableFragment.class;
+                break;
+            default:
+                fragmentClass = NewRoundFragment.class;
+        }
+
+        try{
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch(Exception e){
             e.printStackTrace();
         }
-        addOnClickListeners();
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main_activity_fragment, fragment).commit();
+
+        item.setChecked(true);
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        update();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        dataSource.close();
-    }
-
-    public void update() {
-        updateTextViews();
-        updateBocksRemaining();
-    }
-
-
-    private void updateTextViews() {
-        List<String> list = new ArrayList<>();
-
-        for(int i = 0; i < gameManager.getPlayersDataBaseIds().length; i++ ) {
-            Player p = gameManager.getPlayersDataBaseIds()[i];
-
-            list.add( String.format(Locale.getDefault(), "%s: %dP (%s)", p.getName(), p.getPoints(),
-                    NumberFormat.getCurrencyInstance().format(p.getPointsLost() * gameManager.getSettings().getCentPerPoint() / 100f) ) );
-        }
-
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.simple_row, list);
-
-        ListView listView = (ListView) findViewById(R.id.main_listView_playerList);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                if(gameManager.getPlayersDataBaseIds().length > 4 ) {
-                    builder.setMessage(getString(R.string.dialog_delete_player));
-                    builder.setNegativeButton(getString(R.string.no), new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-                    builder.setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Player player = gameManager.getPlayersDataBaseIds()[position];
-                            gameManager.removePlayer(player);
-                            dataSource.deletePlayer(player);
-                            adapter.notifyDataSetChanged();
-                            update();
-                        }
-                    });
-                } else {
-
-                    builder.setMessage(getString(R.string.dialog_delete_not_enough_players));
-                    builder.setPositiveButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-                }
-                builder.show();
-            }
-        });
-    }
-
-    private void updateBocksRemaining() {
-        TextView textBocks = (TextView) findViewById(R.id.main_textView_bocksLeft);
-        textBocks.setText(getResources().getString(R.string.bocks_remaining) + " " + gameManager.getBocks());
-        TextView textDoubleBocks = (TextView) findViewById(R.id.main_textView_doubleBocksLeft);
-        textDoubleBocks.setText(getResources().getString(R.string.double_bocks_remaining) + " " + gameManager.getDoubleBocks());
-    }
-
-
-    private void addOnClickListeners() {
-        Button buttonMenu = (Button) findViewById(R.id.main_button_menu);
-        buttonMenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        Button buttonNextRound = (Button) findViewById(R.id.main_button_nextRound);
-        buttonNextRound.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RoundActivity.class);
-                intent.putExtra(SettingsActivity.EXTRA_GAME_MANAGER, gameManager);
-                startActivity(intent);
-            }
-        });
-
-        ImageButton buttonAddPlayer = (ImageButton) findViewById(R.id.main_button_add_player);
-        buttonAddPlayer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final EditText editTextName = new EditText(MainActivity.this);
-                editTextName.setHint(getString(R.string.hint_playername));
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setMessage(getString(R.string.dialog_add_player));
-                builder.setView(editTextName);
-
-                builder.setPositiveButton(getString(R.string.continue_text), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        String name = editTextName.getText().toString().trim();
-                        if(name != null && !name.isEmpty() && gameManager.getPlayersDataBaseIds().length < 6) {
-                            Player player = new Player(dataSource.getNextPlayerId(), name);
-                            gameManager.addPlayer(player, gameManager.getPlayersDataBaseIds().length);
-                            dataSource.createPlayer(player, gameManager.getDatabaseId());
-                            update();
-                        }
-                    }
-                });
-                builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-                builder.show();
-            }
-        });
-    }*/
-
 }

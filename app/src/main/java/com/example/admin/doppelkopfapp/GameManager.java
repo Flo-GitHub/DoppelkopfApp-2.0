@@ -3,6 +3,7 @@ package com.example.admin.doppelkopfapp;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class GameManager implements Serializable {
 
@@ -200,9 +201,26 @@ public class GameManager implements Serializable {
 
 
     //----
+    public void addRound(GameRound round) {
+        this.rounds.add(round);
+    }
+
     public String getPlayersAsString() {
         Player[] players = party.getPlayersByDBId(playersDataBaseIds);
         return MyUtils.getPlayersAsString(Arrays.asList(players));
+    }
+
+    public String[] getPlayersAsStrings() {
+        Player[] players = party.getPlayersByDBId(playersDataBaseIds);
+        String[] names = new String[players.length];
+        for(int i = 0; i < players.length; i++) {
+            names[i] = players[i].getName();
+        }
+        return names;
+    }
+
+    public List<Player> getPlayers() {
+        return Arrays.asList(party.getPlayersByDBId(getPlayersDataBaseIds()));
     }
 
     public long getDatabaseId() {

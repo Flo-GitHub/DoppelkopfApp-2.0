@@ -12,7 +12,7 @@ public class Party implements Serializable {
     private List<Player> players;
     private String name;
     private String lastDate;
-    private long currentGame = -1;
+    private long currentGame = 0;//todo change to -1
     private long databaseId;
 
     public Party(String name, List<Player> players, String lastDate) {
@@ -21,8 +21,11 @@ public class Party implements Serializable {
         this.lastDate = lastDate;
     }
 
-    public void addGames(List<GameManager> games) {
-        this.games = games;
+    public void addGame(GameManager game) {
+        if(games == null) {
+            games = new ArrayList<>();
+        }
+        this.games.add(game);
     }
 
     public Player[] getPlayersByDBId(long[] playersDataBaseId) {
