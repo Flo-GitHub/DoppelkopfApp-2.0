@@ -937,7 +937,7 @@ id line3
 id linearLayout
 id listMode
 id list_item
-id main_activity_fragment
+id main_content_frame
 id main_toolbar
 id masked
 id media_actions
@@ -954,6 +954,7 @@ id nav_slideshow
 id nav_view
 id navigation_header_container
 id never
+id new_round_submit
 id none
 id normal
 id notification_background
@@ -1042,12 +1043,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
-id textView1
-id textView3
 id textView4
-id textView5
-id textView6
-id textView7
 id textView8
 id textView_row
 id textView_settings_names

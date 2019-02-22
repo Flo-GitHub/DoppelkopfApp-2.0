@@ -19,6 +19,7 @@ public class Party implements Serializable {
         this.name = name;
         this.players = players;
         this.lastDate = lastDate;
+        games = new ArrayList<>();
     }
 
     public void addGame(GameManager game) {
@@ -90,6 +91,10 @@ public class Party implements Serializable {
             if(game.getDatabaseId() == currentGame)
                 return game;
         throw new RuntimeException("CurrentGame in Party not found.");
+    }
+
+    public void setCurrentGame(long currentGame) {
+        this.currentGame = currentGame;
     }
 
     public String getLastDate() {

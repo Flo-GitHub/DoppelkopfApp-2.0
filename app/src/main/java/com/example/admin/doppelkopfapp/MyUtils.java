@@ -55,19 +55,14 @@ public class MyUtils {
         players.add(new Player(2, "Player2"));
         players.add(new Player(3, "Player3"));
         players.add(new Player(4, "Player4"));
-        GameSettings settings = new GameSettings(1, false, false, false, false);
+        players.add(new Player(5, "Player5555"));
+
+        GameSettings settings = new GameSettings(1, 2, false, false);
         Party party = new Party("This is the coolest group in the world", players, "Jan 14, 2018");
         GameManager manager = new GameManager(party, settings, new long[]{1, 2, 3, 4});
-
-        Map<Long, Integer> map = new HashMap<>();
-        map.put(1L, 234);
-        map.put(2L, -2343);
-        map.put(3L, 9003);
-        map.put(4L, 0);
-        GameRound round = new GameRound(0, map);
-
-        manager.addRound(round);
+        manager.setDatabaseId(party.getGames().size()+1);//todo change (games could be removed!)
         party.addGame(manager);
+        party.setCurrentGame(manager.getDatabaseId());
         return party;
     }
 

@@ -1,26 +1,23 @@
 package com.example.admin.doppelkopfapp;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
-import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RadioGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
+import java.time.chrono.MinguoChronology;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class TableFragment extends Fragment {
@@ -32,9 +29,10 @@ public class TableFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static TableFragment newInstance() {
+    public static TableFragment newInstance(Party party) {
         TableFragment fragment = new TableFragment();
         Bundle args = new Bundle();
+        args.putSerializable(MainActivity.ARG_PARTY, party);
         fragment.setArguments(args);
         return fragment;
     }
@@ -42,8 +40,10 @@ public class TableFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.party = MyUtils.sampleParty();
         if (getArguments() != null) {
+            party = (Party) getArguments().getSerializable(MainActivity.ARG_PARTY);
+        } else {
+            throw new RuntimeException("NO PARTY SET - NEW GAME NOT AVAILABLE");
         }
     }
 
@@ -87,7 +87,7 @@ public class TableFragment extends Fragment {
     private TableRow fillRow(String[] values) {
         TableRow row = new TableRow(getContext());
         row.setId(ViewCompat.generateViewId());
-        row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+        row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
         for(String value : values) {
             row.addView(createTextView(value));
         }
@@ -100,15 +100,37 @@ public class TableFragment extends Fragment {
         List<String[]> values = new ArrayList<>();
         values.add(headerRow(players));
 
+        Map<Long, Integer> playerPoints = new HashMap<>();
 
         for(GameRound round : gameManager.getRounds()) {
-            String[] row = new String[players.size()];
+            String[] row = new String[values.get(0).length];
+            row[0] = String.valueOf(round.getDataBaseId());
             for(int i = 0; i < players.size(); i++) {
-                row[i] = Integer.toString(round.getPlayerPoints().get(players.get(i).getDataBaseId()));
+                long id = players.get(i).getDataBaseId();
+                try {
+                    playerPoints.put(id, (playerPoints.get(id) + round.getPlayerPoints().get(id)) );
+                } catch (Exception e) {
+                    try {
+                        playerPoints.put(id, round.getPlayerPoints().get(id));
+                    } catch (Exception a){
+                        playerPoints.put(id, 0);
+                    }
+                }
+
+                row[i+1] = Integer.toString(playerPoints.get(id));
             }
+            row[row.length-1] = getBockString(round.getCurrentBocks());
             values.add(row);
         }
         return values;
+    }
+
+    private String getBockString(int bocks) {
+        StringBuilder builder = new StringBuilder();
+        for(int i = 0; i< bocks;i++) {
+            builder.append("X");
+        }
+        return builder.toString();
     }
 
     private String[] headerRow(List<Player> players) {
@@ -127,7 +149,10 @@ public class TableFragment extends Fragment {
         tv.setText(text);
         tv.setSingleLine(true);
         tv.setTextAppearance(getContext(), R.style.TextAppearance_AppCompat_Subhead);
-        tv.setPadding(5, 5, 5, 5);
+        tv.setGravity(Gravity.CENTER);
+        tv.setLayoutParams(new TableRow.LayoutParams(
+                TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT, 1));
+        tv.setPadding(8, 8, 8 ,8);
         return tv;
     }
 

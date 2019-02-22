@@ -4,7 +4,8 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,10 +16,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.security.spec.ECField;
-
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, NewRoundFragment.OnSubmitListener{
+
+    public static final String ARG_PARTY = "party";
+
+    Party party;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        party = MyUtils.sampleParty();
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -45,9 +50,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        findViewById(R.id.main_activity_fragment);
-
     }
 
     @Override
@@ -85,6 +87,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment fragment = null;
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(ARG_PARTY, party);
+
         Class fragmentClass;
 
         switch (item.getItemId()) {
@@ -100,17 +106,36 @@ public class MainActivity extends AppCompatActivity
 
         try{
             fragment = (Fragment) fragmentClass.newInstance();
+            fragment.setArguments(bundle);
         } catch(Exception e){
             e.printStackTrace();
         }
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.main_activity_fragment, fragment).commit();
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.main_content_frame, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
 
         item.setChecked(true);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onAttachFragment(Fragment fragment) {
+        if (fragment instanceof NewRoundFragment) {
+            NewRoundFragment newRoundFragment = (NewRoundFragment) fragment;
+            newRoundFragment.setOnSubmitListener(this);
+        }
+    }
+
+    @Override
+    public void onSubmit(GameRound round) {
+        party.getCurrentGame().addRound(round);
+        Log.e("sfs", "fsafdsadfs");
     }
 }

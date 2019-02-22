@@ -1,9 +1,13 @@
 package com.example.admin.doppelkopfapp;
 
+import android.util.Log;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GameManager implements Serializable {
 
@@ -11,8 +15,7 @@ public class GameManager implements Serializable {
     private GameSettings settings;
     private long[] playersDataBaseIds;
     private int giverIndex = 0;
-    private int bocks = 0,
-                doubleBocks = 0;
+    private int bocks[];
     private long databaseId = -1;
     private ArrayList<GameRound> rounds;
     private String lastDate;
@@ -22,6 +25,7 @@ public class GameManager implements Serializable {
         this.playersDataBaseIds = playerDataBaseIds;
         this.settings = settings;
         rounds = new ArrayList<>();
+        bocks = new int[settings.getMaxBocks()];
     }
 
     public void skipRound() {
@@ -72,69 +76,74 @@ public class GameManager implements Serializable {
         }
     }
 
-    public void nextRound(int[] points, int bocks, boolean repeatRound) {
-        if (!isValidRound(points))
+    public void nextRound(Map<Long, Integer> playerPoints, int newBocks, boolean repeatRound) {
+        //change playerPoints for solo
+        updateSoloPlayerPoints(playerPoints);
+        if (!isValidRound(playerPoints))
             throw new IllegalArgumentException("Sum of the points not equal 0.");
-        else if (points.length != 4)
-            throw new IllegalArgumentException("Length of points should be 4, but was " + points.length);
+        else if (playerPoints.size() != 4)
+            throw new IllegalArgumentException("Length of points should be 4, but was " + playerPoints.size());
 
-        int factorToIncrease;
-        if (settings.isSoloBockCalculation() && isSolo(points))
-            factorToIncrease = 1;
-        else if (settings.isDoubleBock() && doubleBocks > 0) {
-            factorToIncrease = 4;
-            doubleBocks--;
-        } else if (settings.isBock() && this.bocks > 0) {
-            factorToIncrease = 2;
-            this.bocks--;
-        } else
-            factorToIncrease = 1;
+        int factorToIncrease = 1;
+        //todo solo bock calculation
+         for(int i = this.bocks.length-1; i <= 0; i--)  {
+             if(this.bocks[i] > 0) {
+                 factorToIncrease = (int)Math.pow(2, this.bocks[i]) ;
+                 break;
+             }
+         }
 
-        for (int i = 0; i < points.length; i++)
-            points[i] *= factorToIncrease;
+        Log.e("Gamemangaer", "FACTOR TO INCREASE " + factorToIncrease);
 
-        party.getPlayersByDBId(getActivePlayers());
-        for (int i = 0; i < 4; i++) {
-            party.getPlayerByDBId(getActivePlayers()[i]).addPoints(points[i]);
+        for (long key : playerPoints.keySet()) {
+            party.getPlayerByDBId(key).addPoints(playerPoints.get(key)*factorToIncrease);
         }
 
         if (!repeatRound)
             nextGiverIndex();
 
-        addBocks(bocks);
+        addBocks(newBocks);
+    }
+
+    private Map<Long, Integer> updateSoloPlayerPoints(Map<Long, Integer> map) {
+        int winners = 0;
+        for(Long key : map.keySet()) {
+            if (map.get(key)>0)
+                winners++;
+        }
+
+        for(Long key : map.keySet()) {
+            if( (winners == 1 && map.get(key)>0) || (winners == 3 && map.get(key)<0) ){
+                map.put(key, map.get(key) * 3);
+            }
+        }
+        return map;
     }
 
     private void addBocks(int n) {
-        for( int i = 0; i < n; i++ ) {
-            if( settings.isDoubleBock() && bocks >= 1 ) {
-                int tempBocks = bocks;
+        for(int i = 0; i < n; i++) {
+            if( settings.getMaxBocks()>=2 && bocks[0] >= 1 ) {
+                int temp = bocks[0];
                 for( int a = 0; a < playersDataBaseIds.length; a++ ) {
-                    if( bocks == 0 )
+                    if( bocks[0] == 0 )
                         break;
-                    doubleBocks++;
-                    bocks--;
+                    bocks[1]++;
+                    bocks[0]--;
                 }
-                bocks += playersDataBaseIds.length - tempBocks;
-            } else if( settings.isBock() ) {
-                bocks += playersDataBaseIds.length;
+                bocks[0] += playersDataBaseIds.length - temp;
+            } else if( settings.getMaxBocks()==1 ) {
+                bocks[0] += playersDataBaseIds.length;
             }
         }
     }
 
-    private boolean isValidRound(int[] points) {
+    private boolean isValidRound(Map<Long, Integer> points) {
         int sum = 0;
-        for( int i : points)
+        for(int i : points.values())
             sum += i;
         return sum == 0;
     }
 
-    private boolean isSolo(int[] points) {
-        int absValue = Math.abs(points[0]);
-        for( int i = 1; i < points.length; i++ )
-            if( Math.abs(points[i]) != absValue )
-                return true;
-        return false;
-    }
 
     public long getGiver() {
         return playersDataBaseIds[giverIndex];
@@ -194,15 +203,24 @@ public class GameManager implements Serializable {
         GameManager gameManager = new GameManager(party, settings, playersDataBaseIds);
         gameManager.setBocks(this.bocks);
         gameManager.setDatabaseId(this.databaseId);
-        gameManager.setDoubleBocks(this.doubleBocks);
         gameManager.setGiverIndex(this.giverIndex);
         return gameManager;
     }
 
 
     //----
+    public int getCurrentBocks(){
+        for(int i = bocks.length-1; i >= 0; i--) {
+            if(bocks[i]> 0){
+                return i+1;
+            }
+        }
+        return 0;
+    }
+
     public void addRound(GameRound round) {
-        this.rounds.add(round);
+        this.rounds.add(round);//todo add repeat round
+        nextRound(round.getPlayerPoints(), round.getNewBocks(), false);
     }
 
     public String getPlayersAsString() {
@@ -241,24 +259,16 @@ public class GameManager implements Serializable {
         return giverIndex;
     }
 
-    public int getBocks() {
+    public int[] getBocks() {
         return bocks;
-    }
-
-    public int getDoubleBocks() {
-        return doubleBocks;
     }
 
     public void setGiverIndex(int giverIndex) {
         this.giverIndex = giverIndex;
     }
 
-    public void setBocks(int bocks) {
+    public void setBocks(int[] bocks) {
         this.bocks = bocks;
-    }
-
-    public void setDoubleBocks(int doubleBocks) {
-        this.doubleBocks = doubleBocks;
     }
 
     public void setRounds(ArrayList<GameRound> rounds) {

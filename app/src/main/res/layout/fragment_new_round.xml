@@ -37,16 +37,16 @@
                 style="@style/Base.Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/check"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/check" />
 
             <ToggleButton
                 android:id="@+id/toggle_round_player2"
                 style="@style/Base.Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
-                android:background="@drawable/check"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/check" />
         </LinearLayout>
 
         <LinearLayout
@@ -60,16 +60,16 @@
                 style="@style/Base.Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@drawable/check"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/check" />
 
             <ToggleButton
                 android:id="@+id/toggle_round_player4"
                 style="@style/Base.Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/check"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@drawable/check" />
         </LinearLayout>
 
         <EditText
@@ -133,6 +133,14 @@
                     android:text="@string/number_3" />
             </RadioGroup>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/new_round_submit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Submit" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
