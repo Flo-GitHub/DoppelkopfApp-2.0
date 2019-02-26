@@ -88,11 +88,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment fragment = null;
 
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(ARG_PARTY, party);
-
         Class fragmentClass;
-
         switch (item.getItemId()) {
             case R.id.nav_camera:
                 fragmentClass = NewRoundFragment.class;
@@ -103,7 +99,19 @@ public class MainActivity extends AppCompatActivity
             default:
                 fragmentClass = NewRoundFragment.class;
         }
+        switchFragments(fragmentClass);
 
+        item.setChecked(true);
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    private void switchFragments(Class fragmentClass) {
+        Fragment fragment = null;
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(ARG_PARTY, party);
         try{
             fragment = (Fragment) fragmentClass.newInstance();
             fragment.setArguments(bundle);
@@ -116,13 +124,6 @@ public class MainActivity extends AppCompatActivity
         transaction.replace(R.id.main_content_frame, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
-
-
-        item.setChecked(true);
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 
     @Override
@@ -136,6 +137,6 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onSubmit(GameRound round) {
         party.getCurrentGame().addRound(round);
-        Log.e("sfs", "fsafdsadfs");
+        switchFragments(TableFragment.class);
     }
 }

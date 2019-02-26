@@ -12,7 +12,6 @@ public class GameRound {
 
 
     public GameRound(long dataBaseId, Map<Long, Integer> playerPoints) {
-        this.currentBocks = currentBocks;
         this.playerPoints = playerPoints;
         this.dataBaseId = dataBaseId;
     }

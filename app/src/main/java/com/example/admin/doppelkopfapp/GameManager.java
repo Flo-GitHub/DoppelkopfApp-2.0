@@ -26,6 +26,9 @@ public class GameManager implements Serializable {
         this.settings = settings;
         rounds = new ArrayList<>();
         bocks = new int[settings.getMaxBocks()];
+        for(int i = 0; i < settings.getMaxBocks(); i++){
+            bocks[i] = 0;
+        }
     }
 
     public void skipRound() {
@@ -76,9 +79,11 @@ public class GameManager implements Serializable {
         }
     }
 
-    public void nextRound(Map<Long, Integer> playerPoints, int newBocks, boolean repeatRound) {
+    public void nextRound(GameRound round, boolean repeatRound) {
         //change playerPoints for solo
+        Map<Long, Integer> playerPoints = round.getPlayerPoints();
         updateSoloPlayerPoints(playerPoints);
+
         if (!isValidRound(playerPoints))
             throw new IllegalArgumentException("Sum of the points not equal 0.");
         else if (playerPoints.size() != 4)
@@ -86,23 +91,24 @@ public class GameManager implements Serializable {
 
         int factorToIncrease = 1;
         //todo solo bock calculation
-         for(int i = this.bocks.length-1; i <= 0; i--)  {
+         for(int i = this.bocks.length-1; i >= 0; i--)  {
+             Log.e("sj;adkf;sa", i + " " + bocks[i]);
              if(this.bocks[i] > 0) {
-                 factorToIncrease = (int)Math.pow(2, this.bocks[i]) ;
+                 factorToIncrease = (int)Math.pow(2, i+1);
+                 this.bocks[i]--;
                  break;
              }
          }
 
-        Log.e("Gamemangaer", "FACTOR TO INCREASE " + factorToIncrease);
-
         for (long key : playerPoints.keySet()) {
-            party.getPlayerByDBId(key).addPoints(playerPoints.get(key)*factorToIncrease);
+            playerPoints.put(key, playerPoints.get(key)*factorToIncrease);
+            party.getPlayerByDBId(key).addPoints(playerPoints.get(key));
         }
 
         if (!repeatRound)
             nextGiverIndex();
 
-        addBocks(newBocks);
+        addBocks(round.getNewBocks());
     }
 
     private Map<Long, Integer> updateSoloPlayerPoints(Map<Long, Integer> map) {
@@ -131,7 +137,7 @@ public class GameManager implements Serializable {
                     bocks[0]--;
                 }
                 bocks[0] += playersDataBaseIds.length - temp;
-            } else if( settings.getMaxBocks()==1 ) {
+            } else if( settings.getMaxBocks()>=1 ) {
                 bocks[0] += playersDataBaseIds.length;
             }
         }
@@ -220,7 +226,7 @@ public class GameManager implements Serializable {
 
     public void addRound(GameRound round) {
         this.rounds.add(round);//todo add repeat round
-        nextRound(round.getPlayerPoints(), round.getNewBocks(), false);
+        nextRound(round, false);
     }
 
     public String getPlayersAsString() {

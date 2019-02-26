@@ -102,9 +102,12 @@ public class TableFragment extends Fragment {
 
         Map<Long, Integer> playerPoints = new HashMap<>();
 
-        for(GameRound round : gameManager.getRounds()) {
+        for(int num = 0; num < gameManager.getRounds().size(); num++) {
+            GameRound round = gameManager.getRounds().get(num);
+
             String[] row = new String[values.get(0).length];
-            row[0] = String.valueOf(round.getDataBaseId());
+            row[0] = String.valueOf(num+1);
+
             for(int i = 0; i < players.size(); i++) {
                 long id = players.get(i).getDataBaseId();
                 try {
@@ -127,7 +130,7 @@ public class TableFragment extends Fragment {
 
     private String getBockString(int bocks) {
         StringBuilder builder = new StringBuilder();
-        for(int i = 0; i< bocks;i++) {
+        for(int i = 0; i < bocks;i++) {
             builder.append("X");
         }
         return builder.toString();
