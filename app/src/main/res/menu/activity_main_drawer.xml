@@ -3,36 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+    <item
+        android:id="@+id/nav_party_select"
+        android:icon="@drawable/ic_group"
+        android:title="Groups" />
+    <item
+        android:id="@+id/nav_game_select"
+        android:icon="@drawable/ic_game"
+        android:title="Games" />
+    <item
+        android:id="@+id/nav_table"
+        android:icon="@drawable/ic_table"
+        android:title="Table" />
+    <item
+        android:id="@+id/nav_new_round"
+        android:icon="@drawable/ic_new_round"
+        android:title="New Round" />
 
 </menu>

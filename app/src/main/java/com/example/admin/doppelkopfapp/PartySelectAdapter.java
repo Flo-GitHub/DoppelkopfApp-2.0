@@ -1,5 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
+import android.support.v4.app.FragmentActivity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -15,7 +16,7 @@ import java.util.List;
 
 public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.MyViewHolder> {
 
-    private PartySelectActivity partySelectActivity;
+    private PartySelectFragment.OnPartySelectListener listener;
     private List<Party> partyList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -36,19 +37,20 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
 
                     if(pos != RecyclerView.NO_POSITION) {
                         Log.e("viewholder", ""+ (pos));//todo
-
-                        Intent intent = new Intent(partySelectActivity, GameSelectActivity.class);
-                        intent.putExtra(INTENT_EXTRAS.PARTY_INDEX, pos);
-                        partySelectActivity.startActivity(intent);
+                        listener.onPartySelect(pos);
                     }
-
                 }
             });
         }
+        public void bindParty(Party party) {
+            group.setText(party.getName());
+            players.setText(party.getPlayersAsString());
+            date.setText(party.getLastDate());
+        }
     }
 
-    public PartySelectAdapter(PartySelectActivity act, PartyManager partyManager) {
-        this.partySelectActivity = act;
+    public PartySelectAdapter(PartySelectFragment.OnPartySelectListener listener, PartyManager partyManager) {
+        this.listener = listener;
         this.partyList = partyManager.getParties();
     }
 
@@ -61,12 +63,7 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Party party = partyList.get(position);
-        holder.group.setText(party.getName());
-        holder.players.setText(party.getPlayersAsString());
-        holder.date.setText(MyUtils.getDate());
-        //todo set image to the groups image
-        //todo maybe add delete?
+        holder.bindParty(partyList.get(position));
     }
 
     @Override

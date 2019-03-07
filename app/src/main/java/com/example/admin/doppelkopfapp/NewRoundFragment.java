@@ -14,6 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -68,16 +69,16 @@ public class NewRoundFragment extends Fragment {
 
         int[] ids = new int[]{R.id.toggle_round_player1, R.id.toggle_round_player2,
                 R.id.toggle_round_player3, R.id.toggle_round_player4};
-        List<Player> players = party.getPlayers();
+        Player[] players = party.getCurrentActivePlayers();
 
-        Log.e("oncreate", players.get(0).getName());
+        Log.e("oncreate", players[0].getName());
         player_views = new ToggleButton[4];
         for(int i = 0; i < ids.length; i++) {
             player_views[i] = view.findViewById(ids[i]);
-            player_views[i].setTextOn(players.get(i).getName());
-            player_views[i].setTextOff(players.get(i).getName());
+            player_views[i].setTextOn(players[i].getName());
+            player_views[i].setTextOff(players[i].getName());
             player_views[i].setChecked(false);
-            player_views[i].setTag(players.get(i).getDataBaseId());
+            player_views[i].setTag(players[i].getDataBaseId());
         }
 
         view_points = view.findViewById(R.id.edit_round_points);
@@ -88,10 +89,10 @@ public class NewRoundFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 try {
-                    GameRound round = new GameRound(2L, getPlayerPoints());
+                    GameRound round = new GameRound(party.getDatabaseId()*1111, getPlayerPoints());
                     round.setNewBocks(getBocks());
                     round.setCurrentBocks(party.getCurrentGame().getCurrentBocks());
-                    Log.e("CurrentGameSize", ""+party.getCurrentGame().getRounds().size());
+                    //Log.e("CurrentGameSize", "" + party.getCurrentGame().getRounds().size());
                     submitListener.onSubmit(round);
                 } catch(Exception e) {
                     e.printStackTrace();
@@ -150,21 +151,9 @@ public class NewRoundFragment extends Fragment {
         return map;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+
     public interface OnSubmitListener {
         void onSubmit(GameRound round);
     }
 
-    public void setOnSubmitListener(OnSubmitListener submitListener) {
-        this.submitListener = submitListener;
-    }
 }

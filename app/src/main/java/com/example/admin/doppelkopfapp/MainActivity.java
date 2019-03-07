@@ -17,21 +17,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, NewRoundFragment.OnSubmitListener{
+        implements NavigationView.OnNavigationItemSelectedListener, NewRoundFragment.OnSubmitListener,
+            PartySelectFragment.OnPartySelectListener, GameSelectFragment.OnGameSelectListener{
 
     public static final String ARG_PARTY = "party";
+    public static final String ARG_PARTY_MANAGER = "partyManager";
 
-    Party party;
+    PartyManager partyManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.main_toolbar);
+        Toolbar toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,21 +42,21 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        party = MyUtils.sampleParty();
+        partyManager = MyUtils.samplePartyManager();
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -86,32 +88,34 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        Fragment fragment = null;
+        Bundle bundle;
 
-        Class fragmentClass;
         switch (item.getItemId()) {
-            case R.id.nav_camera:
-                fragmentClass = NewRoundFragment.class;
+            case R.id.nav_new_round:
+                switchToNewRound();
                 break;
-            case R.id.nav_gallery:
-                fragmentClass = TableFragment.class;
+            case R.id.nav_table:
+                switchToTable();
+                break;
+            case R.id.nav_party_select:
+                switchToParty();
+                break;
+            case R.id.nav_game_select:
+                switchToGame();
                 break;
             default:
-                fragmentClass = NewRoundFragment.class;
+                switchToParty();
         }
-        switchFragments(fragmentClass);
 
         item.setChecked(true);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 
-    private void switchFragments(Class fragmentClass) {
+    private void switchFragments(Class fragmentClass, Bundle bundle) {
         Fragment fragment = null;
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(ARG_PARTY, party);
         try{
             fragment = (Fragment) fragmentClass.newInstance();
             fragment.setArguments(bundle);
@@ -126,17 +130,52 @@ public class MainActivity extends AppCompatActivity
         transaction.commit();
     }
 
-    @Override
-    public void onAttachFragment(Fragment fragment) {
-        if (fragment instanceof NewRoundFragment) {
-            NewRoundFragment newRoundFragment = (NewRoundFragment) fragment;
-            newRoundFragment.setOnSubmitListener(this);
-        }
+    private Bundle partyBundle() {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(ARG_PARTY, partyManager.getCurrentParty());
+        return bundle;
+    }
+
+    private Bundle partyManagerBundle() {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(ARG_PARTY_MANAGER, partyManager);
+        return bundle;
     }
 
     @Override
     public void onSubmit(GameRound round) {
-        party.getCurrentGame().addRound(round);
-        switchFragments(TableFragment.class);
+        partyManager.getCurrentParty().getCurrentGame().addRound(round);
+        switchToTable();
+    }
+
+    @Override
+    public void onPartySelect(int pos) {
+        partyManager.setCurrentParty(partyManager.getParties().get(pos).getDatabaseId());
+        switchToGame();
+        Log.e("Party", partyManager.getCurrentParty().getName() + " was selected!");
+    }
+
+    @Override
+    public void onGameSelect(int pos) {
+        partyManager.getCurrentParty().setCurrentGame(
+                partyManager.getCurrentParty().getGames().get(pos).getDatabaseId());
+        switchToTable();
+        Log.e("Game", partyManager.getCurrentParty().getCurrentGame().getPlayersAsString() + " selected");
+    }
+
+    private void switchToTable() {
+        switchFragments(TableFragment.class, partyBundle());
+    }
+
+    private void switchToNewRound(){
+        switchFragments(NewRoundFragment.class, partyBundle());
+    }
+
+    private void switchToParty() {
+        switchFragments(PartySelectFragment.class, partyManagerBundle());
+    }
+
+    private void switchToGame() {
+        switchFragments(GameSelectFragment.class, partyBundle());
     }
 }

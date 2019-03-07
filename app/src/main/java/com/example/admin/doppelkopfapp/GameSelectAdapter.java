@@ -13,8 +13,8 @@ import java.util.List;
 
 public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.MyViewHolder> {
 
-    private GameSelectActivity gameSelectActivity;
-    private List<GameManager> gameList;
+
+    private GameSelectFragment.OnGameSelectListener gameSelectListener;
     private Party party;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
@@ -26,20 +26,29 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
             date = view.findViewById(R.id.game_card_date);
             players = view.findViewById(R.id.game_card_players);
             gamesPlayed = view.findViewById(R.id.game_card_games_played);
-            image = view.findViewById(R.id.game_card_date);
+            image = view.findViewById(R.id.game_card_image);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.e("viewhold", ""+ (getItemId()));//todo
+                    int pos = getAdapterPosition();
+
+                    if(pos != RecyclerView.NO_POSITION) {
+                        Log.e("viewholder", ""+ (pos));//todo
+                        gameSelectListener.onGameSelect(pos);
+                    }
                 }
             });
         }
+        public void bindGame(GameManager game) {
+            date.setText(game.getLastDate());
+            players.setText(game.getPlayersAsString());
+            date.setText(MyUtils.getDate());
+        }
     }
 
-    public GameSelectAdapter(GameSelectActivity act, Party party) {
-        this.gameSelectActivity = act;
-        this.gameList = party.getGames();
+    public GameSelectAdapter(GameSelectFragment.OnGameSelectListener listener, Party party) {
+        this.gameSelectListener = listener;
         this.party = party;
     }
 
@@ -52,17 +61,16 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
 
     @Override
     public void onBindViewHolder(@NonNull GameSelectAdapter.MyViewHolder holder, int position) {
-        GameManager game = gameList.get(position);
-        holder.date.setText(game.getLastDate());//todo change dates
-        holder.players.setText(game.getPlayersAsString());
-        holder.date.setText(MyUtils.getDate());
+        GameManager game = party.getGames().get(position);
+        party.setCurrentGame(position);
+        holder.bindGame(game);
         //todo set image to the groups image??
         //todo maybe add delete?
     }
 
     @Override
     public int getItemCount() {
-        return gameList.size();
+        return party.getGames().size();
     }
 
 }

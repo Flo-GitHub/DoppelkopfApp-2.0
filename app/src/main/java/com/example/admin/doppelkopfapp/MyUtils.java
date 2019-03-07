@@ -49,6 +49,11 @@ public class MyUtils {
         }
     }*/
 
+    public static GameManager sampleGameManager(Party party){
+        GameSettings settings = new GameSettings(1, 2, false, false);
+        return new GameManager(party, settings, new long[]{1, 2, 3, 4, 5});
+    }
+
     public static Party sampleParty() {
         List<Player> players = new ArrayList<>();
         players.add(new Player(1, "Player1"));
@@ -57,13 +62,23 @@ public class MyUtils {
         players.add(new Player(4, "Player4"));
         players.add(new Player(5, "Player5555"));
 
-        GameSettings settings = new GameSettings(1, 2, false, false);
         Party party = new Party("This is the coolest group in the world", players, "Jan 14, 2018");
-        GameManager manager = new GameManager(party, settings, new long[]{1, 2, 3, 4});
-        manager.setDatabaseId(party.getGames().size()+1);//todo change (games could be removed!)
-        party.addGame(manager);
-        party.setCurrentGame(manager.getDatabaseId());
+        for(int i = 0; i < 3; i++) {
+            GameManager game = sampleGameManager(party);
+            game.setDatabaseId(i + party.getDatabaseId() * 1000);
+            party.addGame(game);
+        }
         return party;
+    }
+
+    public static PartyManager samplePartyManager() {
+        PartyManager partyManager = new PartyManager();
+        for(int i = 0; i < 3; i++) {
+            Party party = sampleParty();
+            party.setDatabaseId(i);
+            partyManager.addParty(party);
+        }
+        return partyManager;
     }
 
 }

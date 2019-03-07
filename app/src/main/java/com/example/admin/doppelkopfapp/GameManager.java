@@ -92,7 +92,6 @@ public class GameManager implements Serializable {
         int factorToIncrease = 1;
         //todo solo bock calculation
          for(int i = this.bocks.length-1; i >= 0; i--)  {
-             Log.e("sj;adkf;sa", i + " " + bocks[i]);
              if(this.bocks[i] > 0) {
                  factorToIncrease = (int)Math.pow(2, i+1);
                  this.bocks[i]--;
@@ -105,9 +104,9 @@ public class GameManager implements Serializable {
             party.getPlayerByDBId(key).addPoints(playerPoints.get(key));
         }
 
-        if (!repeatRound)
-            nextGiverIndex();
-
+        //if (!repeatRound)
+        nextGiverIndex();
+        Log.e("Giver index", "asdfsdfasdssdfasdfsa  " + giverIndex);
         addBocks(round.getNewBocks());
     }
 
@@ -183,8 +182,8 @@ public class GameManager implements Serializable {
                 }
             }
             for( int i = 0; i < giverIndex; i++ ) {
-                if( playersDataBaseIds.length == 5 && giverIndex != i ||
-                        playersDataBaseIds.length == 6 && giverIndex != i && getAcrossFromGiverIndex() != i ) {
+                if( playersDataBaseIds.length == 5 ||
+                        playersDataBaseIds.length == 6 && getAcrossFromGiverIndex() != i ) {
                     activePlayers[activePlayerIndex] = playersDataBaseIds[i];
                     activePlayerIndex++;
                 }

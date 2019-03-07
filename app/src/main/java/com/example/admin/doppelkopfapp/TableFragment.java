@@ -13,7 +13,6 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import java.time.chrono.MinguoChronology;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -57,7 +56,7 @@ public class TableFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        fillTable(getView(), party.getGames().get(0));
+        fillTable(getView(), party.getCurrentGame());
     }
 
     /*    @Override
@@ -112,15 +111,17 @@ public class TableFragment extends Fragment {
                 long id = players.get(i).getDataBaseId();
                 try {
                     playerPoints.put(id, (playerPoints.get(id) + round.getPlayerPoints().get(id)) );
-                } catch (Exception e) {
+                } catch (Exception e1) {
                     try {
+                        if(round.getPlayerPoints().get(id) == null ){
+                            throw new NullPointerException();
+                        }
                         playerPoints.put(id, round.getPlayerPoints().get(id));
                     } catch (Exception a){
-                        playerPoints.put(id, 0);
+                        playerPoints.put(id, playerPoints.get(id));
                     }
                 }
-
-                row[i+1] = Integer.toString(playerPoints.get(id));
+                row[i+1] = String.valueOf(playerPoints.get(id));
             }
             row[row.length-1] = getBockString(round.getCurrentBocks());
             values.add(row);

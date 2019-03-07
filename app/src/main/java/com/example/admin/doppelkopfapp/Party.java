@@ -12,8 +12,8 @@ public class Party implements Serializable {
     private List<Player> players;
     private String name;
     private String lastDate;
-    private long currentGame = 0;//todo change to -1
-    private long databaseId;
+    private long currentGame = 0;
+    private long databaseId = -1;
 
     public Party(String name, List<Player> players, String lastDate) {
         this.name = name;
@@ -80,7 +80,7 @@ public class Party implements Serializable {
     }
 
     public Player[] getCurrentActivePlayers(){
-        long[] playerIds = getCurrentGame().getPlayersDataBaseIds();
+        long[] playerIds = getCurrentGame().getActivePlayers();
         return getPlayersByDBId(playerIds);
     }
 

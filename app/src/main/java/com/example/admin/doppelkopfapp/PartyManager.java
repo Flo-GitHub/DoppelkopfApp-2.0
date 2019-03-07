@@ -2,31 +2,41 @@ package com.example.admin.doppelkopfapp;
 
 import android.content.Context;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PartyManager {
+public class PartyManager implements Serializable {
 
     private List<Party> parties;
-    private GameDataSource dataSource;
+    private long currentParty = 0;
 
-    public PartyManager(Context context) {
-        //dataSource = new GameDataSource(context);
-        //dataSource.open();
-        //test
-        //parties = dataSource.getAllParties();
+    public PartyManager(List<Party> parties) {
+        this.parties = parties;
+    }
+
+    public PartyManager(){
+        parties = new ArrayList<>();
     }
 
     public void addParty(Party party) {
         parties.add(party);
-        //dataSource.createParty(party);
     }
-
-    //public void closeDataBase() {
-     //   dataSource.close();
-    //}
 
     public List<Party> getParties() {
         return parties;
+    }
+
+    public Party getCurrentParty(){
+        if(currentParty == -1)
+            throw new RuntimeException("CurrentGame in Party called but not initialized.");
+        for(Party party : parties)
+            if(party.getDatabaseId() == currentParty)
+                return party;
+        throw new RuntimeException("CurrentGame in Party not found.");
+    }
+
+    public void setCurrentParty(long id){
+        this.currentParty = id;
     }
 }
