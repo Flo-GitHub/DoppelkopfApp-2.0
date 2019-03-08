@@ -11,13 +11,15 @@
         android:id="@+id/nav_game_select"
         android:icon="@drawable/ic_game"
         android:title="Games" />
-    <item
-        android:id="@+id/nav_table"
-        android:icon="@drawable/ic_table"
-        android:title="Table" />
-    <item
-        android:id="@+id/nav_new_round"
-        android:icon="@drawable/ic_new_round"
-        android:title="New Round" />
+    <group android:id="@+id/nav_group_game">
+        <item
+            android:id="@+id/nav_table"
+            android:icon="@drawable/ic_table"
+            android:title="Table" />
+        <item
+            android:id="@+id/nav_new_round"
+            android:icon="@drawable/ic_new_round"
+            android:title="New Round" />
+    </group>
 
 </menu>

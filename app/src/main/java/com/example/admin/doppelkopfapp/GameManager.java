@@ -1,6 +1,8 @@
 package com.example.admin.doppelkopfapp;
 
+import android.renderscript.Sampler;
 import android.util.Log;
+import android.widget.NumberPicker;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -19,6 +21,8 @@ public class GameManager implements Serializable {
     private long databaseId = -1;
     private ArrayList<GameRound> rounds;
     private String lastDate;
+
+    private ValueListener<Integer> valueListener;
 
     public GameManager(Party party, GameSettings settings, long[] playerDataBaseIds) {
         this.party = party;

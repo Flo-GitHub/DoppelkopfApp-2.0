@@ -109,18 +109,12 @@ public class TableFragment extends Fragment {
 
             for(int i = 0; i < players.size(); i++) {
                 long id = players.get(i).getDataBaseId();
-                try {
-                    playerPoints.put(id, (playerPoints.get(id) + round.getPlayerPoints().get(id)) );
-                } catch (Exception e1) {
-                    try {
-                        if(round.getPlayerPoints().get(id) == null ){
-                            throw new NullPointerException();
-                        }
-                        playerPoints.put(id, round.getPlayerPoints().get(id));
-                    } catch (Exception a){
-                        playerPoints.put(id, playerPoints.get(id));
-                    }
-                }
+
+                int rPoints = round.getPlayerPoints().get(id) == null ? 0 : round.getPlayerPoints().get(id);
+                int pPoints = playerPoints.get(id) == null ? 0 : playerPoints.get(id);
+
+                playerPoints.put(id, rPoints + pPoints);
+
                 row[i+1] = String.valueOf(playerPoints.get(id));
             }
             row[row.length-1] = getBockString(round.getCurrentBocks());
