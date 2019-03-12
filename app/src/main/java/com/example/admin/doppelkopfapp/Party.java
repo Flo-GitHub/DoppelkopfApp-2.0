@@ -1,5 +1,8 @@
 package com.example.admin.doppelkopfapp;
 
+import android.graphics.Bitmap;
+import android.util.Log;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,17 +11,24 @@ public class Party implements Serializable {
 
     public static final int PLAYER_LIMIT = 15;
 
+    private GameSettings settings;
     private List<GameManager> games;
     private List<Player> players;
     private String name;
     private String lastDate;
+    private Bitmap image;
     private long currentGame = 0;
     private long databaseId = -1;
 
     public Party(String name, List<Player> players, String lastDate) {
+        this(name, players, MyUtils.defaultSettings(), lastDate);
+    }
+
+    public Party(String name, List<Player> players, GameSettings settings, String lastDate) {
         this.name = name;
         this.players = players;
         this.lastDate = lastDate;
+        this.settings = settings;
         games = new ArrayList<>();
     }
 
@@ -131,5 +141,21 @@ public class Party implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setImage(Bitmap image) {
+        this.image = image;
+    }
+
+    public Bitmap getImage() {
+        return image;
+    }
+
+    public GameSettings getSettings() {
+        return settings;
+    }
+
+    public void setSettings(GameSettings settings) {
+        this.settings = settings;
     }
 }

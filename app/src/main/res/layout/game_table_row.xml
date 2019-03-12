@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="#" />
+            android:text="@string/table_round_index" />
 
         <TextView
             android:id="@+id/game_row_player1"
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="k" />
+            android:text="@string/sample_player_name" />
 
         <TextView
             android:id="@+id/game_row_player2"
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Pla" />
+            android:text="@string/sample_player_name" />
 
         <TextView
             android:id="@+id/game_row_player3"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="Player1" />
+            android:text="@string/sample_player_name" />
 
         <TextView
             android:id="@+id/game_row_player4"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="Player1" />
+            android:text="@string/sample_player_name" />
 
         <TextView
             android:id="@+id/game_row_player5"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="gjhgjk" />
+            android:text="@string/sample_player_name" />
 
         <TextView
             android:id="@+id/game_row_bocks"
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="B" />
+            android:text="@string/table_bock" />
 
 
     </TableRow>

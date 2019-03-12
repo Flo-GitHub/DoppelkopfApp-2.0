@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Select winners:"
+            android:text="@string/select_winners"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -77,8 +77,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:autoLink="none"
             android:ems="10"
-            android:hint="Points"
+            android:hint="@string/points"
             android:inputType="numberSigned"
             android:textSize="24sp" />
 
@@ -92,13 +93,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
                 android:singleLine="true"
-                android:text="Bocks:"
+                android:text="@string/bocks"
                 android:textSize="24sp" />
 
             <RadioGroup
                 android:id="@+id/radio_round_bocks"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:checkedButton="@+id/radio_round_bocks0"
@@ -140,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:text="Submit" />
+            android:text="@string/submit" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

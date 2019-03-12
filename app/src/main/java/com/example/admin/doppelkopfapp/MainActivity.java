@@ -15,10 +15,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, NewRoundFragment.OnSubmitListener,
-            PartySelectFragment.OnPartySelectListener, GameSelectFragment.OnGameSelectListener{
+            PartySelectFragment.OnPartySelectListener, GameSelectFragment.OnGameSelectListener,
+            PartyCreateFragment.OnPartyCreateListener, GameCreateFragment.OnGameCreateListener,
+            SettingsFragment.OnSettingsChangeListener{
 
     public static final String ARG_PARTY = "party";
     public static final String ARG_PARTY_MANAGER = "partyManager";
@@ -33,15 +38,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         partyManager = MyUtils.samplePartyManager();
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -52,6 +48,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        switchToParty();
     }
 
     @Override
@@ -142,26 +140,6 @@ public class MainActivity extends AppCompatActivity
         return bundle;
     }
 
-    @Override
-    public void onSubmit(GameRound round) {
-        partyManager.getCurrentParty().getCurrentGame().addRound(round);
-        switchToTable();
-    }
-
-    @Override
-    public void onPartySelect(int pos) {
-        partyManager.setCurrentParty(partyManager.getParties().get(pos).getDatabaseId());
-        switchToGame();
-        Log.e("Party", partyManager.getCurrentParty().getName() + " was selected!");
-    }
-
-    @Override
-    public void onGameSelect(int pos) {
-        partyManager.getCurrentParty().setCurrentGame(
-                partyManager.getCurrentParty().getGames().get(pos).getDatabaseId());
-        switchToTable();
-        Log.e("Game", partyManager.getCurrentParty().getCurrentGame().getPlayersAsString() + " selected");
-    }
 
     private void switchToTable() {
         switchFragments(TableFragment.class, partyBundle());
@@ -175,7 +153,86 @@ public class MainActivity extends AppCompatActivity
         switchFragments(PartySelectFragment.class, partyManagerBundle());
     }
 
+    private void switchToPartyCreate(){
+        switchFragments(PartyCreateFragment.class, new Bundle());
+    }
+
     private void switchToGame() {
         switchFragments(GameSelectFragment.class, partyBundle());
+    }
+
+    private void switchToGameCreate() {
+        switchFragments(GameCreateFragment.class, partyBundle());
+    }
+
+    private void switchtoSettings(){
+        switchFragments(SettingsFragment.class, partyBundle());
+    }
+
+    @Override
+    public void onSubmit(GameRound round) {
+        try {
+            partyManager.getCurrentParty().getCurrentGame().addRound(round);
+            switchToTable();
+        } catch(Exception e) {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
+    @Override
+    public void onPartySelected(int pos) {
+        partyManager.setCurrentParty(partyManager.getParties().get(pos).getDatabaseId());
+        switchToGame();
+    }
+
+    @Override
+    public void onPartyAddClicked() {
+        switchToPartyCreate();
+    }
+
+    @Override
+    public void onGameSelected(int pos) {
+        partyManager.getCurrentParty().setCurrentGame(
+                partyManager.getCurrentParty().getGames().get(pos).getDatabaseId());
+        switchToTable();
+    }
+
+    @Override
+    public void onGameAddClicked() {
+        switchtoSettings();
+    }
+
+    @Override
+    public void onPartyCreated(Party party) {
+        partyManager.addParty(party);
+        switchToParty();
+    }
+
+    @Override
+    public void onPartyCreateCancelled() {
+        switchToParty();
+    }
+
+    @Override
+    public void onGameCreated(GameManager game) {
+        partyManager.getCurrentParty().addGame(game);
+        switchToGame();
+    }
+
+    @Override
+    public void onGameCreateCancelled() {
+        switchToGame();
+    }
+
+    @Override
+    public void onSettingsSaved(GameSettings settings) {
+        partyManager.getCurrentParty().setSettings(settings);
+        switchToGame();
+    }
+
+    @Override
+    public void onSettingsCancelled() {
+        switchToGame();
     }
 }

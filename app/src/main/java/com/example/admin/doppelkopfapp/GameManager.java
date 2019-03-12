@@ -1,5 +1,7 @@
 package com.example.admin.doppelkopfapp;
 
+import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.renderscript.Sampler;
 import android.util.Log;
 import android.widget.NumberPicker;
@@ -14,25 +16,25 @@ import java.util.Map;
 public class GameManager implements Serializable {
 
     private Party party;
-    private GameSettings settings;
     private long[] playersDataBaseIds;
     private int giverIndex = 0;
     private int bocks[];
     private long databaseId = -1;
     private ArrayList<GameRound> rounds;
     private String lastDate;
+    private Bitmap image;
 
     private ValueListener<Integer> valueListener;
 
-    public GameManager(Party party, GameSettings settings, long[] playerDataBaseIds) {
+    public GameManager(Party party, long[] playerDataBaseIds) {
         this.party = party;
         this.playersDataBaseIds = playerDataBaseIds;
-        this.settings = settings;
         rounds = new ArrayList<>();
-        bocks = new int[settings.getMaxBocks()];
-        for(int i = 0; i < settings.getMaxBocks(); i++){
+        bocks = new int[party.getSettings().getMaxBocks()];
+        for(int i = 0; i < party.getSettings().getMaxBocks(); i++){
             bocks[i] = 0;
         }
+        image = party.getImage();
     }
 
     public void skipRound() {
@@ -48,7 +50,7 @@ public class GameManager implements Serializable {
     public boolean addPlayer( long newPlayerId, int indexToAdd ) {
         //for the case something goes wrong or for the manual adding of playersDataBaseIds
         if( playersDataBaseIds.length >= 6 )
-            throw new IndexOutOfBoundsException("Can't add more than six playersDataBaseIds to game.");
+            throw new IndexOutOfBoundsException(Resources.getSystem().getString(R.string.error_more_than_6_players));
         long[] tempPlayers = playersDataBaseIds;
         playersDataBaseIds = new long[playersDataBaseIds.length+1];
 
@@ -66,7 +68,7 @@ public class GameManager implements Serializable {
 
     public void removePlayer( long databaseId ) {
         if( playersDataBaseIds.length <= 4 )
-            throw new IndexOutOfBoundsException("Can't remove the player because at least 4 playersDataBaseIds are needed");
+            throw new IndexOutOfBoundsException(Resources.getSystem().getString(R.string.error_minimum_4_players));
 
         long[] tempPlayers = playersDataBaseIds;
         playersDataBaseIds = new long[playersDataBaseIds.length-1];
@@ -86,22 +88,23 @@ public class GameManager implements Serializable {
     public void nextRound(GameRound round, boolean repeatRound) {
         //change playerPoints for solo
         Map<Long, Integer> playerPoints = round.getPlayerPoints();
-        updateSoloPlayerPoints(playerPoints);
+        boolean solo = updateSoloPlayerPoints(playerPoints);
 
         if (!isValidRound(playerPoints))
-            throw new IllegalArgumentException("Sum of the points not equal 0.");
+            throw new IllegalArgumentException(Resources.getSystem().getString(R.string.error_winners));
         else if (playerPoints.size() != 4)
             throw new IllegalArgumentException("Length of points should be 4, but was " + playerPoints.size());
 
         int factorToIncrease = 1;
-        //todo solo bock calculation
-         for(int i = this.bocks.length-1; i >= 0; i--)  {
-             if(this.bocks[i] > 0) {
-                 factorToIncrease = (int)Math.pow(2, i+1);
-                 this.bocks[i]--;
-                 break;
-             }
-         }
+        if(!solo || party.getSettings().isSoloBockCalculation()) {
+            for(int i = this.bocks.length-1; i >= 0; i--)  {
+                if(this.bocks[i] > 0) {
+                    factorToIncrease = (int)Math.pow(2, i+1);
+                    this.bocks[i]--;
+                    break;
+                }
+            }
+        }
 
         for (long key : playerPoints.keySet()) {
             playerPoints.put(key, playerPoints.get(key)*factorToIncrease);
@@ -110,11 +113,15 @@ public class GameManager implements Serializable {
 
         //if (!repeatRound)
         nextGiverIndex();
-        Log.e("Giver index", "asdfsdfasdssdfasdfsa  " + giverIndex);
         addBocks(round.getNewBocks());
     }
 
-    private Map<Long, Integer> updateSoloPlayerPoints(Map<Long, Integer> map) {
+    /**
+     *
+     * @param map
+     * @return if round is solo
+     */
+    private boolean updateSoloPlayerPoints(Map<Long, Integer> map) {
         int winners = 0;
         for(Long key : map.keySet()) {
             if (map.get(key)>0)
@@ -126,12 +133,12 @@ public class GameManager implements Serializable {
                 map.put(key, map.get(key) * 3);
             }
         }
-        return map;
+        return winners == 1 || winners == 3;
     }
 
     private void addBocks(int n) {
         for(int i = 0; i < n; i++) {
-            if( settings.getMaxBocks()>=2 && bocks[0] >= 1 ) {
+            if( party.getSettings().getMaxBocks()>=2 && bocks[0] >= 1 ) {
                 int temp = bocks[0];
                 for( int a = 0; a < playersDataBaseIds.length; a++ ) {
                     if( bocks[0] == 0 )
@@ -140,7 +147,7 @@ public class GameManager implements Serializable {
                     bocks[0]--;
                 }
                 bocks[0] += playersDataBaseIds.length - temp;
-            } else if( settings.getMaxBocks()>=1 ) {
+            } else if( party.getSettings().getMaxBocks()>=1 ) {
                 bocks[0] += playersDataBaseIds.length;
             }
         }
@@ -197,7 +204,7 @@ public class GameManager implements Serializable {
     }
 
     public int getMoney( Player player ) {
-        return settings.getCentPerPoint() * player.getPointsLost();
+        return party.getSettings().getCentPerPoint() * player.getPointsLost();
     }
 
     public void nextGiverIndex() {
@@ -208,8 +215,7 @@ public class GameManager implements Serializable {
     }
 
     public GameManager cloneGameManager() {
-        GameSettings settings = this.settings.cloneSettings();
-        GameManager gameManager = new GameManager(party, settings, playersDataBaseIds);
+        GameManager gameManager = new GameManager(party, playersDataBaseIds);
         gameManager.setBocks(this.bocks);
         gameManager.setDatabaseId(this.databaseId);
         gameManager.setGiverIndex(this.giverIndex);
@@ -252,7 +258,7 @@ public class GameManager implements Serializable {
 
     public long getDatabaseId() {
         if( databaseId == -1 )
-            throw new NullPointerException("DatabaseId has not been set yet");
+            throw new NullPointerException(Resources.getSystem().getString(R.string.error_db_id_not_set));
         return databaseId;
     }
 
@@ -294,5 +300,9 @@ public class GameManager implements Serializable {
 
     public void setLastDate(String lastDate) {
         this.lastDate = lastDate;
+    }
+
+    public Bitmap getImage() {
+        return image;
     }
 }

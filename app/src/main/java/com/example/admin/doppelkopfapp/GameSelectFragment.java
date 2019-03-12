@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,6 +25,7 @@ import android.view.ViewGroup;
  */
 public class GameSelectFragment extends Fragment {
 
+    private FloatingActionButton addButton;
     private RecyclerView.Adapter adapter;
     private Party party;
 
@@ -47,6 +49,7 @@ public class GameSelectFragment extends Fragment {
         if (getArguments() != null) {
             party = (Party) getArguments().getSerializable(MainActivity.ARG_PARTY);
         }
+        getActivity().setTitle(getString(R.string.game_select_fragment_title));
     }
 
     @Override
@@ -61,10 +64,18 @@ public class GameSelectFragment extends Fragment {
         adapter = new GameSelectAdapter(gameSelectListener, party);
         initRecyclerView();
         adapter.notifyDataSetChanged();
+
+        addButton = view.findViewById(R.id.game_select_add_button);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onGameAddSelected();
+            }
+        });
     }
 
     private void initRecyclerView() {
-        RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.game_recycler_view);
+        RecyclerView recyclerView = (RecyclerView) getView().findViewById(R.id.game_recycler_view);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
@@ -72,10 +83,9 @@ public class GameSelectFragment extends Fragment {
         recyclerView.setAdapter(adapter);
     }
 
-
-    public void onGameSelect(int pos) {
-        if (gameSelectListener != null) {
-            gameSelectListener.onGameSelect(pos);
+    public void onGameAddSelected() {
+        if(gameSelectListener != null) {
+            gameSelectListener.onGameAddClicked();
         }
     }
 
@@ -97,6 +107,7 @@ public class GameSelectFragment extends Fragment {
     }
 
     public interface OnGameSelectListener {
-        void onGameSelect(int pos);
+        void onGameSelected(int pos);
+        void onGameAddClicked();
     }
 }

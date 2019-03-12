@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
         android:id="@+id/game_card_view"
@@ -31,30 +31,44 @@
             <TextView
                 android:id="@+id/game_card_games_played"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginBottom="8dp"
-                android:text="112 games played"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/game_card_image"
-                app:layout_constraintTop_toBottomOf="@+id/game_card_players"
+                android:layout_height="17dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/sample_rounds"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintWidth_default="wrap" />
 
-            <TextView
-                android:id="@+id/game_card_players"
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:ellipsize="end"
-                android:gravity="left|start"
-                android:singleLine="true"
-                android:text="No players entered"
+                android:layout_height="0dp"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/game_card_image"
-                app:layout_constraintTop_toBottomOf="@+id/game_card_date"
-                app:layout_constraintWidth_default="wrap" />
+                app:layout_constraintTop_toBottomOf="@+id/game_card_date">
+
+                <TextView
+                    android:id="@+id/game_card_players"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:lines="2"
+                    android:singleLine="false"
+                    android:text="@string/sample_player_names"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                    app:layout_constraintTop_toBottomOf="@+id/game_card_date"
+                    app:layout_constraintWidth_default="wrap" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/game_card_date"
@@ -64,7 +78,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 android:singleLine="true"
-                android:text="Jan 12, 2018 - Feb 22, 2018 "
+                android:text="@string/sample_date"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/game_card_image"
@@ -73,8 +87,9 @@
 
             <ImageView
                 android:id="@+id/game_card_image"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/group_image"
                 android:src="@mipmap/ic_launcher"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

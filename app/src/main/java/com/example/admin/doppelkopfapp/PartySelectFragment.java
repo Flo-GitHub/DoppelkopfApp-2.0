@@ -1,7 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,11 +9,9 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +24,7 @@ import android.widget.TextView;
 public class PartySelectFragment extends Fragment {
 
     private RecyclerView.Adapter adapter;
+    private FloatingActionButton addButton;
 
     private PartyManager partyManager;
 
@@ -52,6 +50,8 @@ public class PartySelectFragment extends Fragment {
         if (getArguments() != null) {
             this.partyManager = (PartyManager) getArguments().getSerializable(MainActivity.ARG_PARTY_MANAGER);
         }
+
+        getActivity().setTitle(getString(R.string.party_select_fragment_title));
     }
 
     @Override
@@ -66,6 +66,14 @@ public class PartySelectFragment extends Fragment {
         adapter = new PartySelectAdapter(selectListener, partyManager);
         initRecyclerView();
         adapter.notifyDataSetChanged();
+
+        addButton = view.findViewById(R.id.party_select_add_button);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onPartyAddClick();
+            }
+        });
     }
 
     private void initRecyclerView() {
@@ -79,7 +87,13 @@ public class PartySelectFragment extends Fragment {
 
     public void onPartySelect(int pos) {
         if (selectListener != null) {
-            selectListener.onPartySelect(pos);
+            selectListener.onPartySelected(pos);
+        }
+    }
+
+    public void onPartyAddClick() {
+        if(selectListener != null) {
+            selectListener.onPartyAddClicked();
         }
     }
 
@@ -102,7 +116,8 @@ public class PartySelectFragment extends Fragment {
 
 
     public interface OnPartySelectListener {
-        void onPartySelect(int pos);
+        void onPartySelected(int pos);
+        void onPartyAddClicked();
     }
 
 }

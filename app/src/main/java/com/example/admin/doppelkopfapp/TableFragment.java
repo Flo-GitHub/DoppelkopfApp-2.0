@@ -1,8 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
 import android.view.Gravity;
@@ -19,9 +17,10 @@ import java.util.List;
 import java.util.Map;
 
 
+
 public class TableFragment extends Fragment {
 
-    //private OnFragmentInteractionListener mListener;
+    //private OnSettingsChangeListener mListener;
     private Party party;
 
     public TableFragment() {
@@ -42,8 +41,10 @@ public class TableFragment extends Fragment {
         if (getArguments() != null) {
             party = (Party) getArguments().getSerializable(MainActivity.ARG_PARTY);
         } else {
-            throw new RuntimeException("NO PARTY SET - NEW GAME NOT AVAILABLE");
+            throw new RuntimeException(getString(R.string.error_party_not_set));
         }
+
+        getActivity().setTitle(getString(R.string.table_fragment_title));
     }
 
     @Override
@@ -54,19 +55,21 @@ public class TableFragment extends Fragment {
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        TextView dealerView = view.findViewById(R.id.game_dealer_text);
+        dealerView.setText(party.getPlayerByDBId(party.getCurrentGame().getGiver()).getName());
         fillTable(getView(), party.getCurrentGame());
     }
 
     /*    @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof OnSettingsChangeListener) {
+            mListener = (OnSettingsChangeListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                    + " must implement OnSettingsChangeListener");
         }
     }*/
 
@@ -165,8 +168,7 @@ public class TableFragment extends Fragment {
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    /*public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+    /*public interface OnSettingsChangeListener {
+        void onSettingsSaved(Uri uri);
     }*/
 }

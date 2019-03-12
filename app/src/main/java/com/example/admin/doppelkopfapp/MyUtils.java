@@ -49,9 +49,12 @@ public class MyUtils {
         }
     }*/
 
+    public static GameSettings defaultSettings() {
+        return new GameSettings(2, true);
+    }
+
     public static GameManager sampleGameManager(Party party){
-        GameSettings settings = new GameSettings(1, 2, false, false);
-        return new GameManager(party, settings, new long[]{1, 2, 3, 4, 5});
+        return new GameManager(party, new long[]{1, 2, 3, 4, 5});
     }
 
     public static Party sampleParty() {

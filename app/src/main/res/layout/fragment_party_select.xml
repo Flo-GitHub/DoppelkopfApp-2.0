@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".PartySelectFragment">
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/party_select_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_content_add"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/party_recycler_view"
         android:layout_width="match_parent"

@@ -9,8 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
-
 public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.MyViewHolder> {
 
 
@@ -34,16 +32,18 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
                     int pos = getAdapterPosition();
 
                     if(pos != RecyclerView.NO_POSITION) {
-                        Log.e("viewholder", ""+ (pos));//todo
-                        gameSelectListener.onGameSelect(pos);
+                        gameSelectListener.onGameSelected(pos);
                     }
                 }
             });
         }
         public void bindGame(GameManager game) {
-            date.setText(game.getLastDate());
             players.setText(game.getPlayersAsString());
+            gamesPlayed.setText(game.getRounds().size() + " rounds");
             date.setText(MyUtils.getDate());
+            if(game.getImage() != null) {
+                image.setImageBitmap(game.getImage());
+            }
         }
     }
 
@@ -64,8 +64,6 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
         GameManager game = party.getGames().get(position);
         party.setCurrentGame(position);
         holder.bindGame(game);
-        //todo set image to the groups image??
-        //todo maybe add delete?
     }
 
     @Override

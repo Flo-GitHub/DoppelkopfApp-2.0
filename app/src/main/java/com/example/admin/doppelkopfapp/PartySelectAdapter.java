@@ -1,17 +1,13 @@
 package com.example.admin.doppelkopfapp;
 
-import android.support.v4.app.FragmentActivity;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.io.Serializable;
 import java.util.List;
 
 public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.MyViewHolder> {
@@ -36,8 +32,7 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
                     int pos = getAdapterPosition();
 
                     if(pos != RecyclerView.NO_POSITION) {
-                        Log.e("viewholder", ""+ (pos));//todo
-                        listener.onPartySelect(pos);
+                        listener.onPartySelected(pos);
                     }
                 }
             });
@@ -46,6 +41,10 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
             group.setText(party.getName());
             players.setText(party.getPlayersAsString());
             date.setText(party.getLastDate());
+            if(party.getImage() != null) {
+                image.setImageBitmap(party.getImage());
+            }
+
         }
     }
 

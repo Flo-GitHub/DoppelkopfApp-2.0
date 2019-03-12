@@ -9,11 +9,11 @@ public class GameSettings implements Serializable{
     private int maxBocks;
     private boolean soloBockCalculation;
 
-    public GameSettings(int centPerPoint, int maxBocks, boolean soloBockCalculation, boolean addPoints) {
-        this.centPerPoint = centPerPoint;
+    public GameSettings(int maxBocks, boolean soloBockCalculation) {
+        this.centPerPoint = 0;
         this.maxBocks = maxBocks;
         this.soloBockCalculation = soloBockCalculation;
-        this.addPoints = addPoints;
+        this.addPoints = false;
     }
 
     public int getCentPerPoint() {
@@ -33,6 +33,6 @@ public class GameSettings implements Serializable{
     }
 
     public GameSettings cloneSettings() {
-        return new GameSettings(this.centPerPoint, this.maxBocks, this.soloBockCalculation, this.addPoints);
+        return new GameSettings(this.maxBocks, this.soloBockCalculation);
     }
 }

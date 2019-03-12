@@ -57,8 +57,10 @@ public class NewRoundFragment extends Fragment {
         if (getArguments() != null) {
             party = (Party) getArguments().getSerializable(MainActivity.ARG_PARTY);
         } else {
-            throw new RuntimeException("NO PARTY SET - NEW GAME NOT AVAILABLE");
+            throw new RuntimeException(getString(R.string.error_party_not_set));
         }
+
+        getActivity().setTitle(getString(R.string.new_round_fragment_title));
 
     }
 
@@ -71,7 +73,6 @@ public class NewRoundFragment extends Fragment {
                 R.id.toggle_round_player3, R.id.toggle_round_player4};
         Player[] players = party.getCurrentActivePlayers();
 
-        Log.e("oncreate", players[0].getName());
         player_views = new ToggleButton[4];
         for(int i = 0; i < ids.length; i++) {
             player_views[i] = view.findViewById(ids[i]);
@@ -92,7 +93,6 @@ public class NewRoundFragment extends Fragment {
                     GameRound round = new GameRound(party.getDatabaseId()*1111, getPlayerPoints());
                     round.setNewBocks(getBocks());
                     round.setCurrentBocks(party.getCurrentGame().getCurrentBocks());
-                    //Log.e("CurrentGameSize", "" + party.getCurrentGame().getRounds().size());
                     submitListener.onSubmit(round);
                 } catch(Exception e) {
                     e.printStackTrace();
@@ -111,7 +111,7 @@ public class NewRoundFragment extends Fragment {
             submitListener = (OnSubmitListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                    + " must implement OnSettingsChangeListener");
         }
     }
 
