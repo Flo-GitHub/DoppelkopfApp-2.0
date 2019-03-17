@@ -14,12 +14,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:drawableStart="@drawable/ic_info"
-        android:text="@string/player_deals"
+        android:drawableLeft="@drawable/ic_info"
+        android:drawablePadding="8dp"
+        android:text="@string/table_info"
         android:textSize="18sp" />
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
         android:fillViewport="true">
 
         <LinearLayout

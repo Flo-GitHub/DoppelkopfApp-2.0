@@ -9,8 +9,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\de
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\48a485c48ac365a85a57ed92e35c9d63\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\e14497080c0a0641c2280ada10dfaa86\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\a01b677c05f13091b4211a4926d8cd53\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c879be740c395a5c8a6c436766c0657b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\c5e6bd69acabbe9140f253c083d0f9b1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c879be740c395a5c8a6c436766c0657b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\c09cae5743c9eda887551ab01f9fd72d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\900f734d2c855dfdf5085b5c393eaa1c\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\127a7e221703ca68877ddb505fcbfd88\AndroidManifest.xml:17:1-22:12
@@ -108,10 +108,10 @@ MERGED from [com.android.support:support-v4:28.0.0] C:\Users\delv\.gradle\caches
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\e14497080c0a0641c2280ada10dfaa86\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\a01b677c05f13091b4211a4926d8cd53\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\a01b677c05f13091b4211a4926d8cd53\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c879be740c395a5c8a6c436766c0657b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c879be740c395a5c8a6c436766c0657b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\c5e6bd69acabbe9140f253c083d0f9b1\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\c5e6bd69acabbe9140f253c083d0f9b1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c879be740c395a5c8a6c436766c0657b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\c879be740c395a5c8a6c436766c0657b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\c09cae5743c9eda887551ab01f9fd72d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\c09cae5743c9eda887551ab01f9fd72d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\delv\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\900f734d2c855dfdf5085b5c393eaa1c\AndroidManifest.xml:20:5-44

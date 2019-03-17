@@ -71,13 +71,10 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.mi_settings) {
+            switchToSettings();
             return true;
         }
 
@@ -86,8 +83,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        Bundle bundle;
-
         switch (item.getItemId()) {
             case R.id.nav_new_round:
                 switchToNewRound();
@@ -165,7 +160,7 @@ public class MainActivity extends AppCompatActivity
         switchFragments(GameCreateFragment.class, partyBundle());
     }
 
-    private void switchtoSettings(){
+    private void switchToSettings(){
         switchFragments(SettingsFragment.class, partyBundle());
     }
 
@@ -200,7 +195,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onGameAddClicked() {
-        switchtoSettings();
+        switchToGameCreate();
     }
 
     @Override
@@ -228,11 +223,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onSettingsSaved(GameSettings settings) {
         partyManager.getCurrentParty().setSettings(settings);
-        switchToGame();
+        for(GameManager game : partyManager.getCurrentParty().getGames()) {
+            game.resetBocks(settings.getMaxBocks());
+        }
+        super.onBackPressed();
     }
 
     @Override
     public void onSettingsCancelled() {
-        switchToGame();
+        super.onBackPressed();
     }
 }

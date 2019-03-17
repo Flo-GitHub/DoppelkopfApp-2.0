@@ -107,14 +107,14 @@ public class PartyCreateFragment extends DialogFragment {
             }
         });
 
-        imageButton = view.findViewById(R.id.group_header_image);
+        imageButton = view.findViewById(R.id.party_create_image_button);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Group Image"), PICK_IMAGE);
+                startActivityForResult(Intent.createChooser(intent, getString(R.string.select_group_image)), PICK_IMAGE);
             }
         });
     }
@@ -124,15 +124,14 @@ public class PartyCreateFragment extends DialogFragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE && resultCode == Activity.RESULT_OK) {
             if (data == null) {
-                //Display an error
                 return;
             }
             try {
                 Uri imageUri = data.getData();
                 Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
                 this.bitmap = bitmap;
-                imageButton.setImageBitmap(Bitmap.createScaledBitmap(
-                        bitmap, imageButton.getWidth(), imageButton.getHeight(), true));
+                imageButton.setImageBitmap(Bitmap.createScaledBitmap(bitmap, imageButton.getWidth(),
+                        imageButton.getWidth(), false));
             } catch (Exception e) {
                 Log.e(getClass().getName(), "Couldn't load Image");
             }
@@ -141,7 +140,7 @@ public class PartyCreateFragment extends DialogFragment {
 
     private Party getParty() {
         Party party = new Party(getGroupName(),getPlayers(), MyUtils.getDate());
-        party.setDatabaseId(23232); //todo change databaseid
+        party.setDatabaseId((int)(Math.random()*23234)); //todo change databaseid
         if(bitmap != null) {
             party.setImage(bitmap);
         }

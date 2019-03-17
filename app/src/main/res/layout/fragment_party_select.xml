@@ -13,7 +13,7 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/ic_content_add"
+        android:src="@drawable/ic_add_white"
         app:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

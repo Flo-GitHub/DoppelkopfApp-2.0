@@ -58,7 +58,14 @@ public class TableFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         TextView dealerView = view.findViewById(R.id.game_dealer_text);
-        dealerView.setText(party.getPlayerByDBId(party.getCurrentGame().getGiver()).getName());
+
+        String t = String.format(getString(R.string.table_info),
+                party.getPlayerByDBId(party.getCurrentGame().getGiver()).getName(),
+                party.getCurrentGame().getBockSafe(0),
+                party.getCurrentGame().getBockSafe(1));
+
+
+        dealerView.setText(String.format(t));
         fillTable(getView(), party.getCurrentGame());
     }
 

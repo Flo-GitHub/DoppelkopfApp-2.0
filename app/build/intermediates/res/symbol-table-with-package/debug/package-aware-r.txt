@@ -1011,6 +1011,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add_white
 drawable ic_content_add
 drawable ic_game
 drawable ic_group
@@ -1026,6 +1027,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_new_round
+drawable ic_settings
+drawable ic_settings_white
 drawable ic_table
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1132,8 +1135,7 @@ id game_card_players
 id game_card_view
 id game_create_cancel_button
 id game_create_create_button
-id game_create_group
-id game_create_image
+id game_create_group_header
 id game_create_recycler_view
 id game_dealer_text
 id game_recycler_view
@@ -1177,6 +1179,7 @@ id main_toolbar
 id masked
 id media_actions
 id message
+id mi_settings
 id middle
 id mini
 id mtrl_child_content_container
@@ -1207,6 +1210,7 @@ id party_card_view
 id party_create_cancel_button
 id party_create_create_button
 id party_create_group_text
+id party_create_image_button
 id party_create_player_text1
 id party_create_player_text2
 id party_create_player_text3
@@ -1495,7 +1499,6 @@ string game_select_fragment_title
 string group_image
 string group_name
 string group_name_required
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string maximum_bocks
 string mtrl_chip_close_icon_content_description
@@ -1527,7 +1530,6 @@ string player3_required
 string player4_required
 string player5_optional
 string player6_optional
-string player_deals
 string points
 string sample_date
 string sample_player_name
@@ -1535,6 +1537,7 @@ string sample_player_names
 string sample_rounds
 string save
 string search_menu_title
+string select_group_image
 string select_winners
 string settings_bocks_double
 string settings_bocks_none
@@ -1544,6 +1547,7 @@ string status_bar_notification_info_overflow
 string submit
 string table_bock
 string table_fragment_title
+string table_info
 string table_round_index
 string title_activity_main
 string yes

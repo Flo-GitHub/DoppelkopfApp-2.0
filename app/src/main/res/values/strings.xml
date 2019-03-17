@@ -18,11 +18,10 @@
     <string name="cancel">Cancel</string>
     <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_main">DoppelKopf Notes</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Doppelkopf Notes</string>
+    <string name="nav_header_title">DoppelKopf Notes</string>
     <string name="nav_header_subtitle">Becker Games</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="settings_bocks_none">None</string>
@@ -30,7 +29,6 @@
     <string name="settings_bocks_double">Double</string>
     <string name="maximum_bocks">Maximum Bocks:</string>
     <string name="bocks_in_solo">Bocks in Solo</string>
-    <string name="save">save</string>
     <string name="group_name">Group Name</string>
     <string name="create">Create</string>
     <string name="group_image">Group Image</string>
@@ -45,7 +43,7 @@
     <string name="player4_required">Player 4 (*)</string>
     <string name="player5_optional">Player 5 (opt)</string>
     <string name="player6_optional">Player 6 (opt)</string>
-    <string name="player_deals">deals</string>
+    <string name="table_info" formatted="true">"%1$s deals. %2$d Bocks and %3$d Double Bocks remaining. "</string>
     <string name="sample_player_names">Florian, Anja, Joachim, Tobias, Ulf, Renate</string>
     <string name="sample_rounds">12 Rounds</string>
     <string name="sample_date">Jan 24, 2019</string>
@@ -53,10 +51,10 @@
     <string name="sample_player_name">Robert</string>
     <string name="table_bock">B</string>
     <string name="game_create_fragment_title">Create new Game</string>
-    <string name="error_minimum_4_players">Must select at least 4 players</string>
+    <string name="error_minimum_4_players">Select at least 4 players</string>
     <string name="error_db_id_not_set">Database Id not set</string>
     <string name="error_winners">There must be 1, 2 or 3 winners</string>
-    <string name="error_more_than_6_players">More than 6 players are not supported in a game</string>
+    <string name="error_more_than_6_players">Only 6 Players per Game supported</string>
     <string name="game_select_fragment_title">Select a Game</string>
     <string name="error_party_not_set">No Party selected</string>
     <string name="new_round_fragment_title">New Round</string>
@@ -65,8 +63,8 @@
     <string name="party_select_fragment_title">Select a Group</string>
     <string name="settings_frament_title">Settings</string>
     <string name="table_fragment_title">DoppelKopf Notes</string>
+    <string name="save">Save</string>
+    <string name="select_group_image">Select Group Image</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

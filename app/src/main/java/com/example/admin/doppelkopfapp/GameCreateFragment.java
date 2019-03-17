@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -73,12 +74,14 @@ public class GameCreateFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ImageView imageView = view.findViewById(R.id.game_create_image);
+        ConstraintLayout headerLayout = view.findViewById(R.id.game_create_group_header);
+
+        ImageView imageView = (ImageView) headerLayout.getViewById(R.id.group_header_image);
         if(party.getImage() != null) {
             imageView.setImageBitmap(party.getImage());
         }
 
-        TextView groupText = view.findViewById(R.id.game_create_group);
+        TextView groupText = (TextView) headerLayout.getViewById(R.id.group_header_name);
         groupText.setText(party.getName());
 
         adapter = new GameCreateAdapter(twins());

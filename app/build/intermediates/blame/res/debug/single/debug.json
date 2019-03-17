@@ -64,12 +64,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -104,12 +104,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_table.png.flat",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\color-v23\\abc_tint_default.xml"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -176,16 +176,20 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_add_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add_white.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\interpolator\\mtrl_linear.xml"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_mtrl_linear.xml.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\interpolator\\mtrl_linear.xml"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -252,12 +256,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\animator\\mtrl_chip_state_list_anim.xml"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_group_header.xml.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\layout\\group_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
@@ -266,6 +270,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -280,12 +288,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ad11536046de83646975a291244036ad\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_content_add.png.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_content_add.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -348,6 +356,10 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ad11536046de83646975a291244036ad\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-hdpi\\ic_settings.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
@@ -356,12 +368,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_game.png.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_game.png"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_game.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_game.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -428,24 +440,28 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_simple_row.xml.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\layout\\simple_row.xml"
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_simple_row.xml.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\layout\\simple_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_background_color.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\color\\mtrl_chip_background_color.xml"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_add_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add_white.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -476,16 +492,20 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_add_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_add_white.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
@@ -584,6 +604,10 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_settings.xml.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings.xml"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -626,6 +650,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_bg_color_selector.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\color\\mtrl_btn_bg_color_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_add_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_add_white.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -694,6 +722,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_add_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-mdpi\\ic_add_white.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
@@ -824,12 +856,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -964,6 +996,10 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-mdpi\\ic_settings.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_view.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\layout\\abc_search_view.xml"
     },
@@ -980,12 +1016,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -1114,6 +1150,14 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_add_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-hdpi\\ic_add_white.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings_white.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -1448,8 +1492,16 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_settings_white.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_table.png.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_table.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_settings.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
@@ -1508,6 +1560,10 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable\\abc_list_divider_material.xml"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -1530,6 +1586,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-mdpi\\ic_settings_white.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
@@ -1562,6 +1622,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\bdbc0780c8b5921344eff1adfccbe144\\res\\color\\mtrl_btn_stroke_color_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_settings_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_settings_white.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
@@ -1664,16 +1728,16 @@
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\layout\\nav_header_main.xml"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_group.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_group.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_group.png.flat",
-        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_group.png"
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
@@ -1710,6 +1774,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
@@ -1816,12 +1884,12 @@
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xxhdpi\\ic_info.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_info.png.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_info.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1832,12 +1900,12 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ad11536046de83646975a291244036ad\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
@@ -1862,6 +1930,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_add_white.xml.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add_white.xml"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -2020,6 +2092,10 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-hdpi\\ic_settings_white.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_info.xml.flat",
         "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_info.xml"
     },
@@ -2108,6 +2184,10 @@
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings_white.png.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\src\\main\\res\\drawable-xhdpi\\ic_settings_white.png"
+    },
+    {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
@@ -2174,6 +2254,10 @@
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\delv\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\48a485c48ac365a85a57ed92e35c9d63\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_settings_white.xml.flat",
+        "source": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings_white.xml"
     },
     {
         "merged": "C:\\Users\\delv\\AndroidStudioProjects\\DoppelkopfApp\\DoppelkopfApp-2.0.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_vector_test.xml.flat",

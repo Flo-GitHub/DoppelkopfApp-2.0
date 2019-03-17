@@ -25,14 +25,14 @@
     <string name="nav_header_title">Doppelkopf Notizen</string>
     <string name="nav_header_subtitle">Becker Games</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="settings_bocks_none">None</string>
+    <string name="settings_bocks_none">Keine</string>
     <string name="settings_bocks_single">Einzel</string>
     <string name="settings_bocks_double">Doppel</string>
     <string name="maximum_bocks">Maximale Bocks:</string>
     <string name="bocks_in_solo">Bocks im Solo</string>
-    <string name="save">save</string>
+    <string name="save">Speichern</string>
     <string name="group_name">Gruppenname</string>
-    <string name="create">Create</string>
+    <string name="create">Erstellen</string>
     <string name="group_image">Gruppenbild</string>
     <string name="select_winners">Sieger auswählen:</string>
     <string name="points">Punkte</string>
@@ -45,7 +45,6 @@
     <string name="player4_required">Spieler 4 (*)</string>
     <string name="player5_optional">Spieler 5 (opt)</string>
     <string name="player6_optional">Spieler 6 (opt)</string>
-    <string name="player_deals">gibt</string>
     <string name="sample_player_names">Florian, Anja, Joachim, Tobias, Ulf, Renate</string>
     <string name="sample_rounds">12 Runden</string>
     <string name="sample_date">Jan 24, 2019</string>
@@ -53,8 +52,8 @@
     <string name="sample_player_name">Robert</string>
     <string name="table_bock">B</string>
     <string name="game_create_fragment_title">Neues Spiel Erstellen</string>
-    <string name="error_minimum_4_players">Wählen mindestens 4 Spieler</string>
-    <string name="error_db_id_not_set">Database Id not set</string>
+    <string name="error_minimum_4_players">Wähle mindestens 4 Spieler</string>
+    <string name="error_db_id_not_set">Keine Datenbank ID vorhanden</string>
     <string name="error_winners">Es gibt nur 1, 2 oder 3 Gewinner</string>
     <string name="error_more_than_6_players">Es werden nur 6 Spieler pro Spiel unterstützt</string>
     <string name="game_select_fragment_title">Wähle ein Spiel</string>
@@ -65,5 +64,7 @@
     <string name="party_select_fragment_title">Gruppe Auswählen</string>
     <string name="settings_frament_title">Einstellungen</string>
     <string name="table_fragment_title">DoppelKopf Notizen</string>
+    <string name="table_info">"%1$s gibt. %2$d Bocks und %3$d Doppelbocks verbleibend. "</string>
+    <string name="select_group_image">Gruppenbild Auswählen</string>
 
 </resources>

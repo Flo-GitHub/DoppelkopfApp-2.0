@@ -85,7 +85,10 @@ public class GameManager implements Serializable {
         }
     }
 
-    public void nextRound(GameRound round, boolean repeatRound) {
+    /**
+     * @return actual number of current bocks used
+     */
+    public int nextRound(GameRound round, boolean repeatRound) {
         //change playerPoints for solo
         Map<Long, Integer> playerPoints = round.getPlayerPoints();
         boolean solo = updateSoloPlayerPoints(playerPoints);
@@ -96,9 +99,11 @@ public class GameManager implements Serializable {
             throw new IllegalArgumentException("Length of points should be 4, but was " + playerPoints.size());
 
         int factorToIncrease = 1;
+        int actualBocks = 0;
         if(!solo || party.getSettings().isSoloBockCalculation()) {
             for(int i = this.bocks.length-1; i >= 0; i--)  {
-                if(this.bocks[i] > 0) {
+                if(this.bocks[i] > 0 && party.getSettings().getMaxBocks() >= i) {
+                    actualBocks = i+1;
                     factorToIncrease = (int)Math.pow(2, i+1);
                     this.bocks[i]--;
                     break;
@@ -114,6 +119,7 @@ public class GameManager implements Serializable {
         //if (!repeatRound)
         nextGiverIndex();
         addBocks(round.getNewBocks());
+        return actualBocks;
     }
 
     /**
@@ -234,8 +240,10 @@ public class GameManager implements Serializable {
     }
 
     public void addRound(GameRound round) {
-        this.rounds.add(round);//todo add repeat round
-        nextRound(round, false);
+        int actualBocks = nextRound(round, false);
+        round.setCurrentBocks(actualBocks);
+        this.rounds.add(round);
+
     }
 
     public String getPlayersAsString() {
@@ -260,6 +268,28 @@ public class GameManager implements Serializable {
         if( databaseId == -1 )
             throw new NullPointerException(Resources.getSystem().getString(R.string.error_db_id_not_set));
         return databaseId;
+    }
+
+    public void resetBocks(int newMaxBocks) {
+        int[] bocks = new int[newMaxBocks];
+
+        if(newMaxBocks > 0) {
+            for(int i = 0; i < newMaxBocks-1; i++) {
+                bocks[i] = getBockSafe(i);
+            }
+            for(int i = newMaxBocks-1; i < this.bocks.length; i++) {
+                bocks[newMaxBocks-1] += getBockSafe(i) * (int)Math.pow(2, ( i-(newMaxBocks-1) ));
+            }
+        }
+        this.bocks = bocks;
+    }
+
+    public int getBockSafe(int index){
+        try {
+            return bocks[index];
+        }catch (Exception e) {
+            return 0;
+        }
     }
 
     public void setDatabaseId(long databaseId) {

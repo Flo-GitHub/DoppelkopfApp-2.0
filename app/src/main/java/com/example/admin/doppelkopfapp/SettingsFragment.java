@@ -115,6 +115,7 @@ public class SettingsFragment extends Fragment {
             groupImage.setImageBitmap(party.getImage());
         }
 
+
     }
 
     private int getMaxBocks() {
