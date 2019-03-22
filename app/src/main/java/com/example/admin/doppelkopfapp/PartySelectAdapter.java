@@ -37,11 +37,12 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
                 }
             });
         }
+
         public void bindParty(Party party) {
             group.setText(party.getName());
             players.setText(party.getPlayersAsString());
             date.setText(party.getLastDate());
-            if(party.getImage() != null) {
+            if(party.getImageBytes() != null) {
                 image.setImageBitmap(party.getImage());
             }
 

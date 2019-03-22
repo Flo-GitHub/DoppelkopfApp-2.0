@@ -1,8 +1,10 @@
 package com.example.admin.doppelkopfapp;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.view.View;
 
+import java.io.ByteArrayInputStream;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -59,11 +61,11 @@ public class MyUtils {
 
     public static Party sampleParty() {
         List<Player> players = new ArrayList<>();
-        players.add(new Player(1, "Player1"));
-        players.add(new Player(2, "Player2"));
-        players.add(new Player(3, "Player3"));
-        players.add(new Player(4, "Player4"));
-        players.add(new Player(5, "Player5555"));
+        players.add(new Player("Player1"));
+        players.add(new Player("Player2"));
+        players.add(new Player("Player3"));
+        players.add(new Player("Player4"));
+        players.add(new Player("Player5555"));
 
         Party party = new Party("This is the coolest group in the world", players, "Jan 14, 2018");
         for(int i = 0; i < 3; i++) {
@@ -83,5 +85,6 @@ public class MyUtils {
         }
         return partyManager;
     }
+
 
 }

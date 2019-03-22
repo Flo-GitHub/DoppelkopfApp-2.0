@@ -7,52 +7,26 @@ import java.io.Serializable;
 public class Player implements Serializable, Comparable{
 
     private String name;
-    private int points;
-    private int pointsLost;
-    private final long dataBaseId;
+    public long dataBaseId = -1;
 
-    public Player( long dataBaseId, String name ) {
-        this.dataBaseId = dataBaseId;
+    public Player( String name ) {
         this.name = name;
-
-        points = 0;
-        pointsLost = 0;
-    }
-
-    public void addPoints(int pointsToAdd ) {
-        this.points += pointsToAdd;
-
-        if( pointsToAdd < 0 )
-            this.points += Math.abs(pointsToAdd);
     }
 
     public long getDataBaseId() {
         return dataBaseId;
     }
 
-    public int getPoints() {
-        return points;
-    }
-
-    public int getPointsLost() { return pointsLost; }
-
     public String getName() {
         return name;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setPointsLost(int pointsLost) {
-        this.pointsLost = pointsLost;
-    }
-
-    public Player clonePlayer() {
-        Player player = new Player(this.dataBaseId, this.name);
-        player.setPoints(this.points);
-        player.setPointsLost(this.pointsLost);
-        return player;
+    public void setDataBaseId(long dataBaseId) {
+        this.dataBaseId = dataBaseId;
     }
 
     @Override

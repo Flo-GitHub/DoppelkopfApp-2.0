@@ -1,8 +1,11 @@
 package com.example.admin.doppelkopfapp;
 
+import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.util.Log;
 
+import java.io.ByteArrayOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +19,7 @@ public class Party implements Serializable {
     private List<Player> players;
     private String name;
     private String lastDate;
-    private Bitmap image;
+    private byte[] imageBytes;
     private long currentGame = 0;
     private long databaseId = -1;
 
@@ -84,6 +87,12 @@ public class Party implements Serializable {
         return false;
     }
 
+    private byte[] getImageBytes(Bitmap bitmap) {
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 20, bos);
+        return bos.toByteArray();
+    }
+
 
     public String getPlayersAsString(){
         return MyUtils.getPlayersAsString(players);
@@ -144,11 +153,29 @@ public class Party implements Serializable {
     }
 
     public void setImage(Bitmap image) {
-        this.image = image;
+        try {
+            imageBytes = getImageBytes(image);
+        } catch(Exception e) {
+            Log.e("PARTY ", "couldn't set iamge");
+        }
+    }
+
+    public void setImageBytes(byte[] imageBytes) {
+        this.imageBytes = imageBytes;
     }
 
     public Bitmap getImage() {
-        return image;
+        try {
+            return BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
+
+        }catch(Exception e) {
+            Log.e("PARTY", "couldn't get image");
+        }
+        return null;
+    }
+
+    public byte[] getImageBytes() {
+        return imageBytes;
     }
 
     public GameSettings getSettings() {
@@ -157,5 +184,9 @@ public class Party implements Serializable {
 
     public void setSettings(GameSettings settings) {
         this.settings = settings;
+    }
+
+    public void setLastDate(String lastDate) {
+        this.lastDate = lastDate;
     }
 }

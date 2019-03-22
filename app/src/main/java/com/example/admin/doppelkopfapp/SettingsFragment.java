@@ -110,7 +110,7 @@ public class SettingsFragment extends Fragment {
         TextView groupText = (TextView) headerLayout.getViewById(R.id.group_header_name);
         groupText.setText(party.getName());
 
-        if(party.getImage() != null) {
+        if(party.getImageBytes() != null) {
             ImageView groupImage = (ImageView) headerLayout.getViewById(R.id.group_header_image);
             groupImage.setImageBitmap(party.getImage());
         }

@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item
-        android:id="@+id/nav_party_select"
-        android:icon="@drawable/ic_group"
-        android:title="Groups" />
-    <item
-        android:id="@+id/nav_game_select"
-        android:icon="@drawable/ic_game"
-        android:title="Games" />
-    <group android:id="@+id/nav_group_game">
+    <group
+        android:id="@+id/nav_group_main"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_party_select"
+            android:checked="true"
+            android:icon="@drawable/ic_group"
+            android:title="@string/party_select_fragment_title" />
+        <item
+            android:id="@+id/nav_game_select"
+            android:enabled="false"
+            android:icon="@drawable/ic_game"
+            android:title="@string/game_select_fragment_title" />
         <item
             android:id="@+id/nav_table"
+            android:enabled="false"
             android:icon="@drawable/ic_table"
-            android:title="Table" />
+            android:title="@string/game_table" />
         <item
             android:id="@+id/nav_new_round"
+            android:enabled="false"
             android:icon="@drawable/ic_new_round"
-            android:title="New Round" />
+            android:title="@string/new_round_fragment_title" />
     </group>
 
 </menu>

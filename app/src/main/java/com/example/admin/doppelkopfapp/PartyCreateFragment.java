@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -20,6 +21,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -94,6 +96,7 @@ public class PartyCreateFragment extends DialogFragment {
                 try {
                     onCreateParty(getParty());
                 } catch(Exception e) {
+                    e.printStackTrace();
                     Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
@@ -113,6 +116,13 @@ public class PartyCreateFragment extends DialogFragment {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setType("image/*");
+                intent.putExtra("crop", "true");
+                intent.putExtra("scale", true);
+                intent.putExtra("outputX", 100);
+                intent.putExtra("outputY", 100);
+                intent.putExtra("aspectX", 1);
+                intent.putExtra("aspectY", 1);
+                intent.putExtra("return-data", true);
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent, getString(R.string.select_group_image)), PICK_IMAGE);
             }
@@ -124,23 +134,22 @@ public class PartyCreateFragment extends DialogFragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE && resultCode == Activity.RESULT_OK) {
             if (data == null) {
+                Log.e("aksdf;sakdf|", "COULDN'T LOAD IMAGE");
                 return;
             }
             try {
-                Uri imageUri = data.getData();
-                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
+                InputStream inputStream = getContext().getContentResolver().openInputStream(data.getData());
+                Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                 this.bitmap = bitmap;
-                imageButton.setImageBitmap(Bitmap.createScaledBitmap(bitmap, imageButton.getWidth(),
-                        imageButton.getWidth(), false));
-            } catch (Exception e) {
-                Log.e(getClass().getName(), "Couldn't load Image");
+                imageButton.setImageBitmap(bitmap);
+            } catch(Exception e) {
+                e.printStackTrace();
             }
         }
     }
 
     private Party getParty() {
         Party party = new Party(getGroupName(),getPlayers(), MyUtils.getDate());
-        party.setDatabaseId((int)(Math.random()*23234)); //todo change databaseid
         if(bitmap != null) {
             party.setImage(bitmap);
         }
@@ -150,10 +159,10 @@ public class PartyCreateFragment extends DialogFragment {
 
     private String getGroupName(){
         String name = groupText.getText().toString();
-        if(name.isEmpty()) {
+        if(name.trim().isEmpty()) {
             throw new RuntimeException(getString(R.string.error_required_field_not_initialized));
         } else {
-            return name;
+            return name.trim();
         }
     }
 
@@ -162,11 +171,11 @@ public class PartyCreateFragment extends DialogFragment {
         for(int i = 0; i < playerTexts.length; i++) {
             TextInputEditText editText = playerTexts[i];
             String name = editText.getText().toString();
-            if(name == null || name.isEmpty()) {
+            if(name.trim().isEmpty()) {
                 if(i < 4)
                     throw new RuntimeException(getString(R.string.error_required_field_not_initialized));
-            } else { //todo change databaseid
-                players.add(new Player(i * 23, editText.getText().toString()));
+            } else {
+                players.add(new Player( editText.getText().toString().trim()));
             }
         }
         return players;

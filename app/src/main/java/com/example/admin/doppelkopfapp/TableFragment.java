@@ -1,5 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
@@ -13,9 +14,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-
+import java.util.Set;
 
 
 public class TableFragment extends Fragment {
@@ -88,25 +90,29 @@ public class TableFragment extends Fragment {
 
     private void fillTable(View view, GameManager game) {
         TableLayout table = view.findViewById(R.id.game_table);
-        for(String[] rowValue : rowValues(game)) {
+        for(TableRowValue[] rowValue : rowValues(game)) {
             table.addView(fillRow(rowValue));
         }
     }
 
-    private TableRow fillRow(String[] values) {
+    private TableRow fillRow(TableRowValue[] values) {
         TableRow row = new TableRow(getContext());
         row.setId(ViewCompat.generateViewId());
         row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT));
-        for(String value : values) {
-            row.addView(createTextView(value));
+        for(int i = 0; i < values.length; i++) {
+            if(i == 0 || i == values.length-1) {
+                row.addView(createExtraTextView(values[i]));
+            } else {
+                row.addView(createTextView(values[i]));
+            }
         }
         return row;
     }
 
-    private List<String[]> rowValues(GameManager gameManager){
+    private List<TableRowValue[]> rowValues(GameManager gameManager){
         List<Player> players = gameManager.getPlayers();
 
-        List<String[]> values = new ArrayList<>();
+        List<TableRowValue[]> values = new ArrayList<>();
         values.add(headerRow(players));
 
         Map<Long, Integer> playerPoints = new HashMap<>();
@@ -114,8 +120,8 @@ public class TableFragment extends Fragment {
         for(int num = 0; num < gameManager.getRounds().size(); num++) {
             GameRound round = gameManager.getRounds().get(num);
 
-            String[] row = new String[values.get(0).length];
-            row[0] = String.valueOf(num+1);
+            TableRowValue[] row = new TableRowValue[values.get(0).length];
+            row[0] = new TableRowValue(String.valueOf(num+1));
 
             for(int i = 0; i < players.size(); i++) {
                 long id = players.get(i).getDataBaseId();
@@ -125,9 +131,22 @@ public class TableFragment extends Fragment {
 
                 playerPoints.put(id, rPoints + pPoints);
 
-                row[i+1] = String.valueOf(playerPoints.get(id));
+                TableRowValue.Appearance appearance;
+                if(!round.getPlayerPoints().keySet().contains(gameManager.getPlayersDataBaseIds()[i])) {
+                    appearance = TableRowValue.Appearance.INACTIVE;
+                } else if(rPoints > 0 ) {
+                    appearance = TableRowValue.Appearance.WINNER;
+                } else if(rPoints < 0) {
+                    appearance = TableRowValue.Appearance.LOSER;
+                } else{
+                    appearance = TableRowValue.Appearance.REGULAR;
+                }
+
+                boolean solo = isSolo(round.getPlayerPoints(), gameManager.getPlayersDataBaseIds()[i]);
+
+                row[i+1] = new TableRowValue(String.valueOf(playerPoints.get(id)), appearance, solo);
             }
-            row[row.length-1] = getBockString(round.getCurrentBocks());
+            row[row.length-1] = new TableRowValue(getBockString(round.getCurrentBocks()));
             values.add(row);
         }
         return values;
@@ -141,29 +160,71 @@ public class TableFragment extends Fragment {
         return builder.toString();
     }
 
-    private String[] headerRow(List<Player> players) {
-        String[] header = new String[players.size()+2];
-        header[0] = "#";
+    private TableRowValue[] headerRow(List<Player> players) {
+        TableRowValue[] header = new TableRowValue[players.size()+2];
+        header[0] = new TableRowValue("#");
         for(int i = 0; i < players.size(); i++) {
-            header[i+1] = players.get(i).getName();
+            header[i+1] = new TableRowValue(players.get(i).getName());
         }
-        header[header.length-1] = "B";
+        header[header.length-1] = new TableRowValue("B");
         return header;
     }
 
-    private TextView createTextView(String text) {
+
+    private TextView createTextView(TableRowValue value) {
         TextView tv = new TextView(getContext());
         tv.setId(ViewCompat.generateViewId());
-        tv.setText(text);
-        tv.setSingleLine(true);
+        tv.setText(value.getText());
         tv.setTextAppearance(getContext(), R.style.TextAppearance_AppCompat_Subhead);
         tv.setGravity(Gravity.CENTER);
         tv.setLayoutParams(new TableRow.LayoutParams(
-                TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT, 1));
+                0, TableRow.LayoutParams.MATCH_PARENT, 1));
+        tv.setBackground(getResources().getDrawable(R.drawable.cell_shape));
         tv.setPadding(8, 8, 8 ,8);
+
+        if(value.isSolo()) {
+            tv.setTypeface(null, Typeface.BOLD);
+        }
+
+        if(value.getAppearance() == TableRowValue.Appearance.INACTIVE){
+            tv.setTextColor(getResources().getColor(R.color.inActive));
+        } else if(value.getAppearance() == TableRowValue.Appearance.WINNER) {
+            tv.setTextColor(getResources().getColor(R.color.winner));
+        } else if(value.getAppearance() == TableRowValue.Appearance.LOSER) {
+            tv.setTextColor(getResources().getColor(R.color.loser));
+        }
+
         return tv;
     }
 
+
+    private TextView createExtraTextView(TableRowValue val) {
+        TextView tv = createTextView(val);
+        tv.setLayoutParams(new TableRow.LayoutParams(
+                0, TableRow.LayoutParams.MATCH_PARENT, 0.7f));
+        return tv;
+    }
+
+
+    private boolean isSolo(Map<Long, Integer> playerPoints, long player) {
+        Set<Long> winners = new HashSet<>();
+        Set<Long> losers = new HashSet<>();
+
+        for(long id : playerPoints.keySet()) {
+            if(playerPoints.get(id) > 0) {
+                winners.add(id);
+            } else if (playerPoints.get(id) < 0) {
+                losers.add(id);
+            }
+        }
+
+        if(winners.size() == 3) {
+            return losers.contains(player);
+        } else if(losers.size() == 3) {
+            return winners.contains(player);
+        }
+        return false;
+    }
 
     /**
      * This interface must be implemented by activities that contain this

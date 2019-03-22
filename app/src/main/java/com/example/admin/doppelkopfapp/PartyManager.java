@@ -29,11 +29,11 @@ public class PartyManager implements Serializable {
 
     public Party getCurrentParty(){
         if(currentParty == -1)
-            throw new RuntimeException("CurrentGame in Party called but not initialized.");
+            throw new RuntimeException("CurrentParty called but not initialized.");
         for(Party party : parties)
             if(party.getDatabaseId() == currentParty)
                 return party;
-        throw new RuntimeException("CurrentGame in Party not found.");
+        throw new RuntimeException("CurrentParty in Party not found.");
     }
 
     public void setCurrentParty(long id){

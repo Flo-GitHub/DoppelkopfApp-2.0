@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="inActive">#707070</color>
+    <color name="winner">#64DD17</color>
+    <color name="loser">#D50000</color>
 </resources>

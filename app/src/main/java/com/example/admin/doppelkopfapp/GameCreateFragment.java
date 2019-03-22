@@ -77,7 +77,7 @@ public class GameCreateFragment extends Fragment {
         ConstraintLayout headerLayout = view.findViewById(R.id.game_create_group_header);
 
         ImageView imageView = (ImageView) headerLayout.getViewById(R.id.group_header_image);
-        if(party.getImage() != null) {
+        if(party.getImageBytes() != null) {
             imageView.setImageBitmap(party.getImage());
         }
 
@@ -98,7 +98,6 @@ public class GameCreateFragment extends Fragment {
                         playerChecked[i] = getPlayerChecked().get(i);
                     }
                     GameManager game = new GameManager(party, playerChecked);
-                    game.setDatabaseId((int)(Math.random() * 3223)); //todo change database id
                     onGameCreated(game);
                 } catch (Exception e) {
                     Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();

@@ -37,7 +37,7 @@
     <string name="select_winners">Sieger auswählen:</string>
     <string name="points">Punkte</string>
     <string name="bocks">Bocks</string>
-    <string name="submit">Submit</string>
+    <string name="submit">Weiter</string>
     <string name="group_name_required">Gruppenname (*)</string>
     <string name="player1_required">Spieler 1 (*)</string>
     <string name="player2_required">Spieler 2 (*)</string>
@@ -66,5 +66,6 @@
     <string name="table_fragment_title">DoppelKopf Notizen</string>
     <string name="table_info">"%1$s gibt. %2$d Bocks und %3$d Doppelbocks verbleibend. "</string>
     <string name="select_group_image">Gruppenbild Auswählen</string>
+    <string name="game_table">Tabelle</string>
 
 </resources>

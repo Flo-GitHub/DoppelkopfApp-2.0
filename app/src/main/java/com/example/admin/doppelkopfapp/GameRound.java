@@ -1,19 +1,19 @@
 package com.example.admin.doppelkopfapp;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GameRound {
+public class GameRound implements Serializable {
 
     private int currentBocks = 0;
     private int newBocks = 0;
     private Map<Long, Integer> playerPoints;
-    private long dataBaseId;
+    private long dataBaseId = -1;
 
 
-    public GameRound(long dataBaseId, Map<Long, Integer> playerPoints) {
+    public GameRound(Map<Long, Integer> playerPoints) {
         this.playerPoints = playerPoints;
-        this.dataBaseId = dataBaseId;
     }
 
     public void setNewBocks(int newBocks) {
@@ -34,6 +34,10 @@ public class GameRound {
 
     public Map<Long, Integer> getPlayerPoints() {
         return playerPoints;
+    }
+
+    public void setDataBaseId(long dataBaseId) {
+        this.dataBaseId = dataBaseId;
     }
 
     public long getDataBaseId() {

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.Set;
@@ -28,7 +30,25 @@ public class MainActivity extends AppCompatActivity
     public static final String ARG_PARTY = "party";
     public static final String ARG_PARTY_MANAGER = "partyManager";
 
-    PartyManager partyManager;
+    private static final String TAG_PARTY_SELECT = "party_select",
+                                TAG_PARTY_CREATE = "party_create",
+                                TAG_GAME_SELECT = "game_select",
+                                TAG_GAME_CREATE = "game_create",
+                                TAG_SETTINGS = "settings",
+                                TAG_TABLE = "table",
+                                TAG_NEW_ROUND = "new_round";
+
+    private String fragmentTag = TAG_PARTY_SELECT;
+
+    private NavigationView navigationView;
+    private MenuItem partyItem,
+                     gameItem,
+                     newRoundItem,
+                     tableItem;
+    private ImageView navImageView;
+
+    private PartyManager partyManager;
+    private GameDataSource dataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +58,10 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
 
-        partyManager = MyUtils.samplePartyManager();
+        dataSource = new GameDataSource(this);
+        dataSource.open();
+
+        partyManager = new PartyManager(dataSource.getAllParties());
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -46,11 +69,22 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Menu menu = navigationView.getMenu();
+        partyItem = menu.findItem(R.id.nav_party_select);
+        gameItem = menu.findItem(R.id.nav_game_select);
+        newRoundItem = menu.findItem(R.id.nav_new_round);
+        tableItem = menu.findItem(R.id.nav_table);
+
+        View headerView = navigationView.getHeaderView(0);
+        navImageView = headerView.findViewById(R.id.nav_header_image);
 
         switchToParty();
     }
+
+
 
     @Override
     public void onBackPressed() {
@@ -58,7 +92,20 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            switch (fragmentTag) {
+                case TAG_PARTY_CREATE:
+                case TAG_GAME_SELECT:
+                    switchToParty();
+                    break;
+                case TAG_GAME_CREATE:
+                case TAG_NEW_ROUND:
+                case TAG_TABLE:
+                    switchToGame();
+                    break;
+                case TAG_SETTINGS:
+                    super.onBackPressed();
+                    break;
+            }
         }
     }
 
@@ -107,7 +154,66 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void switchFragments(Class fragmentClass, Bundle bundle) {
+    private void disableItems(MenuItem... items){
+        for(MenuItem item : items) {
+            item.setEnabled(false);
+        }
+    }
+
+    private void enableItems(MenuItem... items) {
+        for(MenuItem item : items) {
+            item.setEnabled(true);
+        }
+    }
+
+    private void reEnableItems() {
+        try {
+            partyItem.setTitle(partyManager.getCurrentParty().getName());
+            enableItems(gameItem);
+        } catch (Exception e) {
+            disableItems(gameItem, newRoundItem, tableItem);
+            partyItem.setTitle(R.string.party_select_fragment_title);
+            return;
+        }
+        try {
+            gameItem.setTitle(partyManager.getCurrentParty().getCurrentGame().getLastDate());
+            enableItems(newRoundItem, tableItem);
+        } catch (Exception e) {
+            disableItems(newRoundItem, tableItem);
+            gameItem.setTitle(R.string.game_select_fragment_title);
+        }
+        try {
+            navImageView.setImageBitmap(partyManager.getCurrentParty().getImage());
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void selectNavigationDrawer(String tag){
+        switch (tag) {
+            case TAG_PARTY_SELECT:
+                navigationView.setCheckedItem(R.id.nav_party_select);
+                partyItem.setTitle(R.string.party_select_fragment_title);
+                break;
+            case TAG_GAME_SELECT:
+                navigationView.setCheckedItem(R.id.nav_game_select);
+                break;
+            case TAG_NEW_ROUND:
+                navigationView.setCheckedItem(R.id.nav_new_round);
+                break;
+            case TAG_TABLE:
+                navigationView.setCheckedItem(R.id.nav_table);
+                break;
+        }
+        reEnableItems();
+    }
+
+    private void switchFragments(Class fragmentClass, Bundle bundle, String tag) {
+        if(!tag.equals(TAG_SETTINGS)) {
+            getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        }
+
         Fragment fragment = null;
         try{
             fragment = (Fragment) fragmentClass.newInstance();
@@ -121,6 +227,8 @@ public class MainActivity extends AppCompatActivity
         transaction.replace(R.id.main_content_frame, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
+        this.fragmentTag = tag;
+        selectNavigationDrawer(tag);
     }
 
     private Bundle partyBundle() {
@@ -137,37 +245,40 @@ public class MainActivity extends AppCompatActivity
 
 
     private void switchToTable() {
-        switchFragments(TableFragment.class, partyBundle());
+        switchFragments(TableFragment.class, partyBundle(), TAG_TABLE);
     }
 
     private void switchToNewRound(){
-        switchFragments(NewRoundFragment.class, partyBundle());
+        switchFragments(NewRoundFragment.class, partyBundle(), TAG_NEW_ROUND);
     }
 
     private void switchToParty() {
-        switchFragments(PartySelectFragment.class, partyManagerBundle());
+        switchFragments(PartySelectFragment.class, partyManagerBundle(), TAG_PARTY_SELECT);
     }
 
     private void switchToPartyCreate(){
-        switchFragments(PartyCreateFragment.class, new Bundle());
+        switchFragments(PartyCreateFragment.class, new Bundle(), TAG_PARTY_CREATE);
     }
 
     private void switchToGame() {
-        switchFragments(GameSelectFragment.class, partyBundle());
+        switchFragments(GameSelectFragment.class, partyBundle(), TAG_GAME_SELECT);
     }
 
     private void switchToGameCreate() {
-        switchFragments(GameCreateFragment.class, partyBundle());
+        switchFragments(GameCreateFragment.class, partyBundle(), TAG_GAME_CREATE);
     }
 
     private void switchToSettings(){
-        switchFragments(SettingsFragment.class, partyBundle());
+        switchFragments(SettingsFragment.class, partyBundle(), TAG_SETTINGS);
     }
 
     @Override
     public void onSubmit(GameRound round) {
         try {
+            long id = dataSource.createRound(round, partyManager.getCurrentParty().getCurrentGame().getDatabaseId());
+            round.setDataBaseId(id);
             partyManager.getCurrentParty().getCurrentGame().addRound(round);
+            dataSource.updateGame(partyManager.getCurrentParty(), partyManager.getCurrentParty().getCurrentGame());
             switchToTable();
         } catch(Exception e) {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
@@ -200,6 +311,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onPartyCreated(Party party) {
+        long id = dataSource.createParty(party);
+        party.setDatabaseId(id);
         partyManager.addParty(party);
         switchToParty();
     }
@@ -211,6 +324,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onGameCreated(GameManager game) {
+        long id = dataSource.createGame(game, partyManager.getCurrentParty().getDatabaseId());
+        game.setDatabaseId(id);
         partyManager.getCurrentParty().addGame(game);
         switchToGame();
     }
@@ -223,8 +338,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onSettingsSaved(GameSettings settings) {
         partyManager.getCurrentParty().setSettings(settings);
+        dataSource.updateSettings(settings, partyManager.getCurrentParty().getDatabaseId());
         for(GameManager game : partyManager.getCurrentParty().getGames()) {
             game.resetBocks(settings.getMaxBocks());
+            dataSource.updateGame(partyManager.getCurrentParty(), game);
         }
         super.onBackPressed();
     }

@@ -631,6 +631,8 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color inActive
+color loser
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -694,6 +696,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color winner
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1004,6 +1007,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable cell_not_active
+drawable cell_shape
 drawable check
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1141,8 +1146,6 @@ id game_dealer_text
 id game_recycler_view
 id game_row_bocks
 id game_row_index
-id game_row_player1
-id game_row_player2
 id game_row_player3
 id game_row_player4
 id game_row_player5
@@ -1161,7 +1164,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
 id info
 id invisible
 id italic
@@ -1171,6 +1173,7 @@ id largeLabel
 id left
 id line1
 id line3
+id linearLayout
 id linearLayout2
 id listMode
 id list_item
@@ -1186,7 +1189,8 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id nav_game_select
-id nav_group_game
+id nav_group_main
+id nav_header_image
 id nav_new_round
 id nav_party_select
 id nav_table
@@ -1341,6 +1345,7 @@ integer mtrl_btn_anim_delay_ms
 integer mtrl_btn_anim_duration_ms
 integer mtrl_chip_anim_duration
 integer mtrl_tab_indicator_anim_duration_ms
+integer name_max_length
 integer show_password_duration
 integer status_bar_notification_info_maxnum
 interpolator mtrl_fast_out_linear_in
@@ -1496,6 +1501,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string game_create_fragment_title
 string game_select_fragment_title
+string game_table
 string group_image
 string group_name
 string group_name_required

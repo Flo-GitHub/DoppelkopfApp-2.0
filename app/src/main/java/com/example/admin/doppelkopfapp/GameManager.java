@@ -2,14 +2,11 @@ package com.example.admin.doppelkopfapp;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.renderscript.Sampler;
 import android.util.Log;
-import android.widget.NumberPicker;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -17,14 +14,11 @@ public class GameManager implements Serializable {
 
     private Party party;
     private long[] playersDataBaseIds;
-    private int giverIndex = 0;
+    private int dealerIndex = 0;
     private int bocks[];
     private long databaseId = -1;
-    private ArrayList<GameRound> rounds;
+    private List<GameRound> rounds;
     private String lastDate;
-    private Bitmap image;
-
-    private ValueListener<Integer> valueListener;
 
     public GameManager(Party party, long[] playerDataBaseIds) {
         this.party = party;
@@ -34,7 +28,6 @@ public class GameManager implements Serializable {
         for(int i = 0; i < party.getSettings().getMaxBocks(); i++){
             bocks[i] = 0;
         }
-        image = party.getImage();
     }
 
     public void skipRound() {
@@ -80,8 +73,8 @@ public class GameManager implements Serializable {
                 indexToAdd++;
             }
 
-        while(giverIndex >= getPlayersDataBaseIds().length) {
-            giverIndex--;
+        while(dealerIndex >= getPlayersDataBaseIds().length) {
+            dealerIndex--;
         }
     }
 
@@ -113,7 +106,6 @@ public class GameManager implements Serializable {
 
         for (long key : playerPoints.keySet()) {
             playerPoints.put(key, playerPoints.get(key)*factorToIncrease);
-            party.getPlayerByDBId(key).addPoints(playerPoints.get(key));
         }
 
         //if (!repeatRound)
@@ -142,21 +134,26 @@ public class GameManager implements Serializable {
         return winners == 1 || winners == 3;
     }
 
+    //max = 1, bocks = [7, 0]
+    //max = 2, newbock = 1, bocks = [0, 4]
     private void addBocks(int n) {
+        Log.e("Bockadd","Before: " + getBockSafe(0) + " " + getBockSafe(1));
         for(int i = 0; i < n; i++) {
-            if( party.getSettings().getMaxBocks()>=2 && bocks[0] >= 1 ) {
-                int temp = bocks[0];
+            if( party.getSettings().getMaxBocks()==2 && bocks[0] >= 1 ) {
+                int changed = 0; //7
                 for( int a = 0; a < playersDataBaseIds.length; a++ ) {
                     if( bocks[0] == 0 )
                         break;
-                    bocks[1]++;
-                    bocks[0]--;
+                    bocks[1]++;//1 2 3 4
+                    bocks[0]--;//6 5 4 3
+                    changed++;
                 }
-                bocks[0] += playersDataBaseIds.length - temp;
-            } else if( party.getSettings().getMaxBocks()>=1 ) {
+                bocks[0] += playersDataBaseIds.length - changed;
+            } else if( party.getSettings().getMaxBocks()==1 ) {
                 bocks[0] += playersDataBaseIds.length;
             }
         }
+        Log.e("Bockadd","Finally: " + getBockSafe(0) + " " + getBockSafe(1));
     }
 
     private boolean isValidRound(Map<Long, Integer> points) {
@@ -168,7 +165,7 @@ public class GameManager implements Serializable {
 
 
     public long getGiver() {
-        return playersDataBaseIds[giverIndex];
+        return playersDataBaseIds[dealerIndex];
     }
 
     /*
@@ -178,7 +175,7 @@ public class GameManager implements Serializable {
         if( playersDataBaseIds.length != 6 )
             throw new IllegalArgumentException("This method is only used to find the second" +
                     " inactive player when playing with 6 playersDataBaseIds");
-        int playerAcrossIndex = giverIndex + 3;
+        int playerAcrossIndex = dealerIndex + 3;
         if( playerAcrossIndex > 5 ) playerAcrossIndex -= playersDataBaseIds.length;
             return playerAcrossIndex;
     }
@@ -191,14 +188,14 @@ public class GameManager implements Serializable {
             long[] activePlayers = new long[4];
             int activePlayerIndex = 0;
 
-            for(int i = giverIndex; i < playersDataBaseIds.length; i++ ) {
-                if( playersDataBaseIds.length == 5 && giverIndex != i ||
-                        playersDataBaseIds.length == 6 && giverIndex != i && getAcrossFromGiverIndex() != i ) {
+            for(int i = dealerIndex; i < playersDataBaseIds.length; i++ ) {
+                if( playersDataBaseIds.length == 5 && dealerIndex != i ||
+                        playersDataBaseIds.length == 6 && dealerIndex != i && getAcrossFromGiverIndex() != i ) {
                     activePlayers[activePlayerIndex] = playersDataBaseIds[i];
                     activePlayerIndex++;
                 }
             }
-            for( int i = 0; i < giverIndex; i++ ) {
+            for(int i = 0; i < dealerIndex; i++ ) {
                 if( playersDataBaseIds.length == 5 ||
                         playersDataBaseIds.length == 6 && getAcrossFromGiverIndex() != i ) {
                     activePlayers[activePlayerIndex] = playersDataBaseIds[i];
@@ -209,14 +206,10 @@ public class GameManager implements Serializable {
         }
     }
 
-    public int getMoney( Player player ) {
-        return party.getSettings().getCentPerPoint() * player.getPointsLost();
-    }
-
     public void nextGiverIndex() {
-        giverIndex += 1;
-        if (giverIndex > playersDataBaseIds.length-1) {
-            giverIndex -= playersDataBaseIds.length;
+        dealerIndex += 1;
+        if (dealerIndex > playersDataBaseIds.length-1) {
+            dealerIndex -= playersDataBaseIds.length;
        }
     }
 
@@ -224,7 +217,7 @@ public class GameManager implements Serializable {
         GameManager gameManager = new GameManager(party, playersDataBaseIds);
         gameManager.setBocks(this.bocks);
         gameManager.setDatabaseId(this.databaseId);
-        gameManager.setGiverIndex(this.giverIndex);
+        gameManager.setDealerIndex(this.dealerIndex);
         return gameManager;
     }
 
@@ -243,7 +236,8 @@ public class GameManager implements Serializable {
         int actualBocks = nextRound(round, false);
         round.setCurrentBocks(actualBocks);
         this.rounds.add(round);
-
+        lastDate = MyUtils.getDate();
+        party.setLastDate(MyUtils.getDate());
     }
 
     public String getPlayersAsString() {
@@ -270,6 +264,8 @@ public class GameManager implements Serializable {
         return databaseId;
     }
 
+    //max = 1, bocks = [10, 0]
+    //max = 2, newbock = 1, bocks = [0, 4]
     public void resetBocks(int newMaxBocks) {
         int[] bocks = new int[newMaxBocks];
 
@@ -300,27 +296,27 @@ public class GameManager implements Serializable {
         return playersDataBaseIds;
     }
 
-    public int getGiverIndex() {
-        return giverIndex;
+    public int getDealerIndex() {
+        return dealerIndex;
     }
 
     public int[] getBocks() {
         return bocks;
     }
 
-    public void setGiverIndex(int giverIndex) {
-        this.giverIndex = giverIndex;
+    public void setDealerIndex(int dealerIndex) {
+        this.dealerIndex = dealerIndex;
     }
 
     public void setBocks(int[] bocks) {
         this.bocks = bocks;
     }
 
-    public void setRounds(ArrayList<GameRound> rounds) {
+    public void setRounds(List<GameRound> rounds) {
         this.rounds = rounds;
     }
 
-    public ArrayList<GameRound> getRounds() {
+    public List<GameRound> getRounds() {
         return rounds;
     }
 
@@ -333,6 +329,6 @@ public class GameManager implements Serializable {
     }
 
     public Bitmap getImage() {
-        return image;
+        return party.getImage();
     }
 }

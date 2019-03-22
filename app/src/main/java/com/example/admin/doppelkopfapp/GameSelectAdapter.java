@@ -11,7 +11,6 @@ import android.widget.TextView;
 
 public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.MyViewHolder> {
 
-
     private GameSelectFragment.OnGameSelectListener gameSelectListener;
     private Party party;
 
@@ -41,9 +40,9 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
             players.setText(game.getPlayersAsString());
             gamesPlayed.setText(game.getRounds().size() + " rounds");
             date.setText(MyUtils.getDate());
-            if(game.getImage() != null) {
+            try {
                 image.setImageBitmap(game.getImage());
-            }
+            } catch (Exception ignore) {}
         }
     }
 
