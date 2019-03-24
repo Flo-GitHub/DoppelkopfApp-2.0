@@ -1,11 +1,14 @@
 package com.example.admin.doppelkopfapp;
 
+import android.content.Context;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -16,16 +19,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.Set;
+import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, NewRoundFragment.OnSubmitListener,
             PartySelectFragment.OnPartySelectListener, GameSelectFragment.OnGameSelectListener,
             PartyCreateFragment.OnPartyCreateListener, GameCreateFragment.OnGameCreateListener,
-            SettingsFragment.OnSettingsChangeListener{
+            SettingsFragment.OnSettingsChangeListener, TableFragment.OnNextRoundListener{
 
     public static final String ARG_PARTY = "party";
     public static final String ARG_PARTY_MANAGER = "partyManager";
@@ -39,6 +45,7 @@ public class MainActivity extends AppCompatActivity
                                 TAG_NEW_ROUND = "new_round";
 
     private String fragmentTag = TAG_PARTY_SELECT;
+    private String lastFragmentTag = fragmentTag;
 
     private NavigationView navigationView;
     private MenuItem partyItem,
@@ -50,10 +57,14 @@ public class MainActivity extends AppCompatActivity
     private PartyManager partyManager;
     private GameDataSource dataSource;
 
+    private static Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        context = this;
 
         Toolbar toolbar = findViewById(R.id.main_toolbar);
         setSupportActionBar(toolbar);
@@ -92,20 +103,49 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            switch (fragmentTag) {
-                case TAG_PARTY_CREATE:
-                case TAG_GAME_SELECT:
-                    switchToParty();
-                    break;
-                case TAG_GAME_CREATE:
-                case TAG_NEW_ROUND:
-                case TAG_TABLE:
-                    switchToGame();
-                    break;
-                case TAG_SETTINGS:
-                    super.onBackPressed();
-                    break;
-            }
+            Log.e("GoBack", fragmentTag + lastFragmentTag);
+            goBack();
+        }
+    }
+
+    private void goBack() {
+        switch (fragmentTag) {
+            case TAG_PARTY_CREATE:
+            case TAG_GAME_SELECT:
+                switchToParty();
+                break;
+            case TAG_GAME_CREATE:
+            case TAG_TABLE:
+                switchToGame();
+                break;
+            case TAG_NEW_ROUND:
+                switchToTable();
+                break;
+            case TAG_SETTINGS:
+                switchToTag(lastFragmentTag);
+        }
+    }
+
+    private void switchToTag(String tag) {
+        switch(tag) {
+            case TAG_PARTY_SELECT:
+                switchToParty();
+                break;
+            case TAG_PARTY_CREATE:
+                switchToPartyCreate();
+                break;
+            case TAG_GAME_SELECT:
+                switchToGame();
+                break;
+            case TAG_GAME_CREATE:
+                switchToGameCreate();
+                break;
+            case TAG_TABLE:
+                switchToTable();
+                break;
+            case TAG_NEW_ROUND:
+                switchToNewRound();
+                break;
         }
     }
 
@@ -185,7 +225,6 @@ public class MainActivity extends AppCompatActivity
         try {
             navImageView.setImageBitmap(partyManager.getCurrentParty().getImage());
         } catch(Exception e) {
-            e.printStackTrace();
         }
 
     }
@@ -210,9 +249,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void switchFragments(Class fragmentClass, Bundle bundle, String tag) {
-        if(!tag.equals(TAG_SETTINGS)) {
-            getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-        }
+        getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
 
         Fragment fragment = null;
         try{
@@ -227,9 +264,24 @@ public class MainActivity extends AppCompatActivity
         transaction.replace(R.id.main_content_frame, fragment);
         transaction.addToBackStack(null);
         transaction.commit();
-        this.fragmentTag = tag;
+
+        if(!tag.equals(fragmentTag)) {
+            lastFragmentTag = this.fragmentTag;
+            this.fragmentTag = tag;
+        }
+        Log.e("", fragmentTag + lastFragmentTag);
+
         selectNavigationDrawer(tag);
+        hideKeyboard();
     }
+
+    private void hideKeyboard() {
+        InputMethodManager inputManager = (InputMethodManager)
+                getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(
+                (null == getCurrentFocus()) ? null : getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+    }
+
 
     private Bundle partyBundle() {
         Bundle bundle = new Bundle();
@@ -269,15 +321,17 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void switchToSettings(){
-        switchFragments(SettingsFragment.class, partyBundle(), TAG_SETTINGS);
+        try {
+            switchFragments(SettingsFragment.class, partyBundle(), TAG_SETTINGS);
+        } catch (Exception ignore) {}
     }
 
     @Override
-    public void onSubmit(GameRound round) {
+    public void onSubmit(GameRound round, boolean repeat) {
         try {
             long id = dataSource.createRound(round, partyManager.getCurrentParty().getCurrentGame().getDatabaseId());
             round.setDataBaseId(id);
-            partyManager.getCurrentParty().getCurrentGame().addRound(round);
+            partyManager.getCurrentParty().getCurrentGame().addRound(round, repeat);
             dataSource.updateGame(partyManager.getCurrentParty(), partyManager.getCurrentParty().getCurrentGame());
             switchToTable();
         } catch(Exception e) {
@@ -295,6 +349,19 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onPartyAddClicked() {
         switchToPartyCreate();
+    }
+
+    @Override
+    public void onPartyDeleted(int pos, RecyclerView.Adapter adapter) {
+        dataSource.deleteDeepParty(partyManager.getParties().get(pos));
+        partyManager.getParties().remove(pos);
+        adapter.notifyDataSetChanged();
+        Toast.makeText(this, getString(R.string.group_deleted), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onPartyEdited(int pos) {
+
     }
 
     @Override
@@ -343,11 +410,20 @@ public class MainActivity extends AppCompatActivity
             game.resetBocks(settings.getMaxBocks());
             dataSource.updateGame(partyManager.getCurrentParty(), game);
         }
-        super.onBackPressed();
+        goBack();
     }
 
     @Override
     public void onSettingsCancelled() {
-        super.onBackPressed();
+        goBack();
+    }
+
+    @Override
+    public void onNextRound() {
+        switchToNewRound();
+    }
+
+    public static Context getContext(){
+        return context;
     }
 }

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/sample_player_name"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <CheckBox
         android:id="@+id/player_check_twin2"
@@ -18,5 +18,5 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/sample_player_name"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 </LinearLayout>

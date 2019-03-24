@@ -45,6 +45,7 @@ public class GameDataSource {
         for(Player p : party.getPlayers()) {
             long playerId = createPlayer(p, id);
             p.setDataBaseId(playerId);
+            Log.e("Player", p.getDataBaseId() + "");
         }
         return id;
     }
@@ -149,11 +150,6 @@ public class GameDataSource {
     public void updateGame(Party party, GameManager game) {
         ContentValues values = gameValues(game, party.getDatabaseId());
         database.update(TABLE_GAME, values, COLUMN_ID + "=" + game.getDatabaseId(), null);
-
-        Player[] players = party.getPlayersByDBId(game.getPlayersDataBaseIds());
-        for(Player p : players) {
-            updatePlayer(p, game.getDatabaseId());
-        }
     }
 
     public List<GameManager> getAllGamesInParty(Party party) {

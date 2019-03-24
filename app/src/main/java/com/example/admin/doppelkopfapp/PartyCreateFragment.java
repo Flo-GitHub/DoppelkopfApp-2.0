@@ -134,7 +134,6 @@ public class PartyCreateFragment extends DialogFragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE && resultCode == Activity.RESULT_OK) {
             if (data == null) {
-                Log.e("aksdf;sakdf|", "COULDN'T LOAD IMAGE");
                 return;
             }
             try {

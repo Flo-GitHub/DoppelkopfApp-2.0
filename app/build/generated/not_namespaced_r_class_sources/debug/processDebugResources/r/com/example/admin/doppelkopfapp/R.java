@@ -4270,72 +4270,73 @@ public final class R {
     public static final int foreground_material_light=0x7f050041;
     public static final int highlighted_text_material_dark=0x7f050042;
     public static final int highlighted_text_material_light=0x7f050043;
-    public static final int inActive=0x7f050044;
-    public static final int loser=0x7f050045;
-    public static final int material_blue_grey_800=0x7f050046;
-    public static final int material_blue_grey_900=0x7f050047;
-    public static final int material_blue_grey_950=0x7f050048;
-    public static final int material_deep_teal_200=0x7f050049;
-    public static final int material_deep_teal_500=0x7f05004a;
-    public static final int material_grey_100=0x7f05004b;
-    public static final int material_grey_300=0x7f05004c;
-    public static final int material_grey_50=0x7f05004d;
-    public static final int material_grey_600=0x7f05004e;
-    public static final int material_grey_800=0x7f05004f;
-    public static final int material_grey_850=0x7f050050;
-    public static final int material_grey_900=0x7f050051;
-    public static final int mtrl_bottom_nav_colored_item_tint=0x7f050052;
-    public static final int mtrl_bottom_nav_item_tint=0x7f050053;
-    public static final int mtrl_btn_bg_color_disabled=0x7f050054;
-    public static final int mtrl_btn_bg_color_selector=0x7f050055;
-    public static final int mtrl_btn_ripple_color=0x7f050056;
-    public static final int mtrl_btn_stroke_color_selector=0x7f050057;
-    public static final int mtrl_btn_text_btn_ripple_color=0x7f050058;
-    public static final int mtrl_btn_text_color_disabled=0x7f050059;
-    public static final int mtrl_btn_text_color_selector=0x7f05005a;
-    public static final int mtrl_btn_transparent_bg_color=0x7f05005b;
-    public static final int mtrl_chip_background_color=0x7f05005c;
-    public static final int mtrl_chip_close_icon_tint=0x7f05005d;
-    public static final int mtrl_chip_ripple_color=0x7f05005e;
-    public static final int mtrl_chip_text_color=0x7f05005f;
-    public static final int mtrl_fab_ripple_color=0x7f050060;
-    public static final int mtrl_scrim_color=0x7f050061;
-    public static final int mtrl_tabs_colored_ripple_color=0x7f050062;
-    public static final int mtrl_tabs_icon_color_selector=0x7f050063;
-    public static final int mtrl_tabs_icon_color_selector_colored=0x7f050064;
-    public static final int mtrl_tabs_legacy_text_color_selector=0x7f050065;
-    public static final int mtrl_tabs_ripple_color=0x7f050066;
-    public static final int mtrl_text_btn_text_color_selector=0x7f050067;
-    public static final int mtrl_textinput_default_box_stroke_color=0x7f050068;
-    public static final int mtrl_textinput_disabled_color=0x7f050069;
-    public static final int mtrl_textinput_filled_box_default_background_color=0x7f05006a;
-    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f05006b;
-    public static final int notification_action_color_filter=0x7f05006c;
-    public static final int notification_icon_bg_color=0x7f05006d;
-    public static final int notification_material_background_media_default_color=0x7f05006e;
-    public static final int primary_dark_material_dark=0x7f05006f;
-    public static final int primary_dark_material_light=0x7f050070;
-    public static final int primary_material_dark=0x7f050071;
-    public static final int primary_material_light=0x7f050072;
-    public static final int primary_text_default_material_dark=0x7f050073;
-    public static final int primary_text_default_material_light=0x7f050074;
-    public static final int primary_text_disabled_material_dark=0x7f050075;
-    public static final int primary_text_disabled_material_light=0x7f050076;
-    public static final int ripple_material_dark=0x7f050077;
-    public static final int ripple_material_light=0x7f050078;
-    public static final int secondary_text_default_material_dark=0x7f050079;
-    public static final int secondary_text_default_material_light=0x7f05007a;
-    public static final int secondary_text_disabled_material_dark=0x7f05007b;
-    public static final int secondary_text_disabled_material_light=0x7f05007c;
-    public static final int switch_thumb_disabled_material_dark=0x7f05007d;
-    public static final int switch_thumb_disabled_material_light=0x7f05007e;
-    public static final int switch_thumb_material_dark=0x7f05007f;
-    public static final int switch_thumb_material_light=0x7f050080;
-    public static final int switch_thumb_normal_material_dark=0x7f050081;
-    public static final int switch_thumb_normal_material_light=0x7f050082;
-    public static final int tooltip_background_dark=0x7f050083;
-    public static final int tooltip_background_light=0x7f050084;
-    public static final int winner=0x7f050085;
+    public static final int ic_launcher_background=0x7f050044;
+    public static final int inActive=0x7f050045;
+    public static final int loser=0x7f050046;
+    public static final int material_blue_grey_800=0x7f050047;
+    public static final int material_blue_grey_900=0x7f050048;
+    public static final int material_blue_grey_950=0x7f050049;
+    public static final int material_deep_teal_200=0x7f05004a;
+    public static final int material_deep_teal_500=0x7f05004b;
+    public static final int material_grey_100=0x7f05004c;
+    public static final int material_grey_300=0x7f05004d;
+    public static final int material_grey_50=0x7f05004e;
+    public static final int material_grey_600=0x7f05004f;
+    public static final int material_grey_800=0x7f050050;
+    public static final int material_grey_850=0x7f050051;
+    public static final int material_grey_900=0x7f050052;
+    public static final int mtrl_bottom_nav_colored_item_tint=0x7f050053;
+    public static final int mtrl_bottom_nav_item_tint=0x7f050054;
+    public static final int mtrl_btn_bg_color_disabled=0x7f050055;
+    public static final int mtrl_btn_bg_color_selector=0x7f050056;
+    public static final int mtrl_btn_ripple_color=0x7f050057;
+    public static final int mtrl_btn_stroke_color_selector=0x7f050058;
+    public static final int mtrl_btn_text_btn_ripple_color=0x7f050059;
+    public static final int mtrl_btn_text_color_disabled=0x7f05005a;
+    public static final int mtrl_btn_text_color_selector=0x7f05005b;
+    public static final int mtrl_btn_transparent_bg_color=0x7f05005c;
+    public static final int mtrl_chip_background_color=0x7f05005d;
+    public static final int mtrl_chip_close_icon_tint=0x7f05005e;
+    public static final int mtrl_chip_ripple_color=0x7f05005f;
+    public static final int mtrl_chip_text_color=0x7f050060;
+    public static final int mtrl_fab_ripple_color=0x7f050061;
+    public static final int mtrl_scrim_color=0x7f050062;
+    public static final int mtrl_tabs_colored_ripple_color=0x7f050063;
+    public static final int mtrl_tabs_icon_color_selector=0x7f050064;
+    public static final int mtrl_tabs_icon_color_selector_colored=0x7f050065;
+    public static final int mtrl_tabs_legacy_text_color_selector=0x7f050066;
+    public static final int mtrl_tabs_ripple_color=0x7f050067;
+    public static final int mtrl_text_btn_text_color_selector=0x7f050068;
+    public static final int mtrl_textinput_default_box_stroke_color=0x7f050069;
+    public static final int mtrl_textinput_disabled_color=0x7f05006a;
+    public static final int mtrl_textinput_filled_box_default_background_color=0x7f05006b;
+    public static final int mtrl_textinput_hovered_box_stroke_color=0x7f05006c;
+    public static final int notification_action_color_filter=0x7f05006d;
+    public static final int notification_icon_bg_color=0x7f05006e;
+    public static final int notification_material_background_media_default_color=0x7f05006f;
+    public static final int primary_dark_material_dark=0x7f050070;
+    public static final int primary_dark_material_light=0x7f050071;
+    public static final int primary_material_dark=0x7f050072;
+    public static final int primary_material_light=0x7f050073;
+    public static final int primary_text_default_material_dark=0x7f050074;
+    public static final int primary_text_default_material_light=0x7f050075;
+    public static final int primary_text_disabled_material_dark=0x7f050076;
+    public static final int primary_text_disabled_material_light=0x7f050077;
+    public static final int ripple_material_dark=0x7f050078;
+    public static final int ripple_material_light=0x7f050079;
+    public static final int secondary_text_default_material_dark=0x7f05007a;
+    public static final int secondary_text_default_material_light=0x7f05007b;
+    public static final int secondary_text_disabled_material_dark=0x7f05007c;
+    public static final int secondary_text_disabled_material_light=0x7f05007d;
+    public static final int switch_thumb_disabled_material_dark=0x7f05007e;
+    public static final int switch_thumb_disabled_material_light=0x7f05007f;
+    public static final int switch_thumb_material_dark=0x7f050080;
+    public static final int switch_thumb_material_light=0x7f050081;
+    public static final int switch_thumb_normal_material_dark=0x7f050082;
+    public static final int switch_thumb_normal_material_light=0x7f050083;
+    public static final int tooltip_background_dark=0x7f050084;
+    public static final int tooltip_background_light=0x7f050085;
+    public static final int winner=0x7f050086;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f060000;
@@ -4661,10 +4662,10 @@ public final class R {
     public static final int design_snackbar_background=0x7f070064;
     public static final int ic_add_white=0x7f070065;
     public static final int ic_content_add=0x7f070066;
-    public static final int ic_game=0x7f070067;
-    public static final int ic_group=0x7f070068;
-    public static final int ic_info=0x7f070069;
-    public static final int ic_launcher_background=0x7f07006a;
+    public static final int ic_delete=0x7f070067;
+    public static final int ic_game=0x7f070068;
+    public static final int ic_group=0x7f070069;
+    public static final int ic_info=0x7f07006a;
     public static final int ic_menu_camera=0x7f07006b;
     public static final int ic_menu_gallery=0x7f07006c;
     public static final int ic_menu_manage=0x7f07006d;
@@ -4675,27 +4676,28 @@ public final class R {
     public static final int ic_mtrl_chip_checked_circle=0x7f070072;
     public static final int ic_mtrl_chip_close_circle=0x7f070073;
     public static final int ic_new_round=0x7f070074;
-    public static final int ic_settings=0x7f070075;
-    public static final int ic_settings_white=0x7f070076;
-    public static final int ic_table=0x7f070077;
-    public static final int mtrl_snackbar_background=0x7f070078;
-    public static final int mtrl_tabs_default_indicator=0x7f070079;
-    public static final int navigation_empty_icon=0x7f07007a;
-    public static final int notification_action_background=0x7f07007b;
-    public static final int notification_bg=0x7f07007c;
-    public static final int notification_bg_low=0x7f07007d;
-    public static final int notification_bg_low_normal=0x7f07007e;
-    public static final int notification_bg_low_pressed=0x7f07007f;
-    public static final int notification_bg_normal=0x7f070080;
-    public static final int notification_bg_normal_pressed=0x7f070081;
-    public static final int notification_icon_background=0x7f070082;
-    public static final int notification_template_icon_bg=0x7f070083;
-    public static final int notification_template_icon_low_bg=0x7f070084;
-    public static final int notification_tile_bg=0x7f070085;
-    public static final int notify_panel_notification_icon_bg=0x7f070086;
-    public static final int side_nav_bar=0x7f070087;
-    public static final int tooltip_frame_dark=0x7f070088;
-    public static final int tooltip_frame_light=0x7f070089;
+    public static final int ic_overflow=0x7f070075;
+    public static final int ic_settings=0x7f070076;
+    public static final int ic_settings_white=0x7f070077;
+    public static final int ic_table=0x7f070078;
+    public static final int mtrl_snackbar_background=0x7f070079;
+    public static final int mtrl_tabs_default_indicator=0x7f07007a;
+    public static final int navigation_empty_icon=0x7f07007b;
+    public static final int notification_action_background=0x7f07007c;
+    public static final int notification_bg=0x7f07007d;
+    public static final int notification_bg_low=0x7f07007e;
+    public static final int notification_bg_low_normal=0x7f07007f;
+    public static final int notification_bg_low_pressed=0x7f070080;
+    public static final int notification_bg_normal=0x7f070081;
+    public static final int notification_bg_normal_pressed=0x7f070082;
+    public static final int notification_icon_background=0x7f070083;
+    public static final int notification_template_icon_bg=0x7f070084;
+    public static final int notification_template_icon_low_bg=0x7f070085;
+    public static final int notification_tile_bg=0x7f070086;
+    public static final int notify_panel_notification_icon_bg=0x7f070087;
+    public static final int side_nav_bar=0x7f070088;
+    public static final int tooltip_frame_dark=0x7f070089;
+    public static final int tooltip_frame_light=0x7f07008a;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -4714,269 +4716,275 @@ public final class R {
     public static final int action_bar_title=0x7f08000d;
     public static final int action_container=0x7f08000e;
     public static final int action_context_bar=0x7f08000f;
-    public static final int action_divider=0x7f080010;
-    public static final int action_image=0x7f080011;
-    public static final int action_menu_divider=0x7f080012;
-    public static final int action_menu_presenter=0x7f080013;
-    public static final int action_mode_bar=0x7f080014;
-    public static final int action_mode_bar_stub=0x7f080015;
-    public static final int action_mode_close_button=0x7f080016;
-    public static final int action_settings=0x7f080017;
-    public static final int action_text=0x7f080018;
-    public static final int actions=0x7f080019;
-    public static final int activity_chooser_view_content=0x7f08001a;
-    public static final int add=0x7f08001b;
-    public static final int alertTitle=0x7f08001c;
-    public static final int all=0x7f08001d;
-    public static final int always=0x7f08001e;
-    public static final int async=0x7f08001f;
-    public static final int auto=0x7f080020;
-    public static final int barrier=0x7f080021;
-    public static final int beginning=0x7f080022;
-    public static final int blocking=0x7f080023;
-    public static final int bottom=0x7f080024;
-    public static final int buttonPanel=0x7f080025;
-    public static final int cancel_action=0x7f080026;
-    public static final int center=0x7f080027;
-    public static final int center_horizontal=0x7f080028;
-    public static final int center_vertical=0x7f080029;
-    public static final int chains=0x7f08002a;
-    public static final int checkbox=0x7f08002b;
-    public static final int chronometer=0x7f08002c;
-    public static final int clip_horizontal=0x7f08002d;
-    public static final int clip_vertical=0x7f08002e;
-    public static final int collapseActionView=0x7f08002f;
-    public static final int container=0x7f080030;
-    public static final int content=0x7f080031;
-    public static final int contentPanel=0x7f080032;
-    public static final int coordinator=0x7f080033;
-    public static final int custom=0x7f080034;
-    public static final int customPanel=0x7f080035;
-    public static final int decor_content_parent=0x7f080036;
-    public static final int default_activity_button=0x7f080037;
-    public static final int design_bottom_sheet=0x7f080038;
-    public static final int design_menu_item_action_area=0x7f080039;
-    public static final int design_menu_item_action_area_stub=0x7f08003a;
-    public static final int design_menu_item_text=0x7f08003b;
-    public static final int design_navigation_view=0x7f08003c;
-    public static final int dimensions=0x7f08003d;
-    public static final int direct=0x7f08003e;
-    public static final int disableHome=0x7f08003f;
-    public static final int drawer_layout=0x7f080040;
-    public static final int edit_query=0x7f080041;
-    public static final int edit_round_points=0x7f080042;
-    public static final int end=0x7f080043;
-    public static final int end_padder=0x7f080044;
-    public static final int enterAlways=0x7f080045;
-    public static final int enterAlwaysCollapsed=0x7f080046;
-    public static final int exitUntilCollapsed=0x7f080047;
-    public static final int expand_activities_button=0x7f080048;
-    public static final int expanded_menu=0x7f080049;
-    public static final int fill=0x7f08004a;
-    public static final int fill_horizontal=0x7f08004b;
-    public static final int fill_vertical=0x7f08004c;
-    public static final int filled=0x7f08004d;
-    public static final int fixed=0x7f08004e;
-    public static final int forever=0x7f08004f;
-    public static final int game_card_date=0x7f080050;
-    public static final int game_card_games_played=0x7f080051;
-    public static final int game_card_image=0x7f080052;
-    public static final int game_card_players=0x7f080053;
-    public static final int game_card_view=0x7f080054;
-    public static final int game_create_cancel_button=0x7f080055;
-    public static final int game_create_create_button=0x7f080056;
-    public static final int game_create_group_header=0x7f080057;
-    public static final int game_create_recycler_view=0x7f080058;
-    public static final int game_dealer_text=0x7f080059;
-    public static final int game_recycler_view=0x7f08005a;
-    public static final int game_row_bocks=0x7f08005b;
-    public static final int game_row_index=0x7f08005c;
-    public static final int game_row_player3=0x7f08005d;
-    public static final int game_row_player4=0x7f08005e;
-    public static final int game_row_player5=0x7f08005f;
-    public static final int game_select_add_button=0x7f080060;
-    public static final int game_table=0x7f080061;
-    public static final int game_table_row=0x7f080062;
-    public static final int ghost_view=0x7f080063;
-    public static final int gone=0x7f080064;
-    public static final int group_divider=0x7f080065;
-    public static final int group_header_image=0x7f080066;
-    public static final int group_header_name=0x7f080067;
-    public static final int groups=0x7f080068;
-    public static final int home=0x7f080069;
-    public static final int homeAsUp=0x7f08006a;
-    public static final int icon=0x7f08006b;
-    public static final int icon_group=0x7f08006c;
-    public static final int ifRoom=0x7f08006d;
-    public static final int image=0x7f08006e;
-    public static final int info=0x7f08006f;
-    public static final int invisible=0x7f080070;
-    public static final int italic=0x7f080071;
-    public static final int item_touch_helper_previous_elevation=0x7f080072;
-    public static final int labeled=0x7f080073;
-    public static final int largeLabel=0x7f080074;
-    public static final int left=0x7f080075;
-    public static final int line1=0x7f080076;
-    public static final int line3=0x7f080077;
-    public static final int linearLayout=0x7f080078;
-    public static final int linearLayout2=0x7f080079;
-    public static final int listMode=0x7f08007a;
-    public static final int list_item=0x7f08007b;
-    public static final int main_content_frame=0x7f08007c;
-    public static final int main_toolbar=0x7f08007d;
-    public static final int masked=0x7f08007e;
-    public static final int media_actions=0x7f08007f;
-    public static final int message=0x7f080080;
-    public static final int mi_settings=0x7f080081;
-    public static final int middle=0x7f080082;
-    public static final int mini=0x7f080083;
-    public static final int mtrl_child_content_container=0x7f080084;
-    public static final int mtrl_internal_children_alpha_tag=0x7f080085;
-    public static final int multiply=0x7f080086;
-    public static final int nav_game_select=0x7f080087;
-    public static final int nav_group_main=0x7f080088;
-    public static final int nav_header_image=0x7f080089;
-    public static final int nav_new_round=0x7f08008a;
-    public static final int nav_party_select=0x7f08008b;
-    public static final int nav_table=0x7f08008c;
-    public static final int nav_view=0x7f08008d;
-    public static final int navigation_header_container=0x7f08008e;
-    public static final int never=0x7f08008f;
-    public static final int new_round_submit=0x7f080090;
-    public static final int none=0x7f080091;
-    public static final int normal=0x7f080092;
-    public static final int notification_background=0x7f080093;
-    public static final int notification_main_column=0x7f080094;
-    public static final int notification_main_column_container=0x7f080095;
-    public static final int outline=0x7f080096;
-    public static final int packed=0x7f080097;
-    public static final int parallax=0x7f080098;
-    public static final int parent=0x7f080099;
-    public static final int parentPanel=0x7f08009a;
-    public static final int parent_matrix=0x7f08009b;
-    public static final int party_card_date=0x7f08009c;
-    public static final int party_card_view=0x7f08009d;
-    public static final int party_create_cancel_button=0x7f08009e;
-    public static final int party_create_create_button=0x7f08009f;
-    public static final int party_create_group_text=0x7f0800a0;
-    public static final int party_create_image_button=0x7f0800a1;
-    public static final int party_create_player_text1=0x7f0800a2;
-    public static final int party_create_player_text2=0x7f0800a3;
-    public static final int party_create_player_text3=0x7f0800a4;
-    public static final int party_create_player_text4=0x7f0800a5;
-    public static final int party_create_player_text5=0x7f0800a6;
-    public static final int party_create_player_text6=0x7f0800a7;
-    public static final int party_recycler_view=0x7f0800a8;
-    public static final int party_select_add_button=0x7f0800a9;
-    public static final int percent=0x7f0800aa;
-    public static final int pin=0x7f0800ab;
-    public static final int player_check_twin1=0x7f0800ac;
-    public static final int player_check_twin2=0x7f0800ad;
-    public static final int progress_circular=0x7f0800ae;
-    public static final int progress_horizontal=0x7f0800af;
-    public static final int radio=0x7f0800b0;
-    public static final int radio_round_bocks=0x7f0800b1;
-    public static final int radio_round_bocks0=0x7f0800b2;
-    public static final int radio_round_bocks1=0x7f0800b3;
-    public static final int radio_round_bocks2=0x7f0800b4;
-    public static final int radio_round_bocks3=0x7f0800b5;
-    public static final int right=0x7f0800b6;
-    public static final int right_icon=0x7f0800b7;
-    public static final int right_side=0x7f0800b8;
-    public static final int save_image_matrix=0x7f0800b9;
-    public static final int save_non_transition_alpha=0x7f0800ba;
-    public static final int save_scale_type=0x7f0800bb;
-    public static final int screen=0x7f0800bc;
-    public static final int scroll=0x7f0800bd;
-    public static final int scrollIndicatorDown=0x7f0800be;
-    public static final int scrollIndicatorUp=0x7f0800bf;
-    public static final int scrollView=0x7f0800c0;
-    public static final int scrollable=0x7f0800c1;
-    public static final int search_badge=0x7f0800c2;
-    public static final int search_bar=0x7f0800c3;
-    public static final int search_button=0x7f0800c4;
-    public static final int search_close_btn=0x7f0800c5;
-    public static final int search_edit_frame=0x7f0800c6;
-    public static final int search_go_btn=0x7f0800c7;
-    public static final int search_mag_icon=0x7f0800c8;
-    public static final int search_plate=0x7f0800c9;
-    public static final int search_src_text=0x7f0800ca;
-    public static final int search_voice_btn=0x7f0800cb;
-    public static final int select_dialog_listview=0x7f0800cc;
-    public static final int selected=0x7f0800cd;
-    public static final int settings_bock0=0x7f0800ce;
-    public static final int settings_bock1=0x7f0800cf;
-    public static final int settings_bock2=0x7f0800d0;
-    public static final int settings_bock_solo=0x7f0800d1;
-    public static final int settings_bocks=0x7f0800d2;
-    public static final int settings_cancel_button=0x7f0800d3;
-    public static final int settings_group_header=0x7f0800d4;
-    public static final int settings_save_button=0x7f0800d5;
-    public static final int shortcut=0x7f0800d6;
-    public static final int showCustom=0x7f0800d7;
-    public static final int showHome=0x7f0800d8;
-    public static final int showTitle=0x7f0800d9;
-    public static final int smallLabel=0x7f0800da;
-    public static final int snackbar_action=0x7f0800db;
-    public static final int snackbar_text=0x7f0800dc;
-    public static final int snap=0x7f0800dd;
-    public static final int snapMargins=0x7f0800de;
-    public static final int spacer=0x7f0800df;
-    public static final int split_action_bar=0x7f0800e0;
-    public static final int spread=0x7f0800e1;
-    public static final int spread_inside=0x7f0800e2;
-    public static final int src_atop=0x7f0800e3;
-    public static final int src_in=0x7f0800e4;
-    public static final int src_over=0x7f0800e5;
-    public static final int standard=0x7f0800e6;
-    public static final int start=0x7f0800e7;
-    public static final int status_bar_latest_event_content=0x7f0800e8;
-    public static final int stretch=0x7f0800e9;
-    public static final int submenuarrow=0x7f0800ea;
-    public static final int submit_area=0x7f0800eb;
-    public static final int tabMode=0x7f0800ec;
-    public static final int tag_transition_group=0x7f0800ed;
-    public static final int tag_unhandled_key_event_manager=0x7f0800ee;
-    public static final int tag_unhandled_key_listeners=0x7f0800ef;
-    public static final int text=0x7f0800f0;
-    public static final int text2=0x7f0800f1;
-    public static final int textSpacerNoButtons=0x7f0800f2;
-    public static final int textSpacerNoTitle=0x7f0800f3;
-    public static final int textStart=0x7f0800f4;
-    public static final int textView=0x7f0800f5;
-    public static final int textView2=0x7f0800f6;
-    public static final int textView4=0x7f0800f7;
-    public static final int textView_row=0x7f0800f8;
-    public static final int text_input_password_toggle=0x7f0800f9;
-    public static final int text_round_select_winner=0x7f0800fa;
-    public static final int textinput_counter=0x7f0800fb;
-    public static final int textinput_error=0x7f0800fc;
-    public static final int textinput_helper_text=0x7f0800fd;
-    public static final int time=0x7f0800fe;
-    public static final int title=0x7f0800ff;
-    public static final int titleDividerNoCustom=0x7f080100;
-    public static final int title_template=0x7f080101;
-    public static final int toggle_round_player1=0x7f080102;
-    public static final int toggle_round_player2=0x7f080103;
-    public static final int toggle_round_player3=0x7f080104;
-    public static final int toggle_round_player4=0x7f080105;
-    public static final int top=0x7f080106;
-    public static final int topPanel=0x7f080107;
-    public static final int touch_outside=0x7f080108;
-    public static final int transition_current_scene=0x7f080109;
-    public static final int transition_layout_save=0x7f08010a;
-    public static final int transition_position=0x7f08010b;
-    public static final int transition_scene_layoutid_cache=0x7f08010c;
-    public static final int transition_transform=0x7f08010d;
-    public static final int uniform=0x7f08010e;
-    public static final int unlabeled=0x7f08010f;
-    public static final int up=0x7f080110;
-    public static final int useLogo=0x7f080111;
-    public static final int view_offset_helper=0x7f080112;
-    public static final int visible=0x7f080113;
-    public static final int withText=0x7f080114;
-    public static final int wrap=0x7f080115;
-    public static final int wrap_content=0x7f080116;
+    public static final int action_delete=0x7f080010;
+    public static final int action_divider=0x7f080011;
+    public static final int action_edit=0x7f080012;
+    public static final int action_image=0x7f080013;
+    public static final int action_menu_divider=0x7f080014;
+    public static final int action_menu_presenter=0x7f080015;
+    public static final int action_mode_bar=0x7f080016;
+    public static final int action_mode_bar_stub=0x7f080017;
+    public static final int action_mode_close_button=0x7f080018;
+    public static final int action_settings=0x7f080019;
+    public static final int action_text=0x7f08001a;
+    public static final int actions=0x7f08001b;
+    public static final int activity_chooser_view_content=0x7f08001c;
+    public static final int add=0x7f08001d;
+    public static final int alertTitle=0x7f08001e;
+    public static final int all=0x7f08001f;
+    public static final int always=0x7f080020;
+    public static final int async=0x7f080021;
+    public static final int auto=0x7f080022;
+    public static final int barrier=0x7f080023;
+    public static final int beginning=0x7f080024;
+    public static final int blocking=0x7f080025;
+    public static final int bottom=0x7f080026;
+    public static final int buttonPanel=0x7f080027;
+    public static final int cancel_action=0x7f080028;
+    public static final int center=0x7f080029;
+    public static final int center_horizontal=0x7f08002a;
+    public static final int center_vertical=0x7f08002b;
+    public static final int chains=0x7f08002c;
+    public static final int checkbox=0x7f08002d;
+    public static final int chronometer=0x7f08002e;
+    public static final int clip_horizontal=0x7f08002f;
+    public static final int clip_vertical=0x7f080030;
+    public static final int collapseActionView=0x7f080031;
+    public static final int container=0x7f080032;
+    public static final int content=0x7f080033;
+    public static final int contentPanel=0x7f080034;
+    public static final int coordinator=0x7f080035;
+    public static final int custom=0x7f080036;
+    public static final int customPanel=0x7f080037;
+    public static final int decor_content_parent=0x7f080038;
+    public static final int default_activity_button=0x7f080039;
+    public static final int design_bottom_sheet=0x7f08003a;
+    public static final int design_menu_item_action_area=0x7f08003b;
+    public static final int design_menu_item_action_area_stub=0x7f08003c;
+    public static final int design_menu_item_text=0x7f08003d;
+    public static final int design_navigation_view=0x7f08003e;
+    public static final int dimensions=0x7f08003f;
+    public static final int direct=0x7f080040;
+    public static final int disableHome=0x7f080041;
+    public static final int drawer_layout=0x7f080042;
+    public static final int edit_query=0x7f080043;
+    public static final int edit_round_points=0x7f080044;
+    public static final int end=0x7f080045;
+    public static final int end_padder=0x7f080046;
+    public static final int enterAlways=0x7f080047;
+    public static final int enterAlwaysCollapsed=0x7f080048;
+    public static final int exitUntilCollapsed=0x7f080049;
+    public static final int expand_activities_button=0x7f08004a;
+    public static final int expanded_menu=0x7f08004b;
+    public static final int fill=0x7f08004c;
+    public static final int fill_horizontal=0x7f08004d;
+    public static final int fill_vertical=0x7f08004e;
+    public static final int filled=0x7f08004f;
+    public static final int fixed=0x7f080050;
+    public static final int forever=0x7f080051;
+    public static final int game_card_date=0x7f080052;
+    public static final int game_card_games_played=0x7f080053;
+    public static final int game_card_image=0x7f080054;
+    public static final int game_card_players=0x7f080055;
+    public static final int game_card_view=0x7f080056;
+    public static final int game_create_cancel_button=0x7f080057;
+    public static final int game_create_create_button=0x7f080058;
+    public static final int game_create_group_header=0x7f080059;
+    public static final int game_create_recycler_view=0x7f08005a;
+    public static final int game_dealer_text=0x7f08005b;
+    public static final int game_recycler_view=0x7f08005c;
+    public static final int game_row_bocks=0x7f08005d;
+    public static final int game_row_index=0x7f08005e;
+    public static final int game_row_player3=0x7f08005f;
+    public static final int game_row_player4=0x7f080060;
+    public static final int game_row_player5=0x7f080061;
+    public static final int game_select_add_button=0x7f080062;
+    public static final int game_table=0x7f080063;
+    public static final int game_table_row=0x7f080064;
+    public static final int ghost_view=0x7f080065;
+    public static final int gone=0x7f080066;
+    public static final int group_divider=0x7f080067;
+    public static final int group_header_image=0x7f080068;
+    public static final int group_header_name=0x7f080069;
+    public static final int groups=0x7f08006a;
+    public static final int home=0x7f08006b;
+    public static final int homeAsUp=0x7f08006c;
+    public static final int icon=0x7f08006d;
+    public static final int icon_group=0x7f08006e;
+    public static final int ifRoom=0x7f08006f;
+    public static final int image=0x7f080070;
+    public static final int info=0x7f080071;
+    public static final int invisible=0x7f080072;
+    public static final int italic=0x7f080073;
+    public static final int item_touch_helper_previous_elevation=0x7f080074;
+    public static final int labeled=0x7f080075;
+    public static final int largeLabel=0x7f080076;
+    public static final int left=0x7f080077;
+    public static final int line1=0x7f080078;
+    public static final int line3=0x7f080079;
+    public static final int linearLayout=0x7f08007a;
+    public static final int linearLayout2=0x7f08007b;
+    public static final int linearLayout3=0x7f08007c;
+    public static final int listMode=0x7f08007d;
+    public static final int list_item=0x7f08007e;
+    public static final int main_content_frame=0x7f08007f;
+    public static final int main_toolbar=0x7f080080;
+    public static final int masked=0x7f080081;
+    public static final int media_actions=0x7f080082;
+    public static final int message=0x7f080083;
+    public static final int mi_settings=0x7f080084;
+    public static final int middle=0x7f080085;
+    public static final int mini=0x7f080086;
+    public static final int mtrl_child_content_container=0x7f080087;
+    public static final int mtrl_internal_children_alpha_tag=0x7f080088;
+    public static final int multiply=0x7f080089;
+    public static final int nav_game_select=0x7f08008a;
+    public static final int nav_group_main=0x7f08008b;
+    public static final int nav_header_image=0x7f08008c;
+    public static final int nav_new_round=0x7f08008d;
+    public static final int nav_party_select=0x7f08008e;
+    public static final int nav_table=0x7f08008f;
+    public static final int nav_view=0x7f080090;
+    public static final int navigation_header_container=0x7f080091;
+    public static final int never=0x7f080092;
+    public static final int new_round_repeat=0x7f080093;
+    public static final int new_round_submit=0x7f080094;
+    public static final int none=0x7f080095;
+    public static final int normal=0x7f080096;
+    public static final int notification_background=0x7f080097;
+    public static final int notification_main_column=0x7f080098;
+    public static final int notification_main_column_container=0x7f080099;
+    public static final int outline=0x7f08009a;
+    public static final int packed=0x7f08009b;
+    public static final int parallax=0x7f08009c;
+    public static final int parent=0x7f08009d;
+    public static final int parentPanel=0x7f08009e;
+    public static final int parent_matrix=0x7f08009f;
+    public static final int party_card_date=0x7f0800a0;
+    public static final int party_card_overflow=0x7f0800a1;
+    public static final int party_card_view=0x7f0800a2;
+    public static final int party_create_cancel_button=0x7f0800a3;
+    public static final int party_create_create_button=0x7f0800a4;
+    public static final int party_create_group_text=0x7f0800a5;
+    public static final int party_create_image_button=0x7f0800a6;
+    public static final int party_create_player_text1=0x7f0800a7;
+    public static final int party_create_player_text2=0x7f0800a8;
+    public static final int party_create_player_text3=0x7f0800a9;
+    public static final int party_create_player_text4=0x7f0800aa;
+    public static final int party_create_player_text5=0x7f0800ab;
+    public static final int party_create_player_text6=0x7f0800ac;
+    public static final int party_recycler_view=0x7f0800ad;
+    public static final int party_select_add_button=0x7f0800ae;
+    public static final int percent=0x7f0800af;
+    public static final int pin=0x7f0800b0;
+    public static final int player_check_twin1=0x7f0800b1;
+    public static final int player_check_twin2=0x7f0800b2;
+    public static final int progress_circular=0x7f0800b3;
+    public static final int progress_horizontal=0x7f0800b4;
+    public static final int radio=0x7f0800b5;
+    public static final int radio_round_bocks=0x7f0800b6;
+    public static final int radio_round_bocks0=0x7f0800b7;
+    public static final int radio_round_bocks1=0x7f0800b8;
+    public static final int radio_round_bocks2=0x7f0800b9;
+    public static final int radio_round_bocks3=0x7f0800ba;
+    public static final int right=0x7f0800bb;
+    public static final int right_icon=0x7f0800bc;
+    public static final int right_side=0x7f0800bd;
+    public static final int save_image_matrix=0x7f0800be;
+    public static final int save_non_transition_alpha=0x7f0800bf;
+    public static final int save_scale_type=0x7f0800c0;
+    public static final int screen=0x7f0800c1;
+    public static final int scroll=0x7f0800c2;
+    public static final int scrollIndicatorDown=0x7f0800c3;
+    public static final int scrollIndicatorUp=0x7f0800c4;
+    public static final int scrollView=0x7f0800c5;
+    public static final int scrollable=0x7f0800c6;
+    public static final int search_badge=0x7f0800c7;
+    public static final int search_bar=0x7f0800c8;
+    public static final int search_button=0x7f0800c9;
+    public static final int search_close_btn=0x7f0800ca;
+    public static final int search_edit_frame=0x7f0800cb;
+    public static final int search_go_btn=0x7f0800cc;
+    public static final int search_mag_icon=0x7f0800cd;
+    public static final int search_plate=0x7f0800ce;
+    public static final int search_src_text=0x7f0800cf;
+    public static final int search_voice_btn=0x7f0800d0;
+    public static final int select_dialog_listview=0x7f0800d1;
+    public static final int selected=0x7f0800d2;
+    public static final int settings_bock0=0x7f0800d3;
+    public static final int settings_bock1=0x7f0800d4;
+    public static final int settings_bock2=0x7f0800d5;
+    public static final int settings_bock_solo=0x7f0800d6;
+    public static final int settings_bocks=0x7f0800d7;
+    public static final int settings_cancel_button=0x7f0800d8;
+    public static final int settings_group_header=0x7f0800d9;
+    public static final int settings_save_button=0x7f0800da;
+    public static final int shortcut=0x7f0800db;
+    public static final int showCustom=0x7f0800dc;
+    public static final int showHome=0x7f0800dd;
+    public static final int showTitle=0x7f0800de;
+    public static final int smallLabel=0x7f0800df;
+    public static final int snackbar_action=0x7f0800e0;
+    public static final int snackbar_text=0x7f0800e1;
+    public static final int snap=0x7f0800e2;
+    public static final int snapMargins=0x7f0800e3;
+    public static final int spacer=0x7f0800e4;
+    public static final int split_action_bar=0x7f0800e5;
+    public static final int spread=0x7f0800e6;
+    public static final int spread_inside=0x7f0800e7;
+    public static final int src_atop=0x7f0800e8;
+    public static final int src_in=0x7f0800e9;
+    public static final int src_over=0x7f0800ea;
+    public static final int standard=0x7f0800eb;
+    public static final int start=0x7f0800ec;
+    public static final int status_bar_latest_event_content=0x7f0800ed;
+    public static final int stretch=0x7f0800ee;
+    public static final int submenuarrow=0x7f0800ef;
+    public static final int submit_area=0x7f0800f0;
+    public static final int tabMode=0x7f0800f1;
+    public static final int table_next_button=0x7f0800f2;
+    public static final int tag_transition_group=0x7f0800f3;
+    public static final int tag_unhandled_key_event_manager=0x7f0800f4;
+    public static final int tag_unhandled_key_listeners=0x7f0800f5;
+    public static final int text=0x7f0800f6;
+    public static final int text2=0x7f0800f7;
+    public static final int textSpacerNoButtons=0x7f0800f8;
+    public static final int textSpacerNoTitle=0x7f0800f9;
+    public static final int textStart=0x7f0800fa;
+    public static final int textView=0x7f0800fb;
+    public static final int textView2=0x7f0800fc;
+    public static final int textView4=0x7f0800fd;
+    public static final int textView_row=0x7f0800fe;
+    public static final int text_input_password_toggle=0x7f0800ff;
+    public static final int text_round_select_winner=0x7f080100;
+    public static final int textinput_counter=0x7f080101;
+    public static final int textinput_error=0x7f080102;
+    public static final int textinput_helper_text=0x7f080103;
+    public static final int time=0x7f080104;
+    public static final int title=0x7f080105;
+    public static final int titleDividerNoCustom=0x7f080106;
+    public static final int title_template=0x7f080107;
+    public static final int toggle_round_player1=0x7f080108;
+    public static final int toggle_round_player2=0x7f080109;
+    public static final int toggle_round_player3=0x7f08010a;
+    public static final int toggle_round_player4=0x7f08010b;
+    public static final int top=0x7f08010c;
+    public static final int topPanel=0x7f08010d;
+    public static final int touch_outside=0x7f08010e;
+    public static final int transition_current_scene=0x7f08010f;
+    public static final int transition_layout_save=0x7f080110;
+    public static final int transition_position=0x7f080111;
+    public static final int transition_scene_layoutid_cache=0x7f080112;
+    public static final int transition_transform=0x7f080113;
+    public static final int uniform=0x7f080114;
+    public static final int unlabeled=0x7f080115;
+    public static final int up=0x7f080116;
+    public static final int useLogo=0x7f080117;
+    public static final int view_offset_helper=0x7f080118;
+    public static final int visible=0x7f080119;
+    public static final int withText=0x7f08011a;
+    public static final int wrap=0x7f08011b;
+    public static final int wrap_content=0x7f08011c;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -5088,12 +5096,14 @@ public final class R {
   public static final class menu {
     public static final int activity_main_drawer=0x7f0c0000;
     public static final int main=0x7f0c0001;
-    public static final int menu_party_select=0x7f0c0002;
+    public static final int menu_card=0x7f0c0002;
+    public static final int menu_party_select=0x7f0c0003;
   }
   public static final class mipmap {
-    public static final int ic_launcher=0x7f0d0000;
-    public static final int ic_launcher_foreground=0x7f0d0001;
-    public static final int ic_launcher_round=0x7f0d0002;
+    public static final int ic_group_image=0x7f0d0000;
+    public static final int ic_launcher=0x7f0d0001;
+    public static final int ic_launcher_foreground=0x7f0d0002;
+    public static final int ic_launcher_round=0x7f0d0003;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0e0000;
@@ -5145,75 +5155,84 @@ public final class R {
     public static final int cancel=0x7f0e002e;
     public static final int character_counter_content_description=0x7f0e002f;
     public static final int character_counter_pattern=0x7f0e0030;
-    public static final int continue_text=0x7f0e0031;
-    public static final int create=0x7f0e0032;
-    public static final int double_bocks_remaining=0x7f0e0033;
-    public static final int error_db_id_not_set=0x7f0e0034;
-    public static final int error_minimum_4_players=0x7f0e0035;
-    public static final int error_more_than_6_players=0x7f0e0036;
-    public static final int error_party_not_set=0x7f0e0037;
-    public static final int error_required_field_not_initialized=0x7f0e0038;
-    public static final int error_winners=0x7f0e0039;
-    public static final int fab_transformation_scrim_behavior=0x7f0e003a;
-    public static final int fab_transformation_sheet_behavior=0x7f0e003b;
-    public static final int game_create_fragment_title=0x7f0e003c;
-    public static final int game_select_fragment_title=0x7f0e003d;
-    public static final int game_table=0x7f0e003e;
-    public static final int group_image=0x7f0e003f;
-    public static final int group_name=0x7f0e0040;
-    public static final int group_name_required=0x7f0e0041;
-    public static final int hide_bottom_view_on_scroll_behavior=0x7f0e0042;
-    public static final int maximum_bocks=0x7f0e0043;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0e0044;
-    public static final int nav_header_desc=0x7f0e0045;
-    public static final int nav_header_subtitle=0x7f0e0046;
-    public static final int nav_header_title=0x7f0e0047;
-    public static final int navigation_drawer_close=0x7f0e0048;
-    public static final int navigation_drawer_open=0x7f0e0049;
-    public static final int new_round_fragment_title=0x7f0e004a;
-    public static final int no=0x7f0e004b;
-    public static final int number_0=0x7f0e004c;
-    public static final int number_1=0x7f0e004d;
-    public static final int number_2=0x7f0e004e;
-    public static final int number_3=0x7f0e004f;
-    public static final int number_4=0x7f0e0050;
-    public static final int number_5=0x7f0e0051;
-    public static final int number_6=0x7f0e0052;
-    public static final int ok=0x7f0e0053;
-    public static final int party_create_fragment_title=0x7f0e0054;
-    public static final int party_select_fragment_title=0x7f0e0055;
-    public static final int password_toggle_content_description=0x7f0e0056;
-    public static final int path_password_eye=0x7f0e0057;
-    public static final int path_password_eye_mask_strike_through=0x7f0e0058;
-    public static final int path_password_eye_mask_visible=0x7f0e0059;
-    public static final int path_password_strike_through=0x7f0e005a;
-    public static final int player1_required=0x7f0e005b;
-    public static final int player2_required=0x7f0e005c;
-    public static final int player3_required=0x7f0e005d;
-    public static final int player4_required=0x7f0e005e;
-    public static final int player5_optional=0x7f0e005f;
-    public static final int player6_optional=0x7f0e0060;
-    public static final int points=0x7f0e0061;
-    public static final int sample_date=0x7f0e0062;
-    public static final int sample_player_name=0x7f0e0063;
-    public static final int sample_player_names=0x7f0e0064;
-    public static final int sample_rounds=0x7f0e0065;
-    public static final int save=0x7f0e0066;
-    public static final int search_menu_title=0x7f0e0067;
-    public static final int select_group_image=0x7f0e0068;
-    public static final int select_winners=0x7f0e0069;
-    public static final int settings_bocks_double=0x7f0e006a;
-    public static final int settings_bocks_none=0x7f0e006b;
-    public static final int settings_bocks_single=0x7f0e006c;
-    public static final int settings_frament_title=0x7f0e006d;
-    public static final int status_bar_notification_info_overflow=0x7f0e006e;
-    public static final int submit=0x7f0e006f;
-    public static final int table_bock=0x7f0e0070;
-    public static final int table_fragment_title=0x7f0e0071;
-    public static final int table_info=0x7f0e0072;
-    public static final int table_round_index=0x7f0e0073;
-    public static final int title_activity_main=0x7f0e0074;
-    public static final int yes=0x7f0e0075;
+    public static final int confirmation_delete_group=0x7f0e0031;
+    public static final int continue_text=0x7f0e0032;
+    public static final int create=0x7f0e0033;
+    public static final int delete=0x7f0e0034;
+    public static final int delete_group_title=0x7f0e0035;
+    public static final int double_bocks_remaining=0x7f0e0036;
+    public static final int edit=0x7f0e0037;
+    public static final int error_db_id_not_set=0x7f0e0038;
+    public static final int error_minimum_4_players=0x7f0e0039;
+    public static final int error_more_than_6_players=0x7f0e003a;
+    public static final int error_party_not_set=0x7f0e003b;
+    public static final int error_points_empty=0x7f0e003c;
+    public static final int error_required_field_not_initialized=0x7f0e003d;
+    public static final int error_winners=0x7f0e003e;
+    public static final int fab_transformation_scrim_behavior=0x7f0e003f;
+    public static final int fab_transformation_sheet_behavior=0x7f0e0040;
+    public static final int game_create_fragment_title=0x7f0e0041;
+    public static final int game_select_fragment_title=0x7f0e0042;
+    public static final int game_table=0x7f0e0043;
+    public static final int group_deleted=0x7f0e0044;
+    public static final int group_image=0x7f0e0045;
+    public static final int group_name=0x7f0e0046;
+    public static final int group_name_required=0x7f0e0047;
+    public static final int hide_bottom_view_on_scroll_behavior=0x7f0e0048;
+    public static final int maximum_bocks=0x7f0e0049;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0e004a;
+    public static final int nav_header_desc=0x7f0e004b;
+    public static final int nav_header_subtitle=0x7f0e004c;
+    public static final int nav_header_title=0x7f0e004d;
+    public static final int navigation_drawer_close=0x7f0e004e;
+    public static final int navigation_drawer_open=0x7f0e004f;
+    public static final int new_round=0x7f0e0050;
+    public static final int new_round_fragment_title=0x7f0e0051;
+    public static final int no=0x7f0e0052;
+    public static final int number_0=0x7f0e0053;
+    public static final int number_1=0x7f0e0054;
+    public static final int number_2=0x7f0e0055;
+    public static final int number_3=0x7f0e0056;
+    public static final int number_4=0x7f0e0057;
+    public static final int number_5=0x7f0e0058;
+    public static final int number_6=0x7f0e0059;
+    public static final int ok=0x7f0e005a;
+    public static final int party_create_fragment_title=0x7f0e005b;
+    public static final int party_select_fragment_title=0x7f0e005c;
+    public static final int password_toggle_content_description=0x7f0e005d;
+    public static final int path_password_eye=0x7f0e005e;
+    public static final int path_password_eye_mask_strike_through=0x7f0e005f;
+    public static final int path_password_eye_mask_visible=0x7f0e0060;
+    public static final int path_password_strike_through=0x7f0e0061;
+    public static final int player1_required=0x7f0e0062;
+    public static final int player2_required=0x7f0e0063;
+    public static final int player3_required=0x7f0e0064;
+    public static final int player4_required=0x7f0e0065;
+    public static final int player5_optional=0x7f0e0066;
+    public static final int player6_optional=0x7f0e0067;
+    public static final int points=0x7f0e0068;
+    public static final int repeat_round=0x7f0e0069;
+    public static final int rounds_played=0x7f0e006a;
+    public static final int sample_date=0x7f0e006b;
+    public static final int sample_player_name=0x7f0e006c;
+    public static final int sample_player_names=0x7f0e006d;
+    public static final int sample_rounds=0x7f0e006e;
+    public static final int save=0x7f0e006f;
+    public static final int search_menu_title=0x7f0e0070;
+    public static final int select_group_image=0x7f0e0071;
+    public static final int select_winners=0x7f0e0072;
+    public static final int settings_bocks_double=0x7f0e0073;
+    public static final int settings_bocks_none=0x7f0e0074;
+    public static final int settings_bocks_single=0x7f0e0075;
+    public static final int settings_frament_title=0x7f0e0076;
+    public static final int status_bar_notification_info_overflow=0x7f0e0077;
+    public static final int submit=0x7f0e0078;
+    public static final int table_bock=0x7f0e0079;
+    public static final int table_fragment_title=0x7f0e007a;
+    public static final int table_info=0x7f0e007b;
+    public static final int table_round_index=0x7f0e007c;
+    public static final int title_activity_main=0x7f0e007d;
+    public static final int yes=0x7f0e007e;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0f0000;
@@ -5731,35 +5750,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.example.admin.doppelkopfapp:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.example.admin.doppelkopfapp:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.example.admin.doppelkopfapp:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.admin.doppelkopfapp:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.example.admin.doppelkopfapp:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.admin.doppelkopfapp:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.example.admin.doppelkopfapp:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.example.admin.doppelkopfapp:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.example.admin.doppelkopfapp:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.admin.doppelkopfapp:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.example.admin.doppelkopfapp:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.example.admin.doppelkopfapp:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.example.admin.doppelkopfapp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.example.admin.doppelkopfapp:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.admin.doppelkopfapp:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.admin.doppelkopfapp:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.example.admin.doppelkopfapp:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.example.admin.doppelkopfapp:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.admin.doppelkopfapp:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.example.admin.doppelkopfapp:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.example.admin.doppelkopfapp:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.example.admin.doppelkopfapp:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.example.admin.doppelkopfapp:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.example.admin.doppelkopfapp:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.example.admin.doppelkopfapp:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.example.admin.doppelkopfapp:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.admin.doppelkopfapp:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.example.admin.doppelkopfapp:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.example.admin.doppelkopfapp:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.becker.games.doppelkopfapp:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.becker.games.doppelkopfapp:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.becker.games.doppelkopfapp:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.becker.games.doppelkopfapp:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.becker.games.doppelkopfapp:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.becker.games.doppelkopfapp:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.becker.games.doppelkopfapp:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.becker.games.doppelkopfapp:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.becker.games.doppelkopfapp:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.becker.games.doppelkopfapp:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.becker.games.doppelkopfapp:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.becker.games.doppelkopfapp:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.becker.games.doppelkopfapp:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.becker.games.doppelkopfapp:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.becker.games.doppelkopfapp:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.becker.games.doppelkopfapp:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.becker.games.doppelkopfapp:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.becker.games.doppelkopfapp:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.becker.games.doppelkopfapp:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.becker.games.doppelkopfapp:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.becker.games.doppelkopfapp:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.becker.games.doppelkopfapp:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.becker.games.doppelkopfapp:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.becker.games.doppelkopfapp:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.becker.games.doppelkopfapp:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.becker.games.doppelkopfapp:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.becker.games.doppelkopfapp:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.becker.games.doppelkopfapp:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.becker.games.doppelkopfapp:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -5802,7 +5821,7 @@ public final class R {
       0x7f0301fe
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5810,11 +5829,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:background
+     * @attr name com.becker.games.doppelkopfapp:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5825,11 +5844,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundSplit
+     * @attr name com.becker.games.doppelkopfapp:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5840,11 +5859,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundStacked
+     * @attr name com.becker.games.doppelkopfapp:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5853,11 +5872,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetEnd
+     * @attr name com.becker.games.doppelkopfapp:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5866,11 +5885,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetEndWithActions
+     * @attr name com.becker.games.doppelkopfapp:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5879,11 +5898,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetLeft
+     * @attr name com.becker.games.doppelkopfapp:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5892,11 +5911,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetRight
+     * @attr name com.becker.games.doppelkopfapp:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5905,11 +5924,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetStart
+     * @attr name com.becker.games.doppelkopfapp:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5918,11 +5937,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetStartWithNavigation
+     * @attr name com.becker.games.doppelkopfapp:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5930,11 +5949,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:customNavigationLayout
+     * @attr name com.becker.games.doppelkopfapp:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -5952,11 +5971,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:displayOptions
+     * @attr name com.becker.games.doppelkopfapp:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5964,11 +5983,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:divider
+     * @attr name com.becker.games.doppelkopfapp:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5977,11 +5996,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:elevation
+     * @attr name com.becker.games.doppelkopfapp:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5990,21 +6009,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:height
+     * @attr name com.becker.games.doppelkopfapp:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:hideOnContentScroll
+     * @attr name com.becker.games.doppelkopfapp:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6012,11 +6031,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:homeAsUpIndicator
+     * @attr name com.becker.games.doppelkopfapp:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6024,11 +6043,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:homeLayout
+     * @attr name com.becker.games.doppelkopfapp:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6036,11 +6055,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:icon
+     * @attr name com.becker.games.doppelkopfapp:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6048,11 +6067,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:indeterminateProgressStyle
+     * @attr name com.becker.games.doppelkopfapp:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6061,11 +6080,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:itemPadding
+     * @attr name com.becker.games.doppelkopfapp:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6073,11 +6092,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:logo
+     * @attr name com.becker.games.doppelkopfapp:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6091,11 +6110,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:navigationMode
+     * @attr name com.becker.games.doppelkopfapp:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6103,11 +6122,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:popupTheme
+     * @attr name com.becker.games.doppelkopfapp:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6116,11 +6135,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:progressBarPadding
+     * @attr name com.becker.games.doppelkopfapp:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6128,21 +6147,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:progressBarStyle
+     * @attr name com.becker.games.doppelkopfapp:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:subtitle
+     * @attr name com.becker.games.doppelkopfapp:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6150,21 +6169,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:subtitleTextStyle
+     * @attr name com.becker.games.doppelkopfapp:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:title
+     * @attr name com.becker.games.doppelkopfapp:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6172,7 +6191,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:titleTextStyle
+     * @attr name com.becker.games.doppelkopfapp:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -6254,12 +6273,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.example.admin.doppelkopfapp:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.example.admin.doppelkopfapp:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.example.admin.doppelkopfapp:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.example.admin.doppelkopfapp:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.admin.doppelkopfapp:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.example.admin.doppelkopfapp:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.becker.games.doppelkopfapp:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.becker.games.doppelkopfapp:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.becker.games.doppelkopfapp:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.becker.games.doppelkopfapp:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.becker.games.doppelkopfapp:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.becker.games.doppelkopfapp:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -6273,7 +6292,7 @@ public final class R {
       0x7f0301af, 0x7f0301fe
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6281,11 +6300,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:background
+     * @attr name com.becker.games.doppelkopfapp:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6296,11 +6315,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundSplit
+     * @attr name com.becker.games.doppelkopfapp:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6308,11 +6327,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:closeItemLayout
+     * @attr name com.becker.games.doppelkopfapp:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6321,11 +6340,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:height
+     * @attr name com.becker.games.doppelkopfapp:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6333,11 +6352,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:subtitleTextStyle
+     * @attr name com.becker.games.doppelkopfapp:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6345,7 +6364,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:titleTextStyle
+     * @attr name com.becker.games.doppelkopfapp:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -6355,8 +6374,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.admin.doppelkopfapp:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.admin.doppelkopfapp:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.becker.games.doppelkopfapp:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.becker.games.doppelkopfapp:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -6365,7 +6384,7 @@ public final class R {
       0x7f0300c1, 0x7f0300fe
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6373,17 +6392,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:expandActivityOverflowButtonDrawable
+     * @attr name com.becker.games.doppelkopfapp:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:initialActivityCount
+     * @attr name com.becker.games.doppelkopfapp:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -6394,13 +6413,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.example.admin.doppelkopfapp:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.example.admin.doppelkopfapp:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.example.admin.doppelkopfapp:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.example.admin.doppelkopfapp:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.example.admin.doppelkopfapp:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.example.admin.doppelkopfapp:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.example.admin.doppelkopfapp:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.becker.games.doppelkopfapp:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.becker.games.doppelkopfapp:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.becker.games.doppelkopfapp:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.becker.games.doppelkopfapp:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.becker.games.doppelkopfapp:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.becker.games.doppelkopfapp:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.becker.games.doppelkopfapp:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -6428,7 +6447,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6437,11 +6456,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonIconDimen
+     * @attr name com.becker.games.doppelkopfapp:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6449,11 +6468,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonPanelSideLayout
+     * @attr name com.becker.games.doppelkopfapp:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6461,11 +6480,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:listItemLayout
+     * @attr name com.becker.games.doppelkopfapp:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6473,11 +6492,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:listLayout
+     * @attr name com.becker.games.doppelkopfapp:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6485,21 +6504,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:multiChoiceItemLayout
+     * @attr name com.becker.games.doppelkopfapp:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:showTitle
+     * @attr name com.becker.games.doppelkopfapp:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6507,7 +6526,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:singleChoiceItemLayout
+     * @attr name com.becker.games.doppelkopfapp:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -6709,9 +6728,9 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.example.admin.doppelkopfapp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded com.example.admin.doppelkopfapp:expanded}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.example.admin.doppelkopfapp:liftOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.becker.games.doppelkopfapp:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.becker.games.doppelkopfapp:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.becker.games.doppelkopfapp:liftOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -6760,7 +6779,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6769,27 +6788,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:elevation
+     * @attr name com.becker.games.doppelkopfapp:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:expanded
+     * @attr name com.becker.games.doppelkopfapp:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#liftOnScroll}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#liftOnScroll}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:liftOnScroll
+     * @attr name com.becker.games.doppelkopfapp:liftOnScroll
      */
     public static final int AppBarLayout_liftOnScroll=5;
     /**
@@ -6799,10 +6818,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.example.admin.doppelkopfapp:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.example.admin.doppelkopfapp:state_collapsible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.example.admin.doppelkopfapp:state_liftable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.example.admin.doppelkopfapp:state_lifted}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.becker.games.doppelkopfapp:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.becker.games.doppelkopfapp:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.becker.games.doppelkopfapp:state_liftable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.becker.games.doppelkopfapp:state_lifted}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -6813,43 +6832,43 @@ public final class R {
       0x7f0301a2, 0x7f0301a3, 0x7f0301a4, 0x7f0301a5
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:state_collapsed
+     * @attr name com.becker.games.doppelkopfapp:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:state_collapsible
+     * @attr name com.becker.games.doppelkopfapp:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#state_liftable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#state_liftable}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:state_liftable
+     * @attr name com.becker.games.doppelkopfapp:state_liftable
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#state_lifted}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#state_lifted}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:state_lifted
+     * @attr name com.becker.games.doppelkopfapp:state_lifted
      */
     public static final int AppBarLayoutStates_state_lifted=3;
     /**
@@ -6859,8 +6878,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.example.admin.doppelkopfapp:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.example.admin.doppelkopfapp:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.becker.games.doppelkopfapp:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.becker.games.doppelkopfapp:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -6869,7 +6888,7 @@ public final class R {
       0x7f03014c, 0x7f03014d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -6886,11 +6905,11 @@ public final class R {
      * <tr><td>snapMargins</td><td>20</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_scrollFlags
+     * @attr name com.becker.games.doppelkopfapp:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6898,7 +6917,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_scrollInterpolator
+     * @attr name com.becker.games.doppelkopfapp:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -6909,9 +6928,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.example.admin.doppelkopfapp:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.example.admin.doppelkopfapp:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.example.admin.doppelkopfapp:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.becker.games.doppelkopfapp:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.becker.games.doppelkopfapp:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.becker.games.doppelkopfapp:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -6937,7 +6956,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6945,22 +6964,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:srcCompat
+     * @attr name com.becker.games.doppelkopfapp:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tint
+     * @attr name com.becker.games.doppelkopfapp:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6977,7 +6996,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:tintMode
+     * @attr name com.becker.games.doppelkopfapp:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -6988,9 +7007,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.example.admin.doppelkopfapp:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.example.admin.doppelkopfapp:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.example.admin.doppelkopfapp:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.becker.games.doppelkopfapp:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.becker.games.doppelkopfapp:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.becker.games.doppelkopfapp:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -7013,7 +7032,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7021,22 +7040,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tickMark
+     * @attr name com.becker.games.doppelkopfapp:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tickMarkTint
+     * @attr name com.becker.games.doppelkopfapp:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7053,7 +7072,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:tickMarkTintMode
+     * @attr name com.becker.games.doppelkopfapp:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -7193,16 +7212,16 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.example.admin.doppelkopfapp:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.example.admin.doppelkopfapp:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.example.admin.doppelkopfapp:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.example.admin.doppelkopfapp:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.example.admin.doppelkopfapp:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.example.admin.doppelkopfapp:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.example.admin.doppelkopfapp:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.example.admin.doppelkopfapp:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.example.admin.doppelkopfapp:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.admin.doppelkopfapp:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.becker.games.doppelkopfapp:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.becker.games.doppelkopfapp:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.becker.games.doppelkopfapp:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.becker.games.doppelkopfapp:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.becker.games.doppelkopfapp:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.becker.games.doppelkopfapp:firstBaselineToTopHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.becker.games.doppelkopfapp:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.becker.games.doppelkopfapp:lastBaselineToBottomHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.becker.games.doppelkopfapp:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.becker.games.doppelkopfapp:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -7234,7 +7253,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7243,11 +7262,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:autoSizeMaxTextSize
+     * @attr name com.becker.games.doppelkopfapp:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7256,11 +7275,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:autoSizeMinTextSize
+     * @attr name com.becker.games.doppelkopfapp:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7268,11 +7287,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:autoSizePresetSizes
+     * @attr name com.becker.games.doppelkopfapp:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7281,11 +7300,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:autoSizeStepGranularity
+     * @attr name com.becker.games.doppelkopfapp:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7298,11 +7317,11 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:autoSizeTextType
+     * @attr name com.becker.games.doppelkopfapp:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#firstBaselineToTopHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#firstBaselineToTopHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7311,21 +7330,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:firstBaselineToTopHeight
+     * @attr name com.becker.games.doppelkopfapp:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:fontFamily
+     * @attr name com.becker.games.doppelkopfapp:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#lastBaselineToBottomHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#lastBaselineToBottomHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7334,11 +7353,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:lastBaselineToBottomHeight
+     * @attr name com.becker.games.doppelkopfapp:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#lineHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#lineHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7347,11 +7366,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:lineHeight
+     * @attr name com.becker.games.doppelkopfapp:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7361,7 +7380,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAllCaps
+     * @attr name com.becker.games.doppelkopfapp:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=10;
     /**
@@ -7373,125 +7392,125 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.example.admin.doppelkopfapp:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.example.admin.doppelkopfapp:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.example.admin.doppelkopfapp:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.example.admin.doppelkopfapp:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.example.admin.doppelkopfapp:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.example.admin.doppelkopfapp:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.example.admin.doppelkopfapp:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.example.admin.doppelkopfapp:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.example.admin.doppelkopfapp:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.example.admin.doppelkopfapp:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.example.admin.doppelkopfapp:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.example.admin.doppelkopfapp:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.example.admin.doppelkopfapp:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.example.admin.doppelkopfapp:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.example.admin.doppelkopfapp:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.example.admin.doppelkopfapp:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.example.admin.doppelkopfapp:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.example.admin.doppelkopfapp:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.example.admin.doppelkopfapp:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.example.admin.doppelkopfapp:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.example.admin.doppelkopfapp:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.example.admin.doppelkopfapp:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.example.admin.doppelkopfapp:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.example.admin.doppelkopfapp:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.example.admin.doppelkopfapp:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.example.admin.doppelkopfapp:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.example.admin.doppelkopfapp:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.example.admin.doppelkopfapp:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.example.admin.doppelkopfapp:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.example.admin.doppelkopfapp:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.example.admin.doppelkopfapp:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.example.admin.doppelkopfapp:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.example.admin.doppelkopfapp:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.example.admin.doppelkopfapp:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.example.admin.doppelkopfapp:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.example.admin.doppelkopfapp:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.example.admin.doppelkopfapp:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.example.admin.doppelkopfapp:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.example.admin.doppelkopfapp:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.example.admin.doppelkopfapp:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.example.admin.doppelkopfapp:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.example.admin.doppelkopfapp:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.example.admin.doppelkopfapp:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.example.admin.doppelkopfapp:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.example.admin.doppelkopfapp:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.example.admin.doppelkopfapp:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.example.admin.doppelkopfapp:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.example.admin.doppelkopfapp:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.example.admin.doppelkopfapp:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.example.admin.doppelkopfapp:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.example.admin.doppelkopfapp:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.example.admin.doppelkopfapp:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.example.admin.doppelkopfapp:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.example.admin.doppelkopfapp:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.example.admin.doppelkopfapp:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.example.admin.doppelkopfapp:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.example.admin.doppelkopfapp:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.example.admin.doppelkopfapp:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.example.admin.doppelkopfapp:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.example.admin.doppelkopfapp:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.example.admin.doppelkopfapp:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.example.admin.doppelkopfapp:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.example.admin.doppelkopfapp:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.example.admin.doppelkopfapp:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.example.admin.doppelkopfapp:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.example.admin.doppelkopfapp:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.example.admin.doppelkopfapp:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.example.admin.doppelkopfapp:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.example.admin.doppelkopfapp:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.example.admin.doppelkopfapp:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.example.admin.doppelkopfapp:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.example.admin.doppelkopfapp:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.example.admin.doppelkopfapp:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.example.admin.doppelkopfapp:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.example.admin.doppelkopfapp:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.example.admin.doppelkopfapp:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.example.admin.doppelkopfapp:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.example.admin.doppelkopfapp:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.example.admin.doppelkopfapp:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.example.admin.doppelkopfapp:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.example.admin.doppelkopfapp:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.example.admin.doppelkopfapp:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.example.admin.doppelkopfapp:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.example.admin.doppelkopfapp:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.example.admin.doppelkopfapp:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.example.admin.doppelkopfapp:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.example.admin.doppelkopfapp:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.example.admin.doppelkopfapp:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.example.admin.doppelkopfapp:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.example.admin.doppelkopfapp:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.example.admin.doppelkopfapp:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.example.admin.doppelkopfapp:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.example.admin.doppelkopfapp:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.example.admin.doppelkopfapp:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.example.admin.doppelkopfapp:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.example.admin.doppelkopfapp:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.example.admin.doppelkopfapp:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.example.admin.doppelkopfapp:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.example.admin.doppelkopfapp:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.example.admin.doppelkopfapp:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.example.admin.doppelkopfapp:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.example.admin.doppelkopfapp:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.example.admin.doppelkopfapp:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.example.admin.doppelkopfapp:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.example.admin.doppelkopfapp:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.example.admin.doppelkopfapp:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.example.admin.doppelkopfapp:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.example.admin.doppelkopfapp:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.example.admin.doppelkopfapp:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.example.admin.doppelkopfapp:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.example.admin.doppelkopfapp:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.example.admin.doppelkopfapp:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.example.admin.doppelkopfapp:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.example.admin.doppelkopfapp:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.example.admin.doppelkopfapp:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.example.admin.doppelkopfapp:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.example.admin.doppelkopfapp:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.example.admin.doppelkopfapp:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.example.admin.doppelkopfapp:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.becker.games.doppelkopfapp:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.becker.games.doppelkopfapp:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.becker.games.doppelkopfapp:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.becker.games.doppelkopfapp:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.becker.games.doppelkopfapp:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.becker.games.doppelkopfapp:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.becker.games.doppelkopfapp:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.becker.games.doppelkopfapp:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.becker.games.doppelkopfapp:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.becker.games.doppelkopfapp:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.becker.games.doppelkopfapp:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.becker.games.doppelkopfapp:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.becker.games.doppelkopfapp:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.becker.games.doppelkopfapp:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.becker.games.doppelkopfapp:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.becker.games.doppelkopfapp:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.becker.games.doppelkopfapp:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.becker.games.doppelkopfapp:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.becker.games.doppelkopfapp:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.becker.games.doppelkopfapp:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.becker.games.doppelkopfapp:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.becker.games.doppelkopfapp:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.becker.games.doppelkopfapp:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.becker.games.doppelkopfapp:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.becker.games.doppelkopfapp:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.becker.games.doppelkopfapp:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.becker.games.doppelkopfapp:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.becker.games.doppelkopfapp:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.becker.games.doppelkopfapp:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.becker.games.doppelkopfapp:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.becker.games.doppelkopfapp:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.becker.games.doppelkopfapp:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.becker.games.doppelkopfapp:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.becker.games.doppelkopfapp:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.becker.games.doppelkopfapp:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.becker.games.doppelkopfapp:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.becker.games.doppelkopfapp:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.becker.games.doppelkopfapp:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.becker.games.doppelkopfapp:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.becker.games.doppelkopfapp:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.becker.games.doppelkopfapp:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.becker.games.doppelkopfapp:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.becker.games.doppelkopfapp:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.becker.games.doppelkopfapp:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.becker.games.doppelkopfapp:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.becker.games.doppelkopfapp:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.becker.games.doppelkopfapp:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.becker.games.doppelkopfapp:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.becker.games.doppelkopfapp:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.becker.games.doppelkopfapp:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.becker.games.doppelkopfapp:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.becker.games.doppelkopfapp:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.becker.games.doppelkopfapp:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.becker.games.doppelkopfapp:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.becker.games.doppelkopfapp:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.becker.games.doppelkopfapp:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.becker.games.doppelkopfapp:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.becker.games.doppelkopfapp:dialogCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.becker.games.doppelkopfapp:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.becker.games.doppelkopfapp:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.becker.games.doppelkopfapp:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.becker.games.doppelkopfapp:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.becker.games.doppelkopfapp:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.becker.games.doppelkopfapp:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.becker.games.doppelkopfapp:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.becker.games.doppelkopfapp:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.becker.games.doppelkopfapp:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.becker.games.doppelkopfapp:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.becker.games.doppelkopfapp:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.becker.games.doppelkopfapp:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.becker.games.doppelkopfapp:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.becker.games.doppelkopfapp:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.becker.games.doppelkopfapp:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.becker.games.doppelkopfapp:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.becker.games.doppelkopfapp:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.becker.games.doppelkopfapp:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.becker.games.doppelkopfapp:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.becker.games.doppelkopfapp:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.becker.games.doppelkopfapp:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.becker.games.doppelkopfapp:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.becker.games.doppelkopfapp:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.becker.games.doppelkopfapp:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.becker.games.doppelkopfapp:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.becker.games.doppelkopfapp:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.becker.games.doppelkopfapp:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.becker.games.doppelkopfapp:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.becker.games.doppelkopfapp:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.becker.games.doppelkopfapp:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.becker.games.doppelkopfapp:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.becker.games.doppelkopfapp:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.becker.games.doppelkopfapp:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.becker.games.doppelkopfapp:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.becker.games.doppelkopfapp:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.becker.games.doppelkopfapp:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.becker.games.doppelkopfapp:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.becker.games.doppelkopfapp:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.becker.games.doppelkopfapp:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.becker.games.doppelkopfapp:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.becker.games.doppelkopfapp:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.becker.games.doppelkopfapp:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.becker.games.doppelkopfapp:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.becker.games.doppelkopfapp:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.becker.games.doppelkopfapp:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.becker.games.doppelkopfapp:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.becker.games.doppelkopfapp:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.becker.games.doppelkopfapp:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.becker.games.doppelkopfapp:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.becker.games.doppelkopfapp:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.becker.games.doppelkopfapp:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.becker.games.doppelkopfapp:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.becker.games.doppelkopfapp:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.becker.games.doppelkopfapp:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.becker.games.doppelkopfapp:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.becker.games.doppelkopfapp:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.becker.games.doppelkopfapp:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.becker.games.doppelkopfapp:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.becker.games.doppelkopfapp:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.becker.games.doppelkopfapp:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.becker.games.doppelkopfapp:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -7671,7 +7690,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7679,11 +7698,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarDivider
+     * @attr name com.becker.games.doppelkopfapp:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7691,11 +7710,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarItemBackground
+     * @attr name com.becker.games.doppelkopfapp:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7703,11 +7722,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarPopupTheme
+     * @attr name com.becker.games.doppelkopfapp:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7724,11 +7743,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarSize
+     * @attr name com.becker.games.doppelkopfapp:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7736,11 +7755,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarSplitStyle
+     * @attr name com.becker.games.doppelkopfapp:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7748,11 +7767,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarStyle
+     * @attr name com.becker.games.doppelkopfapp:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7760,11 +7779,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarTabBarStyle
+     * @attr name com.becker.games.doppelkopfapp:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7772,11 +7791,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarTabStyle
+     * @attr name com.becker.games.doppelkopfapp:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7784,11 +7803,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarTabTextStyle
+     * @attr name com.becker.games.doppelkopfapp:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7796,11 +7815,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarTheme
+     * @attr name com.becker.games.doppelkopfapp:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7808,11 +7827,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionBarWidgetTheme
+     * @attr name com.becker.games.doppelkopfapp:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7820,11 +7839,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7832,11 +7851,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionDropDownStyle
+     * @attr name com.becker.games.doppelkopfapp:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7844,11 +7863,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionMenuTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7859,11 +7878,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionMenuTextColor
+     * @attr name com.becker.games.doppelkopfapp:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7871,11 +7890,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeBackground
+     * @attr name com.becker.games.doppelkopfapp:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7883,11 +7902,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeCloseButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7895,11 +7914,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeCloseDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7907,11 +7926,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeCopyDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7919,11 +7938,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeCutDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7931,11 +7950,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeFindDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7943,11 +7962,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModePasteDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7955,11 +7974,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModePopupWindowStyle
+     * @attr name com.becker.games.doppelkopfapp:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7967,11 +7986,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeSelectAllDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7979,11 +7998,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeShareDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7991,11 +8010,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeSplitBackground
+     * @attr name com.becker.games.doppelkopfapp:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8003,11 +8022,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeStyle
+     * @attr name com.becker.games.doppelkopfapp:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8015,11 +8034,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionModeWebSearchDrawable
+     * @attr name com.becker.games.doppelkopfapp:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8027,11 +8046,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionOverflowButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8039,11 +8058,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionOverflowMenuStyle
+     * @attr name com.becker.games.doppelkopfapp:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8051,11 +8070,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:activityChooserViewStyle
+     * @attr name com.becker.games.doppelkopfapp:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8063,21 +8082,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:alertDialogButtonGroupStyle
+     * @attr name com.becker.games.doppelkopfapp:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:alertDialogCenterButtons
+     * @attr name com.becker.games.doppelkopfapp:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8085,11 +8104,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:alertDialogStyle
+     * @attr name com.becker.games.doppelkopfapp:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8097,11 +8116,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:alertDialogTheme
+     * @attr name com.becker.games.doppelkopfapp:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8109,11 +8128,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:autoCompleteTextViewStyle
+     * @attr name com.becker.games.doppelkopfapp:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8121,11 +8140,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:borderlessButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8133,11 +8152,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonBarButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8145,11 +8164,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonBarNegativeButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8157,11 +8176,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonBarNeutralButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8169,11 +8188,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonBarPositiveButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8181,11 +8200,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonBarStyle
+     * @attr name com.becker.games.doppelkopfapp:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8193,11 +8212,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonStyle
+     * @attr name com.becker.games.doppelkopfapp:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8205,11 +8224,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonStyleSmall
+     * @attr name com.becker.games.doppelkopfapp:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8217,11 +8236,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:checkboxStyle
+     * @attr name com.becker.games.doppelkopfapp:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8229,77 +8248,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:checkedTextViewStyle
+     * @attr name com.becker.games.doppelkopfapp:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorAccent
+     * @attr name com.becker.games.doppelkopfapp:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorBackgroundFloating
+     * @attr name com.becker.games.doppelkopfapp:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorButtonNormal
+     * @attr name com.becker.games.doppelkopfapp:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorControlActivated
+     * @attr name com.becker.games.doppelkopfapp:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorControlHighlight
+     * @attr name com.becker.games.doppelkopfapp:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorControlNormal
+     * @attr name com.becker.games.doppelkopfapp:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8310,44 +8329,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorError
+     * @attr name com.becker.games.doppelkopfapp:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorPrimary
+     * @attr name com.becker.games.doppelkopfapp:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorPrimaryDark
+     * @attr name com.becker.games.doppelkopfapp:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorSwitchThumbNormal
+     * @attr name com.becker.games.doppelkopfapp:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8355,11 +8374,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:controlBackground
+     * @attr name com.becker.games.doppelkopfapp:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dialogCornerRadius}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dialogCornerRadius}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8368,11 +8387,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:dialogCornerRadius
+     * @attr name com.becker.games.doppelkopfapp:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8381,11 +8400,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:dialogPreferredPadding
+     * @attr name com.becker.games.doppelkopfapp:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8393,11 +8412,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:dialogTheme
+     * @attr name com.becker.games.doppelkopfapp:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8405,11 +8424,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:dividerHorizontal
+     * @attr name com.becker.games.doppelkopfapp:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8417,11 +8436,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:dividerVertical
+     * @attr name com.becker.games.doppelkopfapp:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8429,11 +8448,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:dropDownListViewStyle
+     * @attr name com.becker.games.doppelkopfapp:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8442,11 +8461,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:dropdownListPreferredItemHeight
+     * @attr name com.becker.games.doppelkopfapp:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8454,11 +8473,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:editTextBackground
+     * @attr name com.becker.games.doppelkopfapp:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8469,11 +8488,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:editTextColor
+     * @attr name com.becker.games.doppelkopfapp:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8481,11 +8500,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:editTextStyle
+     * @attr name com.becker.games.doppelkopfapp:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8493,11 +8512,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:homeAsUpIndicator
+     * @attr name com.becker.games.doppelkopfapp:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8505,11 +8524,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:imageButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8517,11 +8536,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:listChoiceBackgroundIndicator
+     * @attr name com.becker.games.doppelkopfapp:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8529,11 +8548,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:listDividerAlertDialog
+     * @attr name com.becker.games.doppelkopfapp:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8541,11 +8560,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:listMenuViewStyle
+     * @attr name com.becker.games.doppelkopfapp:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8553,11 +8572,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:listPopupWindowStyle
+     * @attr name com.becker.games.doppelkopfapp:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8566,11 +8585,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:listPreferredItemHeight
+     * @attr name com.becker.games.doppelkopfapp:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8579,11 +8598,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:listPreferredItemHeightLarge
+     * @attr name com.becker.games.doppelkopfapp:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8592,11 +8611,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:listPreferredItemHeightSmall
+     * @attr name com.becker.games.doppelkopfapp:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8605,11 +8624,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:listPreferredItemPaddingLeft
+     * @attr name com.becker.games.doppelkopfapp:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8618,11 +8637,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:listPreferredItemPaddingRight
+     * @attr name com.becker.games.doppelkopfapp:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8630,11 +8649,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:panelBackground
+     * @attr name com.becker.games.doppelkopfapp:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8642,11 +8661,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:panelMenuListTheme
+     * @attr name com.becker.games.doppelkopfapp:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8655,11 +8674,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:panelMenuListWidth
+     * @attr name com.becker.games.doppelkopfapp:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8667,11 +8686,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:popupMenuStyle
+     * @attr name com.becker.games.doppelkopfapp:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8679,11 +8698,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:popupWindowStyle
+     * @attr name com.becker.games.doppelkopfapp:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8691,11 +8710,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:radioButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8703,11 +8722,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:ratingBarStyle
+     * @attr name com.becker.games.doppelkopfapp:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8715,11 +8734,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:ratingBarStyleIndicator
+     * @attr name com.becker.games.doppelkopfapp:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8727,11 +8746,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:ratingBarStyleSmall
+     * @attr name com.becker.games.doppelkopfapp:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8739,11 +8758,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:searchViewStyle
+     * @attr name com.becker.games.doppelkopfapp:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8751,11 +8770,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:seekBarStyle
+     * @attr name com.becker.games.doppelkopfapp:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8763,11 +8782,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:selectableItemBackground
+     * @attr name com.becker.games.doppelkopfapp:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8775,11 +8794,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:selectableItemBackgroundBorderless
+     * @attr name com.becker.games.doppelkopfapp:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8787,11 +8806,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:spinnerDropDownItemStyle
+     * @attr name com.becker.games.doppelkopfapp:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8799,11 +8818,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:spinnerStyle
+     * @attr name com.becker.games.doppelkopfapp:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8811,11 +8830,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:switchStyle
+     * @attr name com.becker.games.doppelkopfapp:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8823,11 +8842,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceLargePopupMenu
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8835,11 +8854,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceListItem
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8847,11 +8866,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceListItemSecondary
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8859,11 +8878,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceListItemSmall
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8871,11 +8890,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearancePopupMenuHeader
+     * @attr name com.becker.games.doppelkopfapp:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8883,11 +8902,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceSearchResultSubtitle
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8895,11 +8914,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceSearchResultTitle
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8907,11 +8926,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceSmallPopupMenu
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8922,11 +8941,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textColorAlertDialogListItem
+     * @attr name com.becker.games.doppelkopfapp:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8937,11 +8956,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textColorSearchUrl
+     * @attr name com.becker.games.doppelkopfapp:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8949,11 +8968,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:toolbarNavigationButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8961,11 +8980,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:toolbarStyle
+     * @attr name com.becker.games.doppelkopfapp:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8976,11 +8995,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tooltipForegroundColor
+     * @attr name com.becker.games.doppelkopfapp:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8988,51 +9007,51 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tooltipFrameBackground
+     * @attr name com.becker.games.doppelkopfapp:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=109;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:viewInflaterClass
+     * @attr name com.becker.games.doppelkopfapp:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:windowActionBar
+     * @attr name com.becker.games.doppelkopfapp:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:windowActionBarOverlay
+     * @attr name com.becker.games.doppelkopfapp:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:windowActionModeOverlay
+     * @attr name com.becker.games.doppelkopfapp:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9045,11 +9064,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.admin.doppelkopfapp:windowFixedHeightMajor
+     * @attr name com.becker.games.doppelkopfapp:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9062,11 +9081,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.admin.doppelkopfapp:windowFixedHeightMinor
+     * @attr name com.becker.games.doppelkopfapp:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9079,11 +9098,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.admin.doppelkopfapp:windowFixedWidthMajor
+     * @attr name com.becker.games.doppelkopfapp:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9096,11 +9115,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.admin.doppelkopfapp:windowFixedWidthMinor
+     * @attr name com.becker.games.doppelkopfapp:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9113,11 +9132,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.admin.doppelkopfapp:windowMinWidthMajor
+     * @attr name com.becker.games.doppelkopfapp:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9130,17 +9149,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.admin.doppelkopfapp:windowMinWidthMinor
+     * @attr name com.becker.games.doppelkopfapp:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:windowNoTitle
+     * @attr name com.becker.games.doppelkopfapp:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=120;
     /**
@@ -9150,12 +9169,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.example.admin.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.example.admin.doppelkopfapp:fabAlignmentMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.example.admin.doppelkopfapp:fabCradleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.example.admin.doppelkopfapp:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.example.admin.doppelkopfapp:fabCradleVerticalOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.example.admin.doppelkopfapp:hideOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.becker.games.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.becker.games.doppelkopfapp:fabAlignmentMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.becker.games.doppelkopfapp:fabCradleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.becker.games.doppelkopfapp:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.becker.games.doppelkopfapp:fabCradleVerticalOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.becker.games.doppelkopfapp:hideOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #BottomAppBar_backgroundTint
      * @see #BottomAppBar_fabAlignmentMode
@@ -9169,18 +9188,18 @@ public final class R {
       0x7f0300cd, 0x7f0300ec
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundTint
+     * @attr name com.becker.games.doppelkopfapp:backgroundTint
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fabAlignmentMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fabAlignmentMode}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9193,11 +9212,11 @@ public final class R {
      * <tr><td>end</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:fabAlignmentMode
+     * @attr name com.becker.games.doppelkopfapp:fabAlignmentMode
      */
     public static final int BottomAppBar_fabAlignmentMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fabCradleMargin}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fabCradleMargin}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9206,11 +9225,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:fabCradleMargin
+     * @attr name com.becker.games.doppelkopfapp:fabCradleMargin
      */
     public static final int BottomAppBar_fabCradleMargin=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fabCradleRoundedCornerRadius}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fabCradleRoundedCornerRadius}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9219,11 +9238,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:fabCradleRoundedCornerRadius
+     * @attr name com.becker.games.doppelkopfapp:fabCradleRoundedCornerRadius
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fabCradleVerticalOffset}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fabCradleVerticalOffset}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9232,17 +9251,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:fabCradleVerticalOffset
+     * @attr name com.becker.games.doppelkopfapp:fabCradleVerticalOffset
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hideOnScroll}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hideOnScroll}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:hideOnScroll
+     * @attr name com.becker.games.doppelkopfapp:hideOnScroll
      */
     public static final int BottomAppBar_hideOnScroll=5;
     /**
@@ -9252,16 +9271,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.example.admin.doppelkopfapp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.example.admin.doppelkopfapp:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.example.admin.doppelkopfapp:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.example.admin.doppelkopfapp:itemIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.example.admin.doppelkopfapp:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.example.admin.doppelkopfapp:itemTextAppearanceActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.example.admin.doppelkopfapp:itemTextAppearanceInactive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.example.admin.doppelkopfapp:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.example.admin.doppelkopfapp:labelVisibilityMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.example.admin.doppelkopfapp:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.becker.games.doppelkopfapp:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.becker.games.doppelkopfapp:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.becker.games.doppelkopfapp:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.becker.games.doppelkopfapp:itemIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.becker.games.doppelkopfapp:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.becker.games.doppelkopfapp:itemTextAppearanceActive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.becker.games.doppelkopfapp:itemTextAppearanceInactive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.becker.games.doppelkopfapp:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.becker.games.doppelkopfapp:labelVisibilityMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.becker.games.doppelkopfapp:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -9280,7 +9299,7 @@ public final class R {
       0x7f03010e, 0x7f030164
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9289,11 +9308,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:elevation
+     * @attr name com.becker.games.doppelkopfapp:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9301,21 +9320,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemBackground
+     * @attr name com.becker.games.doppelkopfapp:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemHorizontalTranslationEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemHorizontalTranslationEnabled}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemHorizontalTranslationEnabled
+     * @attr name com.becker.games.doppelkopfapp:itemHorizontalTranslationEnabled
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemIconSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemIconSize}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9324,22 +9343,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:itemIconSize
+     * @attr name com.becker.games.doppelkopfapp:itemIconSize
      */
     public static final int BottomNavigationView_itemIconSize=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemIconTint
+     * @attr name com.becker.games.doppelkopfapp:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemTextAppearanceActive}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemTextAppearanceActive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9347,11 +9366,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemTextAppearanceActive
+     * @attr name com.becker.games.doppelkopfapp:itemTextAppearanceActive
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemTextAppearanceInactive}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemTextAppearanceInactive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9359,22 +9378,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemTextAppearanceInactive
+     * @attr name com.becker.games.doppelkopfapp:itemTextAppearanceInactive
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemTextColor
+     * @attr name com.becker.games.doppelkopfapp:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#labelVisibilityMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#labelVisibilityMode}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9389,11 +9408,11 @@ public final class R {
      * <tr><td>unlabeled</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:labelVisibilityMode
+     * @attr name com.becker.games.doppelkopfapp:labelVisibilityMode
      */
     public static final int BottomNavigationView_labelVisibilityMode=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9401,7 +9420,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:menu
+     * @attr name com.becker.games.doppelkopfapp:menu
      */
     public static final int BottomNavigationView_menu=9;
     /**
@@ -9411,10 +9430,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.example.admin.doppelkopfapp:behavior_fitToContents}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.example.admin.doppelkopfapp:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.example.admin.doppelkopfapp:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.example.admin.doppelkopfapp:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.becker.games.doppelkopfapp:behavior_fitToContents}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.becker.games.doppelkopfapp:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.becker.games.doppelkopfapp:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.becker.games.doppelkopfapp:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_fitToContents
      * @see #BottomSheetBehavior_Layout_behavior_hideable
@@ -9425,27 +9444,27 @@ public final class R {
       0x7f03003a, 0x7f03003b, 0x7f03003d, 0x7f03003e
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#behavior_fitToContents}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#behavior_fitToContents}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:behavior_fitToContents
+     * @attr name com.becker.games.doppelkopfapp:behavior_fitToContents
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:behavior_hideable
+     * @attr name com.becker.games.doppelkopfapp:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9462,17 +9481,17 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:behavior_peekHeight
+     * @attr name com.becker.games.doppelkopfapp:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:behavior_skipCollapsed
+     * @attr name com.becker.games.doppelkopfapp:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=3;
     /**
@@ -9482,7 +9501,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.admin.doppelkopfapp:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.becker.games.doppelkopfapp:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -9490,13 +9509,13 @@ public final class R {
       0x7f030026
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:allowStacking
+     * @attr name com.becker.games.doppelkopfapp:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -9508,17 +9527,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.example.admin.doppelkopfapp:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.example.admin.doppelkopfapp:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.example.admin.doppelkopfapp:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.example.admin.doppelkopfapp:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.example.admin.doppelkopfapp:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.example.admin.doppelkopfapp:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.example.admin.doppelkopfapp:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.example.admin.doppelkopfapp:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.example.admin.doppelkopfapp:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.example.admin.doppelkopfapp:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.example.admin.doppelkopfapp:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.becker.games.doppelkopfapp:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.becker.games.doppelkopfapp:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.becker.games.doppelkopfapp:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.becker.games.doppelkopfapp:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.becker.games.doppelkopfapp:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.becker.games.doppelkopfapp:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.becker.games.doppelkopfapp:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.becker.games.doppelkopfapp:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.becker.games.doppelkopfapp:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.becker.games.doppelkopfapp:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.becker.games.doppelkopfapp:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -9567,18 +9586,18 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:cardBackgroundColor
+     * @attr name com.becker.games.doppelkopfapp:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9587,11 +9606,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:cardCornerRadius
+     * @attr name com.becker.games.doppelkopfapp:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9600,11 +9619,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:cardElevation
+     * @attr name com.becker.games.doppelkopfapp:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9613,31 +9632,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:cardMaxElevation
+     * @attr name com.becker.games.doppelkopfapp:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:cardPreventCornerOverlap
+     * @attr name com.becker.games.doppelkopfapp:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:cardUseCompatPadding
+     * @attr name com.becker.games.doppelkopfapp:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9646,11 +9665,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentPadding
+     * @attr name com.becker.games.doppelkopfapp:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9659,11 +9678,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentPaddingBottom
+     * @attr name com.becker.games.doppelkopfapp:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9672,11 +9691,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentPaddingLeft
+     * @attr name com.becker.games.doppelkopfapp:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9685,11 +9704,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentPaddingRight
+     * @attr name com.becker.games.doppelkopfapp:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9698,7 +9717,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentPaddingTop
+     * @attr name com.becker.games.doppelkopfapp:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -9713,35 +9732,35 @@ public final class R {
      * <tr><td><code>{@link #Chip_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_text android:text}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIcon com.example.admin.doppelkopfapp:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconEnabled com.example.admin.doppelkopfapp:checkedIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconVisible com.example.admin.doppelkopfapp:checkedIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipBackgroundColor com.example.admin.doppelkopfapp:chipBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipCornerRadius com.example.admin.doppelkopfapp:chipCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipEndPadding com.example.admin.doppelkopfapp:chipEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIcon com.example.admin.doppelkopfapp:chipIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconEnabled com.example.admin.doppelkopfapp:chipIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconSize com.example.admin.doppelkopfapp:chipIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconTint com.example.admin.doppelkopfapp:chipIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconVisible com.example.admin.doppelkopfapp:chipIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipMinHeight com.example.admin.doppelkopfapp:chipMinHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStartPadding com.example.admin.doppelkopfapp:chipStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeColor com.example.admin.doppelkopfapp:chipStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeWidth com.example.admin.doppelkopfapp:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.example.admin.doppelkopfapp:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEnabled com.example.admin.doppelkopfapp:closeIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEndPadding com.example.admin.doppelkopfapp:closeIconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconSize com.example.admin.doppelkopfapp:closeIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconStartPadding com.example.admin.doppelkopfapp:closeIconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconTint com.example.admin.doppelkopfapp:closeIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconVisible com.example.admin.doppelkopfapp:closeIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_hideMotionSpec com.example.admin.doppelkopfapp:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconEndPadding com.example.admin.doppelkopfapp:iconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconStartPadding com.example.admin.doppelkopfapp:iconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_rippleColor com.example.admin.doppelkopfapp:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_showMotionSpec com.example.admin.doppelkopfapp:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textEndPadding com.example.admin.doppelkopfapp:textEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textStartPadding com.example.admin.doppelkopfapp:textStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIcon com.becker.games.doppelkopfapp:checkedIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconEnabled com.becker.games.doppelkopfapp:checkedIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconVisible com.becker.games.doppelkopfapp:checkedIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipBackgroundColor com.becker.games.doppelkopfapp:chipBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipCornerRadius com.becker.games.doppelkopfapp:chipCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipEndPadding com.becker.games.doppelkopfapp:chipEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIcon com.becker.games.doppelkopfapp:chipIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconEnabled com.becker.games.doppelkopfapp:chipIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconSize com.becker.games.doppelkopfapp:chipIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconTint com.becker.games.doppelkopfapp:chipIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconVisible com.becker.games.doppelkopfapp:chipIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipMinHeight com.becker.games.doppelkopfapp:chipMinHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStartPadding com.becker.games.doppelkopfapp:chipStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeColor com.becker.games.doppelkopfapp:chipStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeWidth com.becker.games.doppelkopfapp:chipStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.becker.games.doppelkopfapp:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEnabled com.becker.games.doppelkopfapp:closeIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEndPadding com.becker.games.doppelkopfapp:closeIconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconSize com.becker.games.doppelkopfapp:closeIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconStartPadding com.becker.games.doppelkopfapp:closeIconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconTint com.becker.games.doppelkopfapp:closeIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconVisible com.becker.games.doppelkopfapp:closeIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_hideMotionSpec com.becker.games.doppelkopfapp:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconEndPadding com.becker.games.doppelkopfapp:iconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconStartPadding com.becker.games.doppelkopfapp:iconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_rippleColor com.becker.games.doppelkopfapp:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_showMotionSpec com.becker.games.doppelkopfapp:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textEndPadding com.becker.games.doppelkopfapp:textEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textStartPadding com.becker.games.doppelkopfapp:textStartPadding}</code></td><td></td></tr>
      * </table>
      * @see #Chip_android_textAppearance
      * @see #Chip_android_ellipsize
@@ -9855,7 +9874,7 @@ public final class R {
      */
     public static final int Chip_android_checkable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#checkedIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#checkedIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9863,42 +9882,42 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:checkedIcon
+     * @attr name com.becker.games.doppelkopfapp:checkedIcon
      */
     public static final int Chip_checkedIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#checkedIconEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#checkedIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:checkedIconEnabled
+     * @attr name com.becker.games.doppelkopfapp:checkedIconEnabled
      */
     public static final int Chip_checkedIconEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#checkedIconVisible}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#checkedIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:checkedIconVisible
+     * @attr name com.becker.games.doppelkopfapp:checkedIconVisible
      */
     public static final int Chip_checkedIconVisible=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipBackgroundColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipBackgroundColor
+     * @attr name com.becker.games.doppelkopfapp:chipBackgroundColor
      */
     public static final int Chip_chipBackgroundColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipCornerRadius}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipCornerRadius}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9907,11 +9926,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipCornerRadius
+     * @attr name com.becker.games.doppelkopfapp:chipCornerRadius
      */
     public static final int Chip_chipCornerRadius=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipEndPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9920,11 +9939,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipEndPadding
+     * @attr name com.becker.games.doppelkopfapp:chipEndPadding
      */
     public static final int Chip_chipEndPadding=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9932,21 +9951,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipIcon
+     * @attr name com.becker.games.doppelkopfapp:chipIcon
      */
     public static final int Chip_chipIcon=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipIconEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipIconEnabled
+     * @attr name com.becker.games.doppelkopfapp:chipIconEnabled
      */
     public static final int Chip_chipIconEnabled=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipIconSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9955,32 +9974,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipIconSize
+     * @attr name com.becker.games.doppelkopfapp:chipIconSize
      */
     public static final int Chip_chipIconSize=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipIconTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipIconTint
+     * @attr name com.becker.games.doppelkopfapp:chipIconTint
      */
     public static final int Chip_chipIconTint=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipIconVisible}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipIconVisible
+     * @attr name com.becker.games.doppelkopfapp:chipIconVisible
      */
     public static final int Chip_chipIconVisible=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipMinHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipMinHeight}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9989,11 +10008,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipMinHeight
+     * @attr name com.becker.games.doppelkopfapp:chipMinHeight
      */
     public static final int Chip_chipMinHeight=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipStartPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10002,22 +10021,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipStartPadding
+     * @attr name com.becker.games.doppelkopfapp:chipStartPadding
      */
     public static final int Chip_chipStartPadding=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipStrokeColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipStrokeColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipStrokeColor
+     * @attr name com.becker.games.doppelkopfapp:chipStrokeColor
      */
     public static final int Chip_chipStrokeColor=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipStrokeWidth}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10026,11 +10045,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipStrokeWidth
+     * @attr name com.becker.games.doppelkopfapp:chipStrokeWidth
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10038,21 +10057,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIcon
+     * @attr name com.becker.games.doppelkopfapp:closeIcon
      */
     public static final int Chip_closeIcon=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIconEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIconEnabled
+     * @attr name com.becker.games.doppelkopfapp:closeIconEnabled
      */
     public static final int Chip_closeIconEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIconEndPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10061,11 +10080,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIconEndPadding
+     * @attr name com.becker.games.doppelkopfapp:closeIconEndPadding
      */
     public static final int Chip_closeIconEndPadding=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIconSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10074,11 +10093,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIconSize
+     * @attr name com.becker.games.doppelkopfapp:closeIconSize
      */
     public static final int Chip_closeIconSize=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIconStartPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10087,32 +10106,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIconStartPadding
+     * @attr name com.becker.games.doppelkopfapp:closeIconStartPadding
      */
     public static final int Chip_closeIconStartPadding=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIconTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIconTint
+     * @attr name com.becker.games.doppelkopfapp:closeIconTint
      */
     public static final int Chip_closeIconTint=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIconVisible}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIconVisible
+     * @attr name com.becker.games.doppelkopfapp:closeIconVisible
      */
     public static final int Chip_closeIconVisible=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10120,11 +10139,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:hideMotionSpec
+     * @attr name com.becker.games.doppelkopfapp:hideMotionSpec
      */
     public static final int Chip_hideMotionSpec=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconEndPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10133,11 +10152,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:iconEndPadding
+     * @attr name com.becker.games.doppelkopfapp:iconEndPadding
      */
     public static final int Chip_iconEndPadding=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconStartPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10146,22 +10165,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:iconStartPadding
+     * @attr name com.becker.games.doppelkopfapp:iconStartPadding
      */
     public static final int Chip_iconStartPadding=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#rippleColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:rippleColor
+     * @attr name com.becker.games.doppelkopfapp:rippleColor
      */
     public static final int Chip_rippleColor=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10169,11 +10188,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:showMotionSpec
+     * @attr name com.becker.games.doppelkopfapp:showMotionSpec
      */
     public static final int Chip_showMotionSpec=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textEndPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10182,11 +10201,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:textEndPadding
+     * @attr name com.becker.games.doppelkopfapp:textEndPadding
      */
     public static final int Chip_textEndPadding=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textStartPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10195,7 +10214,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:textStartPadding
+     * @attr name com.becker.games.doppelkopfapp:textStartPadding
      */
     public static final int Chip_textStartPadding=33;
     /**
@@ -10205,12 +10224,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ChipGroup_checkedChip com.example.admin.doppelkopfapp:checkedChip}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacing com.example.admin.doppelkopfapp:chipSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.example.admin.doppelkopfapp:chipSpacingHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.example.admin.doppelkopfapp:chipSpacingVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleLine com.example.admin.doppelkopfapp:singleLine}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleSelection com.example.admin.doppelkopfapp:singleSelection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_checkedChip com.becker.games.doppelkopfapp:checkedChip}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacing com.becker.games.doppelkopfapp:chipSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.becker.games.doppelkopfapp:chipSpacingHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.becker.games.doppelkopfapp:chipSpacingVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleLine com.becker.games.doppelkopfapp:singleLine}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleSelection com.becker.games.doppelkopfapp:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #ChipGroup_checkedChip
      * @see #ChipGroup_chipSpacing
@@ -10224,7 +10243,7 @@ public final class R {
       0x7f030196, 0x7f030197
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#checkedChip}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#checkedChip}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10232,11 +10251,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:checkedChip
+     * @attr name com.becker.games.doppelkopfapp:checkedChip
      */
     public static final int ChipGroup_checkedChip=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipSpacing}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipSpacing}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10245,11 +10264,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipSpacing
+     * @attr name com.becker.games.doppelkopfapp:chipSpacing
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipSpacingHorizontal}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipSpacingHorizontal}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10258,11 +10277,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipSpacingHorizontal
+     * @attr name com.becker.games.doppelkopfapp:chipSpacingHorizontal
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipSpacingVertical}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipSpacingVertical}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10271,27 +10290,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:chipSpacingVertical
+     * @attr name com.becker.games.doppelkopfapp:chipSpacingVertical
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#singleLine}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#singleLine}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:singleLine
+     * @attr name com.becker.games.doppelkopfapp:singleLine
      */
     public static final int ChipGroup_singleLine=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#singleSelection}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#singleSelection}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:singleSelection
+     * @attr name com.becker.games.doppelkopfapp:singleSelection
      */
     public static final int ChipGroup_singleSelection=5;
     /**
@@ -10301,22 +10320,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.example.admin.doppelkopfapp:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.example.admin.doppelkopfapp:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.example.admin.doppelkopfapp:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.example.admin.doppelkopfapp:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.example.admin.doppelkopfapp:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.example.admin.doppelkopfapp:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.example.admin.doppelkopfapp:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.example.admin.doppelkopfapp:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.example.admin.doppelkopfapp:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.example.admin.doppelkopfapp:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.example.admin.doppelkopfapp:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.example.admin.doppelkopfapp:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.example.admin.doppelkopfapp:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.example.admin.doppelkopfapp:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.example.admin.doppelkopfapp:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.example.admin.doppelkopfapp:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.becker.games.doppelkopfapp:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.becker.games.doppelkopfapp:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.becker.games.doppelkopfapp:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.becker.games.doppelkopfapp:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.becker.games.doppelkopfapp:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.becker.games.doppelkopfapp:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.becker.games.doppelkopfapp:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.becker.games.doppelkopfapp:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.becker.games.doppelkopfapp:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.becker.games.doppelkopfapp:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.becker.games.doppelkopfapp:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.becker.games.doppelkopfapp:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.becker.games.doppelkopfapp:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.becker.games.doppelkopfapp:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.becker.games.doppelkopfapp:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.becker.games.doppelkopfapp:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -10342,7 +10361,7 @@ public final class R {
       0x7f0301a7, 0x7f0301f4, 0x7f0301f5, 0x7f0301ff
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10363,11 +10382,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:collapsedTitleGravity
+     * @attr name com.becker.games.doppelkopfapp:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10375,22 +10394,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:collapsedTitleTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:contentScrim
+     * @attr name com.becker.games.doppelkopfapp:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10411,11 +10430,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:expandedTitleGravity
+     * @attr name com.becker.games.doppelkopfapp:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10424,11 +10443,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:expandedTitleMargin
+     * @attr name com.becker.games.doppelkopfapp:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10437,11 +10456,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:expandedTitleMarginBottom
+     * @attr name com.becker.games.doppelkopfapp:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10450,11 +10469,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:expandedTitleMarginEnd
+     * @attr name com.becker.games.doppelkopfapp:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10463,11 +10482,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:expandedTitleMarginStart
+     * @attr name com.becker.games.doppelkopfapp:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10476,11 +10495,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:expandedTitleMarginTop
+     * @attr name com.becker.games.doppelkopfapp:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10488,20 +10507,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:expandedTitleTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:scrimAnimationDuration
+     * @attr name com.becker.games.doppelkopfapp:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10510,42 +10529,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:scrimVisibleHeightTrigger
+     * @attr name com.becker.games.doppelkopfapp:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:statusBarScrim
+     * @attr name com.becker.games.doppelkopfapp:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:title
+     * @attr name com.becker.games.doppelkopfapp:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:titleEnabled
+     * @attr name com.becker.games.doppelkopfapp:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10553,7 +10572,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:toolbarId
+     * @attr name com.becker.games.doppelkopfapp:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -10563,8 +10582,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.example.admin.doppelkopfapp:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.example.admin.doppelkopfapp:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.becker.games.doppelkopfapp:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.becker.games.doppelkopfapp:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -10573,7 +10592,7 @@ public final class R {
       0x7f030115, 0x7f030116
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10587,16 +10606,16 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_collapseMode
+     * @attr name com.becker.games.doppelkopfapp:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_collapseParallaxMultiplier
+     * @attr name com.becker.games.doppelkopfapp:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
@@ -10608,7 +10627,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.example.admin.doppelkopfapp:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.becker.games.doppelkopfapp:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -10638,12 +10657,12 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:alpha
+     * @attr name com.becker.games.doppelkopfapp:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -10654,8 +10673,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.example.admin.doppelkopfapp:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.admin.doppelkopfapp:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.becker.games.doppelkopfapp:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.becker.games.doppelkopfapp:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -10677,18 +10696,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonTint
+     * @attr name com.becker.games.doppelkopfapp:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10705,7 +10724,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonTintMode
+     * @attr name com.becker.games.doppelkopfapp:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -10720,61 +10739,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.example.admin.doppelkopfapp:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.example.admin.doppelkopfapp:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.example.admin.doppelkopfapp:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.example.admin.doppelkopfapp:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.example.admin.doppelkopfapp:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.example.admin.doppelkopfapp:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.example.admin.doppelkopfapp:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.example.admin.doppelkopfapp:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.example.admin.doppelkopfapp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.example.admin.doppelkopfapp:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.example.admin.doppelkopfapp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.example.admin.doppelkopfapp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.example.admin.doppelkopfapp:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.example.admin.doppelkopfapp:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.example.admin.doppelkopfapp:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.example.admin.doppelkopfapp:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.example.admin.doppelkopfapp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.example.admin.doppelkopfapp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.example.admin.doppelkopfapp:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.example.admin.doppelkopfapp:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.example.admin.doppelkopfapp:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.example.admin.doppelkopfapp:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.example.admin.doppelkopfapp:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.example.admin.doppelkopfapp:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.example.admin.doppelkopfapp:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.example.admin.doppelkopfapp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.example.admin.doppelkopfapp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.example.admin.doppelkopfapp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.example.admin.doppelkopfapp:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.example.admin.doppelkopfapp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.example.admin.doppelkopfapp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.example.admin.doppelkopfapp:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.example.admin.doppelkopfapp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.example.admin.doppelkopfapp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.example.admin.doppelkopfapp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.example.admin.doppelkopfapp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.example.admin.doppelkopfapp:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.example.admin.doppelkopfapp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.example.admin.doppelkopfapp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.example.admin.doppelkopfapp:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.example.admin.doppelkopfapp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.example.admin.doppelkopfapp:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.example.admin.doppelkopfapp:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.example.admin.doppelkopfapp:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.example.admin.doppelkopfapp:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.example.admin.doppelkopfapp:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.example.admin.doppelkopfapp:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.example.admin.doppelkopfapp:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.example.admin.doppelkopfapp:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.example.admin.doppelkopfapp:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.example.admin.doppelkopfapp:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.example.admin.doppelkopfapp:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.example.admin.doppelkopfapp:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.example.admin.doppelkopfapp:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.example.admin.doppelkopfapp:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.becker.games.doppelkopfapp:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.becker.games.doppelkopfapp:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.becker.games.doppelkopfapp:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.becker.games.doppelkopfapp:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.becker.games.doppelkopfapp:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.becker.games.doppelkopfapp:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.becker.games.doppelkopfapp:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.becker.games.doppelkopfapp:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.becker.games.doppelkopfapp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.becker.games.doppelkopfapp:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.becker.games.doppelkopfapp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.becker.games.doppelkopfapp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.becker.games.doppelkopfapp:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.becker.games.doppelkopfapp:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.becker.games.doppelkopfapp:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.becker.games.doppelkopfapp:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.becker.games.doppelkopfapp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.becker.games.doppelkopfapp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.becker.games.doppelkopfapp:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.becker.games.doppelkopfapp:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.becker.games.doppelkopfapp:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.becker.games.doppelkopfapp:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.becker.games.doppelkopfapp:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.becker.games.doppelkopfapp:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.becker.games.doppelkopfapp:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.becker.games.doppelkopfapp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.becker.games.doppelkopfapp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.becker.games.doppelkopfapp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.becker.games.doppelkopfapp:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.becker.games.doppelkopfapp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.becker.games.doppelkopfapp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.becker.games.doppelkopfapp:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.becker.games.doppelkopfapp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.becker.games.doppelkopfapp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.becker.games.doppelkopfapp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.becker.games.doppelkopfapp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.becker.games.doppelkopfapp:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.becker.games.doppelkopfapp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.becker.games.doppelkopfapp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.becker.games.doppelkopfapp:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.becker.games.doppelkopfapp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.becker.games.doppelkopfapp:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.becker.games.doppelkopfapp:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.becker.games.doppelkopfapp:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.becker.games.doppelkopfapp:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.becker.games.doppelkopfapp:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.becker.games.doppelkopfapp:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.becker.games.doppelkopfapp:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.becker.games.doppelkopfapp:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.becker.games.doppelkopfapp:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.becker.games.doppelkopfapp:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.becker.games.doppelkopfapp:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.becker.games.doppelkopfapp:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.becker.games.doppelkopfapp:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.becker.games.doppelkopfapp:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -10924,17 +10943,17 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_minHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:barrierAllowsGoneWidgets
+     * @attr name com.becker.games.doppelkopfapp:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10951,21 +10970,21 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:barrierDirection
+     * @attr name com.becker.games.doppelkopfapp:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chainUseRtl
+     * @attr name com.becker.games.doppelkopfapp:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10973,50 +10992,50 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:constraintSet
+     * @attr name com.becker.games.doppelkopfapp:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:constraint_referenced_ids
+     * @attr name com.becker.games.doppelkopfapp:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constrainedHeight
+     * @attr name com.becker.games.doppelkopfapp:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constrainedWidth
+     * @attr name com.becker.games.doppelkopfapp:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBaseline_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11032,20 +11051,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBaseline_toBaselineOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBottom_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11061,11 +11080,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBottom_toBottomOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11081,11 +11100,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBottom_toTopOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11093,20 +11112,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintCircle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintCircleAngle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11115,21 +11134,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintCircleRadius
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintDimensionRatio
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11145,11 +11164,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintEnd_toEndOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11165,11 +11184,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintEnd_toStartOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11178,11 +11197,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintGuide_begin
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11191,20 +11210,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintGuide_end
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintGuide_percent
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11218,11 +11237,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_default
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11239,11 +11258,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_max
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11260,29 +11279,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_min
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_percent
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHorizontal_bias
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11296,29 +11315,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHorizontal_chainStyle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHorizontal_weight
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintLeft_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11334,11 +11353,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintLeft_toLeftOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11354,20 +11373,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintLeft_toRightOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintRight_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11383,11 +11402,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintRight_toLeftOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11403,11 +11422,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintRight_toRightOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11423,11 +11442,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintStart_toEndOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11443,20 +11462,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintStart_toStartOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintTop_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11472,11 +11491,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintTop_toBottomOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11492,20 +11511,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintTop_toTopOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintVertical_bias
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11519,20 +11538,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintVertical_chainStyle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintVertical_weight
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11546,11 +11565,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_default
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11567,11 +11586,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_max
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11588,20 +11607,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_min
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_percent
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11610,11 +11629,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_editor_absoluteX
+     * @attr name com.becker.games.doppelkopfapp:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11623,11 +11642,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_editor_absoluteY
+     * @attr name com.becker.games.doppelkopfapp:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11636,11 +11655,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginBottom
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11649,11 +11668,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginEnd
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11662,11 +11681,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginLeft
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11675,11 +11694,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginRight
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11688,11 +11707,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginStart
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11701,11 +11720,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginTop
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11723,7 +11742,7 @@ public final class R {
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_optimizationLevel
+     * @attr name com.becker.games.doppelkopfapp:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -11733,8 +11752,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.example.admin.doppelkopfapp:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.example.admin.doppelkopfapp:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.becker.games.doppelkopfapp:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.becker.games.doppelkopfapp:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
@@ -11743,7 +11762,7 @@ public final class R {
       0x7f030095, 0x7f0300bc
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#content}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11751,11 +11770,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:content
+     * @attr name com.becker.games.doppelkopfapp:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11768,7 +11787,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:emptyVisibility
+     * @attr name com.becker.games.doppelkopfapp:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -11805,59 +11824,59 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.example.admin.doppelkopfapp:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.example.admin.doppelkopfapp:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.example.admin.doppelkopfapp:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.example.admin.doppelkopfapp:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.example.admin.doppelkopfapp:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.example.admin.doppelkopfapp:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.example.admin.doppelkopfapp:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.example.admin.doppelkopfapp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.example.admin.doppelkopfapp:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.example.admin.doppelkopfapp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.example.admin.doppelkopfapp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.example.admin.doppelkopfapp:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.example.admin.doppelkopfapp:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.example.admin.doppelkopfapp:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.example.admin.doppelkopfapp:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.example.admin.doppelkopfapp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.example.admin.doppelkopfapp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.example.admin.doppelkopfapp:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.example.admin.doppelkopfapp:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.example.admin.doppelkopfapp:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.example.admin.doppelkopfapp:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.example.admin.doppelkopfapp:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.example.admin.doppelkopfapp:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.example.admin.doppelkopfapp:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.example.admin.doppelkopfapp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.example.admin.doppelkopfapp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.example.admin.doppelkopfapp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.example.admin.doppelkopfapp:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.example.admin.doppelkopfapp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.example.admin.doppelkopfapp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.example.admin.doppelkopfapp:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.example.admin.doppelkopfapp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.example.admin.doppelkopfapp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.example.admin.doppelkopfapp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.example.admin.doppelkopfapp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.example.admin.doppelkopfapp:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.example.admin.doppelkopfapp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.example.admin.doppelkopfapp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.example.admin.doppelkopfapp:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.example.admin.doppelkopfapp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.example.admin.doppelkopfapp:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.example.admin.doppelkopfapp:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.example.admin.doppelkopfapp:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.example.admin.doppelkopfapp:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.example.admin.doppelkopfapp:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.example.admin.doppelkopfapp:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.example.admin.doppelkopfapp:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.example.admin.doppelkopfapp:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.example.admin.doppelkopfapp:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.example.admin.doppelkopfapp:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.example.admin.doppelkopfapp:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.example.admin.doppelkopfapp:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.example.admin.doppelkopfapp:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.becker.games.doppelkopfapp:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.becker.games.doppelkopfapp:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.becker.games.doppelkopfapp:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.becker.games.doppelkopfapp:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.becker.games.doppelkopfapp:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.becker.games.doppelkopfapp:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.becker.games.doppelkopfapp:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.becker.games.doppelkopfapp:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.becker.games.doppelkopfapp:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.becker.games.doppelkopfapp:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.becker.games.doppelkopfapp:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.becker.games.doppelkopfapp:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.becker.games.doppelkopfapp:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.becker.games.doppelkopfapp:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.becker.games.doppelkopfapp:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.becker.games.doppelkopfapp:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.becker.games.doppelkopfapp:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.becker.games.doppelkopfapp:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.becker.games.doppelkopfapp:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.becker.games.doppelkopfapp:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.becker.games.doppelkopfapp:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.becker.games.doppelkopfapp:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.becker.games.doppelkopfapp:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.becker.games.doppelkopfapp:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.becker.games.doppelkopfapp:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.becker.games.doppelkopfapp:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.becker.games.doppelkopfapp:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.becker.games.doppelkopfapp:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.becker.games.doppelkopfapp:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.becker.games.doppelkopfapp:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.becker.games.doppelkopfapp:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.becker.games.doppelkopfapp:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.becker.games.doppelkopfapp:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.becker.games.doppelkopfapp:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.becker.games.doppelkopfapp:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.becker.games.doppelkopfapp:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.becker.games.doppelkopfapp:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.becker.games.doppelkopfapp:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.becker.games.doppelkopfapp:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.becker.games.doppelkopfapp:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.becker.games.doppelkopfapp:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.becker.games.doppelkopfapp:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.becker.games.doppelkopfapp:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.becker.games.doppelkopfapp:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.becker.games.doppelkopfapp:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.becker.games.doppelkopfapp:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.becker.games.doppelkopfapp:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.becker.games.doppelkopfapp:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.becker.games.doppelkopfapp:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.becker.games.doppelkopfapp:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.becker.games.doppelkopfapp:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.becker.games.doppelkopfapp:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.becker.games.doppelkopfapp:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -12318,17 +12337,17 @@ public final class R {
      */
     public static final int ConstraintSet_android_elevation=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:barrierAllowsGoneWidgets
+     * @attr name com.becker.games.doppelkopfapp:barrierAllowsGoneWidgets
      */
     public static final int ConstraintSet_barrierAllowsGoneWidgets=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12345,60 +12364,60 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:barrierDirection
+     * @attr name com.becker.games.doppelkopfapp:barrierDirection
      */
     public static final int ConstraintSet_barrierDirection=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chainUseRtl
+     * @attr name com.becker.games.doppelkopfapp:chainUseRtl
      */
     public static final int ConstraintSet_chainUseRtl=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:constraint_referenced_ids
+     * @attr name com.becker.games.doppelkopfapp:constraint_referenced_ids
      */
     public static final int ConstraintSet_constraint_referenced_ids=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constrainedHeight
+     * @attr name com.becker.games.doppelkopfapp:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constrainedWidth
+     * @attr name com.becker.games.doppelkopfapp:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBaseline_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12414,20 +12433,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBaseline_toBaselineOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBottom_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12443,11 +12462,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBottom_toBottomOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12463,11 +12482,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintBottom_toTopOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12475,20 +12494,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintCircle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintCircleAngle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12497,21 +12516,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintCircleRadius
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintDimensionRatio
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12527,11 +12546,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintEnd_toEndOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12547,11 +12566,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintEnd_toStartOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12560,11 +12579,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintGuide_begin
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12573,20 +12592,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintGuide_end
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintGuide_percent
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12600,11 +12619,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_default
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12621,11 +12640,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_max
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12642,29 +12661,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_min
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHeight_percent
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHorizontal_bias
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12678,29 +12697,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHorizontal_chainStyle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintHorizontal_weight
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintLeft_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12716,11 +12735,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintLeft_toLeftOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12736,20 +12755,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintLeft_toRightOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintRight_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12765,11 +12784,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintRight_toLeftOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12785,11 +12804,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintRight_toRightOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12805,11 +12824,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintStart_toEndOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12825,20 +12844,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintStart_toStartOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintTop_creator
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12854,11 +12873,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintTop_toBottomOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12874,20 +12893,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintTop_toTopOf
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintVertical_bias
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12901,20 +12920,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintVertical_chainStyle
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=66;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintVertical_weight
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=67;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12928,11 +12947,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_default
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=68;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12949,11 +12968,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_max
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=69;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12970,20 +12989,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_min
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=70;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_constraintWidth_percent
+     * @attr name com.becker.games.doppelkopfapp:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=71;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12992,11 +13011,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_editor_absoluteX
+     * @attr name com.becker.games.doppelkopfapp:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=72;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13005,11 +13024,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_editor_absoluteY
+     * @attr name com.becker.games.doppelkopfapp:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=73;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13018,11 +13037,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginBottom
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=74;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13031,11 +13050,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginEnd
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13044,11 +13063,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginLeft
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=76;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13057,11 +13076,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginRight
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=77;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13070,11 +13089,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginStart
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=78;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13083,7 +13102,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_goneMarginTop
+     * @attr name com.becker.games.doppelkopfapp:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=79;
     /**
@@ -13093,8 +13112,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.example.admin.doppelkopfapp:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.admin.doppelkopfapp:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.becker.games.doppelkopfapp:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.becker.games.doppelkopfapp:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -13103,7 +13122,7 @@ public final class R {
       0x7f03010d, 0x7f0301a6
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13111,11 +13130,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:keylines
+     * @attr name com.becker.games.doppelkopfapp:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13126,7 +13145,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:statusBarBackground
+     * @attr name com.becker.games.doppelkopfapp:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -13137,12 +13156,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.example.admin.doppelkopfapp:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.example.admin.doppelkopfapp:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.example.admin.doppelkopfapp:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.example.admin.doppelkopfapp:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.example.admin.doppelkopfapp:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.example.admin.doppelkopfapp:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.becker.games.doppelkopfapp:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.becker.games.doppelkopfapp:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.becker.games.doppelkopfapp:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.becker.games.doppelkopfapp:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.becker.games.doppelkopfapp:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.becker.games.doppelkopfapp:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -13186,7 +13205,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13194,11 +13213,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_anchor
+     * @attr name com.becker.games.doppelkopfapp:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13223,21 +13242,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_anchorGravity
+     * @attr name com.becker.games.doppelkopfapp:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_behavior
+     * @attr name com.becker.games.doppelkopfapp:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13256,11 +13275,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_dodgeInsetEdges
+     * @attr name com.becker.games.doppelkopfapp:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13278,16 +13297,16 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_insetEdge
+     * @attr name com.becker.games.doppelkopfapp:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout_keyline
+     * @attr name com.becker.games.doppelkopfapp:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -13297,8 +13316,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.example.admin.doppelkopfapp:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.example.admin.doppelkopfapp:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.becker.games.doppelkopfapp:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.becker.games.doppelkopfapp:bottomSheetStyle}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
@@ -13307,7 +13326,7 @@ public final class R {
       0x7f030043, 0x7f030044
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13315,11 +13334,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:bottomSheetDialogTheme
+     * @attr name com.becker.games.doppelkopfapp:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13327,7 +13346,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:bottomSheetStyle
+     * @attr name com.becker.games.doppelkopfapp:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
@@ -13337,14 +13356,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.admin.doppelkopfapp:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.admin.doppelkopfapp:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.admin.doppelkopfapp:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.example.admin.doppelkopfapp:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.admin.doppelkopfapp:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.admin.doppelkopfapp:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.admin.doppelkopfapp:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.admin.doppelkopfapp:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.becker.games.doppelkopfapp:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.becker.games.doppelkopfapp:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.becker.games.doppelkopfapp:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.becker.games.doppelkopfapp:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.becker.games.doppelkopfapp:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.becker.games.doppelkopfapp:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.becker.games.doppelkopfapp:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.becker.games.doppelkopfapp:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -13360,7 +13379,7 @@ public final class R {
       0x7f0300b4, 0x7f0300e3, 0x7f03019b, 0x7f0301eb
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13369,11 +13388,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:arrowHeadLength
+     * @attr name com.becker.games.doppelkopfapp:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13382,11 +13401,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:arrowShaftLength
+     * @attr name com.becker.games.doppelkopfapp:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13395,22 +13414,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:barLength
+     * @attr name com.becker.games.doppelkopfapp:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:color
+     * @attr name com.becker.games.doppelkopfapp:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13419,11 +13438,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:drawableSize
+     * @attr name com.becker.games.doppelkopfapp:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13432,21 +13451,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:gapBetweenBars
+     * @attr name com.becker.games.doppelkopfapp:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:spinBars
+     * @attr name com.becker.games.doppelkopfapp:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13455,7 +13474,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:thickness
+     * @attr name com.becker.games.doppelkopfapp:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -13465,19 +13484,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.example.admin.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.example.admin.doppelkopfapp:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.example.admin.doppelkopfapp:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.example.admin.doppelkopfapp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.example.admin.doppelkopfapp:fabCustomSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize com.example.admin.doppelkopfapp:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.example.admin.doppelkopfapp:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.example.admin.doppelkopfapp:hoveredFocusedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.example.admin.doppelkopfapp:maxImageSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.example.admin.doppelkopfapp:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.example.admin.doppelkopfapp:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.example.admin.doppelkopfapp:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.example.admin.doppelkopfapp:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.becker.games.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.becker.games.doppelkopfapp:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.becker.games.doppelkopfapp:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.becker.games.doppelkopfapp:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.becker.games.doppelkopfapp:fabCustomSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.becker.games.doppelkopfapp:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.becker.games.doppelkopfapp:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.becker.games.doppelkopfapp:hoveredFocusedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.becker.games.doppelkopfapp:maxImageSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.becker.games.doppelkopfapp:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.becker.games.doppelkopfapp:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.becker.games.doppelkopfapp:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.becker.games.doppelkopfapp:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -13500,18 +13519,18 @@ public final class R {
       0x7f030209
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundTint
+     * @attr name com.becker.games.doppelkopfapp:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13528,11 +13547,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundTintMode
+     * @attr name com.becker.games.doppelkopfapp:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13541,11 +13560,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:borderWidth
+     * @attr name com.becker.games.doppelkopfapp:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13554,11 +13573,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:elevation
+     * @attr name com.becker.games.doppelkopfapp:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fabCustomSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fabCustomSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13567,11 +13586,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:fabCustomSize
+     * @attr name com.becker.games.doppelkopfapp:fabCustomSize
      */
     public static final int FloatingActionButton_fabCustomSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13585,11 +13604,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:fabSize
+     * @attr name com.becker.games.doppelkopfapp:fabSize
      */
     public static final int FloatingActionButton_fabSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13597,11 +13616,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:hideMotionSpec
+     * @attr name com.becker.games.doppelkopfapp:hideMotionSpec
      */
     public static final int FloatingActionButton_hideMotionSpec=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hoveredFocusedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hoveredFocusedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13610,11 +13629,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:hoveredFocusedTranslationZ
+     * @attr name com.becker.games.doppelkopfapp:hoveredFocusedTranslationZ
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#maxImageSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#maxImageSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13623,11 +13642,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:maxImageSize
+     * @attr name com.becker.games.doppelkopfapp:maxImageSize
      */
     public static final int FloatingActionButton_maxImageSize=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13636,22 +13655,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:pressedTranslationZ
+     * @attr name com.becker.games.doppelkopfapp:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:rippleColor
+     * @attr name com.becker.games.doppelkopfapp:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13659,17 +13678,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:showMotionSpec
+     * @attr name com.becker.games.doppelkopfapp:showMotionSpec
      */
     public static final int FloatingActionButton_showMotionSpec=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:useCompatPadding
+     * @attr name com.becker.games.doppelkopfapp:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=12;
     /**
@@ -13679,7 +13698,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.example.admin.doppelkopfapp:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.becker.games.doppelkopfapp:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -13687,13 +13706,13 @@ public final class R {
       0x7f030039
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:behavior_autoHide
+     * @attr name com.becker.games.doppelkopfapp:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -13703,8 +13722,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FlowLayout_itemSpacing com.example.admin.doppelkopfapp:itemSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FlowLayout_lineSpacing com.example.admin.doppelkopfapp:lineSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_itemSpacing com.becker.games.doppelkopfapp:itemSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_lineSpacing com.becker.games.doppelkopfapp:lineSpacing}</code></td><td></td></tr>
      * </table>
      * @see #FlowLayout_itemSpacing
      * @see #FlowLayout_lineSpacing
@@ -13713,7 +13732,7 @@ public final class R {
       0x7f030108, 0x7f030150
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemSpacing}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13722,11 +13741,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:itemSpacing
+     * @attr name com.becker.games.doppelkopfapp:itemSpacing
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#lineSpacing}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#lineSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13735,7 +13754,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:lineSpacing
+     * @attr name com.becker.games.doppelkopfapp:lineSpacing
      */
     public static final int FlowLayout_lineSpacing=1;
     /**
@@ -13745,12 +13764,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.example.admin.doppelkopfapp:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.example.admin.doppelkopfapp:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.example.admin.doppelkopfapp:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.example.admin.doppelkopfapp:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.example.admin.doppelkopfapp:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.example.admin.doppelkopfapp:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.becker.games.doppelkopfapp:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.becker.games.doppelkopfapp:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.becker.games.doppelkopfapp:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.becker.games.doppelkopfapp:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.becker.games.doppelkopfapp:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.becker.games.doppelkopfapp:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -13764,17 +13783,17 @@ public final class R {
       0x7f0300dd, 0x7f0300de
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:fontProviderAuthority
+     * @attr name com.becker.games.doppelkopfapp:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13782,11 +13801,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:fontProviderCerts
+     * @attr name com.becker.games.doppelkopfapp:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13799,11 +13818,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:fontProviderFetchStrategy
+     * @attr name com.becker.games.doppelkopfapp:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -13816,27 +13835,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:fontProviderFetchTimeout
+     * @attr name com.becker.games.doppelkopfapp:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:fontProviderPackage
+     * @attr name com.becker.games.doppelkopfapp:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:fontProviderQuery
+     * @attr name com.becker.games.doppelkopfapp:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -13851,11 +13870,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.example.admin.doppelkopfapp:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.example.admin.doppelkopfapp:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.example.admin.doppelkopfapp:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.example.admin.doppelkopfapp:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.example.admin.doppelkopfapp:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.becker.games.doppelkopfapp:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.becker.games.doppelkopfapp:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.becker.games.doppelkopfapp:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.becker.games.doppelkopfapp:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.becker.games.doppelkopfapp:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -13931,7 +13950,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13939,11 +13958,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:font
+     * @attr name com.becker.games.doppelkopfapp:font
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13956,35 +13975,35 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:fontStyle
+     * @attr name com.becker.games.doppelkopfapp:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:fontVariationSettings
+     * @attr name com.becker.games.doppelkopfapp:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:fontWeight
+     * @attr name com.becker.games.doppelkopfapp:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#ttcIndex}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#ttcIndex}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:ttcIndex
+     * @attr name com.becker.games.doppelkopfapp:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -13996,7 +14015,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.example.admin.doppelkopfapp:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.becker.games.doppelkopfapp:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -14048,13 +14067,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:foregroundInsidePadding
+     * @attr name com.becker.games.doppelkopfapp:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -14324,10 +14343,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.example.admin.doppelkopfapp:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.admin.doppelkopfapp:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.admin.doppelkopfapp:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.admin.doppelkopfapp:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.becker.games.doppelkopfapp:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.becker.games.doppelkopfapp:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.becker.games.doppelkopfapp:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.becker.games.doppelkopfapp:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -14419,7 +14438,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14427,11 +14446,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:divider
+     * @attr name com.becker.games.doppelkopfapp:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14440,21 +14459,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:dividerPadding
+     * @attr name com.becker.games.doppelkopfapp:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:measureWithLargestChild
+     * @attr name com.becker.games.doppelkopfapp:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14469,7 +14488,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:showDividers
+     * @attr name com.becker.games.doppelkopfapp:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -14629,18 +14648,18 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.example.admin.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.example.admin.doppelkopfapp:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_cornerRadius com.example.admin.doppelkopfapp:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.example.admin.doppelkopfapp:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconGravity com.example.admin.doppelkopfapp:iconGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconPadding com.example.admin.doppelkopfapp:iconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconSize com.example.admin.doppelkopfapp:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.example.admin.doppelkopfapp:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.example.admin.doppelkopfapp:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_rippleColor com.example.admin.doppelkopfapp:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeColor com.example.admin.doppelkopfapp:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeWidth com.example.admin.doppelkopfapp:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.becker.games.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.becker.games.doppelkopfapp:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_cornerRadius com.becker.games.doppelkopfapp:cornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.becker.games.doppelkopfapp:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconGravity com.becker.games.doppelkopfapp:iconGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconPadding com.becker.games.doppelkopfapp:iconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconSize com.becker.games.doppelkopfapp:iconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.becker.games.doppelkopfapp:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.becker.games.doppelkopfapp:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_rippleColor com.becker.games.doppelkopfapp:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeColor com.becker.games.doppelkopfapp:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeWidth com.becker.games.doppelkopfapp:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialButton_android_insetLeft
      * @see #MaterialButton_android_insetRight
@@ -14734,18 +14753,18 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundTint
+     * @attr name com.becker.games.doppelkopfapp:backgroundTint
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14762,11 +14781,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundTintMode
+     * @attr name com.becker.games.doppelkopfapp:backgroundTintMode
      */
     public static final int MaterialButton_backgroundTintMode=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#cornerRadius}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#cornerRadius}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14775,11 +14794,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:cornerRadius
+     * @attr name com.becker.games.doppelkopfapp:cornerRadius
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#icon}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14787,11 +14806,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:icon
+     * @attr name com.becker.games.doppelkopfapp:icon
      */
     public static final int MaterialButton_icon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconGravity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconGravity}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -14804,11 +14823,11 @@ public final class R {
      * <tr><td>textStart</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:iconGravity
+     * @attr name com.becker.games.doppelkopfapp:iconGravity
      */
     public static final int MaterialButton_iconGravity=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconPadding}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14817,11 +14836,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:iconPadding
+     * @attr name com.becker.games.doppelkopfapp:iconPadding
      */
     public static final int MaterialButton_iconPadding=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconSize}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconSize}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14830,22 +14849,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:iconSize
+     * @attr name com.becker.games.doppelkopfapp:iconSize
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:iconTint
+     * @attr name com.becker.games.doppelkopfapp:iconTint
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14862,33 +14881,33 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:iconTintMode
+     * @attr name com.becker.games.doppelkopfapp:iconTintMode
      */
     public static final int MaterialButton_iconTintMode=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#rippleColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:rippleColor
+     * @attr name com.becker.games.doppelkopfapp:rippleColor
      */
     public static final int MaterialButton_rippleColor=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:strokeColor
+     * @attr name com.becker.games.doppelkopfapp:strokeColor
      */
     public static final int MaterialButton_strokeColor=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14897,7 +14916,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:strokeWidth
+     * @attr name com.becker.games.doppelkopfapp:strokeWidth
      */
     public static final int MaterialButton_strokeWidth=15;
     /**
@@ -14907,8 +14926,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeColor com.example.admin.doppelkopfapp:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.example.admin.doppelkopfapp:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeColor com.becker.games.doppelkopfapp:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.becker.games.doppelkopfapp:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCardView_strokeColor
      * @see #MaterialCardView_strokeWidth
@@ -14917,18 +14936,18 @@ public final class R {
       0x7f0301a8, 0x7f0301a9
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:strokeColor
+     * @attr name com.becker.games.doppelkopfapp:strokeColor
      */
     public static final int MaterialCardView_strokeColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14937,7 +14956,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:strokeWidth
+     * @attr name com.becker.games.doppelkopfapp:strokeWidth
      */
     public static final int MaterialCardView_strokeWidth=1;
     /**
@@ -14947,38 +14966,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.example.admin.doppelkopfapp:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.example.admin.doppelkopfapp:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.example.admin.doppelkopfapp:chipGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.example.admin.doppelkopfapp:chipStandaloneStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.example.admin.doppelkopfapp:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.example.admin.doppelkopfapp:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.example.admin.doppelkopfapp:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.example.admin.doppelkopfapp:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.example.admin.doppelkopfapp:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.example.admin.doppelkopfapp:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.example.admin.doppelkopfapp:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.example.admin.doppelkopfapp:floatingActionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.example.admin.doppelkopfapp:materialButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.example.admin.doppelkopfapp:materialCardViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.example.admin.doppelkopfapp:navigationViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.example.admin.doppelkopfapp:scrimBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.example.admin.doppelkopfapp:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.example.admin.doppelkopfapp:tabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.example.admin.doppelkopfapp:textAppearanceBody1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.example.admin.doppelkopfapp:textAppearanceBody2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.example.admin.doppelkopfapp:textAppearanceButton}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.example.admin.doppelkopfapp:textAppearanceCaption}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.example.admin.doppelkopfapp:textAppearanceHeadline1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.example.admin.doppelkopfapp:textAppearanceHeadline2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.example.admin.doppelkopfapp:textAppearanceHeadline3}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.example.admin.doppelkopfapp:textAppearanceHeadline4}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.example.admin.doppelkopfapp:textAppearanceHeadline5}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.example.admin.doppelkopfapp:textAppearanceHeadline6}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.example.admin.doppelkopfapp:textAppearanceOverline}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.example.admin.doppelkopfapp:textAppearanceSubtitle1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.example.admin.doppelkopfapp:textAppearanceSubtitle2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.example.admin.doppelkopfapp:textInputStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.becker.games.doppelkopfapp:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.becker.games.doppelkopfapp:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.becker.games.doppelkopfapp:chipGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.becker.games.doppelkopfapp:chipStandaloneStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.becker.games.doppelkopfapp:chipStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.becker.games.doppelkopfapp:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.becker.games.doppelkopfapp:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.becker.games.doppelkopfapp:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.becker.games.doppelkopfapp:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.becker.games.doppelkopfapp:colorSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.becker.games.doppelkopfapp:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.becker.games.doppelkopfapp:floatingActionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.becker.games.doppelkopfapp:materialButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.becker.games.doppelkopfapp:materialCardViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.becker.games.doppelkopfapp:navigationViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.becker.games.doppelkopfapp:scrimBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.becker.games.doppelkopfapp:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.becker.games.doppelkopfapp:tabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.becker.games.doppelkopfapp:textAppearanceBody1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.becker.games.doppelkopfapp:textAppearanceBody2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.becker.games.doppelkopfapp:textAppearanceButton}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.becker.games.doppelkopfapp:textAppearanceCaption}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.becker.games.doppelkopfapp:textAppearanceHeadline1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.becker.games.doppelkopfapp:textAppearanceHeadline2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.becker.games.doppelkopfapp:textAppearanceHeadline3}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.becker.games.doppelkopfapp:textAppearanceHeadline4}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.becker.games.doppelkopfapp:textAppearanceHeadline5}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.becker.games.doppelkopfapp:textAppearanceHeadline6}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.becker.games.doppelkopfapp:textAppearanceOverline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.becker.games.doppelkopfapp:textAppearanceSubtitle1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.becker.games.doppelkopfapp:textAppearanceSubtitle2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.becker.games.doppelkopfapp:textInputStyle}</code></td><td></td></tr>
      * </table>
      * @see #MaterialComponentsTheme_bottomSheetDialogTheme
      * @see #MaterialComponentsTheme_bottomSheetStyle
@@ -15024,7 +15043,7 @@ public final class R {
       0x7f0301de, 0x7f0301e3, 0x7f0301e4, 0x7f0301e8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15032,11 +15051,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:bottomSheetDialogTheme
+     * @attr name com.becker.games.doppelkopfapp:bottomSheetDialogTheme
      */
     public static final int MaterialComponentsTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15044,11 +15063,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:bottomSheetStyle
+     * @attr name com.becker.games.doppelkopfapp:bottomSheetStyle
      */
     public static final int MaterialComponentsTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipGroupStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipGroupStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15056,11 +15075,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipGroupStyle
+     * @attr name com.becker.games.doppelkopfapp:chipGroupStyle
      */
     public static final int MaterialComponentsTheme_chipGroupStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipStandaloneStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipStandaloneStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15068,11 +15087,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipStandaloneStyle
+     * @attr name com.becker.games.doppelkopfapp:chipStandaloneStyle
      */
     public static final int MaterialComponentsTheme_chipStandaloneStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#chipStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#chipStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15080,66 +15099,66 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:chipStyle
+     * @attr name com.becker.games.doppelkopfapp:chipStyle
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorAccent}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorAccent
+     * @attr name com.becker.games.doppelkopfapp:colorAccent
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorBackgroundFloating
+     * @attr name com.becker.games.doppelkopfapp:colorBackgroundFloating
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorPrimary
+     * @attr name com.becker.games.doppelkopfapp:colorPrimary
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorPrimaryDark
+     * @attr name com.becker.games.doppelkopfapp:colorPrimaryDark
      */
     public static final int MaterialComponentsTheme_colorPrimaryDark=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#colorSecondary}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#colorSecondary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:colorSecondary
+     * @attr name com.becker.games.doppelkopfapp:colorSecondary
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15147,11 +15166,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:editTextStyle
+     * @attr name com.becker.games.doppelkopfapp:editTextStyle
      */
     public static final int MaterialComponentsTheme_editTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#floatingActionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#floatingActionButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15177,11 +15196,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.example.admin.doppelkopfapp:floatingActionButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:floatingActionButtonStyle
      */
     public static final int MaterialComponentsTheme_floatingActionButtonStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#materialButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#materialButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15189,11 +15208,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:materialButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:materialButtonStyle
      */
     public static final int MaterialComponentsTheme_materialButtonStyle=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#materialCardViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#materialCardViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15201,11 +15220,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:materialCardViewStyle
+     * @attr name com.becker.games.doppelkopfapp:materialCardViewStyle
      */
     public static final int MaterialComponentsTheme_materialCardViewStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#navigationViewStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#navigationViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15213,11 +15232,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:navigationViewStyle
+     * @attr name com.becker.games.doppelkopfapp:navigationViewStyle
      */
     public static final int MaterialComponentsTheme_navigationViewStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#scrimBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#scrimBackground}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15228,11 +15247,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:scrimBackground
+     * @attr name com.becker.games.doppelkopfapp:scrimBackground
      */
     public static final int MaterialComponentsTheme_scrimBackground=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15240,11 +15259,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:snackbarButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:snackbarButtonStyle
      */
     public static final int MaterialComponentsTheme_snackbarButtonStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15252,11 +15271,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabStyle
+     * @attr name com.becker.games.doppelkopfapp:tabStyle
      */
     public static final int MaterialComponentsTheme_tabStyle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceBody1}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceBody1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15264,11 +15283,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceBody1
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceBody1
      */
     public static final int MaterialComponentsTheme_textAppearanceBody1=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceBody2}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceBody2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15276,11 +15295,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceBody2
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceBody2
      */
     public static final int MaterialComponentsTheme_textAppearanceBody2=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceButton}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceButton}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15288,11 +15307,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceButton
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceButton
      */
     public static final int MaterialComponentsTheme_textAppearanceButton=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceCaption}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceCaption}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15300,11 +15319,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceCaption
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceCaption
      */
     public static final int MaterialComponentsTheme_textAppearanceCaption=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceHeadline1}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceHeadline1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15312,11 +15331,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceHeadline1
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceHeadline1
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline1=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceHeadline2}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceHeadline2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15324,11 +15343,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceHeadline2
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceHeadline2
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline2=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceHeadline3}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceHeadline3}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15336,11 +15355,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceHeadline3
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceHeadline3
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline3=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceHeadline4}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceHeadline4}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15348,11 +15367,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceHeadline4
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceHeadline4
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline4=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceHeadline5}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceHeadline5}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15360,11 +15379,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceHeadline5
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceHeadline5
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline5=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceHeadline6}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceHeadline6}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15372,11 +15391,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceHeadline6
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceHeadline6
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline6=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceOverline}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceOverline}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15384,11 +15403,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceOverline
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceOverline
      */
     public static final int MaterialComponentsTheme_textAppearanceOverline=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceSubtitle1}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceSubtitle1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15396,11 +15415,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceSubtitle1
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceSubtitle1
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle1=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAppearanceSubtitle2}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAppearanceSubtitle2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15408,11 +15427,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAppearanceSubtitle2
+     * @attr name com.becker.games.doppelkopfapp:textAppearanceSubtitle2
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle2=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textInputStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textInputStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15420,7 +15439,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textInputStyle
+     * @attr name com.becker.games.doppelkopfapp:textInputStyle
      */
     public static final int MaterialComponentsTheme_textInputStyle=31;
     /**
@@ -15546,16 +15565,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.example.admin.doppelkopfapp:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.example.admin.doppelkopfapp:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.example.admin.doppelkopfapp:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.example.admin.doppelkopfapp:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.example.admin.doppelkopfapp:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.example.admin.doppelkopfapp:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.example.admin.doppelkopfapp:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.example.admin.doppelkopfapp:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.example.admin.doppelkopfapp:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.example.admin.doppelkopfapp:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.becker.games.doppelkopfapp:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.becker.games.doppelkopfapp:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.becker.games.doppelkopfapp:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.becker.games.doppelkopfapp:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.becker.games.doppelkopfapp:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.becker.games.doppelkopfapp:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.becker.games.doppelkopfapp:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.becker.games.doppelkopfapp:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.becker.games.doppelkopfapp:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.becker.games.doppelkopfapp:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -15732,7 +15751,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15740,31 +15759,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:actionLayout
+     * @attr name com.becker.games.doppelkopfapp:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:actionProviderClass
+     * @attr name com.becker.games.doppelkopfapp:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:actionViewClass
+     * @attr name com.becker.games.doppelkopfapp:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15781,32 +15800,32 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:alphabeticModifiers
+     * @attr name com.becker.games.doppelkopfapp:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:contentDescription
+     * @attr name com.becker.games.doppelkopfapp:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:iconTint
+     * @attr name com.becker.games.doppelkopfapp:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15823,11 +15842,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:iconTintMode
+     * @attr name com.becker.games.doppelkopfapp:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15844,11 +15863,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:numericModifiers
+     * @attr name com.becker.games.doppelkopfapp:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15864,17 +15883,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:showAsAction
+     * @attr name com.becker.games.doppelkopfapp:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:tooltipText
+     * @attr name com.becker.games.doppelkopfapp:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -15891,8 +15910,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.admin.doppelkopfapp:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.example.admin.doppelkopfapp:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.becker.games.doppelkopfapp:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.becker.games.doppelkopfapp:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -15997,17 +16016,17 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:preserveIconSpacing
+     * @attr name com.becker.games.doppelkopfapp:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16015,7 +16034,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:subMenuArrow
+     * @attr name com.becker.games.doppelkopfapp:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -16028,15 +16047,15 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.example.admin.doppelkopfapp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout com.example.admin.doppelkopfapp:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground com.example.admin.doppelkopfapp:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.example.admin.doppelkopfapp:itemHorizontalPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconPadding com.example.admin.doppelkopfapp:itemIconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint com.example.admin.doppelkopfapp:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.example.admin.doppelkopfapp:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor com.example.admin.doppelkopfapp:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.example.admin.doppelkopfapp:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.becker.games.doppelkopfapp:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.becker.games.doppelkopfapp:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.becker.games.doppelkopfapp:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.becker.games.doppelkopfapp:itemHorizontalPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconPadding com.becker.games.doppelkopfapp:itemIconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint com.becker.games.doppelkopfapp:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.becker.games.doppelkopfapp:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor com.becker.games.doppelkopfapp:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.becker.games.doppelkopfapp:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -16095,7 +16114,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16104,11 +16123,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:elevation
+     * @attr name com.becker.games.doppelkopfapp:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16116,11 +16135,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:headerLayout
+     * @attr name com.becker.games.doppelkopfapp:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16128,11 +16147,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemBackground
+     * @attr name com.becker.games.doppelkopfapp:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemHorizontalPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemHorizontalPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16141,11 +16160,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:itemHorizontalPadding
+     * @attr name com.becker.games.doppelkopfapp:itemHorizontalPadding
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemIconPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemIconPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16154,22 +16173,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:itemIconPadding
+     * @attr name com.becker.games.doppelkopfapp:itemIconPadding
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemIconTint
+     * @attr name com.becker.games.doppelkopfapp:itemIconTint
      */
     public static final int NavigationView_itemIconTint=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16177,22 +16196,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:itemTextColor
+     * @attr name com.becker.games.doppelkopfapp:itemTextColor
      */
     public static final int NavigationView_itemTextColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16200,7 +16219,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:menu
+     * @attr name com.becker.games.doppelkopfapp:menu
      */
     public static final int NavigationView_menu=11;
     /**
@@ -16212,7 +16231,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.admin.doppelkopfapp:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.becker.games.doppelkopfapp:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -16249,13 +16268,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:overlapAnchor
+     * @attr name com.becker.games.doppelkopfapp:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -16265,7 +16284,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.admin.doppelkopfapp:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.becker.games.doppelkopfapp:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -16273,13 +16292,13 @@ public final class R {
       0x7f0301a1
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:state_above_anchor
+     * @attr name com.becker.games.doppelkopfapp:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -16289,8 +16308,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.example.admin.doppelkopfapp:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.example.admin.doppelkopfapp:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.becker.games.doppelkopfapp:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.becker.games.doppelkopfapp:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -16299,7 +16318,7 @@ public final class R {
       0x7f03016c, 0x7f03016f
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16308,11 +16327,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:paddingBottomNoButtons
+     * @attr name com.becker.games.doppelkopfapp:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16321,7 +16340,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:paddingTopNoTitle
+     * @attr name com.becker.games.doppelkopfapp:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -16333,15 +16352,15 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.example.admin.doppelkopfapp:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.example.admin.doppelkopfapp:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.example.admin.doppelkopfapp:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.example.admin.doppelkopfapp:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.example.admin.doppelkopfapp:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.example.admin.doppelkopfapp:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout com.example.admin.doppelkopfapp:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount com.example.admin.doppelkopfapp:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.example.admin.doppelkopfapp:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.becker.games.doppelkopfapp:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.becker.games.doppelkopfapp:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.becker.games.doppelkopfapp:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.becker.games.doppelkopfapp:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.becker.games.doppelkopfapp:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.becker.games.doppelkopfapp:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout com.becker.games.doppelkopfapp:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount com.becker.games.doppelkopfapp:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.becker.games.doppelkopfapp:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -16396,17 +16415,17 @@ public final class R {
      */
     public static final int RecyclerView_android_descendantFocusability=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:fastScrollEnabled
+     * @attr name com.becker.games.doppelkopfapp:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16414,11 +16433,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:fastScrollHorizontalThumbDrawable
+     * @attr name com.becker.games.doppelkopfapp:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16426,11 +16445,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:fastScrollHorizontalTrackDrawable
+     * @attr name com.becker.games.doppelkopfapp:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16438,11 +16457,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:fastScrollVerticalThumbDrawable
+     * @attr name com.becker.games.doppelkopfapp:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16450,46 +16469,46 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:fastScrollVerticalTrackDrawable
+     * @attr name com.becker.games.doppelkopfapp:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:layoutManager
+     * @attr name com.becker.games.doppelkopfapp:layoutManager
      */
     public static final int RecyclerView_layoutManager=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:reverseLayout
+     * @attr name com.becker.games.doppelkopfapp:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:spanCount
+     * @attr name com.becker.games.doppelkopfapp:spanCount
      */
     public static final int RecyclerView_spanCount=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:stackFromEnd
+     * @attr name com.becker.games.doppelkopfapp:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=10;
     /**
@@ -16499,7 +16518,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.example.admin.doppelkopfapp:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.becker.games.doppelkopfapp:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -16507,7 +16526,7 @@ public final class R {
       0x7f0300ff
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16518,7 +16537,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:insetForeground
+     * @attr name com.becker.games.doppelkopfapp:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -16528,7 +16547,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.example.admin.doppelkopfapp:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.becker.games.doppelkopfapp:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -16536,7 +16555,7 @@ public final class R {
       0x7f03003c
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16545,7 +16564,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:behavior_overlapTop
+     * @attr name com.becker.games.doppelkopfapp:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -16559,19 +16578,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.example.admin.doppelkopfapp:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.example.admin.doppelkopfapp:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.example.admin.doppelkopfapp:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.example.admin.doppelkopfapp:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.admin.doppelkopfapp:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.example.admin.doppelkopfapp:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.example.admin.doppelkopfapp:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.example.admin.doppelkopfapp:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.example.admin.doppelkopfapp:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.example.admin.doppelkopfapp:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.example.admin.doppelkopfapp:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.admin.doppelkopfapp:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.example.admin.doppelkopfapp:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.becker.games.doppelkopfapp:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.becker.games.doppelkopfapp:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.becker.games.doppelkopfapp:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.becker.games.doppelkopfapp:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.becker.games.doppelkopfapp:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.becker.games.doppelkopfapp:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.becker.games.doppelkopfapp:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.becker.games.doppelkopfapp:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.becker.games.doppelkopfapp:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.becker.games.doppelkopfapp:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.becker.games.doppelkopfapp:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.becker.games.doppelkopfapp:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.becker.games.doppelkopfapp:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -16709,7 +16728,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16717,11 +16736,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:closeIcon
+     * @attr name com.becker.games.doppelkopfapp:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16729,21 +16748,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:commitIcon
+     * @attr name com.becker.games.doppelkopfapp:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:defaultQueryHint
+     * @attr name com.becker.games.doppelkopfapp:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16751,21 +16770,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:goIcon
+     * @attr name com.becker.games.doppelkopfapp:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:iconifiedByDefault
+     * @attr name com.becker.games.doppelkopfapp:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16773,11 +16792,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:layout
+     * @attr name com.becker.games.doppelkopfapp:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16785,21 +16804,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:queryBackground
+     * @attr name com.becker.games.doppelkopfapp:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:queryHint
+     * @attr name com.becker.games.doppelkopfapp:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16807,11 +16826,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:searchHintIcon
+     * @attr name com.becker.games.doppelkopfapp:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16819,11 +16838,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:searchIcon
+     * @attr name com.becker.games.doppelkopfapp:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16831,11 +16850,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:submitBackground
+     * @attr name com.becker.games.doppelkopfapp:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16843,11 +16862,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:suggestionRowLayout
+     * @attr name com.becker.games.doppelkopfapp:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16855,7 +16874,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:voiceIcon
+     * @attr name com.becker.games.doppelkopfapp:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -16865,8 +16884,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.example.admin.doppelkopfapp:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarStyle com.example.admin.doppelkopfapp:snackbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.becker.games.doppelkopfapp:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarStyle com.becker.games.doppelkopfapp:snackbarStyle}</code></td><td></td></tr>
      * </table>
      * @see #Snackbar_snackbarButtonStyle
      * @see #Snackbar_snackbarStyle
@@ -16875,7 +16894,7 @@ public final class R {
       0x7f030198, 0x7f030199
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16883,11 +16902,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:snackbarButtonStyle
+     * @attr name com.becker.games.doppelkopfapp:snackbarButtonStyle
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#snackbarStyle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#snackbarStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16895,7 +16914,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:snackbarStyle
+     * @attr name com.becker.games.doppelkopfapp:snackbarStyle
      */
     public static final int Snackbar_snackbarStyle=1;
     /**
@@ -16906,8 +16925,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.example.admin.doppelkopfapp:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.example.admin.doppelkopfapp:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.becker.games.doppelkopfapp:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.becker.games.doppelkopfapp:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
@@ -16930,7 +16949,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16939,11 +16958,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:elevation
+     * @attr name com.becker.games.doppelkopfapp:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -16952,7 +16971,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:maxActionInlineWidth
+     * @attr name com.becker.games.doppelkopfapp:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -16966,7 +16985,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.example.admin.doppelkopfapp:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.becker.games.doppelkopfapp:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -17041,7 +17060,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17049,7 +17068,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:popupTheme
+     * @attr name com.becker.games.doppelkopfapp:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -17171,17 +17190,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.example.admin.doppelkopfapp:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.example.admin.doppelkopfapp:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.admin.doppelkopfapp:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.example.admin.doppelkopfapp:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.admin.doppelkopfapp:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.admin.doppelkopfapp:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.example.admin.doppelkopfapp:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.example.admin.doppelkopfapp:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.example.admin.doppelkopfapp:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.example.admin.doppelkopfapp:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.example.admin.doppelkopfapp:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.becker.games.doppelkopfapp:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.becker.games.doppelkopfapp:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.becker.games.doppelkopfapp:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.becker.games.doppelkopfapp:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.becker.games.doppelkopfapp:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.becker.games.doppelkopfapp:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.becker.games.doppelkopfapp:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.becker.games.doppelkopfapp:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.becker.games.doppelkopfapp:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.becker.games.doppelkopfapp:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.becker.games.doppelkopfapp:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -17237,27 +17256,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:showText
+     * @attr name com.becker.games.doppelkopfapp:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:splitTrack
+     * @attr name com.becker.games.doppelkopfapp:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17266,11 +17285,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:switchMinWidth
+     * @attr name com.becker.games.doppelkopfapp:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17279,11 +17298,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:switchPadding
+     * @attr name com.becker.games.doppelkopfapp:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17291,11 +17310,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:switchTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17304,22 +17323,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:thumbTextPadding
+     * @attr name com.becker.games.doppelkopfapp:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:thumbTint
+     * @attr name com.becker.games.doppelkopfapp:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17336,11 +17355,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:thumbTintMode
+     * @attr name com.becker.games.doppelkopfapp:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17348,22 +17367,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:track
+     * @attr name com.becker.games.doppelkopfapp:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:trackTint
+     * @attr name com.becker.games.doppelkopfapp:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17380,7 +17399,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:trackTintMode
+     * @attr name com.becker.games.doppelkopfapp:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -17442,31 +17461,31 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground com.example.admin.doppelkopfapp:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart com.example.admin.doppelkopfapp:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity com.example.admin.doppelkopfapp:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTint com.example.admin.doppelkopfapp:tabIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.example.admin.doppelkopfapp:tabIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicator com.example.admin.doppelkopfapp:tabIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.example.admin.doppelkopfapp:tabIndicatorAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.example.admin.doppelkopfapp:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.example.admin.doppelkopfapp:tabIndicatorFullWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.example.admin.doppelkopfapp:tabIndicatorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.example.admin.doppelkopfapp:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.example.admin.doppelkopfapp:tabInlineLabel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.example.admin.doppelkopfapp:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth com.example.admin.doppelkopfapp:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode com.example.admin.doppelkopfapp:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding com.example.admin.doppelkopfapp:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.example.admin.doppelkopfapp:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.example.admin.doppelkopfapp:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.example.admin.doppelkopfapp:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.example.admin.doppelkopfapp:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabRippleColor com.example.admin.doppelkopfapp:tabRippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.example.admin.doppelkopfapp:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.example.admin.doppelkopfapp:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor com.example.admin.doppelkopfapp:tabTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.example.admin.doppelkopfapp:tabUnboundedRipple}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground com.becker.games.doppelkopfapp:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.becker.games.doppelkopfapp:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.becker.games.doppelkopfapp:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTint com.becker.games.doppelkopfapp:tabIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.becker.games.doppelkopfapp:tabIconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicator com.becker.games.doppelkopfapp:tabIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.becker.games.doppelkopfapp:tabIndicatorAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.becker.games.doppelkopfapp:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.becker.games.doppelkopfapp:tabIndicatorFullWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.becker.games.doppelkopfapp:tabIndicatorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.becker.games.doppelkopfapp:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.becker.games.doppelkopfapp:tabInlineLabel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.becker.games.doppelkopfapp:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.becker.games.doppelkopfapp:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.becker.games.doppelkopfapp:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.becker.games.doppelkopfapp:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.becker.games.doppelkopfapp:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.becker.games.doppelkopfapp:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.becker.games.doppelkopfapp:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.becker.games.doppelkopfapp:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabRippleColor com.becker.games.doppelkopfapp:tabRippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.becker.games.doppelkopfapp:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.becker.games.doppelkopfapp:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.becker.games.doppelkopfapp:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.becker.games.doppelkopfapp:tabUnboundedRipple}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -17504,7 +17523,7 @@ public final class R {
       0x7f0301ce
     };
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17512,11 +17531,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabBackground
+     * @attr name com.becker.games.doppelkopfapp:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17525,11 +17544,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabContentStart
+     * @attr name com.becker.games.doppelkopfapp:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17542,22 +17561,22 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:tabGravity
+     * @attr name com.becker.games.doppelkopfapp:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIconTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIconTint}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIconTint
+     * @attr name com.becker.games.doppelkopfapp:tabIconTint
      */
     public static final int TabLayout_tabIconTint=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIconTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIconTintMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17574,11 +17593,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIconTintMode
+     * @attr name com.becker.games.doppelkopfapp:tabIconTintMode
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIndicator}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIndicator}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17586,41 +17605,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIndicator
+     * @attr name com.becker.games.doppelkopfapp:tabIndicator
      */
     public static final int TabLayout_tabIndicator=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIndicatorAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIndicatorAnimationDuration}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIndicatorAnimationDuration
+     * @attr name com.becker.games.doppelkopfapp:tabIndicatorAnimationDuration
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIndicatorColor
+     * @attr name com.becker.games.doppelkopfapp:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIndicatorFullWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIndicatorFullWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIndicatorFullWidth
+     * @attr name com.becker.games.doppelkopfapp:tabIndicatorFullWidth
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIndicatorGravity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIndicatorGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17635,11 +17654,11 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIndicatorGravity
+     * @attr name com.becker.games.doppelkopfapp:tabIndicatorGravity
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17648,21 +17667,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabIndicatorHeight
+     * @attr name com.becker.games.doppelkopfapp:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabInlineLabel}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabInlineLabel}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabInlineLabel
+     * @attr name com.becker.games.doppelkopfapp:tabInlineLabel
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17671,11 +17690,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabMaxWidth
+     * @attr name com.becker.games.doppelkopfapp:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17684,11 +17703,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabMinWidth
+     * @attr name com.becker.games.doppelkopfapp:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -17701,11 +17720,11 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:tabMode
+     * @attr name com.becker.games.doppelkopfapp:tabMode
      */
     public static final int TabLayout_tabMode=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17714,11 +17733,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabPadding
+     * @attr name com.becker.games.doppelkopfapp:tabPadding
      */
     public static final int TabLayout_tabPadding=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17727,11 +17746,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabPaddingBottom
+     * @attr name com.becker.games.doppelkopfapp:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17740,11 +17759,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabPaddingEnd
+     * @attr name com.becker.games.doppelkopfapp:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17753,11 +17772,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabPaddingStart
+     * @attr name com.becker.games.doppelkopfapp:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17766,33 +17785,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:tabPaddingTop
+     * @attr name com.becker.games.doppelkopfapp:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabRippleColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabRippleColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabRippleColor
+     * @attr name com.becker.games.doppelkopfapp:tabRippleColor
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabSelectedTextColor
+     * @attr name com.becker.games.doppelkopfapp:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17800,28 +17819,28 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabTextColor
+     * @attr name com.becker.games.doppelkopfapp:tabTextColor
      */
     public static final int TabLayout_tabTextColor=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#tabUnboundedRipple}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#tabUnboundedRipple}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:tabUnboundedRipple
+     * @attr name com.becker.games.doppelkopfapp:tabUnboundedRipple
      */
     public static final int TabLayout_tabUnboundedRipple=24;
     /**
@@ -17842,8 +17861,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.example.admin.doppelkopfapp:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.example.admin.doppelkopfapp:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.becker.games.doppelkopfapp:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.becker.games.doppelkopfapp:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -18009,17 +18028,17 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:fontFamily
+     * @attr name com.becker.games.doppelkopfapp:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18029,7 +18048,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:textAllCaps
+     * @attr name com.becker.games.doppelkopfapp:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -18041,32 +18060,32 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.example.admin.doppelkopfapp:boxBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.example.admin.doppelkopfapp:boxBackgroundMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.example.admin.doppelkopfapp:boxCollapsedPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.example.admin.doppelkopfapp:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.example.admin.doppelkopfapp:boxCornerRadiusBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.example.admin.doppelkopfapp:boxCornerRadiusTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.example.admin.doppelkopfapp:boxCornerRadiusTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.example.admin.doppelkopfapp:boxStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.example.admin.doppelkopfapp:boxStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.example.admin.doppelkopfapp:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.example.admin.doppelkopfapp:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.example.admin.doppelkopfapp:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.example.admin.doppelkopfapp:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.example.admin.doppelkopfapp:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.example.admin.doppelkopfapp:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperText com.example.admin.doppelkopfapp:helperText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.example.admin.doppelkopfapp:helperTextEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.example.admin.doppelkopfapp:helperTextTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.example.admin.doppelkopfapp:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.example.admin.doppelkopfapp:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.example.admin.doppelkopfapp:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.example.admin.doppelkopfapp:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.example.admin.doppelkopfapp:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.example.admin.doppelkopfapp:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.example.admin.doppelkopfapp:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.example.admin.doppelkopfapp:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.becker.games.doppelkopfapp:boxBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.becker.games.doppelkopfapp:boxBackgroundMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.becker.games.doppelkopfapp:boxCollapsedPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.becker.games.doppelkopfapp:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.becker.games.doppelkopfapp:boxCornerRadiusBottomStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.becker.games.doppelkopfapp:boxCornerRadiusTopEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.becker.games.doppelkopfapp:boxCornerRadiusTopStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.becker.games.doppelkopfapp:boxStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.becker.games.doppelkopfapp:boxStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.becker.games.doppelkopfapp:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.becker.games.doppelkopfapp:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.becker.games.doppelkopfapp:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.becker.games.doppelkopfapp:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.becker.games.doppelkopfapp:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.becker.games.doppelkopfapp:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperText com.becker.games.doppelkopfapp:helperText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.becker.games.doppelkopfapp:helperTextEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.becker.games.doppelkopfapp:helperTextTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.becker.games.doppelkopfapp:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.becker.games.doppelkopfapp:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.becker.games.doppelkopfapp:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.becker.games.doppelkopfapp:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.becker.games.doppelkopfapp:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.becker.games.doppelkopfapp:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.becker.games.doppelkopfapp:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.becker.games.doppelkopfapp:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -18132,18 +18151,18 @@ public final class R {
      */
     public static final int TextInputLayout_android_hint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxBackgroundColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:boxBackgroundColor
+     * @attr name com.becker.games.doppelkopfapp:boxBackgroundColor
      */
     public static final int TextInputLayout_boxBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxBackgroundMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxBackgroundMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18157,11 +18176,11 @@ public final class R {
      * <tr><td>outline</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:boxBackgroundMode
+     * @attr name com.becker.games.doppelkopfapp:boxBackgroundMode
      */
     public static final int TextInputLayout_boxBackgroundMode=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxCollapsedPaddingTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxCollapsedPaddingTop}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18170,11 +18189,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:boxCollapsedPaddingTop
+     * @attr name com.becker.games.doppelkopfapp:boxCollapsedPaddingTop
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxCornerRadiusBottomEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxCornerRadiusBottomEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18183,11 +18202,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:boxCornerRadiusBottomEnd
+     * @attr name com.becker.games.doppelkopfapp:boxCornerRadiusBottomEnd
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxCornerRadiusBottomStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxCornerRadiusBottomStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18196,11 +18215,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:boxCornerRadiusBottomStart
+     * @attr name com.becker.games.doppelkopfapp:boxCornerRadiusBottomStart
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxCornerRadiusTopEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxCornerRadiusTopEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18209,11 +18228,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:boxCornerRadiusTopEnd
+     * @attr name com.becker.games.doppelkopfapp:boxCornerRadiusTopEnd
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxCornerRadiusTopStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxCornerRadiusTopStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18222,22 +18241,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:boxCornerRadiusTopStart
+     * @attr name com.becker.games.doppelkopfapp:boxCornerRadiusTopStart
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxStrokeColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxStrokeColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:boxStrokeColor
+     * @attr name com.becker.games.doppelkopfapp:boxStrokeColor
      */
     public static final int TextInputLayout_boxStrokeColor=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#boxStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#boxStrokeWidth}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18246,30 +18265,30 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:boxStrokeWidth
+     * @attr name com.becker.games.doppelkopfapp:boxStrokeWidth
      */
     public static final int TextInputLayout_boxStrokeWidth=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:counterEnabled
+     * @attr name com.becker.games.doppelkopfapp:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:counterMaxLength
+     * @attr name com.becker.games.doppelkopfapp:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18277,11 +18296,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:counterOverflowTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18289,21 +18308,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:counterTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:errorEnabled
+     * @attr name com.becker.games.doppelkopfapp:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18311,31 +18330,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:errorTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#helperText}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#helperText}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:helperText
+     * @attr name com.becker.games.doppelkopfapp:helperText
      */
     public static final int TextInputLayout_helperText=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#helperTextEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#helperTextEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:helperTextEnabled
+     * @attr name com.becker.games.doppelkopfapp:helperTextEnabled
      */
     public static final int TextInputLayout_helperTextEnabled=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#helperTextTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#helperTextTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18343,31 +18362,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:helperTextTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:helperTextTextAppearance
      */
     public static final int TextInputLayout_helperTextTextAppearance=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:hintAnimationEnabled
+     * @attr name com.becker.games.doppelkopfapp:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:hintEnabled
+     * @attr name com.becker.games.doppelkopfapp:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18375,21 +18394,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:hintTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:passwordToggleContentDescription
+     * @attr name com.becker.games.doppelkopfapp:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18397,32 +18416,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:passwordToggleDrawable
+     * @attr name com.becker.games.doppelkopfapp:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:passwordToggleEnabled
+     * @attr name com.becker.games.doppelkopfapp:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:passwordToggleTint
+     * @attr name com.becker.games.doppelkopfapp:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -18438,7 +18457,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:passwordToggleTintMode
+     * @attr name com.becker.games.doppelkopfapp:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=27;
     /**
@@ -18449,8 +18468,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ThemeEnforcement_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.example.admin.doppelkopfapp:enforceMaterialTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.example.admin.doppelkopfapp:enforceTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.becker.games.doppelkopfapp:enforceMaterialTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.becker.games.doppelkopfapp:enforceTextAppearance}</code></td><td></td></tr>
      * </table>
      * @see #ThemeEnforcement_android_textAppearance
      * @see #ThemeEnforcement_enforceMaterialTheme
@@ -18472,23 +18491,23 @@ public final class R {
      */
     public static final int ThemeEnforcement_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#enforceMaterialTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#enforceMaterialTheme}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:enforceMaterialTheme
+     * @attr name com.becker.games.doppelkopfapp:enforceMaterialTheme
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#enforceTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#enforceTextAppearance}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:enforceTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:enforceTextAppearance
      */
     public static final int ThemeEnforcement_enforceTextAppearance=2;
     /**
@@ -18500,33 +18519,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.example.admin.doppelkopfapp:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.admin.doppelkopfapp:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.example.admin.doppelkopfapp:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.admin.doppelkopfapp:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.example.admin.doppelkopfapp:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.admin.doppelkopfapp:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.example.admin.doppelkopfapp:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.example.admin.doppelkopfapp:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.example.admin.doppelkopfapp:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.example.admin.doppelkopfapp:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.example.admin.doppelkopfapp:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.admin.doppelkopfapp:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.admin.doppelkopfapp:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.example.admin.doppelkopfapp:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.example.admin.doppelkopfapp:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.example.admin.doppelkopfapp:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.admin.doppelkopfapp:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.admin.doppelkopfapp:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.example.admin.doppelkopfapp:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.example.admin.doppelkopfapp:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.admin.doppelkopfapp:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.admin.doppelkopfapp:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.example.admin.doppelkopfapp:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.example.admin.doppelkopfapp:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.example.admin.doppelkopfapp:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.admin.doppelkopfapp:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.example.admin.doppelkopfapp:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.becker.games.doppelkopfapp:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.becker.games.doppelkopfapp:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.becker.games.doppelkopfapp:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.becker.games.doppelkopfapp:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.becker.games.doppelkopfapp:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.becker.games.doppelkopfapp:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.becker.games.doppelkopfapp:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.becker.games.doppelkopfapp:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.becker.games.doppelkopfapp:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.becker.games.doppelkopfapp:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.becker.games.doppelkopfapp:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.becker.games.doppelkopfapp:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.becker.games.doppelkopfapp:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.becker.games.doppelkopfapp:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.becker.games.doppelkopfapp:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.becker.games.doppelkopfapp:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.becker.games.doppelkopfapp:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.becker.games.doppelkopfapp:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.becker.games.doppelkopfapp:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.becker.games.doppelkopfapp:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.becker.games.doppelkopfapp:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.becker.games.doppelkopfapp:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.becker.games.doppelkopfapp:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.becker.games.doppelkopfapp:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.becker.games.doppelkopfapp:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.becker.games.doppelkopfapp:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.becker.games.doppelkopfapp:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -18611,7 +18630,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -18624,21 +18643,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:buttonGravity
+     * @attr name com.becker.games.doppelkopfapp:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:collapseContentDescription
+     * @attr name com.becker.games.doppelkopfapp:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18646,11 +18665,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:collapseIcon
+     * @attr name com.becker.games.doppelkopfapp:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18659,11 +18678,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetEnd
+     * @attr name com.becker.games.doppelkopfapp:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18672,11 +18691,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetEndWithActions
+     * @attr name com.becker.games.doppelkopfapp:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18685,11 +18704,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetLeft
+     * @attr name com.becker.games.doppelkopfapp:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18698,11 +18717,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetRight
+     * @attr name com.becker.games.doppelkopfapp:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18711,11 +18730,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetStart
+     * @attr name com.becker.games.doppelkopfapp:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18724,11 +18743,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:contentInsetStartWithNavigation
+     * @attr name com.becker.games.doppelkopfapp:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18736,21 +18755,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:logo
+     * @attr name com.becker.games.doppelkopfapp:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:logoDescription
+     * @attr name com.becker.games.doppelkopfapp:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18759,21 +18778,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:maxButtonHeight
+     * @attr name com.becker.games.doppelkopfapp:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:navigationContentDescription
+     * @attr name com.becker.games.doppelkopfapp:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18781,11 +18800,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:navigationIcon
+     * @attr name com.becker.games.doppelkopfapp:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18793,21 +18812,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:popupTheme
+     * @attr name com.becker.games.doppelkopfapp:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:subtitle
+     * @attr name com.becker.games.doppelkopfapp:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18815,32 +18834,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:subtitleTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:subtitleTextColor
+     * @attr name com.becker.games.doppelkopfapp:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.example.admin.doppelkopfapp:title
+     * @attr name com.becker.games.doppelkopfapp:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18849,11 +18868,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:titleMargin
+     * @attr name com.becker.games.doppelkopfapp:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18862,11 +18881,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:titleMarginBottom
+     * @attr name com.becker.games.doppelkopfapp:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18875,11 +18894,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:titleMarginEnd
+     * @attr name com.becker.games.doppelkopfapp:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18888,11 +18907,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:titleMarginStart
+     * @attr name com.becker.games.doppelkopfapp:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18901,11 +18920,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:titleMarginTop
+     * @attr name com.becker.games.doppelkopfapp:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18914,11 +18933,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:titleMargins
+     * @attr name com.becker.games.doppelkopfapp:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18926,18 +18945,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:titleTextAppearance
+     * @attr name com.becker.games.doppelkopfapp:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:titleTextColor
+     * @attr name com.becker.games.doppelkopfapp:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -18949,9 +18968,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.example.admin.doppelkopfapp:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.example.admin.doppelkopfapp:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.example.admin.doppelkopfapp:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.becker.games.doppelkopfapp:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.becker.games.doppelkopfapp:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.becker.games.doppelkopfapp:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -18994,7 +19013,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19003,11 +19022,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:paddingEnd
+     * @attr name com.becker.games.doppelkopfapp:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19016,11 +19035,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.example.admin.doppelkopfapp:paddingStart
+     * @attr name com.becker.games.doppelkopfapp:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19028,7 +19047,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:theme
+     * @attr name com.becker.games.doppelkopfapp:theme
      */
     public static final int View_theme=4;
     /**
@@ -19039,8 +19058,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.admin.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.admin.doppelkopfapp:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.becker.games.doppelkopfapp:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.becker.games.doppelkopfapp:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -19065,18 +19084,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundTint
+     * @attr name com.becker.games.doppelkopfapp:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.admin.doppelkopfapp.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.becker.games.doppelkopfapp.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -19093,7 +19112,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.example.admin.doppelkopfapp:backgroundTintMode
+     * @attr name com.becker.games.doppelkopfapp:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**

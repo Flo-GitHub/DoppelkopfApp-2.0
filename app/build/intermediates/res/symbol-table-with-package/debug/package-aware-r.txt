@@ -1,4 +1,4 @@
-com.example.admin.doppelkopfapp
+com.becker.games.doppelkopfapp
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -631,6 +631,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color inActive
 color loser
 color material_blue_grey_800
@@ -1018,10 +1019,10 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_add_white
 drawable ic_content_add
+drawable ic_delete
 drawable ic_game
 drawable ic_group
 drawable ic_info
-drawable ic_launcher_background
 drawable ic_menu_camera
 drawable ic_menu_gallery
 drawable ic_menu_manage
@@ -1032,6 +1033,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_new_round
+drawable ic_overflow
 drawable ic_settings
 drawable ic_settings_white
 drawable ic_table
@@ -1069,7 +1071,9 @@ id action_bar_subtitle
 id action_bar_title
 id action_container
 id action_context_bar
+id action_delete
 id action_divider
+id action_edit
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -1175,6 +1179,7 @@ id line1
 id line3
 id linearLayout
 id linearLayout2
+id linearLayout3
 id listMode
 id list_item
 id main_content_frame
@@ -1197,6 +1202,7 @@ id nav_table
 id nav_view
 id navigation_header_container
 id never
+id new_round_repeat
 id new_round_submit
 id none
 id normal
@@ -1210,6 +1216,7 @@ id parent
 id parentPanel
 id parent_matrix
 id party_card_date
+id party_card_overflow
 id party_card_view
 id party_create_cancel_button
 id party_create_create_button
@@ -1290,6 +1297,7 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
+id table_next_button
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -1435,7 +1443,9 @@ layout simple_row
 layout support_simple_spinner_dropdown_item
 menu activity_main_drawer
 menu main
+menu menu_card
 menu menu_party_select
+mipmap ic_group_image
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -1488,13 +1498,18 @@ string bottom_sheet_behavior
 string cancel
 string character_counter_content_description
 string character_counter_pattern
+string confirmation_delete_group
 string continue_text
 string create
+string delete
+string delete_group_title
 string double_bocks_remaining
+string edit
 string error_db_id_not_set
 string error_minimum_4_players
 string error_more_than_6_players
 string error_party_not_set
+string error_points_empty
 string error_required_field_not_initialized
 string error_winners
 string fab_transformation_scrim_behavior
@@ -1502,6 +1517,7 @@ string fab_transformation_sheet_behavior
 string game_create_fragment_title
 string game_select_fragment_title
 string game_table
+string group_deleted
 string group_image
 string group_name
 string group_name_required
@@ -1513,6 +1529,7 @@ string nav_header_subtitle
 string nav_header_title
 string navigation_drawer_close
 string navigation_drawer_open
+string new_round
 string new_round_fragment_title
 string no
 string number_0
@@ -1537,6 +1554,8 @@ string player4_required
 string player5_optional
 string player6_optional
 string points
+string repeat_round
+string rounds_played
 string sample_date
 string sample_player_name
 string sample_player_names

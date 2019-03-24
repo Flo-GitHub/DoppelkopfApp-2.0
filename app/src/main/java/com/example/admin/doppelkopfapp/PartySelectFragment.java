@@ -118,6 +118,8 @@ public class PartySelectFragment extends Fragment {
     public interface OnPartySelectListener {
         void onPartySelected(int pos);
         void onPartyAddClicked();
+        void onPartyDeleted(int pos, RecyclerView.Adapter adapter);
+        void onPartyEdited(int pos);
     }
 
 }

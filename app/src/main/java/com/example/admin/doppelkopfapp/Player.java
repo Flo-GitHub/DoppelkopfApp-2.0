@@ -37,6 +37,6 @@ public class Player implements Serializable, Comparable{
     @Override
     public int compareTo(@NonNull Object o) {
         Player p = (Player) o;
-        return new Long(this.dataBaseId).compareTo( ((Player) o).dataBaseId);
+        return Long.valueOf(this.dataBaseId).compareTo( ((Player) o).dataBaseId);
     }
 }

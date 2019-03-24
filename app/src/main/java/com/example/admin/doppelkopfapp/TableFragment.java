@@ -1,5 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
+import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,6 +9,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -22,7 +24,7 @@ import java.util.Set;
 
 public class TableFragment extends Fragment {
 
-    //private OnSettingsChangeListener mListener;
+    private OnNextRoundListener onNextRoundListener;
     private Party party;
 
     public TableFragment() {
@@ -52,7 +54,6 @@ public class TableFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_table, container, false);
     }
 
@@ -68,24 +69,33 @@ public class TableFragment extends Fragment {
 
 
         dealerView.setText(String.format(t));
+
+        Button button = view.findViewById(R.id.table_next_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onNextRoundListener.onNextRound();
+            }
+        });
+
         fillTable(getView(), party.getCurrentGame());
     }
 
-    /*    @Override
+    @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnSettingsChangeListener) {
-            mListener = (OnSettingsChangeListener) context;
+        if (context instanceof OnNextRoundListener) {
+            onNextRoundListener = (OnNextRoundListener) context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnSettingsChangeListener");
         }
-    }*/
+    }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        //mListener = null;
+        onNextRoundListener = null;
     }
 
     private void fillTable(View view, GameManager game) {
@@ -226,17 +236,8 @@ public class TableFragment extends Fragment {
         return false;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    /*public interface OnSettingsChangeListener {
-        void onSettingsSaved(Uri uri);
-    }*/
+
+    public interface OnNextRoundListener {
+        void onNextRound();
+    }
 }

@@ -66,6 +66,15 @@
     <string name="save">Save</string>
     <string name="select_group_image">Select Group Image</string>
     <string name="game_table">Table</string>
+    <string name="new_round">New Round</string>
+    <string name="rounds_played">" Rounds"</string>
+    <string name="error_points_empty">Please enter the points for this round.</string>
+    <string name="repeat_round">Repeat Round</string>
+    <string name="delete">delete</string>
+    <string name="edit">edit</string>
+    <string name="confirmation_delete_group">Do you really want to delete this Group?</string>
+    <string name="delete_group_title">Delete Group</string>
+    <string name="group_deleted">Group deleted.</string>
 
 
 </resources>

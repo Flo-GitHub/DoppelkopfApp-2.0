@@ -5,8 +5,8 @@
     <string name="number_0">0</string>
     <string name="number_1">1</string>
     <string name="number_2">2</string>
-    <string name="bocks_remaining">Bocks verbleibend:</string>
-    <string name="double_bocks_remaining">Doppel Bocks remaining:</string>
+    <string name="bocks_remaining">Böcke verbleibend:</string>
+    <string name="double_bocks_remaining">Doppel Böcke verbleibend:</string>
     <string name="continue_text">weiter</string>
     <string name="ok">OK</string>
     <string name="yes">ja</string>
@@ -17,8 +17,6 @@
     <string name="number_6">6</string>
     <string name="cancel">Abbrechen</string>
     <string name="action_settings">Einstellungen</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_main">DoppelKopf Notizen</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -28,15 +26,15 @@
     <string name="settings_bocks_none">Keine</string>
     <string name="settings_bocks_single">Einzel</string>
     <string name="settings_bocks_double">Doppel</string>
-    <string name="maximum_bocks">Maximale Bocks:</string>
-    <string name="bocks_in_solo">Bocks im Solo</string>
+    <string name="maximum_bocks">Maximale Böcke:</string>
+    <string name="bocks_in_solo">Böcke im Solo</string>
     <string name="save">Speichern</string>
     <string name="group_name">Gruppenname</string>
     <string name="create">Erstellen</string>
     <string name="group_image">Gruppenbild</string>
     <string name="select_winners">Sieger auswählen:</string>
     <string name="points">Punkte</string>
-    <string name="bocks">Bocks</string>
+    <string name="bocks">Böcke</string>
     <string name="submit">Weiter</string>
     <string name="group_name_required">Gruppenname (*)</string>
     <string name="player1_required">Spieler 1 (*)</string>
@@ -52,20 +50,30 @@
     <string name="sample_player_name">Robert</string>
     <string name="table_bock">B</string>
     <string name="game_create_fragment_title">Neues Spiel Erstellen</string>
-    <string name="error_minimum_4_players">Wähle mindestens 4 Spieler</string>
+    <string name="error_minimum_4_players">Wähle bitte mindestens 4 Spieler aus.</string>
     <string name="error_db_id_not_set">Keine Datenbank ID vorhanden</string>
     <string name="error_winners">Es gibt nur 1, 2 oder 3 Gewinner</string>
-    <string name="error_more_than_6_players">Es werden nur 6 Spieler pro Spiel unterstützt</string>
-    <string name="game_select_fragment_title">Wähle ein Spiel</string>
+    <string name="error_more_than_6_players">Es werden nur 6 Spieler pro Spiel unterstützt.</string>
+    <string name="game_select_fragment_title">Spiel Auswählen</string>
     <string name="error_party_not_set">Keine Gruppe ausgewählt</string>
     <string name="new_round_fragment_title">Neue Runde</string>
-    <string name="error_required_field_not_initialized">Bitte alle benötigten Felder (*) ausfüllen</string>
+    <string name="error_required_field_not_initialized">Bitte alle benötigten Felder (*) ausfüllen.</string>
     <string name="party_create_fragment_title">Neue Gruppe Erstellen</string>
     <string name="party_select_fragment_title">Gruppe Auswählen</string>
     <string name="settings_frament_title">Einstellungen</string>
     <string name="table_fragment_title">DoppelKopf Notizen</string>
-    <string name="table_info">"%1$s gibt. %2$d Bocks und %3$d Doppelbocks verbleibend. "</string>
+    <string name="table_info">"%1$s gibt. %2$d Böcke und %3$d Doppelböcke verbleibend. "</string>
     <string name="select_group_image">Gruppenbild Auswählen</string>
     <string name="game_table">Tabelle</string>
+    <string name="new_round">Neue Runde</string>
+    <string name="rounds_played">" Runden"</string>
+    <string name="error_points_empty">Bitte trage die Punkte für diese Runde ein.</string>
+    <string name="repeat_round">Runde Wiederholen</string>
+    <string name="delete">löschen</string>
+    <string name="edit">bearbeiten</string>
+    <string name="confirmation_delete_group">Möchtest du diese Gruppe wirklich löschen?</string>
+    <string name="delete_group_title">Gruppe löschen</string>
+    <string name="group_deleted">Gruppe gelöscht.</string>
+
 
 </resources>

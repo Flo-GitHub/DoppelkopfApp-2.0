@@ -7,8 +7,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ExpandableListAdapter;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -20,14 +23,6 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link NewRoundFragment} interface
- * to handle interaction events.
- * Use the {@link NewRoundFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class NewRoundFragment extends Fragment {
 
     private OnSubmitListener submitListener;
@@ -37,6 +32,7 @@ public class NewRoundFragment extends Fragment {
 
     private EditText view_points;
     private RadioGroup view_bocks;
+    private CheckBox view_repeatRound;
 
     public NewRoundFragment() {
         // Required empty public constructor
@@ -84,6 +80,7 @@ public class NewRoundFragment extends Fragment {
 
         view_points = view.findViewById(R.id.edit_round_points);
         view_bocks = view.findViewById(R.id.radio_round_bocks);
+        view_repeatRound = view.findViewById(R.id.new_round_repeat);
 
         Button button = view.findViewById(R.id.new_round_submit);
         button.setOnClickListener(new View.OnClickListener() {
@@ -93,13 +90,13 @@ public class NewRoundFragment extends Fragment {
                     GameRound round = new GameRound(getPlayerPoints());
                     round.setNewBocks(getBocks());
                     round.setCurrentBocks(party.getCurrentGame().getCurrentBocks());
-                    submitListener.onSubmit(round);
+                    submitListener.onSubmit(round, isRepeat());
                 } catch(Exception e) {
-                    e.printStackTrace();
                     Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
+        showKeyboard();
         return view;
     }
 
@@ -122,6 +119,10 @@ public class NewRoundFragment extends Fragment {
     }
 
 
+    private boolean isRepeat(){
+        return view_repeatRound.isChecked();
+    }
+
     private int getBocks() {
         RadioButton button = getView().findViewById(view_bocks.getCheckedRadioButtonId());
         return Integer.parseInt(button.getText().toString());
@@ -129,7 +130,11 @@ public class NewRoundFragment extends Fragment {
     }
 
     private int getPoints() {
-        return Integer.parseInt(view_points.getText().toString());
+        try {
+            return Integer.parseInt(view_points.getText().toString());
+        } catch(Exception e) {
+            throw new RuntimeException(getString(R.string.error_points_empty));
+        }
     }
 
     private Map<Long, Boolean> getWinners(){
@@ -151,9 +156,27 @@ public class NewRoundFragment extends Fragment {
         return map;
     }
 
+    private void showKeyboard(){
+        view_points.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, final boolean hasFocus) {
+                view_points.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(hasFocus) {
+                            InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                            imm.showSoftInput(view_points, InputMethodManager.SHOW_IMPLICIT);
+                        }
+                    }
+                });
+            }
+        });
+        view_points.requestFocus();
+    }
+
 
     public interface OnSubmitListener {
-        void onSubmit(GameRound round);
+        void onSubmit(GameRound round, boolean repeat);
     }
 
 }

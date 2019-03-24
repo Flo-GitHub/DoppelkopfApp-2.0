@@ -14,8 +14,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/cell_not_active"
         android:contentDescription="@string/group_image"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/ic_group"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

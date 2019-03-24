@@ -1,5 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -38,8 +39,8 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
         }
         public void bindGame(GameManager game) {
             players.setText(game.getPlayersAsString());
-            gamesPlayed.setText(game.getRounds().size() + " rounds");
-            date.setText(MyUtils.getDate());
+            gamesPlayed.setText(game.getRounds().size() + MainActivity.getContext().getString(R.string.rounds_played));
+            date.setText(game.getLastDate());
             try {
                 image.setImageBitmap(game.getImage());
             } catch (Exception ignore) {}

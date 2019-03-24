@@ -51,12 +51,15 @@ public class Party implements Serializable {
     }
 
     public Player getPlayerByDBId(long playerDataBaseId) {
+        for(Player p : players) {
+            Log.e("Player", p.getName() + " " + p.getDataBaseId());
+        }
          for(Player p : players) {
              if(p.getDataBaseId() == playerDataBaseId) {
                  return p;
              }
          }
-         throw new IllegalArgumentException("PlayerDataBaseId doesn't exist");
+         throw new IllegalArgumentException("PlayerDataBaseId doesn't exist" + playerDataBaseId);
     }
 
     /*
@@ -165,13 +168,7 @@ public class Party implements Serializable {
     }
 
     public Bitmap getImage() {
-        try {
-            return BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
-
-        }catch(Exception e) {
-            Log.e("PARTY", "couldn't get image");
-        }
-        return null;
+        return BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.length);
     }
 
     public byte[] getImageBytes() {

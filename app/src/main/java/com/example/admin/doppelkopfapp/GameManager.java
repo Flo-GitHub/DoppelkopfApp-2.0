@@ -23,6 +23,7 @@ public class GameManager implements Serializable {
     public GameManager(Party party, long[] playerDataBaseIds) {
         this.party = party;
         this.playersDataBaseIds = playerDataBaseIds;
+        lastDate = MyUtils.getDate();
         rounds = new ArrayList<>();
         bocks = new int[party.getSettings().getMaxBocks()];
         for(int i = 0; i < party.getSettings().getMaxBocks(); i++){
@@ -43,7 +44,7 @@ public class GameManager implements Serializable {
     public boolean addPlayer( long newPlayerId, int indexToAdd ) {
         //for the case something goes wrong or for the manual adding of playersDataBaseIds
         if( playersDataBaseIds.length >= 6 )
-            throw new IndexOutOfBoundsException(Resources.getSystem().getString(R.string.error_more_than_6_players));
+            throw new IndexOutOfBoundsException(MainActivity.getContext().getString(R.string.error_more_than_6_players));
         long[] tempPlayers = playersDataBaseIds;
         playersDataBaseIds = new long[playersDataBaseIds.length+1];
 
@@ -61,7 +62,7 @@ public class GameManager implements Serializable {
 
     public void removePlayer( long databaseId ) {
         if( playersDataBaseIds.length <= 4 )
-            throw new IndexOutOfBoundsException(Resources.getSystem().getString(R.string.error_minimum_4_players));
+            throw new IndexOutOfBoundsException(MainActivity.getContext().getString(R.string.error_minimum_4_players));
 
         long[] tempPlayers = playersDataBaseIds;
         playersDataBaseIds = new long[playersDataBaseIds.length-1];
@@ -87,9 +88,7 @@ public class GameManager implements Serializable {
         boolean solo = updateSoloPlayerPoints(playerPoints);
 
         if (!isValidRound(playerPoints))
-            throw new IllegalArgumentException(Resources.getSystem().getString(R.string.error_winners));
-        else if (playerPoints.size() != 4)
-            throw new IllegalArgumentException("Length of points should be 4, but was " + playerPoints.size());
+            throw new IllegalArgumentException(MainActivity.getContext().getString(R.string.error_winners));
 
         int factorToIncrease = 1;
         int actualBocks = 0;
@@ -108,14 +107,14 @@ public class GameManager implements Serializable {
             playerPoints.put(key, playerPoints.get(key)*factorToIncrease);
         }
 
-        //if (!repeatRound)
-        nextGiverIndex();
+        if (!repeatRound)
+            nextGiverIndex();
+
         addBocks(round.getNewBocks());
         return actualBocks;
     }
 
     /**
-     *
      * @param map
      * @return if round is solo
      */
@@ -134,18 +133,16 @@ public class GameManager implements Serializable {
         return winners == 1 || winners == 3;
     }
 
-    //max = 1, bocks = [7, 0]
-    //max = 2, newbock = 1, bocks = [0, 4]
     private void addBocks(int n) {
         Log.e("Bockadd","Before: " + getBockSafe(0) + " " + getBockSafe(1));
         for(int i = 0; i < n; i++) {
-            if( party.getSettings().getMaxBocks()==2 && bocks[0] >= 1 ) {
+            if( party.getSettings().getMaxBocks()==2) {
                 int changed = 0; //7
                 for( int a = 0; a < playersDataBaseIds.length; a++ ) {
                     if( bocks[0] == 0 )
                         break;
-                    bocks[1]++;//1 2 3 4
-                    bocks[0]--;//6 5 4 3
+                    bocks[1]++;
+                    bocks[0]--;
                     changed++;
                 }
                 bocks[0] += playersDataBaseIds.length - changed;
@@ -232,12 +229,16 @@ public class GameManager implements Serializable {
         return 0;
     }
 
-    public void addRound(GameRound round) {
-        int actualBocks = nextRound(round, false);
+    public void addRound(GameRound round, boolean repeat) {
+        int actualBocks = nextRound(round, repeat);
         round.setCurrentBocks(actualBocks);
         this.rounds.add(round);
         lastDate = MyUtils.getDate();
         party.setLastDate(MyUtils.getDate());
+    }
+
+    public void addRound(GameRound round) {
+        addRound(round, false);
     }
 
     public String getPlayersAsString() {
@@ -260,12 +261,10 @@ public class GameManager implements Serializable {
 
     public long getDatabaseId() {
         if( databaseId == -1 )
-            throw new NullPointerException(Resources.getSystem().getString(R.string.error_db_id_not_set));
+            throw new NullPointerException(MainActivity.getContext().getString(R.string.error_db_id_not_set));
         return databaseId;
     }
 
-    //max = 1, bocks = [10, 0]
-    //max = 2, newbock = 1, bocks = [0, 4]
     public void resetBocks(int newMaxBocks) {
         int[] bocks = new int[newMaxBocks];
 
