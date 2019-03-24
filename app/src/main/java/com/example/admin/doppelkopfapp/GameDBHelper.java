@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class GameDBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "game.db";
-    public static final int    DB_VERSION = 28;
+    public static final int    DB_VERSION = 29;
 
     public static final String TABLE_PLAYERS = "table_players";
     public static final String TABLE_SETTINGS = "table_settings";
