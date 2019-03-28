@@ -1,9 +1,11 @@
 package com.example.admin.doppelkopfapp;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PartyManager implements Serializable {
@@ -13,14 +15,20 @@ public class PartyManager implements Serializable {
 
     public PartyManager(List<Party> parties) {
         this.parties = parties;
+        sort();
     }
 
     public PartyManager(){
         parties = new ArrayList<>();
     }
 
+    public void sort() {
+        Collections.sort(parties);
+    }
+
     public void addParty(Party party) {
         parties.add(party);
+        sort();
     }
 
     public List<Party> getParties() {

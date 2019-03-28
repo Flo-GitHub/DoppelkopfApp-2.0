@@ -122,7 +122,11 @@ public class GameCreateFragment extends Fragment {
                 ids.add(id);
         }
         if(ids.size() >= 4) {
-            return ids;
+            if(ids.size() <= 6) {
+                return ids;
+            } else {
+                throw new IllegalArgumentException(getString(R.string.error_more_than_6_players));
+            }
         } else {
             throw new IllegalArgumentException(getResources().getString(R.string.error_minimum_4_players));
         }

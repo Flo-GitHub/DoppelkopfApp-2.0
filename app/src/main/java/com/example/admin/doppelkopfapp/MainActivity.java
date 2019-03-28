@@ -216,7 +216,8 @@ public class MainActivity extends AppCompatActivity
             return;
         }
         try {
-            gameItem.setTitle(partyManager.getCurrentParty().getCurrentGame().getLastDate());
+            gameItem.setTitle(MyUtils.getFullDisplayDate(
+                    partyManager.getCurrentParty().getCurrentGame().getLastDate()));
             enableItems(newRoundItem, tableItem);
         } catch (Exception e) {
             disableItems(newRoundItem, tableItem);
@@ -333,6 +334,8 @@ public class MainActivity extends AppCompatActivity
             round.setDataBaseId(id);
             partyManager.getCurrentParty().getCurrentGame().addRound(round, repeat);
             dataSource.updateGame(partyManager.getCurrentParty(), partyManager.getCurrentParty().getCurrentGame());
+            partyManager.sort();
+            partyManager.getCurrentParty().sort();
             switchToTable();
         } catch(Exception e) {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();

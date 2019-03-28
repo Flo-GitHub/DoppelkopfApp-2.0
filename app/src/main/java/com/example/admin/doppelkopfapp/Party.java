@@ -8,9 +8,10 @@ import android.util.Log;
 import java.io.ByteArrayOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class Party implements Serializable {
+public class Party implements Serializable, Comparable {
 
     public static final int PLAYER_LIMIT = 15;
 
@@ -18,21 +19,26 @@ public class Party implements Serializable {
     private List<GameManager> games;
     private List<Player> players;
     private String name;
-    private String lastDate;
+    private long lastDate;
     private byte[] imageBytes;
     private long currentGame = 0;
     private long databaseId = -1;
 
-    public Party(String name, List<Player> players, String lastDate) {
+    public Party(String name, List<Player> players, long lastDate) {
         this(name, players, MyUtils.defaultSettings(), lastDate);
     }
 
-    public Party(String name, List<Player> players, GameSettings settings, String lastDate) {
+    public Party(String name, List<Player> players, GameSettings settings, long lastDate) {
         this.name = name;
         this.players = players;
         this.lastDate = lastDate;
         this.settings = settings;
         games = new ArrayList<>();
+        sort();
+    }
+
+    public void sort() {
+        Collections.sort(games);
     }
 
     public void addGame(GameManager game) {
@@ -40,6 +46,7 @@ public class Party implements Serializable {
             games = new ArrayList<>();
         }
         this.games.add(game);
+        sort();
     }
 
     public Player[] getPlayersByDBId(long[] playersDataBaseId) {
@@ -51,9 +58,6 @@ public class Party implements Serializable {
     }
 
     public Player getPlayerByDBId(long playerDataBaseId) {
-        for(Player p : players) {
-            Log.e("Player", p.getName() + " " + p.getDataBaseId());
-        }
          for(Player p : players) {
              if(p.getDataBaseId() == playerDataBaseId) {
                  return p;
@@ -119,7 +123,7 @@ public class Party implements Serializable {
         this.currentGame = currentGame;
     }
 
-    public String getLastDate() {
+    public long getLastDate() {
         return lastDate;
     }
 
@@ -129,6 +133,7 @@ public class Party implements Serializable {
 
     public void setGames(List<GameManager> games) {
         this.games = games;
+        sort();
     }
 
     public List<Player> getPlayers() {
@@ -183,7 +188,13 @@ public class Party implements Serializable {
         this.settings = settings;
     }
 
-    public void setLastDate(String lastDate) {
+    public void setLastDate(long lastDate) {
         this.lastDate = lastDate;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Party other = (Party)o;
+        return MyUtils.compareDates(this.getLastDate(), other.getLastDate());
     }
 }

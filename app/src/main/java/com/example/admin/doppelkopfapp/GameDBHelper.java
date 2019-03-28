@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class GameDBHelper extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "game.db";
-    public static final int    DB_VERSION = 29;
+    public static final int    DB_VERSION = 32;
 
     public static final String TABLE_PLAYERS = "table_players";
     public static final String TABLE_SETTINGS = "table_settings";
@@ -41,7 +41,7 @@ public class GameDBHelper extends SQLiteOpenHelper {
     public static final String SQL_CREATE_PARTY =
             "create table " + TABLE_PARTY + "(" +
                     COLUMN_ID + " integer primary key autoincrement, " +
-                    COLUMN_LAST_DATE + " text not null, " +
+                    COLUMN_LAST_DATE + " integer, " +
                     COLUMN_IMAGE + " blob, " +
                     COLUMN_NAME + " text not null);";
 
@@ -62,13 +62,14 @@ public class GameDBHelper extends SQLiteOpenHelper {
                     COLUMN_BOCKS + " integer, " +
                     COLUMN_DOUBLE_BOCKS + " integer, " +
                     COLUMN_DEALER_INDEX + " integer, " +
-                    COLUMN_LAST_DATE + " text, " +
+                    COLUMN_LAST_DATE + " integer, " +
                     "FOREIGN KEY (" + COLUMN_PARTY + ") REFERENCES " + TABLE_PARTY + "(" + COLUMN_ID + "));";
 
     public static final String SQL_CREATE_GAME_PLAYERS =
             "create table " + TABLE_GAME_PLAYERS + "(" +
                     COLUMN_GAME + " integer, " +
                     COLUMN_PLAYER + " integer, " +
+                    COLUMN_ID + " integer, " +
                     "FOREIGN KEY (" + COLUMN_GAME + ") REFERENCES " + TABLE_GAME + "(" + COLUMN_ID + ")," +
                     "FOREIGN KEY (" + COLUMN_PLAYER + ") REFERENCES " + TABLE_PLAYERS + "(" + COLUMN_ID + "));";
 

@@ -72,7 +72,7 @@ public class GameDataSource {
                 Party party = new Party(
                         c.getString(c.getColumnIndex(COLUMN_NAME)),
                         Arrays.asList(getAllPlayersInParty(partyID)),
-                        c.getString(c.getColumnIndex(COLUMN_LAST_DATE))
+                        c.getLong(c.getColumnIndex(COLUMN_LAST_DATE))
                 );
                 party.setDatabaseId(partyID);
                 byte[] imageBytes = c.getBlob(c.getColumnIndex(COLUMN_IMAGE));
@@ -141,8 +141,8 @@ public class GameDataSource {
         game.setLastDate(MyUtils.getDate());
         ContentValues values = gameValues(game, partyId);
         long id = database.insert(TABLE_GAME, null, values);
-        for(long p : game.getPlayersDataBaseIds()) {
-            createGamePlayer(id, p);
+        for(int i = 0; i < game.getPlayersDataBaseIds().length; i++) {
+            createGamePlayer(i, id, game.getPlayersDataBaseIds()[i]);
         }
         return id;
     }
@@ -174,7 +174,7 @@ public class GameDataSource {
                 game.setBocks(bocks);
 
                 game.setDealerIndex(c.getInt(c.getColumnIndex(COLUMN_DEALER_INDEX)));
-                game.setLastDate(c.getString(c.getColumnIndex(COLUMN_LAST_DATE)));
+                game.setLastDate(c.getLong(c.getColumnIndex(COLUMN_LAST_DATE)));
                 game.setRounds(getAllRoundsInGame(gameID));
 
                 games.add(game);
@@ -194,8 +194,9 @@ public class GameDataSource {
     }
     //GAME - END
 
-    public void createGamePlayer(long gameId, long playerId) {
-        ContentValues values = gamePlayerValues(gameId, playerId);
+    public void createGamePlayer(long id, long gameId, long playerId) {
+        Log.e("create", playerId + " " + id);
+        ContentValues values = gamePlayerValues(id, gameId, playerId);
         database.insert(TABLE_GAME_PLAYERS, null, values);
     }
 
@@ -213,12 +214,11 @@ public class GameDataSource {
         Cursor c = database.rawQuery(selectQuery, null);
 
         long[] players = new long[c.getCount()];
-        int i = 0;
 
         if(c.moveToFirst()) {
             do {
-                players[i] = c.getLong(c.getColumnIndex(COLUMN_PLAYER) );
-                i++;
+                Log.e("get", c.getLong(c.getColumnIndex(COLUMN_PLAYER)) + " " + c.getInt(c.getColumnIndex(COLUMN_ID)));
+                players[c.getInt(c.getColumnIndex(COLUMN_ID))] = c.getLong(c.getColumnIndex(COLUMN_PLAYER) );
             } while(c.moveToNext());
         }
 
@@ -373,8 +373,9 @@ public class GameDataSource {
         return values;
     }
 
-    private ContentValues gamePlayerValues(long gameId, long playerId) {
+    private ContentValues gamePlayerValues(long id, long gameId, long playerId) {
         ContentValues values = new ContentValues();
+        values.put(COLUMN_ID, id);
         values.put(COLUMN_GAME, gameId);
         values.put(COLUMN_PLAYER, playerId);
         return values;

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
@@ -19,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.InputStream;
@@ -39,10 +41,8 @@ public class PartyCreateFragment extends DialogFragment {
     public static int PICK_IMAGE = 23;
 
     private ImageButton imageButton;
-    private Button cancelButton;
-    private Button createButton;
     private TextInputEditText groupText;
-    private TextInputEditText[] playerTexts;
+    private List<TextInputEditText> playerTexts;
     private Bitmap bitmap;
 
     private OnPartyCreateListener partyCreateListener;
@@ -68,7 +68,7 @@ public class PartyCreateFragment extends DialogFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_party_create, container, false);
@@ -80,16 +80,20 @@ public class PartyCreateFragment extends DialogFragment {
 
         groupText = view.findViewById(R.id.party_create_group_text);
 
-        int[] playerTextIds = new int[]{R.id.party_create_player_text1, R.id.party_create_player_text2,
-                R.id.party_create_player_text3, R.id.party_create_player_text4,
-                R.id.party_create_player_text5, R.id.party_create_player_text6};
+        playerTexts = new ArrayList<>();
+        LinearLayout layout = view.findViewById(R.id.party_create_player_layout);
 
-        playerTexts = new TextInputEditText[6];
-        for(int i = 0; i < 6; i++ ) {
-            playerTexts[i] = view.findViewById(playerTextIds[i]);
+        for(int i = 0; i < 10; i++) {
+            ConstraintLayout playerLayout =
+                    (ConstraintLayout) View.inflate(getContext(), R.layout.new_player, null);
+            TextInputEditText editText = playerLayout.findViewById(R.id.new_player_text);
+            int req = i < 4 ? R.string.player_required : R.string.player_optional;
+            editText.setHint(getString(R.string.player) + " " + (i+1) + " " + getString(req));
+            playerTexts.add(editText);
+            layout.addView(playerLayout);
         }
 
-        createButton = view.findViewById(R.id.party_create_create_button);
+        Button createButton = view.findViewById(R.id.party_create_create_button);
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,7 +106,7 @@ public class PartyCreateFragment extends DialogFragment {
             }
         });
 
-        cancelButton = view.findViewById(R.id.party_create_cancel_button);
+        Button cancelButton = view.findViewById(R.id.party_create_cancel_button);
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -167,8 +171,8 @@ public class PartyCreateFragment extends DialogFragment {
 
     private List<Player> getPlayers() {
         List<Player> players = new ArrayList<>();
-        for(int i = 0; i < playerTexts.length; i++) {
-            TextInputEditText editText = playerTexts[i];
+        for(int i = 0; i < playerTexts.size(); i++) {
+            TextInputEditText editText = playerTexts.get(i);
             String name = editText.getText().toString();
             if(name.trim().isEmpty()) {
                 if(i < 4)
