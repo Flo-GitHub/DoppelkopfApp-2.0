@@ -1017,6 +1017,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add
 drawable ic_add_white
 drawable ic_content_add
 drawable ic_delete
@@ -1034,6 +1035,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_new_round
 drawable ic_overflow
+drawable ic_remove
 drawable ic_settings
 drawable ic_settings_white
 drawable ic_table
@@ -1202,6 +1204,8 @@ id nav_table
 id nav_view
 id navigation_header_container
 id never
+id new_player_add
+id new_player_remove
 id new_player_text
 id new_round_repeat
 id new_round_submit
@@ -1416,6 +1420,7 @@ layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_main
 layout new_player
+layout new_player_button
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

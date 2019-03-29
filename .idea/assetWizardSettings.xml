@@ -34,7 +34,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_more_vert_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_add_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -56,7 +56,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="imageAsset" value="C:\Users\delv\AndroidStudioProjects\DoppelkopfApp\DoppelkopfApp-2.0\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" />
-                                      <entry key="outputName" value="ic_overflow" />
+                                      <entry key="outputName" value="ic_add" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>
