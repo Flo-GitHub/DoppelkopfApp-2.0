@@ -7,10 +7,11 @@ import android.util.Log;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class GameManager implements Serializable {
+public class GameManager implements Serializable, Comparable {
 
     private Party party;
     private long[] playersDataBaseIds;
@@ -18,7 +19,7 @@ public class GameManager implements Serializable {
     private int bocks[];
     private long databaseId = -1;
     private List<GameRound> rounds;
-    private String lastDate;
+    private long lastDate;
 
     public GameManager(Party party, long[] playerDataBaseIds) {
         this.party = party;
@@ -31,9 +32,6 @@ public class GameManager implements Serializable {
         }
     }
 
-    public void skipRound() {
-        nextGiverIndex();
-    }
 
     /**
      *
@@ -134,7 +132,6 @@ public class GameManager implements Serializable {
     }
 
     private void addBocks(int n) {
-        Log.e("Bockadd","Before: " + getBockSafe(0) + " " + getBockSafe(1));
         for(int i = 0; i < n; i++) {
             if( party.getSettings().getMaxBocks()==2) {
                 int changed = 0; //7
@@ -150,7 +147,6 @@ public class GameManager implements Serializable {
                 bocks[0] += playersDataBaseIds.length;
             }
         }
-        Log.e("Bockadd","Finally: " + getBockSafe(0) + " " + getBockSafe(1));
     }
 
     private boolean isValidRound(Map<Long, Integer> points) {
@@ -319,15 +315,21 @@ public class GameManager implements Serializable {
         return rounds;
     }
 
-    public String getLastDate() {
+    public long getLastDate() {
         return lastDate;
     }
 
-    public void setLastDate(String lastDate) {
+    public void setLastDate(long lastDate) {
         this.lastDate = lastDate;
     }
 
     public Bitmap getImage() {
         return party.getImage();
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        GameManager other = (GameManager) o;
+        return MyUtils.compareDates(this.getLastDate(), other.getLastDate());
     }
 }

@@ -40,7 +40,7 @@ public class GameSelectAdapter extends RecyclerView.Adapter<GameSelectAdapter.My
         public void bindGame(GameManager game) {
             players.setText(game.getPlayersAsString());
             gamesPlayed.setText(game.getRounds().size() + MainActivity.getContext().getString(R.string.rounds_played));
-            date.setText(game.getLastDate());
+            date.setText(MyUtils.getDisplayDate(game.getLastDate()));
             try {
                 image.setImageBitmap(game.getImage());
             } catch (Exception ignore) {}

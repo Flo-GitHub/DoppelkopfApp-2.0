@@ -2,11 +2,15 @@ package com.example.admin.doppelkopfapp;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.View;
 
 import java.io.ByteArrayInputStream;
 import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -22,10 +26,40 @@ public class MyUtils {
         return context.findViewById(context.getResources().getIdentifier(name, "id", context.getPackageName()));
     }
 
-    public static String getDate() {
-        DateFormat format = DateFormat.getDateInstance();
-        Date date = new Date();
-        return format.format(date);
+    public static long getDate() {
+        return new Date().getTime();
+    }
+
+    private static boolean isToday(long date) {
+        Calendar cal1 = Calendar.getInstance();
+        Calendar cal2 = Calendar.getInstance();
+        cal1.setTime(new Date());
+        cal2.setTime(new Date(date));
+        return cal1.get(Calendar.DAY_OF_YEAR) == cal2.get(Calendar.DAY_OF_YEAR) &&
+                cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR);
+    }
+
+    public static String getFullDisplayDate(long s) {
+        Date date = new Date(s);
+        DateFormat fullFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.SHORT);
+        return fullFormat.format(date);
+    }
+
+    public static String getDisplayDate(long s){
+        Date date = new Date(s);
+        if(isToday(s)) {
+            DateFormat timeFormat = DateFormat.getTimeInstance(DateFormat.SHORT);
+            return timeFormat.format(date);
+        } else {
+            DateFormat dateFormat = DateFormat.getDateInstance();
+            return dateFormat.format(date);
+        }
+    }
+
+    public static int compareDates(long first, long second) {
+        Date firstDate = new Date(first);
+        Date secondDate = new Date(second);
+        return -firstDate.compareTo(secondDate);//inverse because of order in time
     }
 
     public static String getPlayersAsString(List<Player> players) {
@@ -67,7 +101,7 @@ public class MyUtils {
         players.add(new Player("Player4"));
         players.add(new Player("Player5555"));
 
-        Party party = new Party("This is the coolest group in the world", players, "Jan 14, 2018");
+        Party party = new Party("This is the coolest group in the world", players, 223423232);
         for(int i = 0; i < 3; i++) {
             GameManager game = sampleGameManager(party);
             game.setDatabaseId(i + party.getDatabaseId() * 1000);

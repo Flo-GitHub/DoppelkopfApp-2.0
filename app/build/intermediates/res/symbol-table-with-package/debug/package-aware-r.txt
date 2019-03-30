@@ -1017,6 +1017,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add
 drawable ic_add_white
 drawable ic_content_add
 drawable ic_delete
@@ -1034,6 +1035,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_new_round
 drawable ic_overflow
+drawable ic_remove
 drawable ic_settings
 drawable ic_settings_white
 drawable ic_table
@@ -1202,6 +1204,9 @@ id nav_table
 id nav_view
 id navigation_header_container
 id never
+id new_player_add
+id new_player_remove
+id new_player_text
 id new_round_repeat
 id new_round_submit
 id none
@@ -1222,12 +1227,7 @@ id party_create_cancel_button
 id party_create_create_button
 id party_create_group_text
 id party_create_image_button
-id party_create_player_text1
-id party_create_player_text2
-id party_create_player_text3
-id party_create_player_text4
-id party_create_player_text5
-id party_create_player_text6
+id party_create_player_layout
 id party_recycler_view
 id party_select_add_button
 id percent
@@ -1419,6 +1419,8 @@ layout group_header
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_main
+layout new_player
+layout new_player_button
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1547,12 +1549,15 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string player
 string player1_required
 string player2_required
 string player3_required
 string player4_required
 string player5_optional
 string player6_optional
+string player_optional
+string player_required
 string points
 string repeat_round
 string rounds_played

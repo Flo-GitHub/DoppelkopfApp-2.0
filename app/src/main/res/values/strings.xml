@@ -75,6 +75,9 @@
     <string name="confirmation_delete_group">Do you really want to delete this Group?</string>
     <string name="delete_group_title">Delete Group</string>
     <string name="group_deleted">Group deleted.</string>
+    <string name="player">Player</string>
+    <string name="player_required">(*)</string>
+    <string name="player_optional">(opt.)</string>
 
 
 </resources>
