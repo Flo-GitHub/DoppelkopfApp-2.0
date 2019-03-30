@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import java.io.InputStream;
@@ -143,6 +144,14 @@ public class PartyCreateFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
                 addPlayerInput(parentLayout);
+                final ScrollView scrollView = getView().findViewById(R.id.party_create_scroll_view);
+                scrollView.post(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        scrollView.fullScroll(ScrollView.FOCUS_DOWN);
+                    }
+                });
             }
         });
         ImageButton buttonRemove = buttonLayout.findViewById(R.id.new_player_remove);

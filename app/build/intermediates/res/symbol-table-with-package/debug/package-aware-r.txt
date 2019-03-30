@@ -1228,6 +1228,7 @@ id party_create_create_button
 id party_create_group_text
 id party_create_image_button
 id party_create_player_layout
+id party_create_scroll_view
 id party_recycler_view
 id party_select_add_button
 id percent
