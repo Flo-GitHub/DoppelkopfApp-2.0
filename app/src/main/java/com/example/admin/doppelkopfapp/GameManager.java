@@ -327,6 +327,13 @@ public class GameManager implements Serializable, Comparable {
         return party.getImage();
     }
 
+    public GameRound getLastRound() {
+        if(rounds.size() > 0) {
+            return rounds.get(rounds.size()-1);
+        }
+        throw new IllegalArgumentException("No rounds available for getlastRound");
+    }
+
     @Override
     public int compareTo(Object o) {
         GameManager other = (GameManager) o;

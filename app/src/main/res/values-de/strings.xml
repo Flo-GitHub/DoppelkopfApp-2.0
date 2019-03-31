@@ -74,6 +74,13 @@
     <string name="confirmation_delete_group">Möchtest du diese Gruppe wirklich löschen?</string>
     <string name="delete_group_title">Gruppe löschen</string>
     <string name="group_deleted">Gruppe gelöscht.</string>
+    <string name="delete_last">Letzte Runde löschen</string>
+    <string name="player">Spieler</string>
+    <string name="player_required">(*)</string>
+    <string name="player_optional">(opt.)</string>
+    <string name="round_deleted">Runde gelöscht</string>
+    <string name="delete_round_title">Letzte Runde löschen</string>
+    <string name="confirmation_delete_round">Möchtest du die letzte Runde wirklich löschen?</string>
 
 
 </resources>

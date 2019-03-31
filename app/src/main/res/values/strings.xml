@@ -78,6 +78,10 @@
     <string name="player">Player</string>
     <string name="player_required">(*)</string>
     <string name="player_optional">(opt.)</string>
+    <string name="delete_last">Delete Last</string>
+    <string name="round_deleted">Round deleted.</string>
+    <string name="delete_round_title">Delete last Round</string>
+    <string name="confirmation_delete_round">Do you really want to delete the last Round?</string>
 
 
 </resources>

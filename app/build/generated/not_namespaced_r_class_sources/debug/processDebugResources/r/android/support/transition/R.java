@@ -104,18 +104,18 @@ public final class R {
         public static final int save_image_matrix = 0x7f0800bd;
         public static final int save_non_transition_alpha = 0x7f0800be;
         public static final int save_scale_type = 0x7f0800bf;
-        public static final int tag_transition_group = 0x7f0800f2;
-        public static final int tag_unhandled_key_event_manager = 0x7f0800f3;
-        public static final int tag_unhandled_key_listeners = 0x7f0800f4;
-        public static final int text = 0x7f0800f5;
-        public static final int text2 = 0x7f0800f6;
-        public static final int time = 0x7f080103;
-        public static final int title = 0x7f080104;
-        public static final int transition_current_scene = 0x7f08010e;
-        public static final int transition_layout_save = 0x7f08010f;
-        public static final int transition_position = 0x7f080110;
-        public static final int transition_scene_layoutid_cache = 0x7f080111;
-        public static final int transition_transform = 0x7f080112;
+        public static final int tag_transition_group = 0x7f0800f3;
+        public static final int tag_unhandled_key_event_manager = 0x7f0800f4;
+        public static final int tag_unhandled_key_listeners = 0x7f0800f5;
+        public static final int text = 0x7f0800f6;
+        public static final int text2 = 0x7f0800f7;
+        public static final int time = 0x7f080104;
+        public static final int title = 0x7f080105;
+        public static final int transition_current_scene = 0x7f08010f;
+        public static final int transition_layout_save = 0x7f080110;
+        public static final int transition_position = 0x7f080111;
+        public static final int transition_scene_layoutid_cache = 0x7f080112;
+        public static final int transition_transform = 0x7f080113;
     }
     public static final class integer {
         private integer() {}
@@ -135,7 +135,7 @@ public final class R {
     public static final class string {
         private string() {}
 
-        public static final int status_bar_notification_info_overflow = 0x7f0e007a;
+        public static final int status_bar_notification_info_overflow = 0x7f0e007e;
     }
     public static final class style {
         private style() {}

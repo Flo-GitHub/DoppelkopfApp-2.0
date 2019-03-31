@@ -22,6 +22,7 @@ import android.view.MenuItem;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Adapter;
 import android.widget.ImageView;
+import android.widget.TableLayout;
 import android.widget.Toast;
 
 import java.util.Set;
@@ -330,9 +331,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onSubmit(GameRound round, boolean repeat) {
         try {
-            long id = dataSource.createRound(round, partyManager.getCurrentParty().getCurrentGame().getDatabaseId());
-            round.setDataBaseId(id);
             partyManager.getCurrentParty().getCurrentGame().addRound(round, repeat);
+            GameRound newRound = partyManager.getCurrentParty().getCurrentGame().getLastRound();
+
+            long id = dataSource.createRound(newRound, partyManager.getCurrentParty().getCurrentGame().getDatabaseId());
+            newRound.setDataBaseId(id);
             dataSource.updateGame(partyManager.getCurrentParty(), partyManager.getCurrentParty().getCurrentGame());
             partyManager.sort();
             partyManager.getCurrentParty().sort();
@@ -424,6 +427,16 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onNextRound() {
         switchToNewRound();
+    }
+
+    @Override
+    public void onDeleteLastRound(TableLayout tableLayout) {
+        GameManager game = partyManager.getCurrentParty().getCurrentGame();
+        GameRound round = game.getLastRound();
+        dataSource.deleteDeepRound(round);
+        tableLayout.removeViewAt(game.getRounds().size());
+        partyManager.getCurrentParty().getCurrentGame().getRounds().remove(round);
+        Toast.makeText(this, getString(R.string.round_deleted), Toast.LENGTH_SHORT).show();
     }
 
     public static Context getContext(){

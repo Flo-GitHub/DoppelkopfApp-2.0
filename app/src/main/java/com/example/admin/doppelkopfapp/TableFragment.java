@@ -1,6 +1,8 @@
 package com.example.admin.doppelkopfapp;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -70,15 +72,36 @@ public class TableFragment extends Fragment {
 
         dealerView.setText(String.format(t));
 
-        Button button = view.findViewById(R.id.table_next_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        final TableLayout table = view.findViewById(R.id.game_table);
+
+        Button buttonNext = view.findViewById(R.id.table_next_button);
+        buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onNextRoundListener.onNextRound();
             }
         });
 
-        fillTable(getView(), party.getCurrentGame());
+        Button buttonDelete = view.findViewById(R.id.table_delete_last_button);
+        buttonDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(party.getCurrentGame().getRounds().size() > 0) {
+                    new AlertDialog.Builder(getContext())
+                            .setTitle(R.string.delete_round_title)
+                            .setMessage(R.string.confirmation_delete_round)
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    onNextRoundListener.onDeleteLastRound(table);
+                                }})
+                            .setNegativeButton(android.R.string.no, null).show();
+                }
+            }
+        });
+
+
+        fillTable(table, party.getCurrentGame());
     }
 
     @Override
@@ -98,10 +121,9 @@ public class TableFragment extends Fragment {
         onNextRoundListener = null;
     }
 
-    private void fillTable(View view, GameManager game) {
-        TableLayout table = view.findViewById(R.id.game_table);
+    private void fillTable(TableLayout tableLayout, GameManager game) {
         for(TableRowValue[] rowValue : rowValues(game)) {
-            table.addView(fillRow(rowValue));
+            tableLayout.addView(fillRow(rowValue));
         }
     }
 
@@ -239,5 +261,6 @@ public class TableFragment extends Fragment {
 
     public interface OnNextRoundListener {
         void onNextRound();
+        void onDeleteLastRound(TableLayout tableLayout);
     }
 }

@@ -1298,6 +1298,7 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
+id table_delete_last_button
 id table_next_button
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1502,10 +1503,13 @@ string cancel
 string character_counter_content_description
 string character_counter_pattern
 string confirmation_delete_group
+string confirmation_delete_round
 string continue_text
 string create
 string delete
 string delete_group_title
+string delete_last
+string delete_round_title
 string double_bocks_remaining
 string edit
 string error_db_id_not_set
@@ -1561,6 +1565,7 @@ string player_optional
 string player_required
 string points
 string repeat_round
+string round_deleted
 string rounds_played
 string sample_date
 string sample_player_name

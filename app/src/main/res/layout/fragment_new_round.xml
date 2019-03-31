@@ -35,16 +35,16 @@
             <ToggleButton
                 android:id="@+id/toggle_round_player1"
                 style="@style/Base.Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/check" />
 
             <ToggleButton
                 android:id="@+id/toggle_round_player2"
                 style="@style/Base.Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/check" />
         </LinearLayout>
@@ -58,16 +58,16 @@
             <ToggleButton
                 android:id="@+id/toggle_round_player3"
                 style="@style/Base.Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/check" />
 
             <ToggleButton
                 android:id="@+id/toggle_round_player4"
                 style="@style/Base.Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/check" />
         </LinearLayout>
@@ -173,6 +173,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
