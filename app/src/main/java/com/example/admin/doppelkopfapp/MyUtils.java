@@ -72,18 +72,6 @@ public class MyUtils {
         }
         return builder.toString();
     }
-    /*todo update when pulling db extension from github
-    public static void createPartyDataSource(GameDataSource dataSource) {
-        Party party = sampleParty();
-        party.setDatabaseId(dataSource.createParty(party));
-        for(GameManager game : party.getGames()) {
-            dataSource.createGame(game, party.getDatabaseId());
-        }
-        dataSource.createSettings(party.getSettings(), party.getDatabaseId());
-        for(Player p : party.getPlayers()) {
-            dataSource.createPlayer(p, party.getDatabaseId());
-        }
-    }*/
 
     public static GameSettings defaultSettings() {
         return new GameSettings(2, true);

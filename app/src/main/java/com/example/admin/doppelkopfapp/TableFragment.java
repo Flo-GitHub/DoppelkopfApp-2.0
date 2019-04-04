@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewCompat;
 import android.view.Gravity;
@@ -28,6 +29,8 @@ public class TableFragment extends Fragment {
 
     private OnNextRoundListener onNextRoundListener;
     private Party party;
+
+    private TextView dealerView;
 
     public TableFragment() {
         // Required empty public constructor
@@ -59,18 +62,19 @@ public class TableFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_table, container, false);
     }
 
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        TextView dealerView = view.findViewById(R.id.game_dealer_text);
-
-        String t = String.format(getString(R.string.table_info),
+    private String getString(){
+       return String.format(getString(R.string.table_info),
                 party.getPlayerByDBId(party.getCurrentGame().getGiver()).getName(),
                 party.getCurrentGame().getBockSafe(0),
                 party.getCurrentGame().getBockSafe(1));
+    }
 
+    @Override
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        dealerView = view.findViewById(R.id.game_dealer_text);
 
-        dealerView.setText(String.format(t));
+        dealerView.setText(getString());
 
         final TableLayout table = view.findViewById(R.id.game_table);
 
@@ -94,6 +98,7 @@ public class TableFragment extends Fragment {
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     onNextRoundListener.onDeleteLastRound(table);
+                                    dealerView.setText(getString());
                                 }})
                             .setNegativeButton(android.R.string.no, null).show();
                 }

@@ -32,7 +32,6 @@ public class GameManager implements Serializable, Comparable {
         }
     }
 
-
     /**
      *
      * @param newPlayerId
@@ -108,7 +107,7 @@ public class GameManager implements Serializable, Comparable {
         if (!repeatRound)
             nextGiverIndex();
 
-        addBocks(round.getNewBocks());
+        addBocks(bocks, round.getNewBocks());
         return actualBocks;
     }
 
@@ -131,7 +130,7 @@ public class GameManager implements Serializable, Comparable {
         return winners == 1 || winners == 3;
     }
 
-    private void addBocks(int n) {
+    private void addBocks(int[] bocks, int n) {
         for(int i = 0; i < n; i++) {
             if( party.getSettings().getMaxBocks()==2) {
                 int changed = 0; //7
@@ -148,6 +147,7 @@ public class GameManager implements Serializable, Comparable {
             }
         }
     }
+
 
     private boolean isValidRound(Map<Long, Integer> points) {
         int sum = 0;
@@ -237,6 +237,43 @@ public class GameManager implements Serializable, Comparable {
         addRound(round, false);
     }
 
+    public GameRound removeLastRound(){
+        GameRound round = rounds.remove(rounds.size()-1);
+        addCurrentBocks(round.getCurrentBocks());
+        removeNewBocks(round.getNewBocks());
+        return round;
+    }
+
+    private void removeNewBocks(int n){
+        for(int i = n; i > 0; i--) {
+            if( party.getSettings().getMaxBocks()==2 && bocks[1] > 0) {
+                if(bocks[0] >= playersDataBaseIds.length) {
+                    bocks[0]-= playersDataBaseIds.length;
+                    continue;
+                }
+                int changed = bocks[0];
+                bocks[0] -= bocks[0];
+                for( int a = 0; a < playersDataBaseIds.length-changed; a++ ) {
+                    bocks[1]--;
+                    bocks[0]++;
+                }
+            } else if( party.getSettings().getMaxBocks()==1 ) {
+                bocks[0] -= playersDataBaseIds.length;
+            }
+        }
+    }
+
+    private void addCurrentBocks(int bock){
+        if (bock == 0 || bocks.length==0) {
+            return;
+        }
+        if(bock-1 < bocks.length) {
+            bocks[bock-1] ++;
+        }else if(bock==2 && bocks.length==1){
+            bocks[0] += 2;
+        }
+    }
+
     public String getPlayersAsString() {
         Player[] players = party.getPlayersByDBId(playersDataBaseIds);
         return MyUtils.getPlayersAsString(Arrays.asList(players));
@@ -272,6 +309,11 @@ public class GameManager implements Serializable, Comparable {
                 bocks[newMaxBocks-1] += getBockSafe(i) * (int)Math.pow(2, ( i-(newMaxBocks-1) ));
             }
         }
+
+        int singles = bocks[0];
+        bocks[0] = singles % playersDataBaseIds.length;
+        addBocks(bocks, (int)(singles/playersDataBaseIds.length));
+
         this.bocks = bocks;
     }
 

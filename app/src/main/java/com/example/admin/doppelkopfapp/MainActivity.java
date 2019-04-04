@@ -432,10 +432,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onDeleteLastRound(TableLayout tableLayout) {
         GameManager game = partyManager.getCurrentParty().getCurrentGame();
-        GameRound round = game.getLastRound();
+        GameRound round = game.removeLastRound();
         dataSource.deleteDeepRound(round);
-        tableLayout.removeViewAt(game.getRounds().size());
-        partyManager.getCurrentParty().getCurrentGame().getRounds().remove(round);
+        dataSource.updateGame(partyManager.getCurrentParty(), partyManager.getCurrentParty().getCurrentGame());
+        tableLayout.removeViewAt(game.getRounds().size()+1);
         Toast.makeText(this, getString(R.string.round_deleted), Toast.LENGTH_SHORT).show();
     }
 
