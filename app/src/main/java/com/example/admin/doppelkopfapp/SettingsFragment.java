@@ -31,7 +31,6 @@ public class SettingsFragment extends Fragment {
 
     private RadioGroup bocksRadio;
     private CheckBox soloBockBox;
-    private Button saveButton, cancelButton;
 
     private OnSettingsChangeListener settingsChangeListener;
 
@@ -85,7 +84,7 @@ public class SettingsFragment extends Fragment {
         soloBockBox = view.findViewById(R.id.settings_bock_solo);
         soloBockBox.setChecked(party.getSettings().isSoloBockCalculation() && party.getSettings().getMaxBocks()!=0);
 
-        cancelButton = view.findViewById(R.id.settings_cancel_button);
+        Button cancelButton = view.findViewById(R.id.settings_cancel_button);
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,7 +92,7 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        saveButton = view.findViewById(R.id.settings_save_button);
+        Button saveButton = view.findViewById(R.id.settings_save_button);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

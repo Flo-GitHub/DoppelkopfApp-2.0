@@ -1235,6 +1235,8 @@ id percent
 id pin
 id player_check_twin1
 id player_check_twin2
+id player_seat_name
+id player_seat_number
 id progress_circular
 id progress_horizontal
 id radio
@@ -1265,6 +1267,10 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seating_cancel
+id seating_group_header
+id seating_recycler_view
+id seating_save
 id select_dialog_listview
 id selected
 id settings_bock0
@@ -1411,8 +1417,8 @@ layout fragment_game_create
 layout fragment_game_select
 layout fragment_new_round
 layout fragment_party_create
-layout fragment_party_info
 layout fragment_party_select
+layout fragment_seating
 layout fragment_settings
 layout fragment_table
 layout game_card
@@ -1440,6 +1446,7 @@ layout notification_template_part_chronometer
 layout notification_template_part_time
 layout party_card
 layout player_check_twin
+layout player_seat_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1528,6 +1535,7 @@ string group_deleted
 string group_image
 string group_name
 string group_name_required
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string maximum_bocks
 string mtrl_chip_close_icon_content_description

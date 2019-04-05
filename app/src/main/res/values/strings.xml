@@ -83,5 +83,8 @@
     <string name="delete_round_title">Delete last Round</string>
     <string name="confirmation_delete_round">Do you really want to delete the last Round?</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

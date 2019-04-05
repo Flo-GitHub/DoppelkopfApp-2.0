@@ -21,7 +21,7 @@ public class Party implements Serializable, Comparable {
     private String name;
     private long lastDate;
     private byte[] imageBytes;
-    private long currentGame = 0;
+    private long currentGame = -1;
     private long databaseId = -1;
 
     public Party(String name, List<Player> players, long lastDate) {
