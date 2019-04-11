@@ -133,7 +133,7 @@ public class GameManager implements Serializable, Comparable {
     private void addBocks(int[] bocks, int n) {
         for(int i = 0; i < n; i++) {
             if( party.getSettings().getMaxBocks()==2) {
-                int changed = 0; //7
+                int changed = 0;
                 for( int a = 0; a < playersDataBaseIds.length; a++ ) {
                     if( bocks[0] == 0 )
                         break;
@@ -244,32 +244,33 @@ public class GameManager implements Serializable, Comparable {
         return round;
     }
 
-    private void removeNewBocks(int n){
-        for(int i = n; i > 0; i--) {
-            if( party.getSettings().getMaxBocks()==2 && bocks[1] > 0) {
-                if(bocks[0] >= playersDataBaseIds.length) {
-                    bocks[0]-= playersDataBaseIds.length;
-                    continue;
-                }
-                int changed = bocks[0];
-                bocks[0] -= bocks[0];
-                for( int a = 0; a < playersDataBaseIds.length-changed; a++ ) {
-                    bocks[1]--;
-                    bocks[0]++;
-                }
-            } else if( party.getSettings().getMaxBocks()==1 ) {
-                bocks[0] -= playersDataBaseIds.length;
+    public void removeNewBocks(int n){
+        if(party.getSettings().getMaxBocks() == 0) {
+            return;
+        }
+
+        for(int i = 0; i < n; i++) {
+            int singles = Math.min(playersDataBaseIds.length, bocks[0]);
+            bocks[0] -= singles;
+            if(party.getSettings().getMaxBocks() >= 2) {
+                int changed = (playersDataBaseIds.length-singles);
+                bocks[1] -= changed;
+                bocks[0] += changed;
             }
+        }
+
+        for(int i = 0; i < bocks.length; i++) {
+            bocks[i] = Math.max(0, bocks[i]);
         }
     }
 
     private void addCurrentBocks(int bock){
-        if (bock == 0 || bocks.length==0) {
+        if (bock == 0 || party.getSettings().getMaxBocks() == 0) {
             return;
         }
-        if(bock-1 < bocks.length) {
+        if(bock-1 < bocks.length && bock <= party.getSettings().getMaxBocks()) {
             bocks[bock-1] ++;
-        }else if(bock==2 && bocks.length==1){
+        }else if(bock==2 && party.getSettings().getMaxBocks() == 1){
             bocks[0] += 2;
         }
     }

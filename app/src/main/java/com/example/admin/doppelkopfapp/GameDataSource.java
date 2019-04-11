@@ -45,7 +45,6 @@ public class GameDataSource {
         for(Player p : party.getPlayers()) {
             long playerId = createPlayer(p, id);
             p.setDataBaseId(playerId);
-            Log.e("Player", p.getDataBaseId() + "");
         }
         return id;
     }
@@ -195,7 +194,6 @@ public class GameDataSource {
     //GAME - END
 
     public void createGamePlayer(long id, long gameId, long playerId) {
-        Log.e("create", playerId + " " + id);
         ContentValues values = gamePlayerValues(id, gameId, playerId);
         database.insert(TABLE_GAME_PLAYERS, null, values);
     }
@@ -217,7 +215,6 @@ public class GameDataSource {
 
         if(c.moveToFirst()) {
             do {
-                Log.e("get", c.getLong(c.getColumnIndex(COLUMN_PLAYER)) + " " + c.getInt(c.getColumnIndex(COLUMN_ID)));
                 players[c.getInt(c.getColumnIndex(COLUMN_ID))] = c.getLong(c.getColumnIndex(COLUMN_PLAYER) );
             } while(c.moveToNext());
         }

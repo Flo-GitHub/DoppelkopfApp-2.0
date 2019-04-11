@@ -104,7 +104,6 @@ public class MainActivity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            Log.e("GoBack", fragmentTag + lastFragmentTag);
             goBack();
         }
     }
@@ -271,7 +270,6 @@ public class MainActivity extends AppCompatActivity
             lastFragmentTag = this.fragmentTag;
             this.fragmentTag = tag;
         }
-        Log.e("", fragmentTag + lastFragmentTag);
 
         selectNavigationDrawer(tag);
         hideKeyboard();
