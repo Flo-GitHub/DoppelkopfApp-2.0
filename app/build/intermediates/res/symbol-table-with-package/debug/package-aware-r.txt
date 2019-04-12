@@ -1036,6 +1036,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_new_round
 drawable ic_overflow
 drawable ic_remove
+drawable ic_seating
 drawable ic_settings
 drawable ic_settings_white
 drawable ic_table
@@ -1200,6 +1201,7 @@ id nav_group_main
 id nav_header_image
 id nav_new_round
 id nav_party_select
+id nav_seating
 id nav_table
 id nav_view
 id navigation_header_container
@@ -1581,6 +1583,7 @@ string sample_player_names
 string sample_rounds
 string save
 string search_menu_title
+string seating
 string select_group_image
 string select_winners
 string settings_bocks_double

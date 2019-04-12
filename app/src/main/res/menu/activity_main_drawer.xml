@@ -27,6 +27,11 @@
             android:enabled="false"
             android:icon="@drawable/ic_new_round"
             android:title="@string/new_round_fragment_title" />
+        <item
+            android:id="@+id/nav_seating"
+            android:enabled="false"
+            android:icon="@drawable/ic_seating"
+            android:title="@string/seating" />
     </group>
 
 </menu>

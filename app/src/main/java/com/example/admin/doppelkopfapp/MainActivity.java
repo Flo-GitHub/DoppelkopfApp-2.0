@@ -25,6 +25,7 @@ import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.Toast;
 
+import java.util.List;
 import java.util.Set;
 import java.util.Stack;
 
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, NewRoundFragment.OnSubmitListener,
             PartySelectFragment.OnPartySelectListener, GameSelectFragment.OnGameSelectListener,
             PartyCreateFragment.OnPartyCreateListener, GameCreateFragment.OnGameCreateListener,
-            SettingsFragment.OnSettingsChangeListener, TableFragment.OnNextRoundListener{
+            SettingsFragment.OnSettingsChangeListener, TableFragment.OnNextRoundListener,
+            SeatingFragment.OnSeatingChangedListener{
 
     public static final String ARG_PARTY = "party";
     public static final String ARG_PARTY_MANAGER = "partyManager";
@@ -43,7 +45,8 @@ public class MainActivity extends AppCompatActivity
                                 TAG_GAME_CREATE = "game_create",
                                 TAG_SETTINGS = "settings",
                                 TAG_TABLE = "table",
-                                TAG_NEW_ROUND = "new_round";
+                                TAG_NEW_ROUND = "new_round",
+                                TAG_SEATING = "seating";
 
     private String fragmentTag = TAG_PARTY_SELECT;
     private String lastFragmentTag = fragmentTag;
@@ -52,7 +55,8 @@ public class MainActivity extends AppCompatActivity
     private MenuItem partyItem,
                      gameItem,
                      newRoundItem,
-                     tableItem;
+                     tableItem,
+                     seatingItem;
     private ImageView navImageView;
 
     private PartyManager partyManager;
@@ -89,6 +93,7 @@ public class MainActivity extends AppCompatActivity
         gameItem = menu.findItem(R.id.nav_game_select);
         newRoundItem = menu.findItem(R.id.nav_new_round);
         tableItem = menu.findItem(R.id.nav_table);
+        seatingItem = menu.findItem(R.id.nav_seating);
 
         View headerView = navigationView.getHeaderView(0);
         navImageView = headerView.findViewById(R.id.nav_header_image);
@@ -119,6 +124,7 @@ public class MainActivity extends AppCompatActivity
                 switchToGame();
                 break;
             case TAG_NEW_ROUND:
+            case TAG_SEATING:
                 switchToTable();
                 break;
             case TAG_SETTINGS:
@@ -145,6 +151,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case TAG_NEW_ROUND:
                 switchToNewRound();
+                break;
+            case TAG_SEATING:
+                switchToSeating();
                 break;
         }
     }
@@ -183,6 +192,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_game_select:
                 switchToGame();
                 break;
+            case R.id.nav_seating:
+                switchToSeating();
+                break;
             default:
                 switchToParty();
         }
@@ -211,21 +223,21 @@ public class MainActivity extends AppCompatActivity
             partyItem.setTitle(partyManager.getCurrentParty().getName());
             enableItems(gameItem);
         } catch (Exception e) {
-            disableItems(gameItem, newRoundItem, tableItem);
+            disableItems(gameItem, newRoundItem, tableItem, seatingItem);
             partyItem.setTitle(R.string.party_select_fragment_title);
             return;
         }
         try {
             gameItem.setTitle(MyUtils.getFullDisplayDate(
                     partyManager.getCurrentParty().getCurrentGame().getLastDate()));
-            enableItems(newRoundItem, tableItem);
+            enableItems(newRoundItem, tableItem, seatingItem);
         } catch (Exception e) {
-            disableItems(newRoundItem, tableItem);
+            disableItems(newRoundItem, tableItem, seatingItem);
             gameItem.setTitle(R.string.game_select_fragment_title);
         }
         try {
             navImageView.setImageBitmap(partyManager.getCurrentParty().getImage());
-        } catch(Exception e) {
+        } catch(Exception ignore) {
         }
 
     }
@@ -245,6 +257,8 @@ public class MainActivity extends AppCompatActivity
             case TAG_TABLE:
                 navigationView.setCheckedItem(R.id.nav_table);
                 break;
+            case TAG_SEATING:
+                navigationView.setCheckedItem(R.id.nav_seating);
         }
         reEnableItems();
     }
@@ -324,6 +338,10 @@ public class MainActivity extends AppCompatActivity
         try {
             switchFragments(SettingsFragment.class, partyBundle(), TAG_SETTINGS);
         } catch (Exception ignore) {}
+    }
+
+    private void switchToSeating(){
+        switchFragments(SeatingFragment.class, partyBundle(), TAG_SEATING);
     }
 
     @Override
@@ -439,5 +457,18 @@ public class MainActivity extends AppCompatActivity
 
     public static Context getContext(){
         return context;
+    }
+
+    @Override
+    public void onSeatingChanged(List<Long> ids) {
+        for(int i = 0; i < ids.size(); i++){
+            Log.e("i", i + " = " + partyManager.getCurrentParty().getPlayerByDBId(ids.get(i)));
+        }
+        switchToTable();
+    }
+
+    @Override
+    public void onSeatingCanceled() {
+        switchToTable();
     }
 }

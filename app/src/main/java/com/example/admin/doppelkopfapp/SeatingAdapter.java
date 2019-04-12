@@ -23,7 +23,7 @@ public class SeatingAdapter extends RecyclerView.Adapter<SeatingAdapter.MyViewHo
         }
 
         public void bindPlayer(Player p, int pos) {
-            numberView.setText(pos);
+            numberView.setText(String.valueOf(pos+1));
             nameView.setText(p.getName());
         }
     }

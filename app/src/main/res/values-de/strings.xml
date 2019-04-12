@@ -81,6 +81,7 @@
     <string name="round_deleted">Runde gelöscht</string>
     <string name="delete_round_title">Letzte Runde löschen</string>
     <string name="confirmation_delete_round">Möchtest du die letzte Runde wirklich löschen?</string>
+    <string name="seating">Seating</string>
 
 
 </resources>
