@@ -149,6 +149,9 @@ public class GameDataSource {
     public void updateGame(Party party, GameManager game) {
         ContentValues values = gameValues(game, party.getDatabaseId());
         database.update(TABLE_GAME, values, COLUMN_ID + "=" + game.getDatabaseId(), null);
+        for(int i = 0; i < game.getPlayersDataBaseIds().length; i++){
+            updateGamePlayer(i, game.getDatabaseId(), game.getPlayersDataBaseIds()[i]);
+        }
     }
 
     public List<GameManager> getAllGamesInParty(Party party) {
@@ -190,12 +193,21 @@ public class GameDataSource {
             deleteDeepRound(round);
         }
         deleteGamePlayers(game.getDatabaseId());
+        for(long id : game.getPlayersDataBaseIds()){
+            deleteGamePlayer(game.getDatabaseId(), id);
+        }
     }
     //GAME - END
 
     public void createGamePlayer(long id, long gameId, long playerId) {
         ContentValues values = gamePlayerValues(id, gameId, playerId);
         database.insert(TABLE_GAME_PLAYERS, null, values);
+    }
+
+    private void updateGamePlayer(long id, long gameId, long playerId){
+        ContentValues values = gamePlayerValues(id, gameId, playerId);
+        database.update(TABLE_GAME_PLAYERS, values, COLUMN_GAME + "=" + gameId +
+                " and " + COLUMN_PLAYER + "=" + playerId, null);
     }
 
     public void deleteGamePlayer(long gameId, long playerId) {
@@ -269,14 +281,6 @@ public class GameDataSource {
             createPlayerRound(roundId, playerId, round.getPlayerPoints().get(playerId));
         }
         return roundId;
-    }
-
-    public void updateRound(GameRound round, long gameId) {
-        ContentValues values = roundValues(gameId, round);
-        database.update(TABLE_ROUND, values, COLUMN_ID + "="  + round.getDataBaseId(), null);
-        for(long playerId : round.getPlayerPoints().keySet()) {
-            updatePlayerRound(round.getDataBaseId(), playerId, round.getPlayerPoints().get(playerId));
-        }
     }
 
     public void deleteDeepRound(GameRound round) {

@@ -206,6 +206,12 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        dataSource.close();
+    }
+
     private void disableItems(MenuItem... items){
         for(MenuItem item : items) {
             item.setEnabled(false);
@@ -461,10 +467,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onSeatingChanged(List<Long> ids) {
-        for(int i = 0; i < ids.size(); i++){
-            Log.e("i", i + " = " + partyManager.getCurrentParty().getPlayerByDBId(ids.get(i)));
-        }
+        partyManager.getCurrentParty().getCurrentGame().changeSeating(ids);
         switchToTable();
+        dataSource.updateGame(partyManager.getCurrentParty(), partyManager.getCurrentParty().getCurrentGame());
     }
 
     @Override

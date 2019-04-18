@@ -1,13 +1,10 @@
 package com.example.admin.doppelkopfapp;
 
-import android.content.res.Resources;
 import android.graphics.Bitmap;
-import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -105,7 +102,7 @@ public class GameManager implements Serializable, Comparable {
         }
 
         if (!repeatRound)
-            nextGiverIndex();
+            nextDealerIndex();
 
         addBocks(bocks, round.getNewBocks());
         return actualBocks;
@@ -157,20 +154,29 @@ public class GameManager implements Serializable, Comparable {
     }
 
 
-    public long getGiver() {
+    public long getDealer() {
         return playersDataBaseIds[dealerIndex];
     }
 
     /*
     This method is only used to find other inactive player in a game of six playersDataBaseIds.
      */
-    private int getAcrossFromGiverIndex() {
+    private int getAcrossFromDealerIndex() {
         if( playersDataBaseIds.length != 6 )
             throw new IllegalArgumentException("This method is only used to find the second" +
                     " inactive player when playing with 6 playersDataBaseIds");
         int playerAcrossIndex = dealerIndex + 3;
         if( playerAcrossIndex > 5 ) playerAcrossIndex -= playersDataBaseIds.length;
             return playerAcrossIndex;
+    }
+
+    public void changeSeating(List<Long> ids){
+        long[] arr = new long[ids.size()];
+        for(int i = 0; i < ids.size(); i++){
+            arr[i] = ids.get(i);
+        }
+        dealerIndex = ids.indexOf(playersDataBaseIds[dealerIndex]);
+        setPlayersDataBaseIds(arr);
     }
 
     public long[] getActivePlayers() {
@@ -183,14 +189,14 @@ public class GameManager implements Serializable, Comparable {
 
             for(int i = dealerIndex; i < playersDataBaseIds.length; i++ ) {
                 if( playersDataBaseIds.length == 5 && dealerIndex != i ||
-                        playersDataBaseIds.length == 6 && dealerIndex != i && getAcrossFromGiverIndex() != i ) {
+                        playersDataBaseIds.length == 6 && dealerIndex != i && getAcrossFromDealerIndex() != i ) {
                     activePlayers[activePlayerIndex] = playersDataBaseIds[i];
                     activePlayerIndex++;
                 }
             }
             for(int i = 0; i < dealerIndex; i++ ) {
                 if( playersDataBaseIds.length == 5 ||
-                        playersDataBaseIds.length == 6 && getAcrossFromGiverIndex() != i ) {
+                        playersDataBaseIds.length == 6 && getAcrossFromDealerIndex() != i ) {
                     activePlayers[activePlayerIndex] = playersDataBaseIds[i];
                     activePlayerIndex++;
                 }
@@ -199,7 +205,7 @@ public class GameManager implements Serializable, Comparable {
         }
     }
 
-    public void nextGiverIndex() {
+    public void nextDealerIndex() {
         dealerIndex += 1;
         if (dealerIndex > playersDataBaseIds.length-1) {
             dealerIndex -= playersDataBaseIds.length;
@@ -300,6 +306,9 @@ public class GameManager implements Serializable, Comparable {
     }
 
     public void resetBocks(int newMaxBocks) {
+        if(newMaxBocks == 0)
+            return;
+
         int[] bocks = new int[newMaxBocks];
 
         if(newMaxBocks > 0) {
@@ -340,6 +349,10 @@ public class GameManager implements Serializable, Comparable {
 
     public int[] getBocks() {
         return bocks;
+    }
+
+    public void setPlayersDataBaseIds(long[] playersDataBaseIds) {
+        this.playersDataBaseIds = playersDataBaseIds;
     }
 
     public void setDealerIndex(int dealerIndex) {

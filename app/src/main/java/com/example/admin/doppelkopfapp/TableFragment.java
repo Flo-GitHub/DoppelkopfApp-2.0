@@ -64,7 +64,7 @@ public class TableFragment extends Fragment {
 
     private String getString(){
        return String.format(getString(R.string.table_info),
-                party.getPlayerByDBId(party.getCurrentGame().getGiver()).getName(),
+                party.getPlayerByDBId(party.getCurrentGame().getDealer()).getName(),
                 party.getCurrentGame().getBockSafe(0),
                 party.getCurrentGame().getBockSafe(1));
     }

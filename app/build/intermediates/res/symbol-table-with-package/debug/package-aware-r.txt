@@ -1023,6 +1023,7 @@ drawable ic_content_add
 drawable ic_delete
 drawable ic_game
 drawable ic_group
+drawable ic_handles
 drawable ic_info
 drawable ic_menu_camera
 drawable ic_menu_gallery
@@ -1151,14 +1152,8 @@ id game_create_group_header
 id game_create_recycler_view
 id game_dealer_text
 id game_recycler_view
-id game_row_bocks
-id game_row_index
-id game_row_player3
-id game_row_player4
-id game_row_player5
 id game_select_add_button
 id game_table
-id game_table_row
 id ghost_view
 id gone
 id group_divider
@@ -1237,6 +1232,7 @@ id percent
 id pin
 id player_check_twin1
 id player_check_twin2
+id player_seat_handles
 id player_seat_name
 id player_seat_number
 id progress_circular
@@ -1424,7 +1420,6 @@ layout fragment_seating
 layout fragment_settings
 layout fragment_table
 layout game_card
-layout game_table_row
 layout group_header
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

@@ -11,7 +11,8 @@ import java.util.List;
 
 public class SeatingAdapter extends RecyclerView.Adapter<SeatingAdapter.MyViewHolder> {
 
-    List<Player> players;
+    Party party;
+    List<Long> dataBaseIds;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView numberView, nameView;
@@ -28,8 +29,10 @@ public class SeatingAdapter extends RecyclerView.Adapter<SeatingAdapter.MyViewHo
         }
     }
 
-    public SeatingAdapter(List<Player> players) {
-        this.players = players;
+    public SeatingAdapter(Party party, List<Long> dataBaseIds) {
+        this.party = party;
+        this.dataBaseIds = dataBaseIds;
+
     }
 
     @NonNull
@@ -42,11 +45,11 @@ public class SeatingAdapter extends RecyclerView.Adapter<SeatingAdapter.MyViewHo
 
     @Override
     public void onBindViewHolder(@NonNull SeatingAdapter.MyViewHolder myViewHolder, int i) {
-        myViewHolder.bindPlayer(players.get(i), i);
+        myViewHolder.bindPlayer(party.getPlayerByDBId(dataBaseIds.get(i)), i);
     }
 
     @Override
     public int getItemCount() {
-        return players.size();
+        return dataBaseIds.size();
     }
 }
