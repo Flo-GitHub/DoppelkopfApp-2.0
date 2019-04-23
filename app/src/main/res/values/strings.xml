@@ -76,7 +76,7 @@
     <string name="delete_group_title">Delete Group</string>
     <string name="group_deleted">Group deleted.</string>
     <string name="player">Player</string>
-    <string name="player_required">(*)</string>
+    <string name="player_required" translatable="false">(*)</string>
     <string name="player_optional">(opt.)</string>
     <string name="delete_last">Delete Last</string>
     <string name="round_deleted">Round deleted.</string>
@@ -84,8 +84,11 @@
     <string name="confirmation_delete_round">Do you really want to delete the last Round?</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="seating">Seating</string>
+    <string name="delete_game_title">Delete Game</string>
+    <string name="confirmation_delete_game">Do you really want to delete this game?</string>
+    <string name="game_deleted">Game deleted.</string>
 
 
 </resources>

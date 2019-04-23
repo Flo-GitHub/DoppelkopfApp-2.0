@@ -109,5 +109,7 @@ public class GameSelectFragment extends Fragment {
     public interface OnGameSelectListener {
         void onGameSelected(int pos);
         void onGameAddClicked();
+        void onGameDeleted(int pos, RecyclerView.Adapter adapter);
+        void onGameEdited(int pos);
     }
 }

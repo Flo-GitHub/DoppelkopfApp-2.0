@@ -76,12 +76,14 @@
     <string name="group_deleted">Gruppe gelöscht.</string>
     <string name="delete_last">Letzte Runde löschen</string>
     <string name="player">Spieler</string>
-    <string name="player_required">(*)</string>
     <string name="player_optional">(opt.)</string>
-    <string name="round_deleted">Runde gelöscht</string>
+    <string name="round_deleted">Runde gelöscht.</string>
     <string name="delete_round_title">Letzte Runde löschen</string>
     <string name="confirmation_delete_round">Möchtest du die letzte Runde wirklich löschen?</string>
-    <string name="seating">Seating</string>
+    <string name="seating">Sitzordnung</string>
+    <string name="delete_game_title">Spiel Löschen</string>
+    <string name="confirmation_delete_game">Möchtest du dieses Spiel wirklich löschen?</string>
+    <string name="game_deleted">Spiel gelöscht.</string>
 
 
 </resources>

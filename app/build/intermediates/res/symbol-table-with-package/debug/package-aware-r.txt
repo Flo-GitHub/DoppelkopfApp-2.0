@@ -1144,6 +1144,7 @@ id forever
 id game_card_date
 id game_card_games_played
 id game_card_image
+id game_card_overflow
 id game_card_players
 id game_card_view
 id game_create_cancel_button
@@ -1178,6 +1179,8 @@ id line3
 id linearLayout
 id linearLayout2
 id linearLayout3
+id linearLayout4
+id linearLayout5
 id listMode
 id list_item
 id main_content_frame
@@ -1218,7 +1221,10 @@ id parent
 id parentPanel
 id parent_matrix
 id party_card_date
+id party_card_group
+id party_card_image
 id party_card_overflow
+id party_card_players
 id party_card_view
 id party_create_cancel_button
 id party_create_create_button
@@ -1506,11 +1512,13 @@ string bottom_sheet_behavior
 string cancel
 string character_counter_content_description
 string character_counter_pattern
+string confirmation_delete_game
 string confirmation_delete_group
 string confirmation_delete_round
 string continue_text
 string create
 string delete
+string delete_game_title
 string delete_group_title
 string delete_last
 string delete_round_title
@@ -1526,6 +1534,7 @@ string error_winners
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string game_create_fragment_title
+string game_deleted
 string game_select_fragment_title
 string game_table
 string group_deleted

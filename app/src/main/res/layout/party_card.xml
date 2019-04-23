@@ -63,11 +63,11 @@
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                app:layout_constraintStart_toEndOf="@+id/party_card_image"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
-                    android:id="@+id/game_card_players"
+                    android:id="@+id/party_card_players"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -81,8 +81,8 @@
                     android:text="@string/sample_player_names"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/game_card_image"
-                    app:layout_constraintTop_toBottomOf="@+id/game_card_date" />
+                    app:layout_constraintStart_toEndOf="@+id/party_card_image"
+                    app:layout_constraintTop_toBottomOf="@+id/party_card_date" />
             </LinearLayout>
 
             <LinearLayout
@@ -92,11 +92,11 @@
                 android:orientation="horizontal"
                 android:paddingLeft="8dp"
                 app:layout_constraintEnd_toStartOf="@+id/party_card_date"
-                app:layout_constraintStart_toEndOf="@+id/game_card_image"
+                app:layout_constraintStart_toEndOf="@+id/party_card_image"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/game_card_date"
+                    android:id="@+id/party_card_group"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -112,7 +112,7 @@
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/game_card_image"
+                android:id="@+id/party_card_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="@string/group_image"

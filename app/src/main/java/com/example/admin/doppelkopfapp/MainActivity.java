@@ -405,6 +405,19 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
+    public void onGameDeleted(int pos, RecyclerView.Adapter adapter) {
+        dataSource.deleteDeepGame(partyManager.getCurrentParty().getGames().get(pos));
+        partyManager.getCurrentParty().getGames().remove(pos);
+        adapter.notifyDataSetChanged();
+        Toast.makeText(this, getString(R.string.game_deleted), Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onGameEdited(int pos) {
+
+    }
+
+    @Override
     public void onPartyCreated(Party party) {
         long id = dataSource.createParty(party);
         party.setDatabaseId(id);
@@ -452,12 +465,12 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onDeleteLastRound(TableLayout tableLayout) {
+    public void onDeleteLastRound(TableLayout tableLayout, boolean reversed) {
         GameManager game = partyManager.getCurrentParty().getCurrentGame();
         GameRound round = game.removeLastRound();
         dataSource.deleteDeepRound(round);
         dataSource.updateGame(partyManager.getCurrentParty(), partyManager.getCurrentParty().getCurrentGame());
-        tableLayout.removeViewAt(game.getRounds().size()+1);
+        tableLayout.removeViewAt(reversed ? 1 : game.getRounds().size()+1);
         Toast.makeText(this, getString(R.string.round_deleted), Toast.LENGTH_SHORT).show();
     }
 

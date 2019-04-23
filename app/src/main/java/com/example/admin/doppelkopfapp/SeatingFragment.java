@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -22,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class SeatingFragment extends Fragment {
+public class SeatingFragment extends Fragment implements OnStartDragListener {
 
     private Party party;
     private List<Long> databaseIds;
@@ -30,6 +31,7 @@ public class SeatingFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
+    private ItemTouchHelper ith;
 
     public SeatingFragment() {
         // Required empty public constructor
@@ -53,6 +55,7 @@ public class SeatingFragment extends Fragment {
                 databaseIds.add(id);
             }
         }
+        getActivity().setTitle(R.string.seating);
     }
 
     @Override
@@ -65,7 +68,7 @@ public class SeatingFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        adapter = new SeatingAdapter(party, databaseIds);
+        adapter = new SeatingAdapter(party, databaseIds, this);
 
         recyclerView = view.findViewById(R.id.seating_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -113,7 +116,6 @@ public class SeatingFragment extends Fragment {
 
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
-                Log.e("ONSWIPE", direction + " is the dir");
             }
 
             @Override
@@ -123,7 +125,7 @@ public class SeatingFragment extends Fragment {
             }
         };
 
-        ItemTouchHelper ith = new ItemTouchHelper(callback);
+        ith = new ItemTouchHelper(callback);
         ith.attachToRecyclerView(view);
     }
 
@@ -142,6 +144,11 @@ public class SeatingFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         listener = null;
+    }
+
+    @Override
+    public void onStartDrag(RecyclerView.ViewHolder viewHolder) {
+        ith.startDrag(viewHolder);
     }
 
     public interface OnSeatingChangedListener {

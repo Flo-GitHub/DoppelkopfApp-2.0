@@ -22,9 +22,6 @@ import java.util.Map;
 
 public class MyUtils {
 
-    public static View findViewByName(Activity context, String name) {
-        return context.findViewById(context.getResources().getIdentifier(name, "id", context.getPackageName()));
-    }
 
     public static long getDate() {
         return new Date().getTime();
@@ -75,37 +72,6 @@ public class MyUtils {
 
     public static GameSettings defaultSettings() {
         return new GameSettings(2, true);
-    }
-
-    public static GameManager sampleGameManager(Party party){
-        return new GameManager(party, new long[]{1, 2, 3, 4, 5});
-    }
-
-    public static Party sampleParty() {
-        List<Player> players = new ArrayList<>();
-        players.add(new Player("Player1"));
-        players.add(new Player("Player2"));
-        players.add(new Player("Player3"));
-        players.add(new Player("Player4"));
-        players.add(new Player("Player5555"));
-
-        Party party = new Party("This is the coolest group in the world", players, 223423232);
-        for(int i = 0; i < 3; i++) {
-            GameManager game = sampleGameManager(party);
-            game.setDatabaseId(i + party.getDatabaseId() * 1000);
-            party.addGame(game);
-        }
-        return party;
-    }
-
-    public static PartyManager samplePartyManager() {
-        PartyManager partyManager = new PartyManager();
-        for(int i = 0; i < 3; i++) {
-            Party party = sampleParty();
-            party.setDatabaseId(i);
-            partyManager.addParty(party);
-        }
-        return partyManager;
     }
 
 

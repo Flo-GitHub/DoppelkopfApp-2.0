@@ -29,10 +29,10 @@ public class PartySelectAdapter extends RecyclerView.Adapter<PartySelectAdapter.
 
         public MyViewHolder(View view){
             super(view);
-            group = view.findViewById(R.id.game_card_date);
-            players = view.findViewById(R.id.game_card_players);
+            group = view.findViewById(R.id.party_card_group);
+            players = view.findViewById(R.id.party_card_players);
             date = view.findViewById(R.id.party_card_date);
-            image = view.findViewById(R.id.game_card_image);
+            image = view.findViewById(R.id.party_card_image);
             overflow = view.findViewById(R.id.party_card_overflow);
 
             view.setOnClickListener(new View.OnClickListener() {

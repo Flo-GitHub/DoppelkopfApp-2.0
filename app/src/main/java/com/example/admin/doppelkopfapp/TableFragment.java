@@ -18,6 +18,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -26,6 +27,8 @@ import java.util.Set;
 
 
 public class TableFragment extends Fragment {
+
+    private static final boolean reversed = true;
 
     private OnNextRoundListener onNextRoundListener;
     private Party party;
@@ -97,7 +100,7 @@ public class TableFragment extends Fragment {
                             .setIcon(android.R.drawable.ic_dialog_alert)
                             .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
-                                    onNextRoundListener.onDeleteLastRound(table);
+                                    onNextRoundListener.onDeleteLastRound(table, reversed);
                                     dealerView.setText(getString());
                                 }})
                             .setNegativeButton(android.R.string.no, null).show();
@@ -106,7 +109,7 @@ public class TableFragment extends Fragment {
         });
 
 
-        fillTable(table, party.getCurrentGame());
+        fillTable(table, party.getCurrentGame(), reversed);
     }
 
     @Override
@@ -126,8 +129,8 @@ public class TableFragment extends Fragment {
         onNextRoundListener = null;
     }
 
-    private void fillTable(TableLayout tableLayout, GameManager game) {
-        for(TableRowValue[] rowValue : rowValues(game)) {
+    private void fillTable(TableLayout tableLayout, GameManager game, boolean reversed) {
+        for(TableRowValue[] rowValue : rowValues(game, reversed)) {
             tableLayout.addView(fillRow(rowValue));
         }
     }
@@ -146,18 +149,18 @@ public class TableFragment extends Fragment {
         return row;
     }
 
-    private List<TableRowValue[]> rowValues(GameManager gameManager){
+    private List<TableRowValue[]> rowValues(GameManager gameManager, boolean reversed){
         List<Player> players = gameManager.getPlayers();
 
         List<TableRowValue[]> values = new ArrayList<>();
-        values.add(headerRow(players));
-
         Map<Long, Integer> playerPoints = new HashMap<>();
+
+        TableRowValue[] headerRow = headerRow(players);
 
         for(int num = 0; num < gameManager.getRounds().size(); num++) {
             GameRound round = gameManager.getRounds().get(num);
 
-            TableRowValue[] row = new TableRowValue[values.get(0).length];
+            TableRowValue[] row = new TableRowValue[headerRow.length];
             row[0] = new TableRowValue(String.valueOf(num+1));
 
             for(int i = 0; i < players.size(); i++) {
@@ -186,6 +189,13 @@ public class TableFragment extends Fragment {
             row[row.length-1] = new TableRowValue(getBockString(round.getCurrentBocks()));
             values.add(row);
         }
+
+        if(reversed){
+            Collections.reverse(values);
+        }
+
+        values.add(0, headerRow);
+
         return values;
     }
 
@@ -266,6 +276,6 @@ public class TableFragment extends Fragment {
 
     public interface OnNextRoundListener {
         void onNextRound();
-        void onDeleteLastRound(TableLayout tableLayout);
+        void onDeleteLastRound(TableLayout tableLayout, boolean reversed);
     }
 }
