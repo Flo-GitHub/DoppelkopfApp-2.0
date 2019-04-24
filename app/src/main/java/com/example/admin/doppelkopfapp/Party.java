@@ -96,7 +96,7 @@ public class Party implements Serializable, Comparable {
 
     private byte[] getImageBytes(Bitmap bitmap) {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 20, bos);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 80, bos);
         return bos.toByteArray();
     }
 

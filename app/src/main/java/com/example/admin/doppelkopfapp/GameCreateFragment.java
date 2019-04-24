@@ -24,14 +24,6 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link GameCreateFragment.OnGameCreateListener} interface
- * to handle interaction events.
- * Use the {@link GameCreateFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class GameCreateFragment extends Fragment {
 
     private GameCreateAdapter adapter;
@@ -39,6 +31,8 @@ public class GameCreateFragment extends Fragment {
     private Button createButton, cancelButton;
 
     private Party party;
+    private GameManager game;
+    private boolean isNew;
 
     private OnGameCreateListener gameCreateListener;
 
@@ -46,10 +40,11 @@ public class GameCreateFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static GameCreateFragment newInstance(Party party) {
+    public static GameCreateFragment newInstance(Party party, GameManager game) {
         GameCreateFragment fragment = new GameCreateFragment();
         Bundle args = new Bundle();
         args.putSerializable(MainActivity.ARG_PARTY, party);
+        args.putSerializable(MainActivity.ARG_GAME, game);
         fragment.setArguments(args);
         return fragment;
     }
@@ -59,9 +54,15 @@ public class GameCreateFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             this.party = (Party) getArguments().getSerializable(MainActivity.ARG_PARTY);
+            this.game = (GameManager) getArguments().getSerializable(MainActivity.ARG_GAME);
+            isNew = this.game == null;
         }
 
-        getActivity().setTitle(getResources().getString(R.string.game_create_fragment_title));
+        if(isNew){
+            getActivity().setTitle(getString(R.string.game_create_fragment_title));
+        } else {
+            getActivity().setTitle(getString(R.string.game_edit_fragment_title));
+        }
     }
 
     @Override
@@ -84,7 +85,7 @@ public class GameCreateFragment extends Fragment {
         TextView groupText = (TextView) headerLayout.getViewById(R.id.group_header_name);
         groupText.setText(party.getName());
 
-        adapter = new GameCreateAdapter(twins());
+        adapter = new GameCreateAdapter(twins(), game);
         initRecyclerView();
         adapter.notifyDataSetChanged();
 
@@ -97,8 +98,15 @@ public class GameCreateFragment extends Fragment {
                     for(int i = 0; i < playerChecked.length; i++) {
                         playerChecked[i] = getPlayerChecked().get(i);
                     }
-                    GameManager game = new GameManager(party, playerChecked);
-                    onGameCreated(game);
+                    if(isNew){
+                        GameManager game = new GameManager(party, playerChecked);
+                        onGameCreated(game, isNew);
+                    } else {
+                        GameManager game = GameCreateFragment.this.game;
+                        game.setPlayersDataBaseIds(playerChecked);
+                        onGameCreated(game, isNew);
+                    }
+
                 } catch (Exception e) {
                     Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -112,6 +120,10 @@ public class GameCreateFragment extends Fragment {
                 onGameCreateCancelled();
             }
         });
+
+        if(!isNew){
+            createButton.setText(R.string.save);
+        }
     }
 
     private List<Long> getPlayerChecked() {
@@ -141,9 +153,9 @@ public class GameCreateFragment extends Fragment {
         recyclerView.setAdapter(adapter);
     }
 
-    public void onGameCreated(GameManager game) {
+    public void onGameCreated(GameManager game, boolean isNew) {
         if (gameCreateListener != null) {
-            gameCreateListener.onGameCreated(game);
+            gameCreateListener.onGameCreated(game, isNew);
         }
     }
 
@@ -184,7 +196,7 @@ public class GameCreateFragment extends Fragment {
 
 
     public interface OnGameCreateListener {
-        void onGameCreated(GameManager game);
+        void onGameCreated(GameManager game, boolean isNew);
         void onGameCreateCancelled();
     }
 }

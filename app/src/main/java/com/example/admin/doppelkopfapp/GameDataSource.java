@@ -149,8 +149,15 @@ public class GameDataSource {
     public void updateGame(Party party, GameManager game) {
         ContentValues values = gameValues(game, party.getDatabaseId());
         database.update(TABLE_GAME, values, COLUMN_ID + "=" + game.getDatabaseId(), null);
-        for(int i = 0; i < game.getPlayersDataBaseIds().length; i++){
-            updateGamePlayer(i, game.getDatabaseId(), game.getPlayersDataBaseIds()[i]);
+
+        //delete all player ids from game
+        long[] oldIds = getAllPlayersInGame(game.getDatabaseId());
+        for(int i = 0; i < oldIds.length; i++){
+            deleteGamePlayer(game.getDatabaseId(), oldIds[i]);
+        }
+        //add the new to it again
+        for(int i = 0; i < game.getPlayersDataBaseIds().length; i++) {
+            createGamePlayer(i, game.getDatabaseId(), game.getPlayersDataBaseIds()[i]);
         }
     }
 
@@ -202,12 +209,6 @@ public class GameDataSource {
     public void createGamePlayer(long id, long gameId, long playerId) {
         ContentValues values = gamePlayerValues(id, gameId, playerId);
         database.insert(TABLE_GAME_PLAYERS, null, values);
-    }
-
-    private void updateGamePlayer(long id, long gameId, long playerId){
-        ContentValues values = gamePlayerValues(id, gameId, playerId);
-        database.update(TABLE_GAME_PLAYERS, values, COLUMN_GAME + "=" + gameId +
-                " and " + COLUMN_PLAYER + "=" + playerId, null);
     }
 
     public void deleteGamePlayer(long gameId, long playerId) {

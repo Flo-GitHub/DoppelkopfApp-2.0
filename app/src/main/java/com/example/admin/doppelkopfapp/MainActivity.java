@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity
 
     public static final String ARG_PARTY = "party";
     public static final String ARG_PARTY_MANAGER = "partyManager";
+    public static final String ARG_GAME = "game";
 
     private static final String TAG_PARTY_SELECT = "party_select",
                                 TAG_PARTY_CREATE = "party_create",
@@ -144,7 +145,7 @@ public class MainActivity extends AppCompatActivity
                 switchToGame();
                 break;
             case TAG_GAME_CREATE:
-                switchToGameCreate();
+                switchToGameCreate(null);
                 break;
             case TAG_TABLE:
                 switchToTable();
@@ -302,6 +303,11 @@ public class MainActivity extends AppCompatActivity
                 (null == getCurrentFocus()) ? null : getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
+    private Bundle gameCreateBundle(GameManager game){
+        Bundle bundle = partyBundle();
+        bundle.putSerializable(ARG_GAME, game);
+        return bundle;
+    }
 
     private Bundle partyBundle() {
         Bundle bundle = new Bundle();
@@ -336,8 +342,8 @@ public class MainActivity extends AppCompatActivity
         switchFragments(GameSelectFragment.class, partyBundle(), TAG_GAME_SELECT);
     }
 
-    private void switchToGameCreate() {
-        switchFragments(GameCreateFragment.class, partyBundle(), TAG_GAME_CREATE);
+    private void switchToGameCreate(GameManager game) {
+        switchFragments(GameCreateFragment.class, gameCreateBundle(game), TAG_GAME_CREATE);
     }
 
     private void switchToSettings(){
@@ -401,7 +407,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onGameAddClicked() {
-        switchToGameCreate();
+        switchToGameCreate(null);
     }
 
     @Override
@@ -414,7 +420,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onGameEdited(int pos) {
-
+        switchToGameCreate(partyManager.getCurrentParty().getGames().get(pos));
     }
 
     @Override
@@ -431,10 +437,15 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onGameCreated(GameManager game) {
-        long id = dataSource.createGame(game, partyManager.getCurrentParty().getDatabaseId());
-        game.setDatabaseId(id);
-        partyManager.getCurrentParty().addGame(game);
+    public void onGameCreated(GameManager game, boolean isNew) {
+        if(isNew) {
+            long id = dataSource.createGame(game, partyManager.getCurrentParty().getDatabaseId());
+            game.setDatabaseId(id);
+            partyManager.getCurrentParty().addGame(game);
+        } else {
+            dataSource.updateGame(partyManager.getCurrentParty(), game);
+        }
+
         switchToGame();
     }
 

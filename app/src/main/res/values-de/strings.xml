@@ -84,6 +84,7 @@
     <string name="delete_game_title">Spiel Löschen</string>
     <string name="confirmation_delete_game">Möchtest du dieses Spiel wirklich löschen?</string>
     <string name="game_deleted">Spiel gelöscht.</string>
+    <string name="game_edit_fragment_title">Spiel Bearbeiten</string>
 
 
 </resources>

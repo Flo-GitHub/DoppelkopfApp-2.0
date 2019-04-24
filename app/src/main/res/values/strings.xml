@@ -89,6 +89,7 @@
     <string name="delete_game_title">Delete Game</string>
     <string name="confirmation_delete_game">Do you really want to delete this game?</string>
     <string name="game_deleted">Game deleted.</string>
+    <string name="game_edit_fragment_title">Edit Game</string>
 
 
 </resources>

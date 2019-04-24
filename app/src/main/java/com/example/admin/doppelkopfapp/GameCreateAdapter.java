@@ -15,6 +15,7 @@ public class GameCreateAdapter extends RecyclerView.Adapter<GameCreateAdapter.My
 
     private Map<Long, Boolean> playerChecked;
     private List<Player[]> players;
+    private GameManager currentGame;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public CheckBox check1, check2;
@@ -28,14 +29,28 @@ public class GameCreateAdapter extends RecyclerView.Adapter<GameCreateAdapter.My
         public void bindTwin(Player p1, Player p2) {
             check1.setText(p1.getName());
             check1.setOnClickListener(listener(check1, p1));
+            check1.setChecked(contains(p1, currentGame));
 
             if (p2 != null) {
                 check2.setText(p2.getName());
                 check2.setOnClickListener(listener(check2, p2));
+                check2.setChecked(contains(p2, currentGame));
             } else {
                 check2.setVisibility(View.INVISIBLE);
                 check2.setEnabled(false);
             }
+        }
+
+        private boolean contains(Player p, GameManager game){
+            if(game == null)
+                return false;
+
+            for(long id : game.getPlayersDataBaseIds()){
+                if(id == p.getDataBaseId()){
+                    return true;
+                }
+            }
+            return false;
         }
 
         private View.OnClickListener listener(final CheckBox check, final Player p) {
@@ -48,8 +63,9 @@ public class GameCreateAdapter extends RecyclerView.Adapter<GameCreateAdapter.My
         }
     }
 
-    public GameCreateAdapter(List<Player[]> players) {
+    public GameCreateAdapter(List<Player[]> players, GameManager currentGame) {
         this.players = players;
+        this.currentGame = currentGame;
         playerChecked = new HashMap<>();
         for(Player[] ps : players) {
             for(Player p : ps) {
@@ -58,6 +74,12 @@ public class GameCreateAdapter extends RecyclerView.Adapter<GameCreateAdapter.My
                 }
             }
         }
+        if(currentGame != null){
+            for(long id : currentGame.getPlayersDataBaseIds()){
+                playerChecked.put(id, true);
+            }
+        }
+
     }
 
     @Override
