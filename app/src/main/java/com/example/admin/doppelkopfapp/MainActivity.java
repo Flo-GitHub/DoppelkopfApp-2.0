@@ -442,11 +442,12 @@ public class MainActivity extends AppCompatActivity
             long id = dataSource.createGame(game, partyManager.getCurrentParty().getDatabaseId());
             game.setDatabaseId(id);
             partyManager.getCurrentParty().addGame(game);
+            switchToGame();
         } else {
             dataSource.updateGame(partyManager.getCurrentParty(), game);
+            partyManager.getCurrentParty().setCurrentGame(game.getDatabaseId());
+            switchToSeating();
         }
-
-        switchToGame();
     }
 
     @Override
