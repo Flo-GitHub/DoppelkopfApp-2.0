@@ -51,8 +51,25 @@ public class GameDataSource {
 
     public void updateParty(Party party) {
         ContentValues values = partyValues(party);
-        long partyId = database.update(TABLE_PARTY,  values,
+        database.update(TABLE_PARTY,  values,
                 COLUMN_ID + " = " + party.getDatabaseId(), null);
+
+        List<Player> oldPlayers = getAllPlayersInPartyAsList(party.getDatabaseId());
+        //update or delete any players that were in party before
+        for(Player p : oldPlayers){
+            if(party.getPlayers().contains(p)){
+                updatePlayer(p, party.getDatabaseId());
+            } else {
+                deletePlayer(p);
+            }
+        }
+        //create new players added to party
+        for(Player p : party.getPlayers()){
+            if(!p.hasDataBaseId() || !oldPlayers.contains(p)){
+                long id = createPlayer(p, party.getDatabaseId());
+                p.setDataBaseId(id);
+            }
+        }
     }
 
 
@@ -105,13 +122,12 @@ public class GameDataSource {
         return database.insert(TABLE_PLAYERS, null, values);
     }
 
-    public void updatePlayer(Player player, long gameId) {
-        ContentValues values = playerValues(player, gameId);
+    public void updatePlayer(Player player, long partyId) {
+        ContentValues values = playerValues(player, partyId);
         database.update(TABLE_PLAYERS, values, COLUMN_ID + " = " + player.getDataBaseId(), null);
     }
 
-
-    public Player[] getAllPlayersInParty(long partyId) {
+    public List<Player> getAllPlayersInPartyAsList(long partyId){
         List<Player> players = new ArrayList<>();
         String selectQuery = "SELECT * FROM " + TABLE_PLAYERS + " WHERE " + COLUMN_PARTY + " = " + partyId;
 
@@ -126,6 +142,11 @@ public class GameDataSource {
         }
 
         c.close();
+        return players;
+    }
+
+    public Player[] getAllPlayersInParty(long partyId) {
+        List<Player> players = getAllPlayersInPartyAsList(partyId);
         return players.toArray(new Player[players.size()]);
     }
 

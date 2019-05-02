@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity
                 switchToParty();
                 break;
             case TAG_PARTY_CREATE:
-                switchToPartyCreate();
+                switchToPartyCreate(null);
                 break;
             case TAG_GAME_SELECT:
                 switchToGame();
@@ -292,6 +292,8 @@ public class MainActivity extends AppCompatActivity
             this.fragmentTag = tag;
         }
 
+        reEnableItems();
+
         selectNavigationDrawer(tag);
         hideKeyboard();
     }
@@ -306,6 +308,12 @@ public class MainActivity extends AppCompatActivity
     private Bundle gameCreateBundle(GameManager game){
         Bundle bundle = partyBundle();
         bundle.putSerializable(ARG_GAME, game);
+        return bundle;
+    }
+
+    private Bundle partyCreateBundle(Party party){
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(ARG_PARTY, party);
         return bundle;
     }
 
@@ -334,8 +342,8 @@ public class MainActivity extends AppCompatActivity
         switchFragments(PartySelectFragment.class, partyManagerBundle(), TAG_PARTY_SELECT);
     }
 
-    private void switchToPartyCreate(){
-        switchFragments(PartyCreateFragment.class, new Bundle(), TAG_PARTY_CREATE);
+    private void switchToPartyCreate(Party party){
+        switchFragments(PartyCreateFragment.class, partyCreateBundle(party), TAG_PARTY_CREATE);
     }
 
     private void switchToGame() {
@@ -382,7 +390,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onPartyAddClicked() {
-        switchToPartyCreate();
+        switchToPartyCreate(null);
     }
 
     @Override
@@ -395,7 +403,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onPartyEdited(int pos) {
-
+        switchToPartyCreate(partyManager.getParties().get(pos));
     }
 
     @Override
@@ -424,10 +432,15 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onPartyCreated(Party party) {
-        long id = dataSource.createParty(party);
-        party.setDatabaseId(id);
-        partyManager.addParty(party);
+    public void onPartyCreated(Party party, boolean isNew) {
+        if(isNew) {
+            long id = dataSource.createParty(party);
+            party.setDatabaseId(id);
+            partyManager.addParty(party);
+        } else {
+            dataSource.updateParty(party);
+        }
+        partyManager.setCurrentParty(party.getDatabaseId());
         switchToParty();
     }
 
@@ -442,12 +455,11 @@ public class MainActivity extends AppCompatActivity
             long id = dataSource.createGame(game, partyManager.getCurrentParty().getDatabaseId());
             game.setDatabaseId(id);
             partyManager.getCurrentParty().addGame(game);
-            switchToGame();
         } else {
             dataSource.updateGame(partyManager.getCurrentParty(), game);
-            partyManager.getCurrentParty().setCurrentGame(game.getDatabaseId());
-            switchToSeating();
         }
+        partyManager.getCurrentParty().setCurrentGame(game.getDatabaseId());
+        switchToSeating();
     }
 
     @Override

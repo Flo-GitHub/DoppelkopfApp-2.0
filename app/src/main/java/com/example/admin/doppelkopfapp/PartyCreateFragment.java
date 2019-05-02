@@ -1,7 +1,9 @@
 package com.example.admin.doppelkopfapp;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,13 +19,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -40,7 +45,10 @@ public class PartyCreateFragment extends DialogFragment {
 
     private ImageButton imageButton;
     private TextInputEditText groupText;
-    private List<TextInputEditText> playerTexts;
+    private Map<ConstraintLayout, Long> playerLayouts;
+
+    private Party party;
+    private boolean isNew = false;
     private Bitmap bitmap;
 
     private OnPartyCreateListener partyCreateListener;
@@ -49,9 +57,10 @@ public class PartyCreateFragment extends DialogFragment {
         // Required empty public constructor
     }
 
-    public static PartyCreateFragment newInstance() {
+    public static PartyCreateFragment newInstance(Party party) {
         PartyCreateFragment fragment = new PartyCreateFragment();
         Bundle args = new Bundle();
+        args.putSerializable(MainActivity.ARG_PARTY, party);
         fragment.setArguments(args);
         return fragment;
     }
@@ -60,15 +69,19 @@ public class PartyCreateFragment extends DialogFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
+            this.party = (Party) getArguments().getSerializable(MainActivity.ARG_PARTY);
+            this.isNew = this.party == null;
         }
-        getActivity().setTitle(getString(R.string.party_create_fragment_title));
+        if(isNew){
+            getActivity().setTitle(getString(R.string.party_create_fragment_title));
+        } else {
+            getActivity().setTitle(getString(R.string.party_edit_fragment_title));
+        }
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the linearLayout for this fragment
         return inflater.inflate(R.layout.fragment_party_create, container, false);
     }
 
@@ -77,13 +90,20 @@ public class PartyCreateFragment extends DialogFragment {
         super.onViewCreated(view, savedInstanceState);
 
         groupText = view.findViewById(R.id.party_create_group_text);
+        if(!isNew){
+            groupText.setText(party.getName());
+        }
 
-        playerTexts = new ArrayList<>();
+        playerLayouts = new HashMap<>();
         LinearLayout linearLayout = view.findViewById(R.id.party_create_player_layout);
 
         addPlayerAddButtons(linearLayout);
-        for(int i = 0; i < 4; i++) {
-            addPlayerInput(linearLayout);
+        int start = 4;
+        if(!isNew){
+            start = this.party.getPlayers().size();
+        }
+        for(int i = 0; i < start; i++) {
+            addPlayerInput(linearLayout, i);
         }
 
         Button createButton = view.findViewById(R.id.party_create_create_button);
@@ -91,13 +111,16 @@ public class PartyCreateFragment extends DialogFragment {
             @Override
             public void onClick(View view) {
                 try {
-                    onCreateParty(getParty());
+                    onCreateParty(getParty(), isNew);
                 } catch(Exception e) {
                     e.printStackTrace();
                     Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
+        if(!isNew){
+            createButton.setText(R.string.save);
+        }
 
         Button cancelButton = view.findViewById(R.id.party_create_cancel_button);
         cancelButton.setOnClickListener(new View.OnClickListener() {
@@ -124,16 +147,56 @@ public class PartyCreateFragment extends DialogFragment {
                 startActivityForResult(Intent.createChooser(intent, getString(R.string.select_group_image)), PICK_IMAGE);
             }
         });
+        try {
+            imageButton.setImageBitmap(party.getImage());
+        } catch(Exception ignore){}
     }
 
-    private void addPlayerInput(LinearLayout parentLayout){
-        ConstraintLayout playerLayout =
+    private void addPlayerInput(final LinearLayout parentLayout, int index){
+        final ConstraintLayout playerLayout =
                 (ConstraintLayout) View.inflate(getContext(), R.layout.new_player, null);
         TextInputEditText editText = playerLayout.findViewById(R.id.new_player_text);
-        int req = (playerTexts.size()) < 4 ? R.string.player_required : R.string.player_optional;
-        editText.setHint(getString(R.string.player) + " " + (playerTexts.size()+1) + " " + getString(req));
-        playerTexts.add(editText);
-        parentLayout.addView(playerLayout, playerTexts.size()-1);
+        int req = (playerLayouts.size()) < 4 ? R.string.player_required : R.string.player_optional;
+        editText.setHint(getString(R.string.player) + " " + (playerLayouts.size()+1) + " " + getString(req));
+        long id = -1;
+        if(party != null && index < party.getPlayers().size()) {
+            id = party.getPlayers().get(index).getDataBaseId();
+            editText.setText(party.getPlayers().get(index).getName());
+        }
+        playerLayouts.put(playerLayout, id);
+
+        final long finalId = id;
+
+        ImageView buttonRemove = playerLayout.findViewById(R.id.new_player_remove);
+        buttonRemove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(playerLayouts.size() <= 4) {
+                    return;
+                }
+                if(finalId != -1 && !isNew && party.hasPlayerUse(party.getPlayerByDBId(finalId))){
+                    new AlertDialog.Builder(getContext())
+                            .setTitle(R.string.delete_player_title)
+                            .setMessage(R.string.message_cannot_delete_player)
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setPositiveButton(android.R.string.ok, null).show();
+                } else {
+                    new AlertDialog.Builder(getContext())
+                            .setTitle(R.string.delete_player_title)
+                            .setMessage(R.string.confirmation_delete_player)
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    parentLayout.removeView(playerLayout);
+                                    playerLayouts.remove(playerLayout);
+                                }})
+                            .setNegativeButton(android.R.string.no, null).show();
+                }
+
+            }
+        });
+
+        parentLayout.addView(playerLayout, playerLayouts.size()-1);
     }
 
     private void addPlayerAddButtons(final LinearLayout parentLayout){
@@ -143,7 +206,7 @@ public class PartyCreateFragment extends DialogFragment {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addPlayerInput(parentLayout);
+                addPlayerInput(parentLayout, playerLayouts.size());
                 final ScrollView scrollView = getView().findViewById(R.id.party_create_scroll_view);
                 scrollView.post(new Runnable() {
 
@@ -154,18 +217,6 @@ public class PartyCreateFragment extends DialogFragment {
                 });
             }
         });
-        ImageButton buttonRemove = buttonLayout.findViewById(R.id.new_player_remove);
-        buttonRemove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(playerTexts.size() <= 4) {
-                    return;
-                }
-                parentLayout.removeViewAt(playerTexts.size()-1);
-                playerTexts.remove(playerTexts.size()-1);
-            }
-        });
-
         parentLayout.addView(buttonLayout);
     }
 
@@ -188,13 +239,23 @@ public class PartyCreateFragment extends DialogFragment {
     }
 
     private Party getParty() {
-        Party party = new Party(getGroupName(),getPlayers(), MyUtils.getDate());
-        if(bitmap != null) {
-            party.setImage(bitmap);
+        if(isNew){
+            Party party = new Party(getGroupName(),getPlayers(), MyUtils.getDate());
+            if(bitmap != null) {
+                party.setImage(bitmap);
+            }
+            return party;
+        } else {
+            Party party = this.party;
+            party.setName(getGroupName());
+            party.setPlayers(getPlayers());
+            party.setLastDate(MyUtils.getDate());
+            if(bitmap != null){
+                party.setImage(bitmap);
+            }
+            return party;
         }
-        return party;
     }
-
 
     private String getGroupName(){
         String name = groupText.getText().toString();
@@ -207,23 +268,27 @@ public class PartyCreateFragment extends DialogFragment {
 
     private List<Player> getPlayers() {
         List<Player> players = new ArrayList<>();
-        for(int i = 0; i < playerTexts.size(); i++) {
-            TextInputEditText editText = playerTexts.get(i);
+        for(ConstraintLayout layout : playerLayouts.keySet()) {
+            TextInputEditText editText = layout.findViewById(R.id.new_player_text);
             String name = editText.getText().toString();
-            if(name.trim().isEmpty()) {
-                if(i < 4)
-                    throw new RuntimeException(getString(R.string.error_required_field_not_initialized));
-            } else {
-                players.add(new Player( editText.getText().toString().trim()));
+            if(!name.trim().isEmpty()) {
+                Player p = new Player( editText.getText().toString().trim());
+                if(!isNew && playerLayouts.get(layout) != -1){
+                    p.setDataBaseId(playerLayouts.get(layout));
+                }
+                players.add(p);
             }
+        }
+        if(players.size() < 4) {
+            throw new RuntimeException(getString(R.string.error_required_field_not_initialized));
         }
         return players;
     }
 
 
-    public void onCreateParty(Party party) {
+    public void onCreateParty(Party party, boolean isNew) {
         if (partyCreateListener != null) {
-            partyCreateListener.onPartyCreated(party);
+            partyCreateListener.onPartyCreated(party, isNew);
         }
     }
 
@@ -252,7 +317,7 @@ public class PartyCreateFragment extends DialogFragment {
 
 
     public interface OnPartyCreateListener {
-        void onPartyCreated(Party party);
+        void onPartyCreated(Party party, boolean isNew);
         void onPartyCreateCancelled();
     }
 }

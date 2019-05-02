@@ -66,6 +66,15 @@ public class Party implements Serializable, Comparable {
          throw new IllegalArgumentException("PlayerDataBaseId doesn't exist" + playerDataBaseId);
     }
 
+    public boolean hasPlayerUse(Player p){
+        for(GameManager game : getGames()){
+            if(game.getPlayers().contains(p)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     /*
     @return true if player was successfully added to list
      */

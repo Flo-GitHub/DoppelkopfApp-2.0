@@ -32,7 +32,7 @@ public class GameCreateFragment extends Fragment {
 
     private Party party;
     private GameManager game;
-    private boolean isNew;
+    private boolean isNew = false;
 
     private OnGameCreateListener gameCreateListener;
 

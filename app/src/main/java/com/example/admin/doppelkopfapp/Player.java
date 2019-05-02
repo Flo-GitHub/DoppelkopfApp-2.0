@@ -29,6 +29,8 @@ public class Player implements Serializable, Comparable{
         this.dataBaseId = dataBaseId;
     }
 
+    public boolean hasDataBaseId(){ return dataBaseId != -1; }
+
     @Override
     public boolean equals( Object o ) {
         return ((Player) o).getDataBaseId() == dataBaseId;
@@ -37,6 +39,6 @@ public class Player implements Serializable, Comparable{
     @Override
     public int compareTo(@NonNull Object o) {
         Player p = (Player) o;
-        return Long.valueOf(this.dataBaseId).compareTo( ((Player) o).dataBaseId);
+        return Long.valueOf(this.dataBaseId).compareTo(p.dataBaseId);
     }
 }

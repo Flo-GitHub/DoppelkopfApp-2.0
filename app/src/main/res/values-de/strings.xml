@@ -37,12 +37,6 @@
     <string name="bocks">Böcke</string>
     <string name="submit">Weiter</string>
     <string name="group_name_required">Gruppenname (*)</string>
-    <string name="player1_required">Spieler 1 (*)</string>
-    <string name="player2_required">Spieler 2 (*)</string>
-    <string name="player3_required">Spieler 3 (*)</string>
-    <string name="player4_required">Spieler 4 (*)</string>
-    <string name="player5_optional">Spieler 5 (opt)</string>
-    <string name="player6_optional">Spieler 6 (opt)</string>
     <string name="sample_player_names">Florian, Anja, Joachim, Tobias, Ulf, Renate</string>
     <string name="sample_rounds">12 Runden</string>
     <string name="sample_date">Jan 24, 2019</string>
@@ -85,6 +79,10 @@
     <string name="confirmation_delete_game">Möchtest du dieses Spiel wirklich löschen?</string>
     <string name="game_deleted">Spiel gelöscht.</string>
     <string name="game_edit_fragment_title">Spiel Bearbeiten</string>
+    <string name="party_edit_fragment_title">Gruppe Bearbeiten</string>
+    <string name="confirmation_delete_player">Möchtest du diesen Spieler wirklich löschen?</string>
+    <string name="delete_player_title">Spieler Löschen</string>
+    <string name="message_cannot_delete_player">Spieler kann nicht geöscht werden, da er schon Spiele gespielt hat!</string>
 
 
 </resources>

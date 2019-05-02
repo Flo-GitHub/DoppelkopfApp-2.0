@@ -1315,6 +1315,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textInputLayout
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1514,6 +1515,7 @@ string character_counter_content_description
 string character_counter_pattern
 string confirmation_delete_game
 string confirmation_delete_group
+string confirmation_delete_player
 string confirmation_delete_round
 string continue_text
 string create
@@ -1521,6 +1523,7 @@ string delete
 string delete_game_title
 string delete_group_title
 string delete_last
+string delete_player_title
 string delete_round_title
 string double_bocks_remaining
 string edit
@@ -1545,6 +1548,7 @@ string group_name_required
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string maximum_bocks
+string message_cannot_delete_player
 string mtrl_chip_close_icon_content_description
 string nav_header_desc
 string nav_header_subtitle
@@ -1563,6 +1567,7 @@ string number_5
 string number_6
 string ok
 string party_create_fragment_title
+string party_edit_fragment_title
 string party_select_fragment_title
 string password_toggle_content_description
 string path_password_eye
@@ -1570,12 +1575,6 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string player
-string player1_required
-string player2_required
-string player3_required
-string player4_required
-string player5_optional
-string player6_optional
 string player_optional
 string player_required
 string points
