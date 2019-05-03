@@ -88,6 +88,7 @@
     <string name="confirmation_delete_player">Are you sure you want to delete this player?</string>
     <string name="delete_player_title">Delete Player</string>
     <string name="message_cannot_delete_player">Cannot delete Player because he played Games already!</string>
+    <string name="add_new_player">Add new Player</string>
 
 
 </resources>

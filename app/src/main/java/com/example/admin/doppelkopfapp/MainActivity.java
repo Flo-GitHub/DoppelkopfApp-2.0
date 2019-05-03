@@ -1,33 +1,26 @@
 package com.example.admin.doppelkopfapp;
 
 import android.content.Context;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.View;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Adapter;
 import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.Toast;
 
 import java.util.List;
-import java.util.Set;
-import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, NewRoundFragment.OnSubmitListener,
@@ -225,29 +218,39 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    private void reEnableItems() {
-        try {
-            partyItem.setTitle(partyManager.getCurrentParty().getName());
-            enableItems(gameItem);
-        } catch (Exception e) {
-            disableItems(gameItem, newRoundItem, tableItem, seatingItem);
-            partyItem.setTitle(R.string.party_select_fragment_title);
-            return;
+    private void reEnableItems(String tag){
+        switch(tag){
+            case TAG_PARTY_CREATE:
+            case TAG_PARTY_SELECT:
+                partyItem.setTitle(R.string.party_select_fragment_title);
+                gameItem.setTitle(R.string.game_select_fragment_title);
+                disableItems(gameItem, newRoundItem, tableItem, seatingItem);
+                partyManager.setCurrentParty(-1);
+                break;
+            case TAG_GAME_CREATE:
+            case TAG_GAME_SELECT:
+                partyItem.setTitle(partyManager.getCurrentParty().getName());
+                gameItem.setTitle(R.string.game_select_fragment_title);
+                enableItems(gameItem);
+                disableItems(newRoundItem, tableItem, seatingItem);
+                partyManager.getCurrentParty().setCurrentGame(-1);
+                break;
+            case TAG_SETTINGS:
+                break;
+            default:
+                partyItem.setTitle(partyManager.getCurrentParty().getName());
+                gameItem.setTitle(MyUtils.getFullDisplayDate(
+                        partyManager.getCurrentParty().getCurrentGame().getLastDate()));
+                enableItems(gameItem, newRoundItem, tableItem, seatingItem);
         }
-        try {
-            gameItem.setTitle(MyUtils.getFullDisplayDate(
-                    partyManager.getCurrentParty().getCurrentGame().getLastDate()));
-            enableItems(newRoundItem, tableItem, seatingItem);
-        } catch (Exception e) {
-            disableItems(newRoundItem, tableItem, seatingItem);
-            gameItem.setTitle(R.string.game_select_fragment_title);
-        }
-        try {
+        try{
             navImageView.setImageBitmap(partyManager.getCurrentParty().getImage());
-        } catch(Exception ignore) {
+        }catch(Exception e) {
+            navImageView.setImageResource(R.drawable.ic_group);
         }
-
     }
+
+
 
     private void selectNavigationDrawer(String tag){
         switch (tag) {
@@ -267,7 +270,7 @@ public class MainActivity extends AppCompatActivity
             case TAG_SEATING:
                 navigationView.setCheckedItem(R.id.nav_seating);
         }
-        reEnableItems();
+        reEnableItems(tag);
     }
 
     private void switchFragments(Class fragmentClass, Bundle bundle, String tag) {
@@ -292,7 +295,7 @@ public class MainActivity extends AppCompatActivity
             this.fragmentTag = tag;
         }
 
-        reEnableItems();
+        reEnableItems(tag);
 
         selectNavigationDrawer(tag);
         hideKeyboard();

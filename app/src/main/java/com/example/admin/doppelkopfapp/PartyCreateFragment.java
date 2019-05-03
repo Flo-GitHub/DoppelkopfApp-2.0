@@ -22,6 +22,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.InputStream;
@@ -103,7 +104,7 @@ public class PartyCreateFragment extends DialogFragment {
             start = this.party.getPlayers().size();
         }
         for(int i = 0; i < start; i++) {
-            addPlayerInput(linearLayout, i);
+            addPlayerInput(linearLayout, i); //TODO reload on delete so that player numbers are matched
         }
 
         Button createButton = view.findViewById(R.id.party_create_create_button);
@@ -202,8 +203,8 @@ public class PartyCreateFragment extends DialogFragment {
     private void addPlayerAddButtons(final LinearLayout parentLayout){
         ConstraintLayout buttonLayout =
                 (ConstraintLayout) View.inflate(getContext(), R.layout.new_player_button, null);
-        ImageButton buttonAdd = buttonLayout.findViewById(R.id.new_player_add);
-        buttonAdd.setOnClickListener(new View.OnClickListener() {
+        TextView textAdd = buttonLayout.findViewById(R.id.new_player_add);
+        textAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addPlayerInput(parentLayout, playerLayouts.size());

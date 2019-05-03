@@ -14,9 +14,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:padding="8dp"
         android:background="@drawable/cell_not_active"
         android:contentDescription="@string/group_image"
+        android:adjustViewBounds="true"
         android:src="@drawable/ic_group"
+        android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
