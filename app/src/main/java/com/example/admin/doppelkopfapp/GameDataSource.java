@@ -318,7 +318,10 @@ public class GameDataSource {
             do {
                 long id = c.getLong(c.getColumnIndex(COLUMN_ID));
                 getPlayerPoints(id);
-                GameRound round = new GameRound(getPlayerPoints(id));
+                int[] bocks = new int[2];
+                bocks[0] = c.getInt(c.getColumnIndex(COLUMN_BOCKS));
+                bocks[1] = c.getInt(c.getColumnIndex(COLUMN_DOUBLE_BOCKS));
+                GameRound round = new GameRound(getPlayerPoints(id), bocks);
                 round.setDataBaseId(id);
                 round.setCurrentBocks(c.getInt(c.getColumnIndex(COLUMN_CURRENT_ROUND_BOCKS)));
                 round.setNewBocks(c.getInt(c.getColumnIndex(COLUMN_NEW_BOCKS)));
@@ -416,6 +419,8 @@ public class GameDataSource {
         values.put(COLUMN_GAME, gameId);
         values.put(COLUMN_NEW_BOCKS, round.getNewBocks());
         values.put(COLUMN_CURRENT_ROUND_BOCKS, round.getCurrentBocks());
+        values.put(COLUMN_BOCKS, round.getGameBockSafe(0));
+        values.put(COLUMN_DOUBLE_BOCKS, round.getGameBockSafe(1));
         return values;
     }
 

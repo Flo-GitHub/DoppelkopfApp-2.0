@@ -1078,6 +1078,9 @@ id action_context_bar
 id action_delete
 id action_divider
 id action_edit
+id action_edit_game
+id action_edit_group
+id action_edit_settings
 id action_image
 id action_menu_divider
 id action_menu_presenter
@@ -1188,7 +1191,6 @@ id main_toolbar
 id masked
 id media_actions
 id message
-id mi_settings
 id middle
 id mini
 id mtrl_child_content_container
@@ -1528,6 +1530,9 @@ string delete_player_title
 string delete_round_title
 string double_bocks_remaining
 string edit
+string edit_game
+string edit_group
+string edit_settings
 string error_db_id_not_set
 string error_minimum_4_players
 string error_more_than_6_players

@@ -1,6 +1,7 @@
 package com.example.admin.doppelkopfapp;
 
 import android.content.Context;
+
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -46,11 +47,13 @@ public class MainActivity extends AppCompatActivity
     private String lastFragmentTag = fragmentTag;
 
     private NavigationView navigationView;
+
     private MenuItem partyItem,
                      gameItem,
                      newRoundItem,
                      tableItem,
                      seatingItem;
+
     private ImageView navImageView;
 
     private PartyManager partyManager;
@@ -156,19 +159,58 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        reEnableMenu(menu);
         return true;
+    }
+
+    @Override
+    public boolean onMenuOpened(int featureId, Menu menu) {
+        if(menu != null){
+            reEnableMenu(menu);
+        }
+        return super.onMenuOpened(featureId, menu);
+    }
+
+    private void reEnableMenu(Menu menu){
+        MenuItem editSettingsItem = menu.findItem(R.id.action_edit_settings);
+        MenuItem editPartyItem = menu.findItem(R.id.action_edit_group);
+        MenuItem editGameItem = menu.findItem(R.id.action_edit_game);
+
+        switch(fragmentTag){
+            case TAG_PARTY_CREATE:
+            case TAG_PARTY_SELECT:
+                disableItems(editSettingsItem, editPartyItem, editGameItem);
+                break;
+            case TAG_GAME_CREATE:
+            case TAG_GAME_SELECT:
+                enableItems(editPartyItem, editSettingsItem);
+                disableItems(editGameItem);
+                break;
+            case TAG_SETTINGS:
+                break;
+            default:
+                enableItems(editPartyItem, editSettingsItem, editGameItem);
+        }
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.mi_settings) {
-            switchToSettings();
-            return true;
+        switch(id) {
+            case R.id.action_edit_settings:
+                switchToSettings();
+                break;
+            case R.id.action_edit_group:
+                switchToPartyCreate(partyManager.getCurrentParty());
+                break;
+            case R.id.action_edit_game:
+                switchToGameCreate(partyManager.getCurrentParty().getCurrentGame());
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     @Override

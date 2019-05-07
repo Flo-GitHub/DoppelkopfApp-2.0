@@ -89,6 +89,9 @@
     <string name="delete_player_title">Delete Player</string>
     <string name="message_cannot_delete_player">Cannot delete Player because he played Games already!</string>
     <string name="add_new_player">Add new Player</string>
+    <string name="edit_group">Edit Group</string>
+    <string name="edit_game">Edit Game</string>
+    <string name="edit_settings">Edit Settings</string>
 
 
 </resources>

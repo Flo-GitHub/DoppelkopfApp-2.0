@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <item
-        android:id="@+id/mi_settings"
-        android:icon="@drawable/ic_settings_white"
-        app:showAsAction="ifRoom"
-        android:title="Settings">
-    </item>
+        android:id="@+id/action_edit_settings"
+        android:orderInCategory="100"
+        android:title="@string/edit_settings" />
+    <item
+        android:id="@+id/action_edit_group"
+        android:orderInCategory="101"
+        android:title="@string/edit_group" />
+
+    <item
+        android:id="@+id/action_edit_game"
+        android:orderInCategory="102"
+        android:title="@string/edit_game" />
+
+
 </menu>

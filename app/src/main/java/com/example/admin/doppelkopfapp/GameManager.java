@@ -1,6 +1,7 @@
 package com.example.admin.doppelkopfapp;
 
 import android.graphics.Bitmap;
+import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -239,46 +240,24 @@ public class GameManager implements Serializable, Comparable {
         party.setLastDate(MyUtils.getDate());
     }
 
+    public void resetBocks(int newMaxBocks){
+        if(newMaxBocks == 0){
+            this.bocks = new int[]{0, 0};
+        } else if(newMaxBocks == 1){
+            this.bocks = new int[]{getBockSafe(0)+getBockSafe(1)*2, 0};
+        } else if(newMaxBocks == 2){
+            this.bocks = new int[]{getBockSafe(0), getBockSafe(1)};
+        }
+    }
+
     public void addRound(GameRound round) {
         addRound(round, false);
     }
 
     public GameRound removeLastRound(){
         GameRound round = rounds.remove(rounds.size()-1);
-        addCurrentBocks(round.getCurrentBocks());
-        removeNewBocks(round.getNewBocks());
+        this.bocks = round.getGameBocks();
         return round;
-    }
-
-    public void removeNewBocks(int n){
-        if(party.getSettings().getMaxBocks() == 0) {
-            return;
-        }
-
-        for(int i = 0; i < n; i++) {
-            int singles = Math.min(playersDataBaseIds.length, bocks[0]);
-            bocks[0] -= singles;
-            if(party.getSettings().getMaxBocks() >= 2) {
-                int changed = (playersDataBaseIds.length-singles);
-                bocks[1] -= changed;
-                bocks[0] += changed;
-            }
-        }
-
-        for(int i = 0; i < bocks.length; i++) {
-            bocks[i] = Math.max(0, bocks[i]);
-        }
-    }
-
-    private void addCurrentBocks(int bock){
-        if (bock == 0 || party.getSettings().getMaxBocks() == 0) {
-            return;
-        }
-        if(bock-1 < bocks.length && bock <= party.getSettings().getMaxBocks()) {
-            bocks[bock-1] ++;
-        }else if(bock==2 && party.getSettings().getMaxBocks() == 1){
-            bocks[0] += 2;
-        }
     }
 
     public String getPlayersAsString() {
@@ -305,28 +284,6 @@ public class GameManager implements Serializable, Comparable {
         return databaseId;
     }
 
-    public void resetBocks(int newMaxBocks) {
-        if(newMaxBocks == 0)
-            return;
-
-        int[] bocks = new int[newMaxBocks];
-
-        if(newMaxBocks > 0) {
-            for(int i = 0; i < newMaxBocks-1; i++) {
-                bocks[i] = getBockSafe(i);
-            }
-            for(int i = newMaxBocks-1; i < this.bocks.length; i++) {
-                bocks[newMaxBocks-1] += getBockSafe(i) * (int)Math.pow(2, ( i-(newMaxBocks-1) ));
-            }
-        }
-
-        int singles = bocks[0];
-        bocks[0] = singles % playersDataBaseIds.length;
-        addBocks(bocks, (int)(singles/playersDataBaseIds.length));
-
-        this.bocks = bocks;
-    }
-
     public int getBockSafe(int index){
         try {
             return bocks[index];
@@ -349,6 +306,10 @@ public class GameManager implements Serializable, Comparable {
 
     public int[] getBocks() {
         return bocks;
+    }
+
+    public int[] getBocksCopy(){
+        return bocks.clone();
     }
 
     public void setPlayersDataBaseIds(long[] playersDataBaseIds) {

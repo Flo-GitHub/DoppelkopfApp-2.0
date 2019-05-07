@@ -27,7 +27,7 @@ import android.widget.Toast;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -95,7 +95,7 @@ public class PartyCreateFragment extends DialogFragment {
             groupText.setText(party.getName());
         }
 
-        playerLayouts = new HashMap<>();
+        playerLayouts = new LinkedHashMap<>();
         LinearLayout linearLayout = view.findViewById(R.id.party_create_player_layout);
 
         addPlayerAddButtons(linearLayout);
@@ -104,7 +104,7 @@ public class PartyCreateFragment extends DialogFragment {
             start = this.party.getPlayers().size();
         }
         for(int i = 0; i < start; i++) {
-            addPlayerInput(linearLayout, i); //TODO reload on delete so that player numbers are matched
+            addPlayerInput(linearLayout, i);
         }
 
         Button createButton = view.findViewById(R.id.party_create_create_button);
@@ -190,6 +190,7 @@ public class PartyCreateFragment extends DialogFragment {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     parentLayout.removeView(playerLayout);
                                     playerLayouts.remove(playerLayout);
+                                    reloadPlayerHints();
                                 }})
                             .setNegativeButton(android.R.string.no, null).show();
                 }
@@ -198,6 +199,23 @@ public class PartyCreateFragment extends DialogFragment {
         });
 
         parentLayout.addView(playerLayout, playerLayouts.size()-1);
+    }
+
+    private void reloadPlayerHints(){
+        int i = 0;
+        for (ConstraintLayout playerLayout : playerLayouts.keySet()){
+            TextView tv = playerLayout.findViewById(R.id.new_player_text);
+            long id = playerLayouts.get(playerLayout);
+            String hint;
+            if(id == -1){
+                int req = i < 4 ? R.string.player_required : R.string.player_optional;
+                hint = getString(R.string.player) + " " + (i+1) + " " + getString(req);
+            } else {
+                hint = party.getPlayerByDBId(id).getName();
+            }
+            tv.setHint(hint);
+            i++;
+        }
     }
 
     private void addPlayerAddButtons(final LinearLayout parentLayout){

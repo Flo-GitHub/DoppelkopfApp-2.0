@@ -87,7 +87,7 @@ public class NewRoundFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 try {
-                    GameRound round = new GameRound(getPlayerPoints());
+                    GameRound round = new GameRound(getPlayerPoints(), party.getCurrentGame().getBocksCopy());
                     round.setNewBocks(getBocks());
                     round.setCurrentBocks(party.getCurrentGame().getCurrentBocks());
                     submitListener.onSubmit(round, isRepeat());
