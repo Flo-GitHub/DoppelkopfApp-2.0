@@ -486,7 +486,7 @@ public class MainActivity extends AppCompatActivity
             dataSource.updateParty(party);
         }
         partyManager.setCurrentParty(party.getDatabaseId());
-        switchToParty();
+        switchToGame();
     }
 
     @Override

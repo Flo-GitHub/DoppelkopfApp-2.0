@@ -12,8 +12,10 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -106,6 +108,7 @@ public class PartyCreateFragment extends DialogFragment {
         for(int i = 0; i < start; i++) {
             addPlayerInput(linearLayout, i);
         }
+        reloadPlayerHints();
 
         Button createButton = view.findViewById(R.id.party_create_create_button);
         createButton.setOnClickListener(new View.OnClickListener() {
@@ -157,8 +160,6 @@ public class PartyCreateFragment extends DialogFragment {
         final ConstraintLayout playerLayout =
                 (ConstraintLayout) View.inflate(getContext(), R.layout.new_player, null);
         TextInputEditText editText = playerLayout.findViewById(R.id.new_player_text);
-        int req = (playerLayouts.size()) < 4 ? R.string.player_required : R.string.player_optional;
-        editText.setHint(getString(R.string.player) + " " + (playerLayouts.size()+1) + " " + getString(req));
         long id = -1;
         if(party != null && index < party.getPlayers().size()) {
             id = party.getPlayers().get(index).getDataBaseId();
@@ -204,16 +205,17 @@ public class PartyCreateFragment extends DialogFragment {
     private void reloadPlayerHints(){
         int i = 0;
         for (ConstraintLayout playerLayout : playerLayouts.keySet()){
-            TextView tv = playerLayout.findViewById(R.id.new_player_text);
+            TextInputLayout inputLayout = playerLayout.findViewById(R.id.new_player_text_input_layout);
             long id = playerLayouts.get(playerLayout);
             String hint;
+            Log.e("id", "" + id);
             if(id == -1){
                 int req = i < 4 ? R.string.player_required : R.string.player_optional;
                 hint = getString(R.string.player) + " " + (i+1) + " " + getString(req);
             } else {
                 hint = party.getPlayerByDBId(id).getName();
             }
-            tv.setHint(hint);
+            inputLayout.setHint(hint);
             i++;
         }
     }
@@ -226,6 +228,7 @@ public class PartyCreateFragment extends DialogFragment {
             @Override
             public void onClick(View v) {
                 addPlayerInput(parentLayout, playerLayouts.size());
+                reloadPlayerHints();
                 final ScrollView scrollView = getView().findViewById(R.id.party_create_scroll_view);
                 scrollView.post(new Runnable() {
 
@@ -259,7 +262,7 @@ public class PartyCreateFragment extends DialogFragment {
 
     private Party getParty() {
         if(isNew){
-            Party party = new Party(getGroupName(),getPlayers(), MyUtils.getDate());
+            Party party = new Party(getGroupName(), getPlayers(), MyUtils.getDate());
             if(bitmap != null) {
                 party.setImage(bitmap);
             }
@@ -291,11 +294,13 @@ public class PartyCreateFragment extends DialogFragment {
             TextInputEditText editText = layout.findViewById(R.id.new_player_text);
             String name = editText.getText().toString();
             if(!name.trim().isEmpty()) {
-                Player p = new Player( editText.getText().toString().trim());
+                Player p = new Player( editText.getText().toString().trim() );
                 if(!isNew && playerLayouts.get(layout) != -1){
                     p.setDataBaseId(playerLayouts.get(layout));
                 }
                 players.add(p);
+            } else if(!isNew && playerLayouts.get(layout) != -1){
+                throw new RuntimeException(getString(R.string.error_player_field_empty));
             }
         }
         if(players.size() < 4) {

@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -55,9 +56,11 @@ public class GameDataSource {
         //update or delete any players that were in party before
         for(Player p : oldPlayers){
             if(party.getPlayers().contains(p)){
-                updatePlayer(p, party.getDatabaseId());
+                updatePlayer(party.getPlayerByDBId(p.getDataBaseId()), party.getDatabaseId());
+                Log.e("PlayerUPDATE", p.getName() + " " + p.getDataBaseId());
             } else {
                 deletePlayer(p);
+                Log.e("PlayerDELETE", p.getName() + " " + p.getDataBaseId());
             }
         }
         //create new players added to party
@@ -65,6 +68,7 @@ public class GameDataSource {
             if(!p.hasDataBaseId() || !oldPlayers.contains(p)){
                 long id = createPlayer(p, party.getDatabaseId());
                 p.setDataBaseId(id);
+                Log.e("PlayerCREATE", p.getName() + " " + id);
             }
         }
     }

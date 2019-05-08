@@ -92,6 +92,7 @@
     <string name="edit_group">Edit Group</string>
     <string name="edit_game">Edit Game</string>
     <string name="edit_settings">Edit Settings</string>
+    <string name="error_player_field_empty">Existing Player\'s name cannot be empty!</string>
 
 
 </resources>

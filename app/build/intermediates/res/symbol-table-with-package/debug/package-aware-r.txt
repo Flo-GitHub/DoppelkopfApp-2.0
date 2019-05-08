@@ -1209,6 +1209,7 @@ id never
 id new_player_add
 id new_player_remove
 id new_player_text
+id new_player_text_input_layout
 id new_round_repeat
 id new_round_submit
 id none
@@ -1317,7 +1318,6 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
-id textInputLayout
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1537,6 +1537,7 @@ string error_db_id_not_set
 string error_minimum_4_players
 string error_more_than_6_players
 string error_party_not_set
+string error_player_field_empty
 string error_points_empty
 string error_required_field_not_initialized
 string error_winners
