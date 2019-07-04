@@ -1,24 +1,9 @@
 package com.example.admin.doppelkopfapp;
 
-import android.app.Activity;
-import android.graphics.Bitmap;
-import android.util.Log;
-import android.view.View;
-
-import java.io.ByteArrayInputStream;
 import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-/**
- * Created by delv on 8/1/2017.
- */
 
 public class MyUtils {
 

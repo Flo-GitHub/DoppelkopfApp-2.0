@@ -32,6 +32,11 @@
             android:enabled="false"
             android:icon="@drawable/ic_seating"
             android:title="@string/seating" />
+        <item
+            android:id="@+id/nav_stats"
+            android:enabled="false"
+            android:icon="@drawable/ic_stats"
+            android:title="@string/stats" />
 
     </group>
 

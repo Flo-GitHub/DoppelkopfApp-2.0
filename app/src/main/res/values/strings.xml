@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DoppelKopf Notes</string>
+    <string name="app_name">Notes Doppelkopf</string>
 
     <string name="number_0">0</string>
     <string name="number_1">1</string>
@@ -64,8 +64,8 @@
     <string name="rounds_played">" Rounds"</string>
     <string name="error_points_empty">Please enter the points for this round.</string>
     <string name="repeat_round">Repeat Round</string>
-    <string name="delete">delete</string>
-    <string name="edit">edit</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
     <string name="confirmation_delete_group">Are you sure you want to delete this Group?</string>
     <string name="delete_group_title">Delete Group</string>
     <string name="group_deleted">Group deleted.</string>
@@ -93,6 +93,12 @@
     <string name="edit_game">Edit Game</string>
     <string name="edit_settings">Edit Settings</string>
     <string name="error_player_field_empty">Existing Player\'s name cannot be empty!</string>
+    <string name="rounds">Rounds</string>
+    <string name="overall">Difference</string>
+    <string name="won">Won</string>
+    <string name="lost">Lost</string>
+    <string name="stats">Statistics</string>
+    <string name="solos">Solos</string>
 
 
 </resources>

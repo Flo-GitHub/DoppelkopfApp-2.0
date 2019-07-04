@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity
                                 TAG_SETTINGS = "settings",
                                 TAG_TABLE = "table",
                                 TAG_NEW_ROUND = "new_round",
-                                TAG_SEATING = "seating";
+                                TAG_SEATING = "seating",
+                                TAG_STATS = "stats";
 
     private String fragmentTag = TAG_PARTY_SELECT;
     private String lastFragmentTag = fragmentTag;
@@ -52,7 +53,8 @@ public class MainActivity extends AppCompatActivity
                      gameItem,
                      newRoundItem,
                      tableItem,
-                     seatingItem;
+                     seatingItem,
+                     statsItem;
 
     private ImageView navImageView;
 
@@ -91,6 +93,7 @@ public class MainActivity extends AppCompatActivity
         newRoundItem = menu.findItem(R.id.nav_new_round);
         tableItem = menu.findItem(R.id.nav_table);
         seatingItem = menu.findItem(R.id.nav_seating);
+        statsItem = menu.findItem(R.id.nav_stats);
 
         View headerView = navigationView.getHeaderView(0);
         navImageView = headerView.findViewById(R.id.nav_header_image);
@@ -183,6 +186,7 @@ public class MainActivity extends AppCompatActivity
                 break;
             case TAG_GAME_CREATE:
             case TAG_GAME_SELECT:
+            case TAG_STATS:
                 enableItems(editPartyItem, editSettingsItem);
                 disableItems(editGameItem);
                 break;
@@ -231,6 +235,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_seating:
                 switchToSeating();
                 break;
+            case R.id.nav_stats:
+                switchToStats();
+                break;
             default:
                 switchToParty();
         }
@@ -266,14 +273,15 @@ public class MainActivity extends AppCompatActivity
             case TAG_PARTY_SELECT:
                 partyItem.setTitle(R.string.party_select_fragment_title);
                 gameItem.setTitle(R.string.game_select_fragment_title);
-                disableItems(gameItem, newRoundItem, tableItem, seatingItem);
+                disableItems(gameItem, newRoundItem, tableItem, seatingItem, statsItem);
                 partyManager.setCurrentParty(-1);
                 break;
             case TAG_GAME_CREATE:
+            case TAG_STATS:
             case TAG_GAME_SELECT:
                 partyItem.setTitle(partyManager.getCurrentParty().getName());
                 gameItem.setTitle(R.string.game_select_fragment_title);
-                enableItems(gameItem);
+                enableItems(gameItem, statsItem);
                 disableItems(newRoundItem, tableItem, seatingItem);
                 partyManager.getCurrentParty().setCurrentGame(-1);
                 break;
@@ -283,7 +291,7 @@ public class MainActivity extends AppCompatActivity
                 partyItem.setTitle(partyManager.getCurrentParty().getName());
                 gameItem.setTitle(MyUtils.getFullDisplayDate(
                         partyManager.getCurrentParty().getCurrentGame().getLastDate()));
-                enableItems(gameItem, newRoundItem, tableItem, seatingItem);
+                enableItems(gameItem, newRoundItem, tableItem, seatingItem, statsItem);
         }
         try{
             navImageView.setImageBitmap(partyManager.getCurrentParty().getImage());
@@ -311,6 +319,10 @@ public class MainActivity extends AppCompatActivity
                 break;
             case TAG_SEATING:
                 navigationView.setCheckedItem(R.id.nav_seating);
+                break;
+            case TAG_STATS:
+                navigationView.setCheckedItem(R.id.nav_stats);
+                break;
         }
         reEnableItems(tag);
     }
@@ -407,6 +419,10 @@ public class MainActivity extends AppCompatActivity
 
     private void switchToSeating(){
         switchFragments(SeatingFragment.class, partyBundle(), TAG_SEATING);
+    }
+
+    private void switchToStats(){
+        switchFragments(StatsFragment.class, partyBundle(), TAG_STATS);
     }
 
     @Override

@@ -1008,6 +1008,9 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable button_a
+drawable button_b
+drawable button_background
 drawable cell_not_active
 drawable cell_shape
 drawable check
@@ -1040,6 +1043,7 @@ drawable ic_remove
 drawable ic_seating
 drawable ic_settings
 drawable ic_settings_white
+drawable ic_stats
 drawable ic_table
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1202,9 +1206,11 @@ id nav_header_image
 id nav_new_round
 id nav_party_select
 id nav_seating
+id nav_stats
 id nav_table
 id nav_view
 id navigation_header_container
+id nestedScrollView
 id never
 id new_player_add
 id new_player_remove
@@ -1263,6 +1269,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -1306,6 +1313,12 @@ id src_in
 id src_over
 id standard
 id start
+id stats_group_header
+id stats_radio_group
+id stats_radio_points
+id stats_radio_rounds
+id stats_radio_solos
+id stats_table
 id status_bar_latest_event_content
 id stretch
 id submenuarrow
@@ -1427,6 +1440,7 @@ layout fragment_party_create
 layout fragment_party_select
 layout fragment_seating
 layout fragment_settings
+layout fragment_stats
 layout fragment_table
 layout game_card
 layout group_header
@@ -1554,6 +1568,7 @@ string group_name
 string group_name_required
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string lost
 string maximum_bocks
 string message_cannot_delete_player
 string mtrl_chip_close_icon_content_description
@@ -1573,6 +1588,7 @@ string number_4
 string number_5
 string number_6
 string ok
+string overall
 string party_create_fragment_title
 string party_edit_fragment_title
 string party_select_fragment_title
@@ -1587,6 +1603,7 @@ string player_required
 string points
 string repeat_round
 string round_deleted
+string rounds
 string rounds_played
 string sample_date
 string sample_player_name
@@ -1601,6 +1618,8 @@ string settings_bocks_double
 string settings_bocks_none
 string settings_bocks_single
 string settings_frament_title
+string solos
+string stats
 string status_bar_notification_info_overflow
 string submit
 string table_bock
@@ -1608,6 +1627,7 @@ string table_fragment_title
 string table_info
 string table_round_index
 string title_activity_main
+string won
 string yes
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

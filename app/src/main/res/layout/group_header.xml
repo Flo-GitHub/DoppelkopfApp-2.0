@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/group_header_image"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -30,7 +30,7 @@
         android:layout_marginBottom="8dp"
         android:maxLength="16"
         android:text="@string/group_name"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@+id/group_header_image"
         app:layout_constraintEnd_toEndOf="parent"

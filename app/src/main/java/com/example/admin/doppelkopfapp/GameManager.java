@@ -1,7 +1,6 @@
 package com.example.admin.doppelkopfapp;
 
 import android.graphics.Bitmap;
-import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -257,6 +256,7 @@ public class GameManager implements Serializable, Comparable {
     public GameRound removeLastRound(){
         GameRound round = rounds.remove(rounds.size()-1);
         this.bocks = round.getGameBocks();
+        resetBocks(party.getSettings().getMaxBocks());
         return round;
     }
 

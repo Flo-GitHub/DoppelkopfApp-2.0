@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Doppelkopf Notizen</string>
+    <string name="app_name">Notizen Doppelkopf</string>
 
     <string name="number_0">0</string>
     <string name="number_1">1</string>
@@ -47,7 +47,7 @@
     <string name="error_minimum_4_players">Wähle bitte mindestens 4 Spieler aus.</string>
     <string name="error_db_id_not_set">Keine Datenbank ID vorhanden</string>
     <string name="error_winners">Es gibt nur 1, 2 oder 3 Gewinner</string>
-    <string name="error_more_than_6_players">Es werden nur 6 Spieler pro Spiel unterstützt.</string>
+    <string name="error_more_than_6_players">Es werden nur 6 Spieler pro Spiel gleichzeitig unterstützt.</string>
     <string name="game_select_fragment_title">Spiel Auswählen</string>
     <string name="error_party_not_set">Keine Gruppe ausgewählt</string>
     <string name="new_round_fragment_title">Neue Runde</string>
@@ -63,8 +63,8 @@
     <string name="rounds_played">" Runden"</string>
     <string name="error_points_empty">Bitte trage die Punkte für diese Runde ein.</string>
     <string name="repeat_round">Runde Wiederholen</string>
-    <string name="delete">löschen</string>
-    <string name="edit">bearbeiten</string>
+    <string name="delete">Löschen</string>
+    <string name="edit">Bearbeiten</string>
     <string name="confirmation_delete_group">Möchtest du diese Gruppe wirklich löschen?</string>
     <string name="delete_group_title">Gruppe löschen</string>
     <string name="group_deleted">Gruppe gelöscht.</string>
@@ -83,6 +83,17 @@
     <string name="confirmation_delete_player">Möchtest du diesen Spieler wirklich löschen?</string>
     <string name="delete_player_title">Spieler Löschen</string>
     <string name="message_cannot_delete_player">Spieler kann nicht geöscht werden, da er schon Spiele gespielt hat!</string>
+    <string name="add_new_player">Spieler Hinzufügen</string>
+    <string name="edit_group">Gruppe bearbeiten</string>
+    <string name="edit_game">Spiel bearbeiten</string>
+    <string name="edit_settings">Einstellungen bearbeiten</string>
+    <string name="error_player_field_empty">Bestehende Spieler brauchen einen Namen!</string>
+    <string name="rounds">Runden</string>
+    <string name="overall">Differenz</string>
+    <string name="won">Gewonnen</string>
+    <string name="lost">Verloren</string>
+    <string name="stats">Statistiken</string>
+    <string name="solos">Solo</string>
 
 
 </resources>

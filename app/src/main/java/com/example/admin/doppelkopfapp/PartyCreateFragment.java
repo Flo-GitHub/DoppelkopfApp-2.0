@@ -14,8 +14,6 @@ import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,14 +32,6 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link PartyCreateFragment.OnPartyCreateListener} interface
- * to handle interaction events.
- * Use the {@link PartyCreateFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class PartyCreateFragment extends DialogFragment {
 
     public static int PICK_IMAGE = 23;
@@ -208,7 +198,6 @@ public class PartyCreateFragment extends DialogFragment {
             TextInputLayout inputLayout = playerLayout.findViewById(R.id.new_player_text_input_layout);
             long id = playerLayouts.get(playerLayout);
             String hint;
-            Log.e("id", "" + id);
             if(id == -1){
                 int req = i < 4 ? R.string.player_required : R.string.player_optional;
                 hint = getString(R.string.player) + " " + (i+1) + " " + getString(req);

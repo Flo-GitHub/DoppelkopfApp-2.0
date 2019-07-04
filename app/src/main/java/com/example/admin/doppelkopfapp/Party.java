@@ -1,15 +1,16 @@
 package com.example.admin.doppelkopfapp;
 
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class Party implements Serializable, Comparable {
 
@@ -105,8 +106,81 @@ public class Party implements Serializable, Comparable {
 
     private byte[] getImageBytes(Bitmap bitmap) {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 80, bos);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 20, bos);
         return bos.toByteArray();
+    }
+
+    //overall, won, lost
+    public int[] getPlayerStats(Player p, StatsFragment.Stats stats){
+        int[] values = new int[3];
+        for(int i = 0; i < values.length; i++){
+            values[i] = 0;
+        }
+        for(GameManager game : getGames()){
+            for(GameRound round : game.getRounds()){
+                try{
+                    int pts = round.getPlayerPoints().get(p.getDataBaseId());
+                    switch(stats){
+                        case POINTS:
+                            if(pts > 0){
+                                values[1] += pts;
+                            } else{
+                                values[2] -= pts;
+                            }
+                            values[0] += pts;
+                            break;
+                        case ROUNDS:
+                            if(pts > 0){
+                                values[1]++;
+                                values[0]++;
+                            } else if(pts < 0){
+                                values[2]++;
+                                values[0]--;
+                            }
+                            break;
+                        case SOLO:
+                            switch (isSolo(round.getPlayerPoints(), p.getDataBaseId())){
+                                case WIN:
+                                    values[0]++;
+                                    values[1]++;
+                                    break;
+                                case LOSS:
+                                    values[0]--;
+                                    values[2]++;
+                                    break;
+                            }
+                    }
+
+
+                } catch (Exception ignore){}
+
+            }
+        }
+        return values;
+    }
+
+    enum SoloType{
+        WIN, LOSS, NO_SOLO
+    }
+
+    private SoloType isSolo(Map<Long, Integer> playerPoints, long player) {
+        Set<Long> winners = new HashSet<>();
+        Set<Long> losers = new HashSet<>();
+
+        for(long id : playerPoints.keySet()) {
+            if(playerPoints.get(id) > 0) {
+                winners.add(id);
+            } else if (playerPoints.get(id) < 0) {
+                losers.add(id);
+            }
+        }
+
+        if(winners.size() == 3 && losers.contains(player)) {
+            return SoloType.LOSS;
+        } else if(losers.size() == 3 && winners.contains(player)){
+            return SoloType.WIN;
+        }
+        return SoloType.NO_SOLO;
     }
 
 
@@ -173,7 +247,6 @@ public class Party implements Serializable, Comparable {
         try {
             imageBytes = getImageBytes(image);
         } catch(Exception e) {
-            Log.e("PARTY ", "couldn't set iamge");
         }
     }
 
